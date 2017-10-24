@@ -162,3 +162,125 @@ img.pull-left {
     padding: 10px;
     margin: 0;
 }
+
+/*****************************************
+ * Supply
+ *****************************************/
+
+.supply-panel {
+    border: 1px solid #ddd;
+    margin: 2rem 0;
+    position: relative;
+    background: #f4f3f1 url(../img/grey-prism.svg) repeat scroll;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.supply-header {
+    float: left;
+    margin-top: 30px;
+    width: 33.33333333%
+}
+
+.supply-title {
+    border: 1px solid #ddd;
+    border-width: 0 1px 1px 1px;
+    display: inline-block;
+    font-size: 1.5rem;
+    left: 2rem;
+    line-height: 2rem;
+    padding: .5rem 1rem .5rem;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+}
+
+.supply-cost {
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 2.309rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.supply-cost > span {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.309rem;
+}
+
+.supply-level {
+    display: block;
+    margin: 0.8rem 0 2rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.supply-level > label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin: 0;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.supply-level > span {
+    border: 1px dotted;
+    display: inline-block;
+    font-size: 1.2rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin: 0 1px;
+    opacity: 0.4;
+    padding: 0.5rem;
+    width: 1.5rem;
+}
+
+.supply-level > .level-1 { color: rgb(52,  173, 0); }
+.supply-level > .level-2 { color: rgb(255, 174, 0); }
+.supply-level > .level-3 { color: rgb(217, 72,  0); }
+.supply-level > .level-4 { color: rgb(143, 0,   0); }
+.supply-level > .level-5 { color: rgb(124, 0, 110); }
+
+.supply-level-1 > .level-1,
+.supply-level-2 > .level-2,
+.supply-level-3 > .level-3,
+.supply-level-4 > .level-4,
+.supply-level-5 > .level-5 {
+    border: 1px solid;
+    color: #fff;
+    font-weight: 600;
+    opacity: 1;
+}
+
+.supply-level-1 > .level-1 { background-color: rgb(52,  173, 0); }
+.supply-level-2 > .level-2 { background-color: rgb(255, 174, 0); }
+.supply-level-3 > .level-3 { background-color: rgb(217, 72,  0); }
+.supply-level-4 > .level-4 { background-color: rgb(143, 0,   0); }
+.supply-level-5 > .level-5 { background-color: rgb(124, 0, 110); }
+
+.supply-content {
+    float: left;
+    width: 66.66666667%;
+    font-size: 0.9rem;
+}
+
+.supply-content .supply-item > strong {
+    display: block;
+    float: left;
+    width: 100px;
+    overflow: hidden;
+    font-weight: 500;
+    clear: left;
+    text-align: left;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.supply-content .supply-item > span {
+    display: block;
+    margin-left: 110px;
+    text-align: justify;
+}
