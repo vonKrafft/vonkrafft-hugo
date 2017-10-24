@@ -1,0 +1,7 @@
+<div class="code-container">
+    <div class="code-title">
+        <i class="fa fa-{{.Get `icon`}}"></i>
+        {{.Get "title"}}
+    </div>
+    <pre class="code code-{{.Get `lang`}}">{{.Inner}}</pre>
+</div>
