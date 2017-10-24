@@ -1,0 +1,141 @@
+html {
+    font-size: 15px;
+    font-family: 'Rajdhani',-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei","Helvetica Neue",sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background: #4b5b6e url(../img/blue-prism.png) repeat fixed;
+}
+
+.site-header {
+    color: #f2f2f2;
+}
+
+.site-header a {
+    color: #e5e5e5;
+}
+
+.site-header a:hover, 
+.site-header a:focus, 
+.site-header .is-active a {
+    color: #f2f2f2;
+}
+
+@media screen and (max-height: 768px) and (min-width: 800px) {
+    .social-menu {
+        display: block;
+    }
+}
+
+@media screen and (max-height: 568px) and (min-width: 800px) {
+    .social-menu {
+        display: none;
+    }
+}
+
+.pull-right {
+    display: block;
+    float: right;
+    margin-left: 1rem !important;
+}
+
+.pull-left {
+    display: block;
+    float: left;
+    margin-right: 1rem !important;
+}
+
+.align-right {
+    display: block;
+    text-align: right;
+}
+
+.align-left {
+    display: block;
+    text-align: left;
+}
+
+img.pull-right, 
+img.pull-left {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.avatar {
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    transition: all ease-out .5s;
+}
+
+.avatar:hover {
+    transform: none;
+}
+
+@media screen and (max-width: 800px) {
+    .avatar {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        width: auto;
+        height: 2rem;
+        margin-top: 0;
+        border: none;
+    }
+}
+
+.post-detail .post-header .post-title {
+    margin-bottom: 0;
+}
+
+.post-detail .post-header .post-meta {
+    margin-top: 0;
+}
+
+.post-content {
+    line-height: 1.618;
+}
+
+.post-content p+ul {
+    margin-top: -1rem;
+}
+
+.post-entry a:focus, 
+.post-entry a:hover, 
+.post-content a {
+    color: #429ab4;
+}
+
+.post-content figure img, 
+.post-content img {
+    box-shadow: none;
+}
+
+.post-content li+li {
+    margin-top: 0rem;
+}
+
+.suspension a.to-comment {
+    color: #429ab4;
+}
+
+.suspension a.to-comment:hover {
+    color: #fff;
+    background-color: #429ab4;
+    border-color: #429ab4;
+}
+
+.clearfix::after, .clearfix::before {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.img-cc {
+    display: inline-block;
+    margin-bottom: -3px;
+}
