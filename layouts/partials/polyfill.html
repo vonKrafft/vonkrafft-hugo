@@ -1,0 +1,15 @@
+{{ `<!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <script src="/js/videojs-ie8.min.js"></script>
+  <![endif]-->` | safeHTML }}
+
+{{ `<!--[if lte IE 11]>
+    <script src="/js/classList.min.js"></script>
+  <![endif]-->` | safeHTML }}
+
+<!-- IEdge 9-14, Android < 5, Safari < 10 -->
+<script src="/js/ofi.min.js"></script>
+
+<!-- Smooth Scroll with closest & requestAnimationFrame Polyfills -->
+<script src="/js/smooth-scroll.polyfills.min.js"></script>
