@@ -1,0 +1,4 @@
+<figure class="gallery gallery-column-{{ .Get `columns` }}">
+	{{ .Inner }}
+	{{ with .Get "title" }}<figcaption class="clearfix"><h4>{{.}}</h4></figcaption>{{ end }}
+</figure>

@@ -446,3 +446,49 @@ img.pull-left {
     background-color: #d9edf7;
     border-color: #bce8f1;
 }
+
+/*****************************************
+ * Gallery
+ *****************************************/
+
+figure.gallery {
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+figure.gallery::before, 
+figure.gallery::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+figure.gallery .gallery-item {
+    float: left;
+}
+
+figure.gallery-column-2 .gallery-item { width: 50%; }
+figure.gallery-column-3 .gallery-item { width: 33.33333333%; }
+figure.gallery-column-4 .gallery-item { width: 25%; }
+figure.gallery-column-5 .gallery-item { width: 20%; }
+figure.gallery-column-6 .gallery-item { width: 16.66666667%; }
+
+figure.gallery .gallery-item > .gallery-image {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+figure.gallery .gallery-item > .gallery-image > * {
+    display: inline-block;
+}
+
+figure.gallery .gallery-item > .gallery-image a {
+    border-style: none;
+}
+
+figure.gallery .gallery-item > .gallery-image img {
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+}
