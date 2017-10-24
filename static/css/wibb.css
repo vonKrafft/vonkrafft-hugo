@@ -284,3 +284,54 @@ img.pull-left {
     margin-left: 110px;
     text-align: justify;
 }
+
+/*****************************************
+ * Rated
+ *****************************************/
+
+.rated-container {
+    border: 1px solid #ddd;
+    margin: 3rem 0 2rem 0;
+    position: relative;
+    background: #f4f3f1 url(../img/grey-prism.svg) repeat scroll;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+}
+
+.rated-container > ul, 
+.rated-container > ol {
+    float: left;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 50%;
+    list-style: none;
+    text-align: center;
+}
+
+.rated-container > ul::before, 
+.rated-container > ol::before {
+    display: block;
+    position: absolute;
+    border: 4px solid;
+    border-radius: 50%;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 2.618rem;
+    background-color: #f4f3f1;
+    top: -5rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.rated-container > ul::before {
+    content: "+";
+    border-color: #3c763d;
+}
+
+.rated-container > ol::before {
+    content: "-";
+    border-color: #a94442;
+}
