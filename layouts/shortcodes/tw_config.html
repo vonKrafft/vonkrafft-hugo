@@ -1,0 +1,9 @@
+<div class="config-panel clearfix" style="border-color: {{ .Get `color` }};">
+    <div class="cost-wrapper">
+    	<div class="cost" style="border-color: {{ .Get `color` }};"><span>{{ .Get "cost" }} <em>euros</em></span></div>
+    </div>
+    <div class="config-content">
+        <div class="config-title">{{ .Get "title" }}</div>
+        {{ .Inner }}
+    </div>
+</div>
