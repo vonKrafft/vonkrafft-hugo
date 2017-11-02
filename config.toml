@@ -1,6 +1,6 @@
 baseURL = "http://localhost:1313"
 languageCode = "fr"
-title = ""
+title = "vonKrafft"
 theme = "hugo-nuo"
 enableRobotsTXT = true
 pygmentsuseclasses = true
@@ -38,7 +38,7 @@ copyright = "© This post is licensed under a Creative Commons Attribution-NonCo
 # Add your own params here
 [params]
   author = "vonKrafft"
-  avatar = "/img/brand.png"
+  avatar = "/img/avatar.jpg"
   seotitle = "Tuto Wibb | Chronicles of a cybersecurity consultant"
   subtitle = "Chronicles of a cybersecurity consultant"
   description = ""
