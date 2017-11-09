@@ -1,6 +1,6 @@
-<figure>
+<figure{{ with .Get `class` }} class="{{.}}"{{ end }}>
     {{ with .Get "link" }}<a href="{{.}}" target="_blank">{{ end }}
-        <img src="{{ .Get `src` }}"{{ with .Get `alt` }} alt="{{.}}"{{ end }}{{ with .Get `class` }} class="{{.}}"{{ end }}{{ with .Get `width` }} width="{{.}}"{{ end }}{{ with .Get `height` }} height="{{.}}"{{ end }}>
+        <img src="{{ .Get `src` }}"{{ with .Get `alt` }} alt="{{.}}"{{ end }}{{ with .Get `width` }} width="{{.}}"{{ end }}{{ with .Get `height` }} height="{{.}}"{{ end }}>
     {{ with .Get "link" }}</a>{{ end }}
     {{ with .Get "title" }}
         <figcaption>

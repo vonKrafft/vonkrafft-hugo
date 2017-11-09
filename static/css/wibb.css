@@ -58,6 +58,10 @@ h1.title, h2.title {
     margin-right: 1rem !important;
 }
 
+.half {
+    max-width: 50%;
+}
+
 .align-right {
     display: block;
     text-align: right;
