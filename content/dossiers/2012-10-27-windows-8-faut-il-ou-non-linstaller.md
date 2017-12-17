@@ -2,13 +2,13 @@
 title: "Windows 8 : Faut-il ou non l’installer ?"
 description: "Faut-il garder son système d’exploitation (OS) actuel ou bien passer à Windows 8 ? Voici les pours et les contres de ce nouveaux Windows."
 tags: [ "Windows", "Windows 8", "Microsoft" ]
-lastmod: "2015-12-19 19:19:30"
+lastmod: "2012-10-27 19:19:30"
 date: "2012-10-27 12:15:09"
 categories:
     - "Dossiers"
 type: post
 slug: "windows-8-faut-il-ou-non-linstaller"
-cover: "/media/2012/10/1b0cd9877d658b1fc8938af41e208113-150x150.jpg"
+cover: "/media/2012/10/1b0cd9877d658b1fc8938af41e208113.jpg"
 ---
 
 Nouveau fer de lance de Microsoft, Windows 8 est disponible depuis le 26 octobre dernier. Faut-il garder son système d’exploitation (OS) actuel ou bien passer à Windows 8 ? Certes, les nouvelles fonctionnalités sont tentante, mais sachez rester prudent. Voici les pours et les contres de ce nouveaux Windows.

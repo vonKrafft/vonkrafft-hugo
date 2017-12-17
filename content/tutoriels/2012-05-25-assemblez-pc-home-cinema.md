@@ -2,13 +2,13 @@
 title: "Assemblez votre PC Home Cinéma"
 description: "Alternative aux équipements \"Média Center\" trop restrictifs, voici quelques conseils pour concevoir et monter votre PC Home Cinéma."
 tags: [ "PC", "Home cinéma", "Assemblage", "Configs", "Vidéo", "HD" ]
-lastmod: "2015-12-19 23:32:20"
-date: "2012-05-25 12:00:00"
+lastmod: "2012-05-25 23:32:20"
+date: "2012-05-25 23:32:20"
 categories:
     - "Tutoriels"
 type: post
 slug: "assemblez-pc-home-cinema"
-cover: "/media/2012/05/518fef6001c6886c5c379acadcbec04b-150x150.jpg"
+cover: "/media/2012/05/518fef6001c6886c5c379acadcbec04b.jpg"
 ---
 
 Le « Média Center » désigne les disques dur et les TV connectés, comme par exemple les TV d’Apple ou de Google, les lecteurs multimédia, mais aussi les box TV de opérateur. Successeur du lecteur DVD, le « Média Center » permet de regarder la TV, lire ses films et ses enregistrements et naviguer sur internet. Cependant, de nombreux problème se pose, notamment à cause des formats vidéo supporté, mais aussi parce que leur utilisation est trop restreinte. Pour pallier à ces inconvénients, vous pouvez opter pour un PC Home Cinéma.

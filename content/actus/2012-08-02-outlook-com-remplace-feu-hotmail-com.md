@@ -2,13 +2,13 @@
 title: "Outlook.com remplace feu Hotmail.com"
 description: "Avec Outlook.com, son nouveau client mail en ligne, Microsoft espère concurrencer Gmail et les autres ténors de la messagerie en ligne."
 tags: [ "Microsoft", "Outlook", "Hotmail", "Mail", "Messagerie" ]
-lastmod: "2015-12-19 22:54:11"
-date: "2012-08-02 12:00:00"
+lastmod: "2012-08-02 22:54:11"
+date: "2012-08-02 22:54:11"
 categories:
     - "Actus"
 type: post
 slug: "outlook-com-remplace-feu-hotmail-com"
-cover: "/media/2012/08/fa67a1326d850bc102e9c8e4d6407527-150x150.jpg"
+cover: "/media/2012/08/fa67a1326d850bc102e9c8e4d6407527-1024x480.jpg"
 ---
 
 Depuis la sortie de Windows 8, Microsoft fait souffler une tempête de changement sur l’ensemble de ses services. C’est au tour d’Hotmail d’adopter les couleurs de Windows 8 en se métamorphosant en Outlook. Avec ce nouveau client mail en ligne, Microsoft espère concurrencer Gmail et les autres ténors de la messagerie en ligne.

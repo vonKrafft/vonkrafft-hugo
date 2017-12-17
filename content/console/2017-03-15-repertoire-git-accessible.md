@@ -8,7 +8,7 @@ categories:
     - "Console"
 type: post
 slug: "repertoire-git-accessible"
-cover: "/media/2017/03/a22eaab5c6227da7b38ffb1db7ba6ccd-150x150.png"
+cover: "/media/2017/03/a22eaab5c6227da7b38ffb1db7ba6ccd.png"
 ---
 
 Récemment, je suis intervenu sur un serveur web qui s’était fait compromettre. J’ai donc cherché à savoir quelle avait été la porte d’entrée sur le serveur. C’était assez folklorique : chmod 777 sur le webroot, une flopée de SQLi, des webshell à la pelle, des config apache et MySQL très laxistes et surtout un répertoire .git avec du directory listing …

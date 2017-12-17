@@ -8,7 +8,7 @@ categories:
     - "Console"
 type: post
 slug: "activer-http2-nginx-debian"
-cover: "/media/2016/05/12df53fea8b3adfa6c2ec456dd22e204-150x150.jpg"
+cover: "/media/2016/05/12df53fea8b3adfa6c2ec456dd22e204.jpg"
 ---
 
 Cela fait maintenant 20 ans que le protocole HTTP (HyperText Transfer Protocol) a été inventé, et depuis les versions HTTP/1.0 en [mai 1996](https://www.ietf.org/rfc/rfc1945.txt) et HTTP/1.1 en [janvier 1997](https://www.ietf.org/rfc/rfc2068.txt) il n'a plus évolué. Afin de pallier les limitations de HTTP, Google a mené ses propres travaux, dévoilant SPDY en 2012 qui visait essentiellement à réduire le temps de chargement des pages web en ajoutant la notion de priorité des contenus et le multiplexage des transferts au sein d'une seule connexion TCP. Ces travaux ont inspiré l'IETF qui a repris cette approche afin de publier les caractéristiques de HTTP/2.0 (écrit aussi HTTP2). Les RFC7540 et RFC7541 qui définissent les standards de HTTP2 ainsi que la compression HPACK des en-têtes HTTP2 ont été publiée par l'IETF en mai 2015. Pourquoi alors ne pas activer HTTP2 sur son propre serveur ?

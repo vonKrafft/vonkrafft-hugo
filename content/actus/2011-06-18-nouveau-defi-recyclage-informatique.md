@@ -2,13 +2,13 @@
 title: "Le nouveau défi du recyclage informatique"
 description: ""
 tags: [ "Recyclage", "DEEE", "Écologie", "LDLC" ]
-lastmod: "2016-05-10 19:56:58"
-date: "2011-06-18 12:00:00"
+lastmod: "2011-06-18 19:56:58"
+date: "2011-06-18 19:56:58"
 categories:
     - "Actus"
 type: post
 slug: "nouveau-defi-recyclage-informatique"
-cover: "/media/2011/06/72d6f4b79d11c313a46e146e5a72c576-150x150.jpg"
+cover: "/media/2011/06/72d6f4b79d11c313a46e146e5a72c576.jpg"
 ---
 
 Que devient un PC en fin de vie, que faire de nos appareils électroniques lorsqu’on ne s’en sert plus ? Le recyclage de nos compagnons high-tech devient primordial, alors voici ce qu’il en est aujourd’hui et ce qu’il faut faire.

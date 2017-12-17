@@ -2,13 +2,13 @@
 title: "Guide d\'achat PC portable 2011"
 description: "Il est parfois difficile de choir le bon modèle de PC portable. Voici un guide pour vous aider dans votre achat de septembre 2011."
 tags: [ "Guide d'achat", "PC portable" ]
-lastmod: "2016-05-10 20:20:51"
-date: "2011-08-26 12:00:00"
+lastmod: "2011-08-26 20:20:51"
+date: "2011-08-26 20:20:51"
 categories:
     - "Guides"
 type: post
 slug: "guide-achat-pc-portable-2011"
-cover: "/media/2011/08/77c5eddae118736e4d52a1cedf0d0a58-150x150.png"
+cover: "/media/2011/08/77c5eddae118736e4d52a1cedf0d0a58.png"
 ---
 
 Ça y est, c’est la rentrée, et c’est aussi la période pendant laquelle les constructeurs de PC portable renouvellent leurs gammes. Au même moment, vous vous dites qu’il est temps d’investir dans un ordinateur portable afin de remplacer votre vieux modèle ou bien pour nous épauler dans nos études qui débutent. Quoi qu’il en soit, il est parfois difficile de choir le bon modèle de PC. Voici un guide pour vous aider dans votre achat de septembre.

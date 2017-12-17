@@ -3,12 +3,12 @@ title: "iPad 3 : le « Nouvel iPad » troisième du nom"
 description: "Comment passer à coté de l\'annonce de l\'un des produits les plus attendus du moment. Présentation de l\'iPad 3 d\'Apple alias le « Nouvel iPad »."
 tags: [ "Apple", "iPad", "A5X", "iOS" ]
 lastmod: "2016-01-11 19:21:35"
-date: "2012-03-07 12:00:00"
+date: "2012-03-07 19:21:35"
 categories:
     - "Actus"
 type: post
 slug: "ipad-3-le-nouvel-ipad-troisieme-du-nom"
-cover: "/media/2012/03/bded7649b6d525b01fa031e8cb0f6946-150x150.png"
+cover: "/media/2012/03/bded7649b6d525b01fa031e8cb0f6946.png"
 ---
 
 ## iPad 3 ... et non, *« Le Nouvel iPad »*

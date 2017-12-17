@@ -2,13 +2,13 @@
 title: "Surface, l\'intégration made in Microsoft"
 description: "Microsoft a annoncé le 19 juin dernier la sortie prochaine de sa tablette : Surface. Présentation de la tablette et avis de la rédaction."
 tags: [ "Windows", "Surface", "Microsoft", "Tablette" ]
-lastmod: "2015-12-19 23:24:44"
-date: "2012-07-02 12:00:00"
+lastmod: "2012-07-02 23:24:44"
+date: "2012-07-02 23:24:44"
 categories:
     - "Actus"
 type: post
 slug: "surface-lintegration-made-in-microsoft"
-cover: "/media/2012/07/d10a2b7204c992679d55eff0c95dcd04-150x150.jpg"
+cover: "/media/2012/07/d10a2b7204c992679d55eff0c95dcd04.jpg"
 ---
 
 L’essor des tablettes à prit Microsoft de cours, et ce dernier se devait de trouver une parade à iOS et Android. Dans cette optique, l’éditeur de système d’exploitation a effectué une refonte totale de son OS Windows pour l’ouvrir au marché des tablettes. Mais ce que personne n’attendait, c’est que ce géant des logiciels se lance dans la commercialisation de sa propre tablette. En effet, la société a annoncé le 19 juin dernier la sortie prochaine de sa tablette : Surface.

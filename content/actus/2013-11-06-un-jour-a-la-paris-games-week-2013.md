@@ -2,13 +2,13 @@
 title: "Un jour à la Paris Games Week 2013"
 description: "Jeux en avant-première, tournois et ambiance gamer, voici un bref résumé de la Paris Games Week pour ceux qui n’ont pas eu la chance de pouvoir y aller."
 tags: [ "PGW", "Paris Games Week", "2013", "jeu vidéo", "PS4", "Xbox One" ]
-lastmod: "2015-12-19 18:43:51"
+lastmod: "2013-11-06 18:43:51"
 date: "2013-11-06 10:05:57"
 categories:
     - "Actus"
 type: post
 slug: "un-jour-a-la-paris-games-week-2013"
-cover: "/media/2013/11/fc1121d18030a80a50207f0099161544-150x150.jpg"
+cover: "/media/2013/11/fc1121d18030a80a50207f0099161544-1024x576.jpg"
 ---
 
 {{< img src="/media/2013/11/ad85189defc55188e36d0030a505bb71-150x150.jpg" alt="pgw01" link="/media/2013/11/ad85189defc55188e36d0030a505bb71.jpg" class="pull-right" width="80px" height="80px">}}

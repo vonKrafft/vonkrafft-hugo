@@ -2,13 +2,13 @@
 title: "Monter un Mini-PC"
 description: "Monter vous-même votre mini-PC, un ordinateur à moindre coût qui se glisse partout et qui suffit pour les tâches courantes."
 tags: [ "Boitier PC", "tuto", "Mini PC" ]
-lastmod: "2016-05-09 21:58:06"
-date: "2011-01-05 12:00:00"
+lastmod: "2011-01-05 21:58:06"
+date: "2011-01-05 21:58:06"
 categories:
     - "Tutoriels"
 type: post
 slug: "monter-un-mini-pc"
-cover: "/media/2011/01/367f6e82d2f38a17aad6be39de432e37-150x150.jpg"
+cover: "/media/2011/01/367f6e82d2f38a17aad6be39de432e37.jpg"
 ---
 
 On trouve les mini-PC partout dans le commerce mais rien ne vous empêche de faire le vôtre. Un ordinateur miniature, suffisant pour toutes les tâches du quotidien ; la bureautique, internet & mails et le visionnage de films  ... et peu gourmand en énergie.

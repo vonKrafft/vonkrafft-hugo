@@ -2,13 +2,13 @@
 title: "Bien choisir son disque SSD"
 description: "Annoncé comme l’avenir du stockage des informations en remplacement des disques durs, voici quelques pistes pour vous aider dans le choix d\'un SSD."
 tags: [ "Guide d'achat", "SSD", "Stockage" ]
-lastmod: "2016-05-10 19:44:18"
-date: "2011-05-29 12:00:00"
+lastmod: "2011-05-29 19:44:18"
+date: "2011-05-29 19:44:18"
 categories:
     - "Guides"
 type: post
 slug: "bien-choisir-disque-ssd"
-cover: "/media/2011/05/1126bffa694048b4de49d7cb4f900686-cover-150x150.jpg"
+cover: "/media/2011/05/1126bffa694048b4de49d7cb4f900686-cover-1024x576.jpg"
 ---
 
 Annoncé comme l’avenir du stockage des informations, le SSD est un élément qui doit vous inciter à la plus grande prudence et à une grande réflexion avant l'achat. Voici quelques pistes pour vous aider dans ce choix.

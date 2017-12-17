@@ -2,13 +2,13 @@
 title: "Guide d\'achat - Les PC portables 2012"
 description: "Ça y est, c’est la rentrée, et j\'en profite pour faire une mise à jour du guide d\'achat des PC portables : ultra-mobile, familiale, étudiant et gamer."
 tags: [ "Guide d'achat", "PC portable", "PC", "achat", "ordinateur" ]
-lastmod: "2016-05-09 19:14:17"
+lastmod: "2012-08-28 19:14:17"
 date: "2012-08-28 13:53:11"
 categories:
     - "Guides"
 type: post
 slug: "guide-dachat-pc-portable-2012"
-cover: "/media/2012/08/2f212049ce79d2b949fd242043004288-150x150.png"
+cover: "/media/2012/08/2f212049ce79d2b949fd242043004288.png"
 ---
 
 Ça y est, c’est la rentrée, et j'en profite pour faire une mise à jour du guide d'achat PC portables. En effet, vous vous dites qu’il est temps d’investir dans un ordinateur portable afin de remplacer votre vieux modèle ou bien pour vous épauler dans vos études qui débutent. Quoi qu’il en soit, il est parfois difficile de choisir le bon modèle de PC. Voici un guide pour vous aider dans votre achat de septembre.

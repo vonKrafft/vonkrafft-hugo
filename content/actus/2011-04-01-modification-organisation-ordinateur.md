@@ -2,13 +2,13 @@
 title: "Modification de l\'organisation de l\'ordinateur"
 description: "Le chipset et le processeur sont en train de fusionner petit à petit. Explication de l\'organisation des composants sur la carte mère."
 tags: [ "PC", "CPU", "Carte mère", "Chipset", "RAM" ]
-lastmod: "2016-05-09 22:40:50"
-date: "2011-04-01 12:00:00"
+lastmod: "2011-04-01 22:40:50"
+date: "2011-04-01 22:40:50"
 categories:
     - "Actus"
 type: post
 slug: "modification-organisation-ordinateur"
-cover: "/media/2011/04/8f52d9d12e7cda00d35e05e32d5935d1-150x150.jpeg"
+cover: "/media/2011/04/8f52d9d12e7cda00d35e05e32d5935d1-1024x576.jpeg"
 ---
 
 Dans un PC, ce n’est pas au processeur que reviennent toutes les tâches. Il est épaulé par tous les autres composants avec qui il dialogue grâce au chipset, un ensemble de puces essentielles qui dirigent les données entre les divers éléments du PC … et qui sont en train de subir un changement radical. Explication de l'organisation des composants sur la carte mère.

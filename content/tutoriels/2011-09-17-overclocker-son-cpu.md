@@ -2,13 +2,13 @@
 title: "Overclocker son CPU"
 description: "Pour plus de fluidité ou pour faire renaître un vieux processeur, voici comment overclocker (i.e. augmenter la fréquence) son CPU."
 tags: [ "CPU", "Overclocking", "tuto" ]
-lastmod: "2016-05-10 20:48:51"
-date: "2011-09-17 12:00:00"
+lastmod: "2011-09-17 20:48:51"
+date: "2011-09-17 20:48:51"
 categories:
     - "Tutoriels"
 type: post
 slug: "overclocker-son-cpu"
-cover: "/media/2011/09/1c624a315b25dee4702269e5b6753953-150x150.jpg"
+cover: "/media/2011/09/1c624a315b25dee4702269e5b6753953-1024x683.jpg"
 ---
 
 Il y a quelques années, l'overclocking demandait beaucoup de moyens et était réservé aux informaticiens expérimentés. Mais depuis, les choses ont bien changées et overclocker son CPU est devenu plus facile. Pour plus de fluidité ou pour faire renaître un vieux processeur, voici comment augmenter la fréquence de son CPU.

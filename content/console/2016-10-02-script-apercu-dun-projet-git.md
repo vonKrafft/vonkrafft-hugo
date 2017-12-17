@@ -8,7 +8,7 @@ categories:
     - "Console"
 type: post
 slug: "script-apercu-dun-projet-git"
-cover: "/media/2016/10/8047d08e7a9c14108656e68be19a1e58-150x150.jpg"
+cover: "/media/2016/10/8047d08e7a9c14108656e68be19a1e58-1024x640.jpg"
 ---
 
 Vous connaissez sans doute la célèbre plateforme [github.com](https://github.com/), qui permet d'explorer et gérer un projet Git. D'autres alternatives existent, comme [GitLab ](https://about.gitlab.com/) ou [Gogs](https://try.gogs.io/), qui permettent de disposer d'une interface web pour ses projets Git.

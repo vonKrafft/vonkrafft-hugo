@@ -8,7 +8,7 @@ categories:
     - "Dossiers"
 type: post
 slug: "proces-samsung-apple-consequences"
-cover: "/media/2012/08/c7161344758092b2199b0e6d03faaf1a-150x150.jpg"
+cover: "/media/2012/08/c7161344758092b2199b0e6d03faaf1a-1024x471.jpg"
 ---
 
 {{< img src="/media/2012/08/c7161344758092b2199b0e6d03faaf1a-1024x471.jpg" link="/media/2012/08/c7161344758092b2199b0e6d03faaf1a.jpg" >}}

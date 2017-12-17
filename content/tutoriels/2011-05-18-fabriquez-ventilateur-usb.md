@@ -2,13 +2,13 @@
 title: "Fabriquez votre ventilateur USB"
 description: "Je vous propose de faire un ventilateur USB. Ce n’est pas grandement utile mais vous pourrez fièrement vous vanter en disant : \"c’est moi qui l’ai fait !\"."
 tags: [ "USB", "ventilateur", "électronique", "fabriquer" ]
-lastmod: "2016-05-09 23:20:22"
+lastmod: "2011-05-18 23:20:22"
 date: "2011-05-18 13:02:44"
 categories:
     - "Tutoriels"
 type: post
 slug: "fabriquez-ventilateur-usb"
-cover: "/media/2011/05/12371e0b53ec20a2910edc2afe24a872-150x150.jpg"
+cover: "/media/2011/05/12371e0b53ec20a2910edc2afe24a872-1024x769.jpg"
 ---
 
 Je ne sais pas si vous suivez l'actualité informatique, mais on peut remarquer tout un tas de trucs inutiles en USB : un barbecue USB, un aquarium USB, un ventilateur USB, un réfrigérateur USB, une chauffe tasse USB, etc. …

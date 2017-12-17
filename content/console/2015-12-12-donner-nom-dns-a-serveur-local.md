@@ -8,7 +8,7 @@ categories:
     - "Console"
 type: post
 slug: "donner-nom-dns-a-serveur-local"
-cover: "/media/2015/12/5bb38ba3a8ec3b4d0c26c73c31d0cd58-150x150.jpg"
+cover: "/media/2015/12/5bb38ba3a8ec3b4d0c26c73c31d0cd58.jpg"
 ---
 
 Sur le réseaux, les machine sont identifier par une adresse IP et/ou un nom DNS (et pas que, mais ce n’ai pas le propos de ce tutoriel). Une adresse IP (de l’anglais Internet Protocol) est comme une adresse postale mais appliqué au domaine de l’informatique. Il en existe deux versions :

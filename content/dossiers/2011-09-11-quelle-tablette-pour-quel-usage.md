@@ -2,13 +2,13 @@
 title: "Quelle tablette pour quel usage ?"
 description: "La tablette tactile est devenue la star de l\'équipement informatique. Sélection de trois tablettes pour trois usages différents."
 tags: [ "Guide d'achat", "Tablette" ]
-lastmod: "2016-05-10 20:43:05"
-date: "2011-09-11 12:00:00"
+lastmod: "2011-09-11 20:43:05"
+date: "2011-09-11 20:43:05"
 categories:
     - "Dossiers"
 type: post
 slug: "quelle-tablette-pour-quel-usage"
-cover: "/media/2011/09/0289ee4684e3879c0ef2504ca941be53-150x150.png"
+cover: "/media/2011/09/0289ee4684e3879c0ef2504ca941be53.png"
 ---
 
 Il y a peu, on se posait encore la question de l'utilité d'une tablette. Mais ces écrans tactiles ultra connectés à mi-chemin entre téléphone et netbook sont devenus les stars de l'équipement informatique. Sélection de trois tablettes pour trois usages différents.

@@ -2,13 +2,13 @@
 title: "Visitez les data-centers de Google"
 description: "Un présentation en images des data-centers de Google proposée par la firme de Mountain View (toutes les photos et plus d\'info sur leur site)."
 tags: [ "DataCenter", "Google" ]
-lastmod: "2015-12-19 19:19:59"
+lastmod: "2013-04-20 19:19:59"
 date: "2013-04-20 11:31:43"
 categories:
     - "Actus"
 type: post
 slug: "visitez-les-data-center-de-google"
-cover: "/media/2013/04/7f5e341bdeaeb34e8184b04c3bac9d01-150x150.jpg"
+cover: "/media/2013/04/7f5e341bdeaeb34e8184b04c3bac9d01.jpg"
 ---
 
 Journée portes ouvertes pour les data-centers de chez Google, ou du moins virtuellement. Le géant de Moutain View propose depuis octobre dernier un voyage en image dans les sites - sécurisés comme des sites militaires ! - où sont stockées les serveurs, routeurs, switchs et autres équipements réseau qui gèrent les données nécessaires à la navigation web.

@@ -2,13 +2,13 @@
 title: "Asus Noob Overclocking Challenge 2012"
 description: "Seconde édition de l\'Asus Noob Overclocking Challenge, une compétition entre quatre équipes composées d\'un pro et d\'un débutant en Overclocking."
 tags: [ "Asus", "Overclocking", "Surcouf", "Asus Noob Overclocking Challenge" ]
-lastmod: "2015-12-20 00:20:11"
-date: "2012-03-31 12:00:00"
+lastmod: "2012-03-31 00:20:11"
+date: "2012-03-31 00:20:11"
 categories:
     - "Actus"
 type: post
 slug: "asus-noob-overclocking-challenge-2012"
-cover: "/media/2012/03/7ec9d4471da595d37f40036e1a08d821-150x150.png"
+cover: "/media/2012/03/7ec9d4471da595d37f40036e1a08d821-1024x1517.png"
 ---
 
 {{< img src="/media/2012/03/7ec9d4471da595d37f40036e1a08d821-300x444.png" class="pull-left" height="150px" >}}

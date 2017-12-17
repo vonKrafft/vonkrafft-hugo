@@ -2,13 +2,13 @@
 title: "Optimiser la durée de vie de sa batterie"
 description: "Vous tous, possesseurs de PC portables ou de gadgets électroniques, vous êtes confronté l’autonomie de votre appareil et à la durée de vie de sa batterie."
 tags: [ "PC portable", "Batterie" ]
-lastmod: "2016-05-10 21:04:15"
-date: "2011-09-25 12:00:00"
+lastmod: "2011-09-25 21:04:15"
+date: "2011-09-25 21:04:15"
 categories:
     - "Guides"
 type: post
 slug: "optimiser-duree-vie-batterie"
-cover: "/media/2011/09/865d1541140a82f2c07e68db069d32b3-150x150.png"
+cover: "/media/2011/09/865d1541140a82f2c07e68db069d32b3.png"
 ---
 
 Vous tous, possesseurs de PC portables ou de gadgets électroniques, vous êtes confronté l’autonomie de votre appareil et  à la durée de vie de sa batterie. Mais savez-vous qu’une batterie demande de l’entretient et qu’il ne faut pas l’utiliser n’importe comment ? Voici quelques conseils qui permettront à votre batterie Lithium-ion de durer plus longtemps.

@@ -2,13 +2,13 @@
 title: "Recyclez vos disquettes en pot à crayons"
 description: "Découvrez comment recyclez vos anciennes disquettes qui trainent au fond de votre placard en un pot à crayons geek et original !"
 tags: [ "Disquette", "Bricolage", "Recyclage", "Pot à crayons" ]
-lastmod: "2016-05-10 21:40:16"
-date: "2012-06-08 12:00:00"
+lastmod: "2012-06-08 21:40:16"
+date: "2012-06-08 21:40:16"
 categories:
     - "Tutoriels"
 type: post
 slug: "recyclez-vos-disquettes-pot-a-crayons"
-cover: "/media/2012/06/7dcf77e2e4900f3b44315485b22beda2-150x150.jpg"
+cover: "/media/2012/06/7dcf77e2e4900f3b44315485b22beda2-1024x768.jpg"
 ---
 
 Il vous reste des disquettes au fond d’un placard et votre âme nostalgique de Geek ne saurait s’en défaire, et bien ne les jetez pas – du moins pas tous – et recyclez-les en un pot à crayons.

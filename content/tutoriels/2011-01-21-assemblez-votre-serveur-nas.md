@@ -2,13 +2,13 @@
 title: "Assemblez votre serveur NAS de A à Z"
 description: "Un guide de montage étape par étape pour vous aider à assembler votre propre serveur NAS de données et l\'inclure dans votre réseau domestique."
 tags: [ "tuto", "NAS", "Montage PC" ]
-lastmod: "2016-05-09 22:15:29"
-date: "2011-01-21 12:00:00"
+lastmod: "2011-01-21 22:15:29"
+date: "2011-01-21 22:15:29"
 categories:
     - "Tutoriels"
 type: post
 slug: "assemblez-votre-serveur-nas"
-cover: "/media/2011/01/356a8667d4d5192ba470210640d8e32e-150x150.jpg"
+cover: "/media/2011/01/356a8667d4d5192ba470210640d8e32e.jpg"
 ---
 
 Comment monter un serveur de fichiers à la maison, pour sauvegarder ses données et les rendre accessibles facilement ? Un guide de montage étape par étape pour vous aider à assembler votre propre serveur NAS de données et l'inclure dans votre réseau domestique.

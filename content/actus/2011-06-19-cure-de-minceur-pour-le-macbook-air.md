@@ -2,13 +2,13 @@
 title: "Cure de minceur pour le MacBook Air"
 description: "Le nouveau MacBook Air sortit en octobre 2010 est l’un des PC le plus fin du monde. Visite en image dans les entrailles de la machine ..."
 tags: [ "PC portable", "Apple", "MacBook Air" ]
-lastmod: "2016-05-09 21:34:09"
-date: "2011-06-19 12:00:00"
+lastmod: "2011-06-19 21:34:09"
+date: "2011-06-19 21:34:09"
 categories:
     - "Actus"
 type: post
 slug: "cure-de-minceur-pour-le-macbook-air"
-cover: "/media/2011/06/7e214786550505f5842c58f096470766-150x150.jpg"
+cover: "/media/2011/06/7e214786550505f5842c58f096470766-1024x683.jpg"
 ---
 
 Un poids de 1 Kg pour une épaisseur allant de 0,3 à 1,7 mm, le nouveau MacBook Air sortit en octobre 2010 est l’un des PC le plus fin du monde. Visite en image dans les entrailles de la machine.

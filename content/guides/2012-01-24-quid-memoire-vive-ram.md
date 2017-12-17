@@ -2,13 +2,13 @@
 title: "Quid de la mémoire vive (RAM)"
 description: "La RAM définie la réactivité de votre ordinateur, son aptitude à exécuter rapidement une application. Son choix est donc important ne doit pas être négligé."
 tags: [ "Quid", "RAM", "Mémoire" ]
-lastmod: "2016-05-10 21:55:42"
-date: "2012-01-24 12:00:00"
+lastmod: "2012-01-24 21:55:42"
+date: "2012-01-24 21:55:42"
 categories:
     - "Guides"
 type: post
 slug: "quid-memoire-vive-ram"
-cover: "/media/2012/01/8d8bea89388715ee7c01183a0667e892-150x150.png"
+cover: "/media/2012/01/8d8bea89388715ee7c01183a0667e892.png"
 ---
 
 La mémoire vive, aussi appelée RAM de l'anglais Random Access Memory,  est le lieu de stockage des données en cours de traitement. La RAM définie la réactivité de votre ordinateur, son aptitude à exécuter rapidement une application. Son choix est donc important et elle ne doit en aucun cas être négligée.

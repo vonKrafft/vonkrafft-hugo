@@ -2,13 +2,13 @@
 title: "Recyclez son ordinateur"
 description: "Du salon au garage, il existe mille façons d\'exprimer votre gratitude à votre machine. Recyclez votre ordinateur avec l\'une de ces 3 idées."
 tags: [ "Recyclage", "Home cinéma", "Mini PC", "NAS" ]
-lastmod: "2016-05-09 22:32:02"
-date: "2011-01-22 12:00:00"
+lastmod: "2011-01-22 22:32:02"
+date: "2011-01-22 22:32:02"
 categories:
     - "Tutoriels"
 type: post
 slug: "recyclez-son-ordinateur"
-cover: "/media/2011/01/45711b3f02564e59b92166a371f49346-150x150.jpg"
+cover: "/media/2011/01/45711b3f02564e59b92166a371f49346.jpg"
 ---
 
 L'homme numérique est ingrat. Le premier PC qui lui a permis de jouer à ses premiers jeux vidéo, qui lui a ouvert les portes d'internet, qui lui a fait découvrir parfois les retouches photo, le montage vidéo ... Ce PC dort dans la cave ou au grenier depuis que son successeur lui a pris sa place. Trop vieux, trop lent, trop moche et trop gros ... oui mais pas moins utile. Du salon au garage, il existe mille façons d'exprimer votre gratitude à votre machine et de recyclez votre PC.

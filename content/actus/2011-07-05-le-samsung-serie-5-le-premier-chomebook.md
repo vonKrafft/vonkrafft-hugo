@@ -2,13 +2,13 @@
 title: "Le Samsung Serie 5, le premier ChomeBook"
 description: "Le Samsung Serie 5 n’est autre que le premier ordinateur portable qui embarque le tout nouveau système d’exploitation de Google : Chrome OS."
 tags: [ "PC portable", "Google", "Samsung", "ChromeBook" ]
-lastmod: "2016-05-09 21:40:46"
-date: "2011-07-05 12:00:00"
+lastmod: "2011-07-05 21:40:46"
+date: "2011-07-05 21:40:46"
 categories:
     - "Actus"
 type: post
 slug: "le-samsung-serie-5-le-premier-chomebook"
-cover: "/media/2011/07/291ba6f1a6af6f40fddd9a0ec27f4130-150x150.jpg"
+cover: "/media/2011/07/291ba6f1a6af6f40fddd9a0ec27f4130.jpg"
 ---
 
 Le Samsung Serie 5 n’est autre que le premier ordinateur portable qui embarque le tout nouveau système d’exploitation de Google : Chrome OS. Petit tour d’horizon en image de ce PC portable …

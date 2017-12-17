@@ -2,13 +2,13 @@
 title: "Donnez une seconde vie à votre PC"
 description: "Remplacer votre PC vous fait mal au cœur car vous l’avez acheté il y a moins de cinq ans ... offrez-lui plutôt une seconde vie."
 tags: [ "PC", "Recyclage", "recycler", "Mise à jour", "Seconde vie", "Booster" ]
-lastmod: "2016-05-10 21:16:06"
-date: "2011-10-05 12:00:00"
+lastmod: "2011-10-05 21:16:06"
+date: "2011-10-05 21:16:06"
 categories:
     - "Tutoriels"
 type: post
 slug: "donnez-seconde-vie-pc"
-cover: "/media/2011/10/c2ba637e4e689abf1e2018b6e5112be7-150x150.jpg"
+cover: "/media/2011/10/c2ba637e4e689abf1e2018b6e5112be7.jpg"
 ---
 
 Votre PC est trop vieux à votre goût trop lent, mais le remplacer vous fait mal au cœur (et au porte-monnaie) car vous l’avez acheté il y a moins de cinq ans ... et bien ne le remplacez pas, offrez-lui plutôt une cure de rajeunissement et donnez-lui une seconde vie.

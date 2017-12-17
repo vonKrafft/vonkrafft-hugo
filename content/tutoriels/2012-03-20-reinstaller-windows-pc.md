@@ -3,12 +3,12 @@ title: "Réinstaller Windows sur son PC"
 description: "C’est le printemps, accompagné de sa traditionnelle époque du grand ménage. Et pourquoi ne pas en profiter pour réinstaller Windows ?"
 tags: [ "Windows", "Microsoft", "Réinstallation", "Sauvegarde", "Printemps", "Logiciels" ]
 lastmod: "2016-01-11 19:07:03"
-date: "2012-03-20 12:00:00"
+date: "2012-03-20 19:07:03"
 categories:
     - "Tutoriels"
 type: post
 slug: "reinstaller-windows-pc"
-cover: "/media/2012/03/4552016b0902f973b7fdd9e443b95a9e-150x150.jpg"
+cover: "/media/2012/03/4552016b0902f973b7fdd9e443b95a9e-1024x426.jpg"
 ---
 
 Ça y’est, c’est le printemps, accompagné de sa traditionnelle époque du grand ménage. Et celui-ci passe aussi par les disques durs de nos ordinateurs : pourquoi ne pas en profiter pour réinstaller Windows ? Libre à vous de faire du tri dans vos fichiers, je vais vous donner ici quelques conseils pour faire une réinstallation de Windows efficace.

@@ -2,13 +2,13 @@
 title: "Quid de la carte mère"
 description: "Clé de voute de l\'ordinateur, la carte mère est le composant qu\'il faut choisir avec le plus d\'attention car elle relie tous les composants de votre PC."
 tags: [ "Quid", "Carte mère", "CM", "ATX", "Chipset" ]
-lastmod: "2016-05-10 22:00:27"
-date: "2012-02-04 12:00:00"
+lastmod: "2012-02-04 22:00:27"
+date: "2012-02-04 22:00:27"
 categories:
     - "Guides"
 type: post
 slug: "quid-carte-mere"
-cover: "/media/2012/02/89c97c8c5d88b4123df891dd15c15fda-150x150.jpg"
+cover: "/media/2012/02/89c97c8c5d88b4123df891dd15c15fda.jpg"
 ---
 
 Clé de voute de l'ordinateur, la carte mère est le composant qu'il faut choisir avec le plus d'attention. En effet, c'est sur elle que viendront se greffer tous les autres composants du PC, internes ou externes. Voici donc un petit guide pour vous aider à choisir correctement votre carte mère.

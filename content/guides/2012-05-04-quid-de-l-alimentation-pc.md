@@ -2,13 +2,13 @@
 title: "Quid de l\'alimentation PC"
 description: "Un guide pour comprendre l\'utilité d\'une bonne alimentation PC et des conseils pour bien la choisir en fonction de ses besoins."
 tags: [ "Quid", "Alimentation", "80 Plus" ]
-lastmod: "2015-12-20 00:04:07"
-date: "2012-05-04 12:00:00"
+lastmod: "2012-05-04 00:04:07"
+date: "2012-05-04 00:04:07"
 categories:
     - "Guides"
 type: post
 slug: "quid-de-l-alimentation-pc"
-cover: "/media/2012/05/a43683d33b40f413228d54e3c6ed4a2f-150x150.jpg"
+cover: "/media/2012/05/a43683d33b40f413228d54e3c6ed4a2f-1024x576.jpg"
 ---
 
 L’alimentation est la première responsable des maux d’un PC et pour cause : malgré son importance, elle est souvent négligée devant les autres composants pour des raisons budgétaires. Et pourtant, c’est elle qui assure le fonctionnement de tous les composants.

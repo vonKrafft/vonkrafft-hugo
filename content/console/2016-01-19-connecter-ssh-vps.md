@@ -8,7 +8,7 @@ categories:
     - "Console"
 type: post
 slug: "connecter-ssh-vps"
-cover: "/media/2016/01/597378aff3d794da6abd242d9a708295-150x150.jpg"
+cover: "/media/2016/01/597378aff3d794da6abd242d9a708295.jpg"
 ---
 
 Dans le tutoriel suivant, nous allons voir comment nous connecter en SSH à un serveur VPS, une manière simple et sécurisée pour administrer le serveur à distance.

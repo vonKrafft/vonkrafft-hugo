@@ -8,7 +8,7 @@ categories:
     - "Actus"
 type: post
 slug: "une-rentree-high-tech-qui-sannonce-riche"
-cover: "/media/2012/08/5e71d4555e9077219b195f5c36adb82d-150x150.png"
+cover: "/media/2012/08/5e71d4555e9077219b195f5c36adb82d.png"
 ---
 
 Chaque année, la rentrée scolaire s’accompagne de toute une panoplie de nouveautés technologiques. Mais ce cru 2012 s’annonce particulièrement riche, notamment chez Microsoft, Apple, Google et Samsung. Et la compétition sera rude car le marché des smartphone et des tablettes est en pleine explosion. Entre **prises de risques** et **révolutions high-tech**, cette rentrée ne ménagera pas la planète numérique.

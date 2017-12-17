@@ -2,13 +2,13 @@
 title: "Portal 2 : Test du jeu sur PC"
 description: "Avec Portal, Valve avait signé en 2007 un magnifique jeu de réflexion unique en son genre. Et voici la suite : Portal 2 !"
 tags: [ "jeu vidéo", "Test", "Portal 2", "Valve" ]
-lastmod: "2015-12-19 22:43:02"
+lastmod: "2012-07-18 22:43:02"
 date: "2012-07-18 11:20:55"
 categories:
     - "Dossiers"
 type: post
 slug: "test-de-portal-2-sur-pc"
-cover: "/media/2012/07/df343cf56d5c5198ed2b08479dee3925-150x150.jpg"
+cover: "/media/2012/07/df343cf56d5c5198ed2b08479dee3925-1024x645.jpg"
 ---
 
 Avec Portal, Valve avait signé en 2007 un magnifique jeu de réflexion unique en son genre. Et voici la suite : Portal 2 est un jeu intelligent, drôle et original. Ce chef d’œuvre ôte tous les doutes sur l'intérêt d'offrir une suite à Portal grâce à une histoire solo haletante et un Game Play enrichie.

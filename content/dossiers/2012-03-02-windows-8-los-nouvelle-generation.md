@@ -3,12 +3,12 @@ title: "Windows 8, l\'OS nouvelle génération"
 description: "Microsoft a dévoilé mercredi la version Consumer Preview de son futur système d\'exploitation Windows 8, un hybride clavier/souris/tactile..."
 tags: [ "Windows 8", "Microsoft", "tuto", "wibb", "Test" ]
 lastmod: "2016-01-11 19:46:55"
-date: "2012-03-02 12:00:00"
+date: "2012-03-02 19:46:55"
 categories:
     - "Dossiers"
 type: post
 slug: "windows-8-los-nouvelle-generation"
-cover: "/media/2012/03/498b52a88a56fec88890f34fd3cce37c-150x150.png"
+cover: "/media/2012/03/498b52a88a56fec88890f34fd3cce37c.png"
 ---
 
 Microsoft a dévoilé mercredi la version Consumer Preview de son futur système d'exploitation Windows 8. Avec cet OS, l'éditeur prend le pari risqué d'unifier les smartphones, les tablettes et les PC et est ainsi le premier à innover dans l'ère post-PC ([voir article](http://tuto-wibb.kazeo.com/dossiers/dossiers,r1553176-6.html)).

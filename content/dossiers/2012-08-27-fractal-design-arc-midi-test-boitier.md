@@ -2,13 +2,13 @@
 title: "Fractal Design Arc Midi : Test du boîtier"
 description: "Tour d’horizon du Fractal Design Arc Midi Tower, un boitier PC moyen/grand tour qui ne manque de rien et a tout d\'un grand !"
 tags: [ "Boitier PC", "Tour", "Boitier", "Test", "Fractal Design", "Arci Midi" ]
-lastmod: "2015-12-19 22:42:53"
+lastmod: "2012-08-27 22:42:53"
 date: "2012-08-27 11:47:31"
 categories:
     - "Dossiers"
 type: post
 slug: "fractal-design-arc-midi-test-boitier"
-cover: "/media/2012/08/0f5be67f305e564b587e58ce107d0c40-150x150.jpg"
+cover: "/media/2012/08/0f5be67f305e564b587e58ce107d0c40-1024x1365.jpg"
 ---
 
 Sorti il y a un an, le Fractal Design Arc Midi, boitier commercialisé par Fractal, se place dans le moyen gamme et vise la clientèle Gamer. Conçu pour offrir un maximum de place et de modularité dans un boitier compact, il est plus petit qu’un boîtier Grand Tour mais reste tout de même plus grand qu’un boîtier Moyen Tour. Enfin, il promet surtout des performances de refroidissement accrues grâce à une large possibilité de ventilation musclée et un châssis très aéré. Tour d’horizon du Fractal Design Arc Midi Tower.

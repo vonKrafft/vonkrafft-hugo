@@ -2,13 +2,13 @@
 title: "Changement d\'époque, la fin du règne du PC"
 description: "Si le PC était au centre de ce monde il y a quelques années, il a fait son temps et n’est plus la star. Est-il sur le point de disparaitre ?"
 tags: [ "hisoire", "fin du PC", "histoire du PC", "tuto", "wibb" ]
-lastmod: "2016-05-09 20:32:09"
-date: "2011-10-23 12:00:00"
+lastmod: "2011-10-23 20:32:09"
+date: "2011-10-23 20:32:09"
 categories:
     - "Dossiers"
 type: post
 slug: "changement-depoque-la-fin-du-regne-du-pc"
-cover: "/media/2011/10/a272c556d87d883f9bd3daf9734b33ea-150x150.jpg"
+cover: "/media/2011/10/a272c556d87d883f9bd3daf9734b33ea.jpg"
 ---
 
 Interconnecté, telle est la description du monde informatique actuel. Car si l’ordinateur individuel était au centre de ce monde il y a quelques années, il a fait son temps et n’est plus la star du high-tech. Aujourd’hui, il côtoie les portables, tablettes et Smartphones, qui ont donnés à l’informatique la mobilité et l’inter-connectivité que nous connaissons. Retour en image sur l’histoire du règne du PC dans l’ère de l’informatique individuelle.

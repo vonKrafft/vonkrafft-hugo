@@ -2,13 +2,13 @@
 title: "Le Courant Porteur en Ligne - CPL"
 description: "La technologie CPL permet de transmettre des données par le circuit électrique de la maison. Explication du fonctionnement du courant porteur en ligne."
 tags: [ "Quid", "CPL", "Réseau", "Technique" ]
-lastmod: "2016-05-10 18:53:38"
-date: "2011-05-18 12:00:00"
+lastmod: "2011-05-18 18:53:38"
+date: "2011-05-18 18:53:38"
 categories:
     - "Guides"
 type: post
 slug: "le-courant-porteur-en-ligne-cpl"
-cover: "/media/2011/05/0f2fa23471511c398c13d01b50f48d01-150x150.png"
+cover: "/media/2011/05/0f2fa23471511c398c13d01b50f48d01.png"
 ---
 
 {{< img src="/media/2011/05/0f2fa23471511c398c13d01b50f48d01.png" link="/media/2011/05/0f2fa23471511c398c13d01b50f48d01.png" >}}

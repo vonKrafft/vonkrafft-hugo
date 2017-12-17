@@ -2,13 +2,13 @@
 title: "Un morpion en Javascript"
 description: "Explication rapide du code source JavaScript d\'un jeu du morpion. Ce code source est aussi téléchargeable en suivant ce lien."
 tags: [ "Morpion", "JavaScript", "Jeu", "CSS", "jQuery", "Tic Tac Toe", "HTML" ]
-lastmod: "2015-12-19 18:35:51"
+lastmod: "2013-12-12 18:35:51"
 date: "2013-12-12 17:23:50"
 categories:
     - "Tutoriels"
 type: post
 slug: "un-morpion-en-javascript"
-cover: "/media/2013/12/86d8663b4bb62cbe6de841cb80991e60-150x150.png"
+cover: "/media/2013/12/86d8663b4bb62cbe6de841cb80991e60-1024x614.png"
 ---
 
 On est parfois ammener à s'oocuper comme on peu lorsqu'on ne trouve rien à faire. C'est ainsi que j'ai implémenté un Morpion codé en JavaScript.

@@ -2,13 +2,13 @@
 title: "iPhone 5 : Apple en mal de « Révolution » ?"
 description: "Suite à la récente Keynote d\'Apple, voici un rapide aperçu du prochain iPhone 5 et des autres nouveau produits qui l\'accompagneront."
 tags: [ "iPhone", "Apple", "iPhone 5", "iPod Touch", "iPod Nano" ]
-lastmod: "2015-12-19 19:25:06"
+lastmod: "2012-09-13 19:25:06"
 date: "2012-09-13 19:30:43"
 categories:
     - "Actus"
 type: post
 slug: "iphone-5-apple-en-mal-de-revolution"
-cover: "/media/2012/09/19d088d51aa85332c444fe0f1d4d7ccd-150x150.png"
+cover: "/media/2012/09/19d088d51aa85332c444fe0f1d4d7ccd.png"
 ---
 
 Bientôt un an que Steve Jobs a quitté ce monde, et Apple. Or, la firme de Cupertino a effrayé le monde informatique avec le Nouvel iPad qui se rapprochait plus de « l’évolution » que de la « révolution ». Et malheureusement, Apple n'a pas su créer la susprise en ce 12 septembre. En effet, même si cette **Keynote **s’est accompagnée de l'iPhone 5, d’une nouvelle gamme d’iPod Nano et Touch, ainsi que de nouveaux écouteurs et un nouveau connecteur, ces nouveautés n'ont fait que confirmer les rumeurs sans apporter de « révolution ».

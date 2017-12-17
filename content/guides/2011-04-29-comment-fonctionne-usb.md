@@ -2,8 +2,8 @@
 title: "Comment fonctionne l\'USB"
 description: "Né en 1991, le port USB s’est imposer dans le monde de l’informatique. Mais comment fonctionne cette interface que nous utilisons depuis plus de 20 ans ?"
 tags: [ "Quid", "USB", "Technique" ]
-lastmod: "2016-05-10 19:21:47"
-date: "2011-04-29 12:00:00"
+lastmod: "2011-04-29 19:21:47"
+date: "2011-04-29 19:21:47"
 categories:
     - "Guides"
 type: post
