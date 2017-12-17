@@ -57,7 +57,7 @@ Mais une carte mère sert avant tout à lier les autres composants entre eux. C�
 
 - Les **disques** : on doit retrouver des ports S-ATA, maintenant largement rependu. Le S-ATA II est à préférer, voire du S-ATA 3.0 plus rapide. On trouve aussi des ports IDE et Floppy, hérités des vieux disques durs et des lecteurs de CD et de disquettes.
 - La **connectique** **avant** : les ports présents en façade sont à relier sur la carte mère. Généralement, on trouve de l’USB (2.0 et maintenant 3.0), du son (AC’97) et parfois du FireWire.
-- La **RAM** : un, deux ou quatre connecteurs, voire plus. Cela dépend surtout du format de la carte mère. Pour plus d’information, se reporter au guide [Mémoire Vive](http://tuto-wibb.krafft.ovh/?p=20120124).
+- La **RAM** : un, deux ou quatre connecteurs, voire plus. Cela dépend surtout du format de la carte mère. Pour plus d’information, se reporter au guide [Mémoire Vive](/guides/quid-memoire-vive-ram/).
 - Les **ports** **d’extension** : leur nombre est souvent fixé par le format de la carte mère. Ils permettent d’ajouter des composants à votre carte ; son, Wi-Fi, vidéo, USB, etc. … On trouve le PCI Express 16x (ou l’AGP plus ancien) pour la vidéo, qui est décliné en PCIe 8x, PCIe 4x et PCIe 1x pour les autres cartes d'extension. On trouve aussi encore des ports PCI.
 
 

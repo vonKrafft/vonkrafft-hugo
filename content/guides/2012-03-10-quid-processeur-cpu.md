@@ -15,14 +15,11 @@ Le CPU, pour Central Process Unit, effectue l’ensemble des calculs nécessaire
 
 ## La fréquence du processeur
 
-Elle s’exprime en Gigahertz (GHz). Elle indique le nombre d’opération que le CPU peut effectuer par seconde (1GHz = 1 million d’opération par seconde). Longtemps considérer comme un indicateur de la puissance du CPU, la fréquence native d’un processeur actuel varie entre 1,5 GHz et 3,6 GHz pour les PC de bureau. Je parle de fréquence native car il est possible d’overclocker son processeur pour augmenter sa fréquence (voir l’article à ce [sujet](http://tuto-wibb.krafft.ovh/?p=20110917)).
+Elle s’exprime en Gigahertz (GHz). Elle indique le nombre d’opération que le CPU peut effectuer par seconde (1GHz = 1 million d’opération par seconde). Longtemps considérer comme un indicateur de la puissance du CPU, la fréquence native d’un processeur actuel varie entre 1,5 GHz et 3,6 GHz pour les PC de bureau. Je parle de fréquence native car il est possible d’overclocker son processeur pour augmenter sa fréquence (voir l’article sur [l'overclocking](/tutoriels/overclocker-son-cpu/)).
 
-{{% tw_alert "info" %}}**INFO :** Pour l’anecdote, le record d’overclocking avec un CPU grand public est détenu par l’AMD FX-8150 qui a atteint une fréquence de 8,429 GHz. Pour atteindre un tel niveau, il a fallu utiliser de l’hélium liquide pour refroidir le processeur.{{% /tw_alert %}}
+{{% tw_alert "info" %}}<i class="fa fa-info-circle"></i> **INFO :** Pour l’anecdote, le record d’overclocking avec un CPU grand public est détenu par l’AMD FX-8150 qui a atteint une fréquence de 8,429 GHz. Pour atteindre un tel niveau, il a fallu utiliser de l’hélium liquide pour refroidir le processeur.{{% /tw_alert %}}
 
 Cependant, il ne faut pas oublier que généralement plus la fréquence est élevée plus la température est élevée. Je dis « généralement » car avec la multiplication des cœurs (voir plus bas), le rapport fréquence/température s’est un peu complexifié.
-
-![](images/tw_20120310_qcpu02.jpg)
-![](images/tw_20120310_qcpu01.jpg)
 
 ## La mémoire cache
 
@@ -36,19 +33,19 @@ Les processeurs actuels possèdent plusieurs niveaux de mémoire cache :
 - Le **cache L3** : autrefois solidaire de la carte mère, les nouvelle architecture l’intègre au CPU. Il s’intercale alors entre le cache L2 et la mémoire vive.
 
 <table style="text-align: center; width: 100%; height: 100px;" cellspacing="5" cellpadding="1">
-<tbody>
-<tr>
-<td style="background-color: #e0f2ff; border: solid 1px #404040; width: 19%;">Cœur du Processeur</td>
-<td style="background-color: #fff4e0; border: solid 1px #404040; width: 19%;">Cache L1</td>
-<td style="background-color: #e0ffe0; border: solid 1px #404040; width: 19%;">Cache L2</td>
-<td style="background-color: #ffe0e0; border: solid 1px #404040; width: 19%;">Cache L3</td>
-<td style="width: 5%; border: none;"></td>
-<td style="background-color: #cacaca; border: solid 1px #404040; width: 19%;">Mémoire Vive</td>
-</tr>
-<tr>
-<td style="height: 30%;" colspan="6">Schéma de la structure des caches d’un processeur</td>
-</tr>
-</tbody>
+	<tbody>
+		<tr>
+			<td style="background-color: #e0f2ff; border: solid 1px #404040; width: 19%;">Cœur du Processeur</td>
+			<td style="background-color: #fff4e0; border: solid 1px #404040; width: 19%;">Cache L1</td>
+			<td style="background-color: #e0ffe0; border: solid 1px #404040; width: 19%;">Cache L2</td>
+			<td style="background-color: #ffe0e0; border: solid 1px #404040; width: 19%;">Cache L3</td>
+			<td style="width: 5%; border: none;"></td>
+			<td style="background-color: #cacaca; border: solid 1px #404040; width: 19%;">Mémoire Vive</td>
+		</tr>
+		<tr>
+			<td style="height: 30%;" colspan="6">Schéma de la structure des caches d’un processeur</td>
+		</tr>
+	</tbody>
 </table>
 
 ## Les processeurs Multi-Cœur
@@ -72,7 +69,7 @@ Les principaux processeurs multi-cœur AMD et Intel les plus récents sont les s
 ## Le socket
 
 En fonction du socket que vous allez choisir, vous devrez acheter une carte mère compatible avec celui-ci. Actuellement, les sockets les plus fréquents sont les AM3 (AMD), LGA1155 et LGA1156 (Intel). Mais on trouve également des sockets AM2 et AMD2+ (AMD) et des sockets LGA775, LGA1366 et LGA2011 (Intel).
-Pour plus d’info, voir l’article sur les [cartes mères](http://tuto-wibb.kazeo.com/guides/guides,r1553175-10.html).
+Pour plus d’info, voir l’article sur les [cartes mères](/guides/quid-carte-mere/).
 
 {{< img src="/media/2012/03/639a82223fa951396ed4bf99e9c4eb20.jpg" >}}
 

@@ -13,7 +13,7 @@ cover: "/media/2011/05/12371e0b53ec20a2910edc2afe24a872-1024x769.jpg"
 
 Je ne sais pas si vous suivez l'actualité informatique, mais on peut remarquer tout un tas de trucs inutiles en USB : un barbecue USB, un aquarium USB, un ventilateur USB, un réfrigérateur USB, une chauffe tasse USB, etc. …
 
-Je vous propose de faire un ventilateur USB. Ce n’est pas grandement utile mais vous pourrez fièrement vous vanter en disant : « c’est moi qui l’ai fait ! ». Avant de commencer, je vous conseille de jeter un œil au [fonctionnement de l'USB](http://tuto-wibb.krafft.ovh/2011/04/comment-fonctionne-usb/).
+Je vous propose de faire un ventilateur USB. Ce n’est pas grandement utile mais vous pourrez fièrement vous vanter en disant : « c’est moi qui l’ai fait ! ». Avant de commencer, je vous conseille de jeter un œil au [fonctionnement de l'USB](/guides/comment-fonctionne-usb/).
 
 {{< tw_supply level="4" time="45 minutes" supplies="Un ventilateur de PC et un vieux câble USB, un fer à souder avec du fil d'étain, une paire de ciseaux et un ordinateur avec de l'USB (pour tester)." >}}
 

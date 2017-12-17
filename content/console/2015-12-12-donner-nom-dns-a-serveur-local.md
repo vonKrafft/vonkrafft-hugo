@@ -11,12 +11,12 @@ slug: "donner-nom-dns-a-serveur-local"
 cover: "/media/2015/12/5bb38ba3a8ec3b4d0c26c73c31d0cd58.jpg"
 ---
 
-Sur le réseaux, les machine sont identifier par une adresse IP et/ou un nom DNS (et pas que, mais ce n’ai pas le propos de ce tutoriel). Une adresse IP (de l’anglais Internet Protocol) est comme une adresse postale mais appliqué au domaine de l’informatique. Il en existe deux versions :
+Sur le réseaux, les machines sont identifiés par une adresse IP et/ou un nom DNS (et pas que, mais ce n’est pas le propos de ce tutoriel). Une adresse IP (de l’anglais Internet Protocol) est comme une adresse postale mais appliquée au domaine de l’informatique. Il en existe deux versions :
 
-- IPv4 (version 4) crée en 1981 est le format le plus utilisé. Il permet d’écrire les adresses sur 32 bits, soit en théorie 4 294 967 296 adresses possibles. Mais nous avons dans le monde plus d’équipement relié à internet qu’il n’y a d’adresse IPv4.
-- IPv6 (version 6) crée en 1998 est sensé remplacer IPv4. Il permet d’écrire les adresses sur 128 bits, soit en théorie 3,4×1038 adresses possibles.
+- IPv4 (version 4) crée en 1981 est le format le plus utilisé. Cela permet d’écrire les adresses sur 32 bits, soit en théorie 4 294 967 296 adresses possibles. Mais nous avons dans le monde plus d’équipements relié à internet qu’il n’y a d’adresses IPv4.
+- IPv6 (version 6) crée en 1998 est censé remplacer IPv4. Cela permet d’écrire les adresses sur 128 bits, soit en théorie 3,4×10^38 adresses possibles.
 
-Pour palier au manque d’adresse IPv4, nous utilisons ce que nous appelons les plage d’IP privée. Ainsi, vous possédez une IP publique attribuée par votre FAI (Fournisseur d'Accès Internet) et de plusieurs IP privées. Ces IP privée sont la plupart du temps de la forme 192.168.X.X, qui est une des plage d’IPv4 privée (utilisée par toutes des box Internet française par défaut), soit en théorie 35 536 adresses possibles. Ces adresses privées sont locales, c’est à dire que vous ne pourrez pas accéder à votre PC depuis l’extérieur en utilisant son IP privée. Mais nous ne cherchons pas à accéder à notre PC depuis l’extérieur …
+Pour palier au manque d’adresses IPv4, nous utilisons ce que nous appelons les plages d’IP privées. Ainsi, vous possédez une IP publique attribuée par votre FAI (Fournisseur d'Accès Internet) et de plusieurs IP privées. Ces IP privées sont la plupart du temps de la forme 192.168.X.X, qui est une des plages d’IPv4 privées (utilisée par toutes des box Internet des FAI français par défaut), soit en théorie 35 536 adresses possibles. Ces adresses privées sont locales, c’est à dire que vous ne pourrez pas accéder à votre PC depuis l’extérieur en utilisant son IP privée. Mais nous ne cherchons pas à accéder à notre PC depuis l’extérieur …
 
 | Préfixe        | Plage IP privée               | Nombre d'adresses  |
 | -------------- | ----------------------------- | ------------------ |
@@ -34,17 +34,18 @@ Si vous avez un serveur local (pour diverses raisons), vous pouvez y accéder av
 
 Oui, mais cela est vrai uniquement depuis l’extérieur, c’est-à-dire depuis une machine client qui se trouve au delà de notre box Internet. Mais nous supposons que notre serveur et notre client sont sur le même réseaux privé.
 
-{{< img src="/media/2015/12/91e02cd2b8621d0c05197f645668c5c4.png" title="Par défaut, un client extérieur ne peut pas accéder aux équipement de votre réseau local" link="/media/2015/12/91e02cd2b8621d0c05197f645668c5c4.png" >}}
+{{< img src="/media/2015/12/91e02cd2b8621d0c05197f645668c5c4.png" title="Par défaut, un client extérieur ne peut pas accéder aux équipements de votre réseau local" link="/media/2015/12/91e02cd2b8621d0c05197f645668c5c4.png" >}}
 
-Donc, vous pouvez accéder à votre serveur (en HTTP, FTP, SSH … en fonction des services installé sur votre serveur) avec on adresse IP. Mais les adresses IP sont allouée dynamiquement, c’est-à-dire que l’adresse de votre serveur peut changer. Nous allons donc faire deux choses :
+Donc, vous pouvez accéder à votre serveur (en HTTP, FTP, SSH … en fonction des services installés sur votre serveur) avec on adresse IP. Mais les adresses IP sont allouées dynamiquement, c’est-à-dire que l’adresse de votre serveur peut changer. Nous allons donc faire deux choses :
 
 - Configurer le serveur pour lui donner une adresse IP fixe
 - Indiquer à notre (nos) client(s) que notre serveur a un nom
 
-
 ## Une IP fixe
 
-Nous allons configurer notre interface réseau. Pour moi, il s’agit de eth0 (connexion physique n°0), mais cela peut être différent pour vous : eth1 (si vous avez plusieurs cartes réseau), wlan0 (si vous êtes connecté en wifi) …
+Nous allons configurer notre interface réseau. Pour moi, il s’agit de eth0 (connexion physique n°0), mais cela peut être différent pour vous : eth1 (si vous avez plusieurs cartes réseau), wlan0 (si vous êtes connecté en wifi), ou autre …
+
+{{% tw_alert "info" %}}<i class="fa fa-info-circle"></i> Le serveur `vps-001` est un serveur Debian. Pour les autres distributions Linux, opu pour un serveur Windows, il sera necessaire d'adapter certaines commandes et/ou chemins de fichiers.{{% /tw_alert %}}
 
 Le fichier de configuration est le suivant : /etc/networks/interfaces. Par défaut, notre serveur (comme n’importe quel équipement réseau) demande une adresse IP à notre box Internet :
 
@@ -72,21 +73,23 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 192.168.1.0     0.0.0.0         255.255.255.0   U     0      0      0   eth0
 {{< /tw_code >}}
 
-L’adresse de votre gateway est celle repérée par le flag UG. Pour moi il s’agit de 192.168.1.254. Pour appliquer les changements, nous redémarrons de réseau :
+L’adresse de votre gateway est celle repérée par le flag UG. Pour moi il s’agit de 192.168.1.254. Pour appliquer les changements, nous redémarrons le réseau :
 
 {{< tw_code lang="console" icon="code" title="Console" >}}
 vonkrafft@vps-001:~$ sudo service networking restart
 {{< /tw_code >}}
 
+{{% tw_alert "info" %}}<i class="fa fa-info-circle"></i> Il est aussi possible d'attribuer une adresse IP fixe en utilisant votre box Internet. Mais toutes les box des FAI français ne proposent pas cette options.{{% /tw_alert %}}
+
 ## Un nom DNS pour votre serveur
 
-Lorsque vous naviguez sur le web, vous ne vous amuser surement pas à saisir l’adresse IP du serveur hébergant votre site web. Non ? Vous saisissez son URL (par exemple tuto-wibb.krafft.ovh). Derrière ce nom, il y a un service appelé DNS (de l’anglais Domain Name Service) qui s’occupe de traduire le nom du site en adresse IP.
+Lorsque vous naviguez sur le web, vous ne vous amusez surement pas à saisir l’adresse IP du serveur hébergant votre site web. Non ? Vous saisissez son URL (par exemple `google.com`). Derrière ce nom, il y a un service appelé DNS (de l’anglais Domain Name Service) qui s’occupe de traduire le nom du site en adresse IP. Tout comme les pages blanches font la correspondance entre un nom et un numéro de téléphone, un DNS fait la correspondance entre un nom de domaine et une adresse IP.
 
-Il existe de nombreux serveur DNS dans le monde, mais ils ne nous intereese pas ici car nous allons utiliser notre DNS local.
+Il existe de nombreux serveurs DNS dans le monde, mais ils ne nous intéressent pas ici car nous allons utiliser notre DNS local.
 
 {{% tw_alert "warning" %}}<i class="fa fa-question-circle"></i> Un DNS local ? Où ça ?{{% /tw_alert %}}
 
-Tous les PC possède un DNS local qui est consulté avant de demander aux autres DNS de traduire un nom. Nous allons donc renseigner notre nom dans le DNS de notre machine client, qui n’est autre qu’un fichier : /etc/hosts. Il faut ajouter notre traduction comme suit : `<adresse_ip> <nom>`
+Tous les PC possède un DNS local qui est consulté avant de demander aux autres DNS de traduire un nom. Nous allons donc renseigner notre nom dans le DNS de notre machine client, qui n’est autre qu’un fichier : `/etc/hosts`. Il faut ajouter notre traduction comme suit : `<adresse_ip> <nom>`
 
 {{< tw_code lang="plaintext" icon="file-text-o" title="/etc/hosts" >}}
 192.168.1.100    vps-001.server
@@ -94,14 +97,16 @@ Tous les PC possède un DNS local qui est consulté avant de demander aux autres
 
 {{% tw_alert "warning" %}}<i class="fa fa-question-circle"></i> Mais quel nom choisir ?{{% /tw_alert %}}
 
-Qu’importe. Quoi qu’il arrive ce DNS est local, vous êtes le seul à le consulter. Vous pourriez très bien nommer votre serveur facebook.com. Il sera accessible avec ce nom depuis votre client mais vous n’aurez plus accès à Facebook.
+Qu’importe. Quoi qu’il arrive ce DNS est local, vous êtes le seul à le consulter. Vous pourriez très bien nommer votre serveur `facebook.com`. Il sera accessible avec ce nom depuis votre client mais vous n’aurez plus accès à Facebook.
 
-{{% tw_alert "info" %}}<i class="fa fa-lightbulb-o"></i> Le plus simple est de choisir le nom de la machine suivi d’un domaine. Pour mon réseau local, j’utilise le nom de la machine suivi de “.server”{{% /tw_alert %}}
+{{% tw_alert "success" %}}<i class="fa fa-lightbulb-o"></i> Le plus simple est de choisir le nom de la machine suivi d’un domaine local que vous utiliserez pour tous vos équipements réseau. Pour mon réseau local, j’utilise le nom de la machine suivi de “.server”{{% /tw_alert %}}
 
-Et voilà, c’est tout. Cependant, votre serveur n’a été renommé que pour un client, et il vous faudra répéter la manipulation pour chaque client en modifiant leur fichier /etc/hosts. Une autre solution consiste à utiliser un serveur DNS local.
+Et voilà, c’est tout. Cependant, votre serveur n’a été renommé que pour un client, et il vous faudra répéter la manipulation pour chaques clients en modifiant leur fichier `/etc/hosts`. Une autre solution consiste à utiliser un serveur DNS local.
+
+{{% tw_alert "info" %}}<i class="fa fa-info-circle"></i> Il est aussi possible d'attribuer une adresse nom de domaine en utilisant votre box Internet. Mais toutes les box des FAI français ne proposent pas cette options.{{% /tw_alert %}}
 
 A présent, vous pouvez accéder à votre serveur ainsi :
 
-- http://vps-001.server
+- http(s)://vps-001.server
 - ssh vonkrafft@vps-001.server
 - etc.

@@ -29,7 +29,7 @@ Le premier rôle de votre PC Home Cinéma est de regarder vos films. Mais, vous 
 
 Il ne faut pas oublier aussi que votre PC sera doté d’un système d’exploitation tel que Windows ou Linux, sur lequel vous installerez un logiciel Média Center. Pour ce dernier, je vous conseille de vous équiper d’un SSD : le prix au Go est à présent raisonnable pour un gain de vitesse conséquent. Pour la capacité, 40 Go suffirons puisque le PC n’est pas destiné à recevoir de nombreux logiciels.
 
-Enfin, parlons un peu de la sécurité. C’est au bon vouloir de chacun mais je soulignerais le fait que vous allez stocker tous vos films, musiques, photos et enregistrement sur votre disque de stockage. Imaginez si ce dernier venait à lâcher : 1 To de données volatilisé … Solution, vous pouvez effectuer des sauvegardes périodique sur un disque dur externe. Mais vous pouvez aussi opter pour le RAID1 qui consiste à avoir deux disques physiques, image l’un de l’autre : si un disque décède, il vous suffit de le remplacer et aucunes de vos données ne sera perdues ([Plus d’info](http://tuto-wibb.krafft.ovh/?p=20070717)).
+Enfin, parlons un peu de la sécurité. C’est au bon vouloir de chacun mais je soulignerais le fait que vous allez stocker tous vos films, musiques, photos et enregistrement sur votre disque de stockage. Imaginez si ce dernier venait à lâcher : 1 To de données volatilisé … Solution, vous pouvez effectuer des sauvegardes périodique sur un disque dur externe. Mais vous pouvez aussi opter pour le RAID1 qui consiste à avoir deux disques physiques, image l’un de l’autre : si un disque décède, il vous suffit de le remplacer et aucunes de vos données ne sera perdues.
 
 ### Décoder le contenu multimédia
 
@@ -82,6 +82,6 @@ Un PC Home Cinéma ayant un rôle précis, n’importe quel composant ne convien
 
 {{% /tw_config %}}
 
-Ne reste plus à présent qu’à monter cette configuration. Si vous avez besoin d’aide pour le montage, je vous encourage à jeter un œil au [Guide de Montage PC](http://tuto-wibb.krafft.ovh/?page_id=20121434).
+Ne reste plus à présent qu’à monter cette configuration. Si vous avez besoin d’aide pour le montage, je vous encourage à jeter un œil au [Guide de Montage PC](/monter-son-pc/).
 
 Ajouter à ce PC un télécommande afin de pouvoir le piloté depuis votre canapé. Il existe aussi des clavier/trackPad afin d’utiliser pleinement votre PC Home Cinéma.

@@ -11,7 +11,7 @@ slug: "7-pc-portables-rentree-2011"
 cover: "/media/2011/09/439b89d7de0f4ec36adb27b8f92d89f0.png"
 ---
 
-Pour bien débuter la rentrée, voici en complément du [guide d'achat PC portable](http://tuto-wibb.krafft.ovh/2011/08/guide-achat-pc-portable-2011/) une sélection de sept PC portables afin de vous aider dans votre quête du PC le mieux adapté pour vous.
+Pour bien débuter la rentrée, voici en complément du [guide d'achat PC portable](/guides/guide-achat-pc-portable-2011/) une sélection de sept PC portables afin de vous aider dans votre quête du PC le mieux adapté pour vous.
 
 ### Un Netbook-tablette innovant
 

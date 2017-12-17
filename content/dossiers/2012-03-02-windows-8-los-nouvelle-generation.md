@@ -11,7 +11,7 @@ slug: "windows-8-los-nouvelle-generation"
 cover: "/media/2012/03/498b52a88a56fec88890f34fd3cce37c.png"
 ---
 
-Microsoft a dévoilé mercredi la version Consumer Preview de son futur système d'exploitation Windows 8. Avec cet OS, l'éditeur prend le pari risqué d'unifier les smartphones, les tablettes et les PC et est ainsi le premier à innover dans l'ère post-PC ([voir article](http://tuto-wibb.kazeo.com/dossiers/dossiers,r1553176-6.html)).
+Microsoft a dévoilé mercredi la version Consumer Preview de son futur système d'exploitation Windows 8. Avec cet OS, l'éditeur prend le pari risqué d'unifier les smartphones, les tablettes et les PC et est ainsi le premier à innover dans l'ère post-PC ([voir article](/dossiers/changement-depoque-la-fin-du-regne-du-pc)).
 
 {{% tw_alert "info" %}}**Mise à jour du 1er Juin 2012** : Microsoft a mis en ligne la Release Preview de Windows 8, téléchargeable [ici](http://windows.microsoft.com/fr-FR/windows-8/download).{{% /tw_alert %}}
 

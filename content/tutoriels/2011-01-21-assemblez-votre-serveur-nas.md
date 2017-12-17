@@ -30,11 +30,11 @@ Aujourd’hui, la situation se résume à ça : un utilisateur lambda d’un PC 
 
 Maintenant, observons votre lieu de travail : il y a de fortes chances pour qu’au boulot, vous ayez accès à un « disque réseau partagé ». Un espace de stockage sur serveur, accessible via le réseau, et sur lequel vous stockez vos PowerPoint, vos PDF, vos documents, vos images débiles, vos films de vacances, et même quelques fichiers pour le travail...
 
-{{% tw_alert "info" %}}<i class="fa fa-question-circle"></i> Pourquoi ne pas monter son serveur à la maison ?{{% /tw_alert %}}
+{{% tw_alert "warning" %}}<i class="fa fa-question-circle"></i> Pourquoi ne pas monter son serveur à la maison ?{{% /tw_alert %}}
 
 ## Intégrer un NAS dans son réseau
 
-Après une introduction un peu longue, nous allons pouvoir commencer. Je supposerai par la suite que vous avez lu le guide [Monter son PC](http://tuto-wibb.kazeo.com/Monter-son-PC,r393777.html) et donc je passerais très vite sur le montage.
+Après une introduction un peu longue, nous allons pouvoir commencer. Je supposerai par la suite que vous avez lu le guide [Monter son PC](/monter-son-pc/) et donc je passerais très vite sur le montage.
 
 NOTE : Il existe des serveurs NAS « clef en main » à acheter dans le commerce. En dehors du fait qu’ils prennent rarement en charge le RAID, ils sont souvent plus chers que la solution proposée ici. Et souvent, ils ne sont pas évolutifs. Pas moyen d’y ajouter plus de deux disques (pour les premiers prix).
 
@@ -64,7 +64,7 @@ Et le système d'exploitation ? Vous avez le chois entre la distribution Windows
 
 ### Les composants
 
-L'objectif est de réduire la taille du NAS basique afin d'obtenir un mini serveur domestique (un peu comme un [mini PC](http://tuto-wibb.kazeo.com/?page=rubrique&idr=391903&pa=3)). Niveau composant, il faudra opter pour un boîtier Mini-ITX ainsi que pour la carte mère qui va avec (attention, veillez à prendre de la DDR3). Pour le processeur, un Intel Atom intégré suffira, et ajoutez à ça environ 1 Go de mémoire vive DDR3 (2 Go maximum, après c'est inutile). Enfin, pensez à acheter une clé USB, ou retrouvez-en une au fond d'un de vos tiroirs. 128 Mo suffise, mais je vous conseil 1 Go pour être tranquille.
+L'objectif est de réduire la taille du NAS basique afin d'obtenir un mini serveur domestique (un peu comme un [mini PC](/tutoriels/monter-un-mini-pc/)). Niveau composant, il faudra opter pour un boîtier Mini-ITX ainsi que pour la carte mère qui va avec (attention, veillez à prendre de la DDR3). Pour le processeur, un Intel Atom intégré suffira, et ajoutez à ça environ 1 Go de mémoire vive DDR3 (2 Go maximum, après c'est inutile). Enfin, pensez à acheter une clé USB, ou retrouvez-en une au fond d'un de vos tiroirs. 128 Mo suffise, mais je vous conseil 1 Go pour être tranquille.
 
 ### Le stockage et le système d'exploitation
 
@@ -88,7 +88,7 @@ Et le système d'exploitation ? Vous avez le chois entre la distribution Windows
 
 ## Montage du NAS
 
-Donc, c’est très simple : montez votre NAS. Si vous recyclez votre vieux PC, passez à l'étape n°8 directement. Pour plus dinfo sur le montage, rendez-vous [ici](http://tuto-wibb.krafft.ovh/monter-son-pc/).
+Donc, c’est très simple : montez votre NAS. Si vous recyclez votre vieux PC, passez à l'étape n°8 directement. Pour plus dinfo sur le montage, rendez-vous [ici](/monter-son-pc/).
 
 1. Trouvez un tournevis cruciforme, un tournevis plat, une table solide et bien protégée contre les rayures ;
 1. Montez le boîtier, branchez son alimentation ;
@@ -115,7 +115,7 @@ Copiez, depuis votre PC fixe, Freenas sur votre clef USB en suivant les instruct
 
 Ensuite, vous pourrez vous connecter au serveur depuis votre PC fixe via un explorateur web style Firefox pour configurer la matrice RAID et le système de fichier (LISEZ [la documentation de Freenas](http://freenas.org/documentation:setup_and_user_guide)). Une fois ceci fait, vous pourrez créer un drive partagé sur le réseau, que tous les PC de la maison pourront voir. Il sera bien au chaud derrière le Firewall de votre routeur. En outre, Freenas étant un OS très simple et sans autres applications sur le serveur, les risques de piratage et/ou infection sont quasi nuls (enfin n’oubliez pas d’inclure le nouveau lecteur dans vos recherches de virus périodiques).
 
-NOTE : Il y a une fonction « recycle bin » / poubelle dans Freenas, pour créer une « poubelle » comme dans Windows (un espace où sont conservés les fichiers « effacés » par vos soins et éventuellement par mégarde).
+{{% tw_alert "info" %}}<i class="fa fa-question-circle"></i> **NOTE :** Il y a une fonction « recycle bin » / poubelle dans Freenas, pour créer une « poubelle » comme dans Windows (un espace où sont conservés les fichiers « effacés » par vos soins et éventuellement par mégarde).{{% /tw_alert %}}
 
 ## Conclusion
 

@@ -76,4 +76,4 @@ Voici les vues de dessus et de profil du connecteur (en coupe) :
 
 Certes, les noms nous sont inutiles, mais cela nous apprend qu'il y a désormais une connectique pour la transmission et la réception dans la version 3.0 de l'USB.
 
-Maintenant que vous en savez un peu plus sur ce port, vous pouvez [construire un ventilateur USB](http://tuto-wibb.krafft.ovh/2011/05/fabriquez-ventilateur-usb/).
+Maintenant que vous en savez un peu plus sur ce port, vous pouvez [construire un ventilateur USB](/tutoriels/fabriquez-ventilateur-usb/).
