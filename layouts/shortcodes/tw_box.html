@@ -1,0 +1,6 @@
+<div class="box box-{{ .Get `size`}}">
+	<div class="box-body clearfix">
+		<h3 class="box-title">{{ .Get "title"}}{{ with .Get "subtitle"}} <small>{{.}}</small>{{ end }}</h3>
+		{{ .Inner }}
+	</div>
+</div>
