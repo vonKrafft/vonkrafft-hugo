@@ -1,0 +1,17 @@
+{{ define "title" }}
+    Works
+    {{ if isset .Site.Params "seotitle" }} | {{ .Site.Params.seotitle }}{{ else }} | {{ .Site.Title }}{{ end }}
+{{ end }}
+
+{{ define "main" }}
+    {{ partial "header.html" . }}
+    <section class="main page-detail">
+        <header class="page-header clearfix">
+            <h1 class="page-title">{{ .Title }}</h1>
+        </header>
+        <article class="page-content">{{ .Content }}</article>
+        <footer class="page-footer">
+        </footer>
+    </section>
+    {{ partial "footer.html" . }}
+{{ end }}

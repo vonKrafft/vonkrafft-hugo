@@ -1,0 +1,19 @@
+<div class="work">
+    <aside class="work-cover" style="background-image: url({{ .Get `cover` | safeCSS }});">
+        <a href="{{ .Get `cover` }}" data-lightbox="post-gallery" data-title="{{ .Get `title` }}"><i class="fa fa-search-plus fa-3x"></i></a>
+    </aside>
+    <article class="work-body">
+        <header class="work-heading">
+            <h2 class="work-title">{{ .Get "title" }}</h2>
+        </header>        
+        {{ .Inner }}
+        <footer class="work-footer">
+            <ul class="list-inline">
+                <li>Developer(s) : <strong><a href="{{ .Get `authorURI` }}">{{ .Get "author" }}</a></strong></li>
+                <li>Date : <strong>{{ .Get "date" }}</strong></li>
+                <li>Client : <strong><a href="{{ .Get `clientURI` }}">{{ .Get "client" }}</a></strong></li>
+                <li>Tags : <strong>{{ .Get "tags" }}</strong></li>
+            </ul>
+        </footer>
+    </article>
+</div>
