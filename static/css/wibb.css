@@ -283,6 +283,8 @@ img.pull-left {
 .code-container {
     border: 1px solid #ddd;
     font-size: 0.9rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .code-container > .code-title {
@@ -862,6 +864,7 @@ img.pull-left {
 }
 
 .timeline > .item-entry > .item-body > .item-side > a.item-cover {
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
