@@ -277,31 +277,6 @@ img.pull-left {
 }
 
 /*****************************************
- * Code
- *****************************************/
-
-.code-container {
-    border: 1px solid #ddd;
-    font-size: 0.9rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.code-container > .code-title {
-    color: #586069;
-    background-color: #f7f7f7;
-    overflow: hidden;
-    padding: 5px 10px;
-    font-weight: bold;
-    border-bottom: 1px solid #eee;
-}
-
-.code-container > pre.code {
-    padding: 10px;
-    margin: 0;
-}
-
-/*****************************************
  * Box
  *****************************************/
 
