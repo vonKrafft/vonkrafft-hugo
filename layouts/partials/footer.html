@@ -1,6 +1,6 @@
 <footer class="site-footer">
   <p>© {{ if eq now.Year 2017 }}2017{{ else }}2017-{{ now.Year }}{{ end }} {{ .Site.Title }}</p>
-  <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/laozhu/hugo-nuo" target="_blank">Nuo</a>.</p>
+  <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>.</p>
 </footer>
 
 <!-- Scripts -->
@@ -10,6 +10,7 @@
 <script type="text/javascript" src="/js/rainbow-wibb.min.js"></script>
 
 {{ if .Site.GoogleAnalytics }}
+{{ partial "cnil.html" . }}
 {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
 
