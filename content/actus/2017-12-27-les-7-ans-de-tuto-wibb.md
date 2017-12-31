@@ -11,7 +11,7 @@ slug: "les-7-ans-de-tuto-wibb"
 cover: "/media/2017/12/1b195cfef859bc0bc3d46acd289e35ee.png"
 ---
 
-Il y bientôt a **sept ans**, mon premier article est publié sur le site : un tutoriel pour [monter un Mini-PC](/tutoriels/monter-un-mini-pc/). Le site s'appelle alors **Tuto Wibb**, une déclinaison du précédent site **Wibb** que j'avais créé pour apprendre le HTML et le CSS. A cette époque, je suis Math sup' (2nd année de prépa) et je me dis que quitte à m'intéresser à l'informatique, autant partager mes connaissances. Hébergé sur la plateforme **Kazeo**, je débute la rédaction de plusieurs tutoriels.
+Il y a bientôt **sept ans**, mon premier article est publié sur le site : un tutoriel pour [monter un Mini-PC](/tutoriels/monter-un-mini-pc/). Le site s'appelle alors **Tuto Wibb**, une déclinaison du précédent site **Wibb** que j'avais créé pour apprendre le HTML et le CSS. A cette époque, je suis Math sup' (2nd année de prépa) et je me dis que quitte à m'intéresser à l'informatique, autant partager mes connaissances. Hébergé sur la plateforme **Kazeo**, je débute la rédaction de plusieurs tutoriels.
 
 ## Diversification des articles
 
