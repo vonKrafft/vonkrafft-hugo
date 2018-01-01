@@ -13,6 +13,8 @@ cover: "/media/2011/01/356a8667d4d5192ba470210640d8e32e.jpg"
 
 Comment monter un serveur de fichiers à la maison, pour sauvegarder ses données et les rendre accessibles facilement ? Un guide de montage étape par étape pour vous aider à assembler votre propre serveur NAS de données et l'inclure dans votre réseau domestique.
 
+<!--more-->
+
 ## Une époque dangereuse
 
 L’informatique est bel et bien installée chez nous et s’il y a une vingtaine d’années, avoir un ordinateur était un luxe, aujourd’hui, on en a deux ou trois chez nous. De plus, changer de PC ou de disque dur est problématique aussi : celui qui a déjà grillé un disque dur sait de quoi je parle, et celui qui a déjà essayé de transférer des gros volumes de données (> 300Go) d’un PC à un autre le sait aussi... Donc comment faire pour s’y retrouver ?
@@ -30,7 +32,7 @@ Aujourd’hui, la situation se résume à ça : un utilisateur lambda d’un PC 
 
 Maintenant, observons votre lieu de travail : il y a de fortes chances pour qu’au boulot, vous ayez accès à un « disque réseau partagé ». Un espace de stockage sur serveur, accessible via le réseau, et sur lequel vous stockez vos PowerPoint, vos PDF, vos documents, vos images débiles, vos films de vacances, et même quelques fichiers pour le travail...
 
-{{% tw_alert "warning" %}}<i class="fa fa-question-circle"></i> Pourquoi ne pas monter son serveur à la maison ?{{% /tw_alert %}}
+{{% alert "warning" %}}<i class="fa fa-question-circle"></i> Pourquoi ne pas monter son serveur à la maison ?{{% /alert %}}
 
 ## Intégrer un NAS dans son réseau
 
@@ -46,7 +48,7 @@ Si vous avez un vieux PC dans un coin, c’est le moment de le recycler. N’imp
 
 ## Montez un NAS classique
 
-{{< tw_supply cost="350" level="3" time="1 à 3 heures" supplies="Processeur AMD Sempron 145 (35€ env.), carte mère Gigabyte GA-M68MT-S2 (50€ env.), mémoire vive 1Go DDR3-1333 (20€ env.), disque dur 2x1To RAID1 (140€ env.), alimentation silencieuse (80€ env.), boîtier entrée de gamme (35€ env.)" >}}
+{{< supply cost="350" level="3" time="1 à 3 heures" supplies="Processeur AMD Sempron 145 (35€ env.), carte mère Gigabyte GA-M68MT-S2 (50€ env.), mémoire vive 1Go DDR3-1333 (20€ env.), disque dur 2x1To RAID1 (140€ env.), alimentation silencieuse (80€ env.), boîtier entrée de gamme (35€ env.)" >}}
 
 ### Les composants
 
@@ -60,7 +62,7 @@ Et le système d'exploitation ? Vous avez le chois entre la distribution Windows
 
 ## Montez un NAS miniature
 
-{{< tw_supply cost="460" level="3" time="1 à 3 heures" supplies="Processeur AMD Atom D525 intégré, carte mère Asus AT5IONT-I Mini-ITX (155€ env.), mémoire vive 1Go So-Dimm DDR3-800 (25€ env.), disque dur 2x1To RAID1 (190€ env.), alimentation intégrée, boîtier Antec ISK 100 (80€ env.)" >}}
+{{< supply cost="460" level="3" time="1 à 3 heures" supplies="Processeur AMD Atom D525 intégré, carte mère Asus AT5IONT-I Mini-ITX (155€ env.), mémoire vive 1Go So-Dimm DDR3-800 (25€ env.), disque dur 2x1To RAID1 (190€ env.), alimentation intégrée, boîtier Antec ISK 100 (80€ env.)" >}}
 
 ### Les composants
 
@@ -74,7 +76,7 @@ Et le système d'exploitation ? Vous avez le chois entre la distribution Windows
 
 ## Recyclez votre vieux PC en NAS
 
-{{< tw_supply cost="150" level="3" time="1 à 3 heures" supplies="Votre vieux PC, disque dur 2x1To RAID1 (140€ env.), une clé USB (10€ env.)" >}}
+{{< supply cost="150" level="3" time="1 à 3 heures" supplies="Votre vieux PC, disque dur 2x1To RAID1 (140€ env.), une clé USB (10€ env.)" >}}
 
 ### Le vieux PC
 
@@ -115,7 +117,7 @@ Copiez, depuis votre PC fixe, Freenas sur votre clef USB en suivant les instruct
 
 Ensuite, vous pourrez vous connecter au serveur depuis votre PC fixe via un explorateur web style Firefox pour configurer la matrice RAID et le système de fichier (LISEZ [la documentation de Freenas](http://freenas.org/documentation:setup_and_user_guide)). Une fois ceci fait, vous pourrez créer un drive partagé sur le réseau, que tous les PC de la maison pourront voir. Il sera bien au chaud derrière le Firewall de votre routeur. En outre, Freenas étant un OS très simple et sans autres applications sur le serveur, les risques de piratage et/ou infection sont quasi nuls (enfin n’oubliez pas d’inclure le nouveau lecteur dans vos recherches de virus périodiques).
 
-{{% tw_alert "info" %}}<i class="fa fa-question-circle"></i> **NOTE :** Il y a une fonction « recycle bin » / poubelle dans Freenas, pour créer une « poubelle » comme dans Windows (un espace où sont conservés les fichiers « effacés » par vos soins et éventuellement par mégarde).{{% /tw_alert %}}
+{{% alert "info" %}}<i class="fa fa-question-circle"></i> **NOTE :** Il y a une fonction « recycle bin » / poubelle dans Freenas, pour créer une « poubelle » comme dans Windows (un espace où sont conservés les fichiers « effacés » par vos soins et éventuellement par mégarde).{{% /alert %}}
 
 ## Conclusion
 

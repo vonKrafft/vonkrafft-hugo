@@ -13,6 +13,8 @@ cover: "/media/2011/09/0289ee4684e3879c0ef2504ca941be53.png"
 
 Il y a peu, on se posait encore la question de l'utilité d'une tablette. Mais ces écrans tactiles ultra connectés à mi-chemin entre téléphone et netbook sont devenus les stars de l'équipement informatique. Sélection de trois tablettes pour trois usages différents.
 
+<!--more-->
+
 ## La tablette pour lire des vidéos
 
 Pour visionner vos films, il faut privilégier la luminosité de l’écran, la puissance du processeur, la prise micro-HDMI et le décodage des formats vidéos jusqu’au HD 1080p.

@@ -13,6 +13,8 @@ cover: "/media/2012/02/89c97c8c5d88b4123df891dd15c15fda.jpg"
 
 Clé de voute de l'ordinateur, la carte mère est le composant qu'il faut choisir avec le plus d'attention. En effet, c'est sur elle que viendront se greffer tous les autres composants du PC, internes ou externes. Voici donc un petit guide pour vous aider à choisir correctement votre carte mère.
 
+<!--more-->
+
 ## Le format
 
 {{< img src="/media/2012/02/3ac0fe454169b8241246695c8ae1655c-294x300.jpg" link="/media/2012/02/3ac0fe454169b8241246695c8ae1655c.jpg" class="pull-right">}}

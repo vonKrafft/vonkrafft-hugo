@@ -13,6 +13,8 @@ cover: "/media/2011/09/865d1541140a82f2c07e68db069d32b3.png"
 
 Vous tous, possesseurs de PC portables ou de gadgets électroniques, vous êtes confronté l’autonomie de votre appareil et  à la durée de vie de sa batterie. Mais savez-vous qu’une batterie demande de l’entretient et qu’il ne faut pas l’utiliser n’importe comment ? Voici quelques conseils qui permettront à votre batterie Lithium-ion de durer plus longtemps.
 
+<!--more-->
+
 ## Attention à la décharge
 
 Lorsque vous acheter un PC portable (ou autre appareil électronique), il est nécessaire de charger la batterie au maximum sans interruption. Ensuite, durant toute la durée de vie de la batterie, il faut absolument évité de la vider entièrement sous peine de perdre 10 à 20% de sa capacité d’un seul coup. Le PC vous alerte lorsque le niveau de la batterie est faible, puis lorsque celui-ci est critique. Mais les pourcentages sont souvent mal régler. Il est conseillé de brancher son portable au secteur lorsque la charge de la batterie descend en dessous des 20%. A 10%, on atteint le seuil critique !

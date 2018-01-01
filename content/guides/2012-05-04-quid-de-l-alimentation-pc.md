@@ -13,6 +13,8 @@ cover: "/media/2012/05/a43683d33b40f413228d54e3c6ed4a2f-1024x576.jpg"
 
 L’alimentation est la première responsable des maux d’un PC et pour cause : malgré son importance, elle est souvent négligée devant les autres composants pour des raisons budgétaires. Et pourtant, c’est elle qui assure le fonctionnement de tous les composants.
 
+<!--more-->
+
 ## Une partie technique …
 
 ### La Puissance de l'alimentation
@@ -67,11 +69,11 @@ Enfin, même si la majorité des alimentations propose des connecteurs inamovibl
 
 La norme de l'alimentation est déterminée par le boîtier dans lequel elle va prendre place. La plus courante les l’ATX. Mais celle-ci se décline en plusieurs normes apparus au fil du temps avec les nouveaux besoins des composants. La plus récente les l’ATX 2.3. D’autres boitiers plus exotiques nécessitent une norme particulière telles que le Flex-ATX ou l’EPS, le SFX ou le TFX.
 
-{{% tw_gallery columns="3" title="Alimentation ATX, Flex ATX et TFX" %}}
-{{< tw_gallery_item src="/media/2012/05/3943f9b57c4a193c4fdb822a79f8c169-300x225.jpg" link="/media/2012/05/3943f9b57c4a193c4fdb822a79f8c169.jpg" >}}
-{{< tw_gallery_item src="/media/2012/05/84a98f30e431e616cb9afbccc2470721.jpg" link="/media/2012/05/84a98f30e431e616cb9afbccc2470721.jpg" >}}
-{{< tw_gallery_item src="/media/2012/05/415c96672a562cab3f4b831411411eab-300x248.jpg" link="/media/2012/05/415c96672a562cab3f4b831411411eab.jpg" >}}
-{{% /tw_gallery %}}
+{{% gallery columns="3" title="Alimentation ATX, Flex ATX et TFX" %}}
+{{< gallery_item src="/media/2012/05/3943f9b57c4a193c4fdb822a79f8c169-300x225.jpg" link="/media/2012/05/3943f9b57c4a193c4fdb822a79f8c169.jpg" >}}
+{{< gallery_item src="/media/2012/05/84a98f30e431e616cb9afbccc2470721.jpg" link="/media/2012/05/84a98f30e431e616cb9afbccc2470721.jpg" >}}
+{{< gallery_item src="/media/2012/05/415c96672a562cab3f4b831411411eab-300x248.jpg" link="/media/2012/05/415c96672a562cab3f4b831411411eab.jpg" >}}
+{{% /gallery %}}
 
 ### La ventilation
 

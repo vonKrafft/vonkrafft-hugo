@@ -13,10 +13,12 @@ cover: "/media/2012/07/d10a2b7204c992679d55eff0c95dcd04.jpg"
 
 L’essor des tablettes à prit Microsoft de cours, et ce dernier se devait de trouver une parade à iOS et Android. Dans cette optique, l’éditeur de système d’exploitation a effectué une refonte totale de son OS Windows pour l’ouvrir au marché des tablettes. Mais ce que personne n’attendait, c’est que ce géant des logiciels se lance dans la commercialisation de sa propre tablette. En effet, la société a annoncé le 19 juin dernier la sortie prochaine de sa tablette : Surface.
 
-{{% tw_gallery columns="2" %}}
-{{< tw_gallery_item src="/media/2012/07/ff02f58cc7a9e7449b45df0affc8f267-300x219.jpg" link="/media/2012/07/ff02f58cc7a9e7449b45df0affc8f267.jpg" >}}
-{{< tw_gallery_item src="/media/2012/07/ad8f0ac5562865244b0721f96ed70f90-300x219.jpg" link="/media/2012/07/ad8f0ac5562865244b0721f96ed70f90.jpg" >}}
-{{% /tw_gallery %}}
+<!--more-->
+
+{{% gallery columns="2" %}}
+{{< gallery_item src="/media/2012/07/ff02f58cc7a9e7449b45df0affc8f267-300x219.jpg" link="/media/2012/07/ff02f58cc7a9e7449b45df0affc8f267.jpg" >}}
+{{< gallery_item src="/media/2012/07/ad8f0ac5562865244b0721f96ed70f90-300x219.jpg" link="/media/2012/07/ad8f0ac5562865244b0721f96ed70f90.jpg" >}}
+{{% /gallery %}}
 
 Un fois de plus, Microsoft se lance dans le domaine du matériel. Cela avait débuté avec la première version de Windows qui avait besoin d’une souris, et Microsoft la lui donna. Par la suite, l’éditeur logiciel a tenté de se faire une place sur le marché, avec par exemple la célèbre console Xbox, qui a connu le succès attendu, le baladeur Zune, qui a eu moins de chance, et à présent la tablette Surface.
 
@@ -40,13 +42,13 @@ Cependant, pas de prix dévoilés pour aucune de ces deux tablettes.
 
 Microsoft prévoit de décliner deux versions de sa Surface : l'une avec un processeur ARM et donc Windows RT (avec la suite Office 2013), l'autre avec processeur Intel et Windows 8 Pro. La première est destinée au grand public et présente des caractéristiques classiques d’une tablette : 9,3 mm d’épaisseur pour un poids de 676 g. La seconde, conçue pour l’univers professionnel, est plus lourde (903 g) mais aussi plus épaisse (13.5 mm) et présente des grille d’aération. A noté que Microsoft n’a pas encore fait le choix des processeurs pour ses tablettes.
 
-{{% tw_gallery columns="5" title="Surface by Microsoft (Cliquez pour agrandir)" %}}
-{{< tw_gallery_item src="/media/2012/07/ff02f58cc7a9e7449b45df0affc8f267-150x150.jpg" link="/media/2012/07/ff02f58cc7a9e7449b45df0affc8f267.jpg" >}}
-{{< tw_gallery_item src="/media/2012/07/ad8f0ac5562865244b0721f96ed70f90-150x150.jpg" link="/media/2012/07/ad8f0ac5562865244b0721f96ed70f90.jpg" >}}
-{{< tw_gallery_item src="/media/2012/07/77c7cc930fd1443f34d12a07c7987354-150x150.jpg" link="/media/2012/07/77c7cc930fd1443f34d12a07c7987354.jpg" >}}
-{{< tw_gallery_item src="/media/2012/07/e59d9e28aae9a4f03d30f5bf89467808-150x150.jpg" link="/media/2012/07/e59d9e28aae9a4f03d30f5bf89467808.jpg" >}}
-{{< tw_gallery_item src="/media/2012/07/59950b608e39ac06f3e3801f34e138a8-150x150.jpg" link="/media/2012/07/59950b608e39ac06f3e3801f34e138a8.jpg" >}}
-{{% /tw_gallery %}}
+{{% gallery columns="5" title="Surface by Microsoft (Cliquez pour agrandir)" %}}
+{{< gallery_item src="/media/2012/07/ff02f58cc7a9e7449b45df0affc8f267-150x150.jpg" link="/media/2012/07/ff02f58cc7a9e7449b45df0affc8f267.jpg" >}}
+{{< gallery_item src="/media/2012/07/ad8f0ac5562865244b0721f96ed70f90-150x150.jpg" link="/media/2012/07/ad8f0ac5562865244b0721f96ed70f90.jpg" >}}
+{{< gallery_item src="/media/2012/07/77c7cc930fd1443f34d12a07c7987354-150x150.jpg" link="/media/2012/07/77c7cc930fd1443f34d12a07c7987354.jpg" >}}
+{{< gallery_item src="/media/2012/07/e59d9e28aae9a4f03d30f5bf89467808-150x150.jpg" link="/media/2012/07/e59d9e28aae9a4f03d30f5bf89467808.jpg" >}}
+{{< gallery_item src="/media/2012/07/59950b608e39ac06f3e3801f34e138a8-150x150.jpg" link="/media/2012/07/59950b608e39ac06f3e3801f34e138a8.jpg" >}}
+{{% /gallery %}}
 
 Du côté de la connectique, Microsoft ne présente pour la version RT qu’un port USB 2.0 et un lecteur MicroSD. La version Pro est plus fournie, avec un USB 3.0, lecteur MicroSDXC et un port Mini DisplayPort.
 

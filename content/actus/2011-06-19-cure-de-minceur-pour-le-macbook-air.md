@@ -13,6 +13,8 @@ cover: "/media/2011/06/7e214786550505f5842c58f096470766-1024x683.jpg"
 
 Un poids de 1 Kg pour une épaisseur allant de 0,3 à 1,7 mm, le nouveau MacBook Air sortit en octobre 2010 est l’un des PC le plus fin du monde. Visite en image dans les entrailles de la machine.
 
+<!--more-->
+
 {{< img src="/media/2011/06/5f3a6f7acd575403d7a716a3cfd41203.png" link="/media/2011/06/5f3a6f7acd575403d7a716a3cfd41203.png" >}}
 
 ## Caractéristiques sur MacBook Air

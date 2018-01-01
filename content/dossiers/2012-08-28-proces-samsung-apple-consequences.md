@@ -15,6 +15,8 @@ cover: "/media/2012/08/c7161344758092b2199b0e6d03faaf1a-1024x471.jpg"
 
 Le tribunal californien chargé de l’affaire "Samsung-Apple" a rendu ce week-end son [verdict](http://www.scribd.com/fullscreen/103860673?access_key=key-1ho669app2expaa7tptr) et condamne le constructeur coréen à 1,049 milliard de dommages et intérêts. Quant à la firme de Steve Jobs, elle n’écope d’aucunes condamnations. Cette défaite de Samsung aura de lourdes conséquences sur le marché du smartphone.Voilà qui clôture plusieurs mois de débats qui ont secoués la planète numérique : Samsung a été condamné à versé plus d’un milliard de dollars à Apple pour avoir utilisé illégalement plusieurs de ses brevets. Un record pour une affaire de violation de propriété intellectuelle.
 
+<!--more-->
+
 ## Samsung-Apple, un impact financier
 
 Première conséquence, quelque jours après le verdict : le géant sud-coréen a enregistré ce lundi une chute de 7,45% de son action, soit une perte de plus de 12 milliards de capital. Cependant, la sanction financière ne serait pas un problème pour Samsung. Un analyste chez Daishin Securities, Jeff Kang, déclare que « le bas de laine de Samsung est estimé à quelque 17 milliards de dollars ».

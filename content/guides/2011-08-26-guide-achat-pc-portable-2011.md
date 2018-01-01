@@ -13,6 +13,8 @@ cover: "/media/2011/08/77c5eddae118736e4d52a1cedf0d0a58.png"
 
 Ça y est, c’est la rentrée, et c’est aussi la période pendant laquelle les constructeurs de PC portable renouvellent leurs gammes. Au même moment, vous vous dites qu’il est temps d’investir dans un ordinateur portable afin de remplacer votre vieux modèle ou bien pour nous épauler dans nos études qui débutent. Quoi qu’il en soit, il est parfois difficile de choir le bon modèle de PC. Voici un guide pour vous aider dans votre achat de septembre.
 
+<!--more-->
+
 ## Définir ses besoins et son budget
 
 Pour commencer, il faut d’abord se demander ce que l’on voudrait faire avec son ordinateur. L’utilisation du PC portable nous aidera à déterminer le budget à lui consacrer. Ainsi, on peut distinguer quelques utilisations fréquentes :

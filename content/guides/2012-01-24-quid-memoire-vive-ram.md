@@ -13,6 +13,8 @@ cover: "/media/2012/01/8d8bea89388715ee7c01183a0667e892.png"
 
 La mémoire vive, aussi appelée RAM de l'anglais Random Access Memory,  est le lieu de stockage des données en cours de traitement. La RAM définie la réactivité de votre ordinateur, son aptitude à exécuter rapidement une application. Son choix est donc important et elle ne doit en aucun cas être négligée.
 
+<!--more-->
+
 ## Quantité de mémoire
 
 La mémoire vive bénéficie d’une connexion privilégiée avec le processeur et ce dernier utilise cette rapidité d’accès pour y stocker toutes les informations dont il a besoin pour effectuer ses calculs. Lorsque la quantité de mémoire vive n’est pas suffisante, les traitements se font non plus sur la RAM mais sur le disque dur, ce qui ralentit considérablement le système.
@@ -40,4 +42,4 @@ Vous pouvez installer autant de barrettes que vous le permet votre carte mère.
 - 3 ou 6 barrettes : rare mais présent, le Triple-Channel est basé sur le même principe que le Dual-Channel, comme son nom l’indique, mais fait fonctionner les barrettes par trois.
 - Plus de barrettes : honnêtement, cela n’a pas grand intérêt.
 
-{{% tw_alert "warning" %}}<i class="fa fa-exclamation-circle"></i> Pour le Dual-Channel et le triple-Channel, les barrettes de mémoire vive doivent être identiques (et compatible avec le Dual ou le triple Channel bien sûr).{{% /tw_alert %}}
+{{% alert "warning" %}}<i class="fa fa-exclamation-circle"></i> Pour le Dual-Channel et le triple-Channel, les barrettes de mémoire vive doivent être identiques (et compatible avec le Dual ou le triple Channel bien sûr).{{% /alert %}}

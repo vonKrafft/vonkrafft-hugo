@@ -13,6 +13,8 @@ cover: "/media/2012/09/19d088d51aa85332c444fe0f1d4d7ccd.png"
 
 Bientôt un an que Steve Jobs a quitté ce monde, et Apple. Or, la firme de Cupertino a effrayé le monde informatique avec le Nouvel iPad qui se rapprochait plus de « l’évolution » que de la « révolution ». Et malheureusement, Apple n'a pas su créer la susprise en ce 12 septembre. En effet, même si cette **Keynote **s’est accompagnée de l'iPhone 5, d’une nouvelle gamme d’iPod Nano et Touch, ainsi que de nouveaux écouteurs et un nouveau connecteur, ces nouveautés n'ont fait que confirmer les rumeurs sans apporter de « révolution ».
 
+<!--more-->
+
 {{< img src="/media/2012/09/19d088d51aa85332c444fe0f1d4d7ccd.png" alt="Aperçu de l'iPhone 5" link="/media/2012/09/19d088d51aa85332c444fe0f1d4d7ccd.png" >}}
 
 ## L'iPhone 5 qui réinvente l’iPhone ?

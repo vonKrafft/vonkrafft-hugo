@@ -13,6 +13,8 @@ cover: "/media/2017/12/1b195cfef859bc0bc3d46acd289e35ee.png"
 
 Il y a bientôt **sept ans**, mon premier article est publié sur le site : un tutoriel pour [monter un Mini-PC](/tutoriels/monter-un-mini-pc/). Le site s'appelle alors **Tuto Wibb**, une déclinaison du précédent site **Wibb** que j'avais créé pour apprendre le HTML et le CSS. A cette époque, je suis Math sup' (2nd année de prépa) et je me dis que quitte à m'intéresser à l'informatique, autant partager mes connaissances. Hébergé sur la plateforme **Kazeo**, je débute la rédaction de plusieurs tutoriels.
 
+<!--more-->
+
 ## Diversification des articles
 
 Très vite, je me prends au jeu et je cherche à diversifier le contenu. Viennent se greffer au site les **actus**, puis les **guides** et les **dossiers**. Je découvre un sujet, je le creuse et le résume sur mon site. Le contenu des actus est peu technique et il s'agissait principalement du croisement de plusieurs articles sur un sujet d'actualité qui m'intéressait.
@@ -21,12 +23,12 @@ Les **guides** sont plus techniques, ou alors ils sont là pour conseiller à l'
 
 Enfin, les **dossiers**. Arrivés sur le site en septembre 2011, ils allaient alors de pairs avec les guides. Mais très vite, je dédie la catégorie à un fait d'actualité que je creuse plus que les autres, ou un test d'un OS, d'un jeu ou d'un appareil. 
 
-{{% tw_gallery columns="4" title="Les différents logos du site au cours du temps..." %}}
-{{< tw_gallery_item src="/media/2017/12/6f40a28e863dc0291e26b7b10ff5525b-150x150.png" link="/media/2017/12/6f40a28e863dc0291e26b7b10ff5525b.png" >}}
-{{< tw_gallery_item src="/media/2017/12/c3d9fb21fd73548e69605bf9360f75f4-150x150.png" link="/media/2017/12/c3d9fb21fd73548e69605bf9360f75f4.png" >}}
-{{< tw_gallery_item src="/media/2017/12/e455bdf500974e6ea4a036d016841443-150x150.png" link="/media/2017/12/e455bdf500974e6ea4a036d016841443.png" >}}
-{{< tw_gallery_item src="/media/2017/12/18b2150055cf0402e963425ffdf86134-150x150.png" link="/media/2017/12/18b2150055cf0402e963425ffdf86134.png" >}}
-{{% /tw_gallery %}}
+{{% gallery columns="4" title="Les différents logos du site au cours du temps..." %}}
+{{< gallery_item src="/media/2017/12/6f40a28e863dc0291e26b7b10ff5525b-150x150.png" link="/media/2017/12/6f40a28e863dc0291e26b7b10ff5525b.png" >}}
+{{< gallery_item src="/media/2017/12/c3d9fb21fd73548e69605bf9360f75f4-150x150.png" link="/media/2017/12/c3d9fb21fd73548e69605bf9360f75f4.png" >}}
+{{< gallery_item src="/media/2017/12/e455bdf500974e6ea4a036d016841443-150x150.png" link="/media/2017/12/e455bdf500974e6ea4a036d016841443.png" >}}
+{{< gallery_item src="/media/2017/12/18b2150055cf0402e963425ffdf86134-150x150.png" link="/media/2017/12/18b2150055cf0402e963425ffdf86134.png" >}}
+{{% /gallery %}}
 
 ## L'apogée de Tuto Wibb
 
@@ -34,10 +36,10 @@ Les nouvelles technologies me passionnent et de nombreux articles voient le jour
 
 Septembre 2012, je rentre en école d'ingénieur. J'y apprends notamment le C, le Java et je me familiarise avec l'administration système. En parrallèle, j'apprends le PHP et je m'intéresse à WordPress. Le site est peu à peu délaissé, la motivation pour la rédaction d'article diminuant lorsque l'on baigne toute la journée dans le domaine. Après presque deux ans d'activité et 40 articles, **Tuto Wibb** entre peu à peu en hibernation ...
 
-{{% tw_gallery columns="2" title="Le site en décembre 2011 et en juin 2012" %}}
-{{< tw_gallery_item src="/media/2017/12/f6ade5c985635ef04e7e4a07283dc5e3.png" link="/media/2017/12/2983a32abf19dc340406f4761140da3e.png" >}}
-{{< tw_gallery_item src="/media/2017/12/a6bc072b24aae9e7ca1011ca5d67b157.png" link="/media/2017/12/eb7a448780657632f1ba3aa669356e4c.png" >}}
-{{% /tw_gallery %}}
+{{% gallery columns="2" title="Le site en décembre 2011 et en juin 2012" %}}
+{{< gallery_item src="/media/2017/12/f6ade5c985635ef04e7e4a07283dc5e3.png" link="/media/2017/12/2983a32abf19dc340406f4761140da3e.png" >}}
+{{< gallery_item src="/media/2017/12/a6bc072b24aae9e7ca1011ca5d67b157.png" link="/media/2017/12/eb7a448780657632f1ba3aa669356e4c.png" >}}
+{{% /gallery %}}
 
 ## Migration vers WordPress
 
@@ -45,10 +47,10 @@ Un an plus tard, je rentre au club info pour administrer le site des élèves et
 
 En novembre 2013, je vais à la Paris Games Week et j'en profite pour reprendre la rédaction d'article dont le rythme de publication avec diminué depuis 1 an. Mais peu de temps après, le site tombe dans l'abandon et aucun article n'est mis en ligne pendant 2 ans<sup>1</sup> !!! C'est seulement en décembre 2015 que le site reprend vie. Je suis alors en master 2 à Grenoble et j'ai depuis peu un serveur chez OVH. En mai 2016, je décide de rapatrier le site sur ce serveur qui y gagne au passage un coup de pinceau avec un nouveau thème WordPress entièrement personnel. Une nouvelle catégorie fait également son apparition : console, avec un premier article pour [donner un nom DNS à son serveur local](https://vonkrafft.fr/console/donner-nom-dns-a-serveur-local/).
 
-{{% tw_gallery columns="2" title="Le site avant et après sa migration en mai 2016" %}}
-{{< tw_gallery_item src="/media/2017/12/ae1e7950cd6ca0c48b4c7aed43f9797c.png" link="/media/2017/12/65e7a314ef517c94664de23a17560d78.png" >}}
-{{< tw_gallery_item src="/media/2017/12/b00f5cdd768277fb1b3ec55bb2418f72.png" link="/media/2017/12/fbaa9c52d042f7f7091210800dba68e5.png" >}}
-{{% /tw_gallery %}}
+{{% gallery columns="2" title="Le site avant et après sa migration en mai 2016" %}}
+{{< gallery_item src="/media/2017/12/ae1e7950cd6ca0c48b4c7aed43f9797c.png" link="/media/2017/12/65e7a314ef517c94664de23a17560d78.png" >}}
+{{< gallery_item src="/media/2017/12/b00f5cdd768277fb1b3ec55bb2418f72.png" link="/media/2017/12/fbaa9c52d042f7f7091210800dba68e5.png" >}}
+{{% /gallery %}}
 
 ## Hugo et le renouveau ?
 

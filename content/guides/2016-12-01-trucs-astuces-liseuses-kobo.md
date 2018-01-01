@@ -13,6 +13,8 @@ cover: "/media/2016/12/32052f235759e191308724ac5e4d2d0f-1024x479.jpg"
 
 Si vous aussi vous avez franchi le pas du numérique et que vous avez acheté une liseuse pour pouvoir enfin emporter plus de 3 livres pour vos vacances et si vous aussi vous avez choisi la Kobo (créée par qui vous savez), cet article est écrit tout juste pour vous.
 
+<!--more-->
+
 {{< img src="/media/2016/12/32052f235759e191308724ac5e4d2d0f-1024x479.jpg" alt="Calibre" link="/media/2016/12/32052f235759e191308724ac5e4d2d0f.jpg" >}}
 
 ## Le bon format pour les livres

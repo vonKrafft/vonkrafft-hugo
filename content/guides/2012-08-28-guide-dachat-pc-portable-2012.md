@@ -13,6 +13,8 @@ cover: "/media/2012/08/2f212049ce79d2b949fd242043004288.png"
 
 Ça y est, c’est la rentrée, et j'en profite pour faire une mise à jour du guide d'achat PC portables. En effet, vous vous dites qu’il est temps d’investir dans un ordinateur portable afin de remplacer votre vieux modèle ou bien pour vous épauler dans vos études qui débutent. Quoi qu’il en soit, il est parfois difficile de choisir le bon modèle de PC. Voici un guide pour vous aider dans votre achat de septembre.
 
+<!--more-->
+
 ## Définir ses besoins et son budget
 
 Pour commencer, il faut d’abord vous demander ce que vous souhaitez faire avec votre ordinateur afin de déterminer le budget à lui consacrer. Ainsi, on peut distinguer quelques utilisations fréquentes :
@@ -152,4 +154,4 @@ Un PC dédié aux jeux se doit d’être plus performant et de ce fait, il faut 
 - 3 ou 4 port USB (3.0 si possible), un lecteur DVD, un lecteur de cartes, un port HDMI, une prise Ethernet et des ports micro et casque.
 - Wi-Fi 802.11n (et du Bluetooth éventuellement).
 
-{{% tw_alert "success" %}}}}<i class="fa fa-check-circle-o"></i> Voilà pour ce guide spécial rentrée 2012, bonne reprise à tous.{{% /tw_alert %}}
+{{% alert "success" %}}}}<i class="fa fa-check-circle-o"></i> Voilà pour ce guide spécial rentrée 2012, bonne reprise à tous.{{% /alert %}}

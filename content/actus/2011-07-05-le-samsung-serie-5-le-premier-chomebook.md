@@ -13,6 +13,8 @@ cover: "/media/2011/07/291ba6f1a6af6f40fddd9a0ec27f4130.jpg"
 
 Le Samsung Serie 5 n’est autre que le premier ordinateur portable qui embarque le tout nouveau système d’exploitation de Google : Chrome OS. Petit tour d’horizon en image de ce PC portable …
 
+<!--more-->
+
 {{< img src="/media/2011/07/a7981129e6936e7c4eb21b9b4aa96914.png" link="/media/2011/07/a7981129e6936e7c4eb21b9b4aa96914.png" >}}
 
 ## Caractéristiques du Samsung Serie 5

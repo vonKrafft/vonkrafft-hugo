@@ -15,6 +15,8 @@ Les systèmes de fichiers sont utilisés pour organiser le stockage de l’infor
 
 Il existe plusieurs systèmes de fichiers, chacun ayant des caractéristiques propres et des cas d’utilisation particulier. S’il est souvent peu utile de sélectionner manuellement son système de fichier plutôt que de choisir celui proposé par défaut, dans certaines conditions d’utilisation il est nécessaire de sélectionner le système de fichier le plus adapté ; cela peut-être le plus rapide, ou le plus fiable, ou celui impliquant le moins de cycles d’écritures, etc.
 
+<!--more-->
+
 Ce bref état de l’art va donc tout d’abord présenter quelques facteurs de choix pouvant aider à départager des systèmes de fichier concurrents, avant de présenter plus en détail trois de ceux-ci : zfs, btrfs et ext4.
 
 ## Types de système de fichier

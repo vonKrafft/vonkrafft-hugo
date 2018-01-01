@@ -11,11 +11,13 @@ slug: "fabriquez-ventilateur-usb"
 cover: "/media/2011/05/12371e0b53ec20a2910edc2afe24a872-1024x769.jpg"
 ---
 
-Je ne sais pas si vous suivez l'actualité informatique, mais on peut remarquer tout un tas de trucs inutiles en USB : un barbecue USB, un aquarium USB, un ventilateur USB, un réfrigérateur USB, une chauffe tasse USB, etc. …
+Je ne sais pas si vous suivez l'actualité informatique, mais on peut remarquer tout un tas de trucs inutiles en USB : un barbecue USB, un aquarium USB, un ventilateur USB, un réfrigérateur USB, une chauffe tasse USB, etc. … Je vous propose de faire un ventilateur USB. Ce n’est pas grandement utile mais vous pourrez fièrement vous vanter en disant : « c’est moi qui l’ai fait ! ».
 
-Je vous propose de faire un ventilateur USB. Ce n’est pas grandement utile mais vous pourrez fièrement vous vanter en disant : « c’est moi qui l’ai fait ! ». Avant de commencer, je vous conseille de jeter un œil au [fonctionnement de l'USB](/guides/comment-fonctionne-usb/).
+<!--more-->
 
-{{< tw_supply level="4" time="45 minutes" supplies="Un ventilateur de PC et un vieux câble USB, un fer à souder avec du fil d'étain, une paire de ciseaux et un ordinateur avec de l'USB (pour tester)." >}}
+Avant de commencer, je vous conseille de jeter un œil au [fonctionnement de l'USB](/guides/comment-fonctionne-usb/).
+
+{{< supply level="4" time="45 minutes" supplies="Un ventilateur de PC et un vieux câble USB, un fer à souder avec du fil d'étain, une paire de ciseaux et un ordinateur avec de l'USB (pour tester)." >}}
 
 ## La préparation
 
@@ -28,7 +30,7 @@ Tout d'abord, il faut :
 - Une paire de ciseaux ;
 - Un ordinateur avec de l'USB (pour tester).
 
-{{% tw_alert "info" %}}<i class="fa fa-info-circle"></i> Un ventilateur de PC fonctionne en 12 V - 500 mA, or l'USB ne peut délivrer que 5 V - 500 mA. Donc l’USB ne pourra alimenter pleinement le ventilateur : ce n’est pas très important, notez juste que votre ventilateur ne tournera pas à sa vitesse maximale.{{% /tw_alert %}}
+{{% alert "info" %}}<i class="fa fa-info-circle"></i> Un ventilateur de PC fonctionne en 12 V - 500 mA, or l'USB ne peut délivrer que 5 V - 500 mA. Donc l’USB ne pourra alimenter pleinement le ventilateur : ce n’est pas très important, notez juste que votre ventilateur ne tournera pas à sa vitesse maximale.{{% /alert %}}
 
 ## Le montage
 
@@ -41,12 +43,12 @@ Tout d'abord, il faut :
 - Procédez au dessoudage des fils à l’aide de votre fer à souder.
 - Maintenant, prenez vos deux fils de l’USB préalablement dénudés est souder les à la place des fils +12V et 0V de votre ventilateur (si vous avez noté la position des fils comme je vous l’ai dit, il ne devrait pas y avoir de problème)
 
-{{% tw_gallery columns="4" %}}
-{{< tw_gallery_item src="/media/2011/05/e776e2478a89d87f3d3cb0c619851d9f-150x150.jpg" link="/media/2011/05/e776e2478a89d87f3d3cb0c619851d9f.jpg" >}}
-{{< tw_gallery_item src="/media/2011/05/a4d59281d401a278dbe8a46c47c1eeb0-150x150.jpg" link="/media/2011/05/a4d59281d401a278dbe8a46c47c1eeb0.jpg" >}}
-{{< tw_gallery_item src="/media/2011/05/12371e0b53ec20a2910edc2afe24a872-150x150.jpg" link="/media/2011/05/12371e0b53ec20a2910edc2afe24a872.jpg" >}}
-{{< tw_gallery_item src="/media/2011/05/327d7d6fccbf0cfc4288ce8963e461c2-150x150.jpg" link="/media/2011/05/327d7d6fccbf0cfc4288ce8963e461c2.jpg" >}}
-{{% /tw_gallery %}}
+{{% gallery columns="4" %}}
+{{< gallery_item src="/media/2011/05/e776e2478a89d87f3d3cb0c619851d9f-150x150.jpg" link="/media/2011/05/e776e2478a89d87f3d3cb0c619851d9f.jpg" >}}
+{{< gallery_item src="/media/2011/05/a4d59281d401a278dbe8a46c47c1eeb0-150x150.jpg" link="/media/2011/05/a4d59281d401a278dbe8a46c47c1eeb0.jpg" >}}
+{{< gallery_item src="/media/2011/05/12371e0b53ec20a2910edc2afe24a872-150x150.jpg" link="/media/2011/05/12371e0b53ec20a2910edc2afe24a872.jpg" >}}
+{{< gallery_item src="/media/2011/05/327d7d6fccbf0cfc4288ce8963e461c2-150x150.jpg" link="/media/2011/05/327d7d6fccbf0cfc4288ce8963e461c2.jpg" >}}
+{{% /gallery %}}
 
 Désormais, vous pouvez brancher, et constater que ça tourne !
 

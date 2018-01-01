@@ -13,6 +13,8 @@ cover: "/media/2017/03/a22eaab5c6227da7b38ffb1db7ba6ccd.png"
 
 Récemment, je suis intervenu sur un serveur web qui s’était fait compromettre. J’ai donc cherché à savoir quelle avait été la porte d’entrée sur le serveur. C’était assez folklorique : chmod 777 sur le webroot, une flopée de SQLi, des webshell à la pelle, des config apache et MySQL très laxistes et surtout un répertoire .git avec du directory listing …
 
+<!--more-->
+
 Depuis, les problèmes sont résolus et je voulais vous partager l’exploit du « .git » que j’ai trouvé assez sympa. Pour des questions de confidentialité, nous appellerons ce site « champions.fr » (parce qu’à ce niveau-là, ce sont vraiment de grands champions pour avoir un site comme celui-là en production avec une tétrachiée des données clients).
 
 ## Let’s begin !
@@ -23,11 +25,11 @@ Tout d'abord, j'ai accès à la page suivante : [http://champions.fr/.git/](htt
 
 Pour « cloner » le dépôt en local, il me suffit de télécharger récursivement tous les fichiers du répertoire git :
 
-{{< tw_code lang="console" icon="code" title="Console" >}}
+{{< code lang="console" icon="code" title="Console" >}}
 root:~# wget -r http://champions.fr/.git/
 root:~# cd champions.fr
 root:~/champion.fr(git:stable_prod)#
-{{< /tw_code >}}
+{{< /code >}}
 
 ## Restaurer avec git
 

@@ -13,6 +13,8 @@ cover: "/media/2012/10/1b0cd9877d658b1fc8938af41e208113.jpg"
 
 Nouveau fer de lance de Microsoft, Windows 8 est disponible depuis le 26 octobre dernier. Faut-il garder son système d’exploitation (OS) actuel ou bien passer à Windows 8 ? Certes, les nouvelles fonctionnalités sont tentante, mais sachez rester prudent. Voici les pours et les contres de ce nouveaux Windows.
 
+<!--more-->
+
 {{< img src="/media/2012/10/1b0cd9877d658b1fc8938af41e208113.jpg" link="/media/2012/10/1b0cd9877d658b1fc8938af41e208113.jpg" >}}
 
 ## 4 raisons de migrer vers Windows 8 …
@@ -33,11 +35,11 @@ C’est, avec la nouvelle interface, une des grandes nouveautés de Windows 8. L
 
 Après un temps d’adaptation à cette nouvelle interface plus ou moins long, Windows 8 se révèle performant et agréable à utiliser avec ses graphismes sans fioritures, sa lisibilité et ses multiples astuces de navigation et de personnalisation. Ce nouvel OS est aussi plus stable, plus sécurisé et l'intègre de nombreux services Web et des réseaux sociaux (Facebook, Twitter, Linkedln…).
 
-{{% tw_gallery columns="3" %}}
-{{< tw_gallery_item src="/media/2012/10/ed3e5aa7351a0c63e930a9a97a52e9bd-300x207.jpg" link="/media/2012/10/ed3e5aa7351a0c63e930a9a97a52e9bd.jpg" >}}
-{{< tw_gallery_item src="/media/2012/10/f1705779e9da18dc4d57deb19b677fe8-300x102.jpg" link="/media/2012/10/f1705779e9da18dc4d57deb19b677fe8.jpg" >}}
-{{< tw_gallery_item src="/media/2012/10/01ac0863f605ff59df17bea100219bc7-300x187.jpg" link="/media/2012/10/01ac0863f605ff59df17bea100219bc7.jpg" >}}
-{{% /tw_gallery %}}
+{{% gallery columns="3" %}}
+{{< gallery_item src="/media/2012/10/ed3e5aa7351a0c63e930a9a97a52e9bd-300x207.jpg" link="/media/2012/10/ed3e5aa7351a0c63e930a9a97a52e9bd.jpg" >}}
+{{< gallery_item src="/media/2012/10/f1705779e9da18dc4d57deb19b677fe8-300x102.jpg" link="/media/2012/10/f1705779e9da18dc4d57deb19b677fe8.jpg" >}}
+{{< gallery_item src="/media/2012/10/01ac0863f605ff59df17bea100219bc7-300x187.jpg" link="/media/2012/10/01ac0863f605ff59df17bea100219bc7.jpg" >}}
+{{% /gallery %}}
 
 ## … et 4 raisons de garder son OS actuel
 
@@ -54,11 +56,11 @@ Si la nouvelle interface Modern UI est un argument pour adopter Windows 8, c’e
 
 Règle n°1 de l’informatique : « Quand tout va bien, ne touche à rien ! ». En vingt ans, Windows est devenu le système le plus démocratisé, équipant presque 90% des PC du monde. Mais depuis Windows 95, l’expérience utilisateur, les menu, les réglages, tous est resté inchangé permettant la prise en main rapide d’une nouvelle version de Windows. Mais Windows 8 met tout par terre : plus de menu Démarrer, un mélange applications/logiciels, une nouvelle barre latérale (Charm Bar), des tuiles, un double panneau de configuration … Le pari du changement fait par Microsoft peut en stopper plus d’un.
 
-{{% tw_gallery columns="3" %}}
-{{< tw_gallery_item src="/media/2012/10/6778ea8b91695fbca58c7578aebf941a-300x150.jpg" link="/media/2012/10/6778ea8b91695fbca58c7578aebf941a.jpg" >}}
-{{< tw_gallery_item src="/media/2012/10/c60361f3501dddfb6862e21daa95d604-300x200.jpg" link="/media/2012/10/c60361f3501dddfb6862e21daa95d604.jpg" >}}
-{{< tw_gallery_item src="/media/2012/10/1785bf3943bda892ca6bf8299bba57c8-300x187.jpg" link="/media/2012/10/1785bf3943bda892ca6bf8299bba57c8.jpg" >}}
-{{% /tw_gallery %}}
+{{% gallery columns="3" %}}
+{{< gallery_item src="/media/2012/10/6778ea8b91695fbca58c7578aebf941a-300x150.jpg" link="/media/2012/10/6778ea8b91695fbca58c7578aebf941a.jpg" >}}
+{{< gallery_item src="/media/2012/10/c60361f3501dddfb6862e21daa95d604-300x200.jpg" link="/media/2012/10/c60361f3501dddfb6862e21daa95d604.jpg" >}}
+{{< gallery_item src="/media/2012/10/1785bf3943bda892ca6bf8299bba57c8-300x187.jpg" link="/media/2012/10/1785bf3943bda892ca6bf8299bba57c8.jpg" >}}
+{{% /gallery %}}
 
 ### Trop tôt ?
 

@@ -13,7 +13,9 @@ cover: "/media/2012/03/4552016b0902f973b7fdd9e443b95a9e-1024x426.jpg"
 
 Ça y’est, c’est le printemps, accompagné de sa traditionnelle époque du grand ménage. Et celui-ci passe aussi par les disques durs de nos ordinateurs : pourquoi ne pas en profiter pour réinstaller Windows ? Libre à vous de faire du tri dans vos fichiers, je vais vous donner ici quelques conseils pour faire une réinstallation de Windows efficace.
 
-{{< tw_supply level="2" time="1 à 4 heures" supplies="Un DVD d'installation de Windows ou une clé USB bootable, un disque dur externe pour sauvegarder vos données, votre PC et un accès à Internet" >}}
+<!--more-->
+
+{{< supply level="2" time="1 à 4 heures" supplies="Un DVD d'installation de Windows ou une clé USB bootable, un disque dur externe pour sauvegarder vos données, votre PC et un accès à Internet" >}}
 
 ## Sauvegarder ses données
 
@@ -83,8 +85,8 @@ Pour clore de tutoriel, voici de quoi conserver votre système au sommet de sa f
 - [Glary Utilities](http://www.clubic.com/telecharger-fiche73266-glary-utilities.html) (gratuit) : tout comme Ccleaner, il propose une solution de « Maintenance en un clic » accompagné d’un mode de fonctions avancées.
 - [TuneUp Utilities](http://www.clubic.com/telecharger-fiche14995-tuneup-utilities-2012.html) (40 euros env.) : complet, il propose tout un panel de programme pour optimiser et personnaliser son système. Je vous le recommande.
 
-{{% tw_gallery columns="3" %}}
-{{< tw_gallery_item src="/media/2012/03/62e6e5d80448b91eda532682e8e250af.jpg" >}}
-{{< tw_gallery_item src="/media/2012/03/e2c637950d07ec5c417060eef93b182a.jpg" >}}
-{{< tw_gallery_item src="/media/2012/03/3fabd73770bf5b901740141d92bb29a5.jpg" >}}
-{{% /tw_gallery %}}
+{{% gallery columns="3" %}}
+{{< gallery_item src="/media/2012/03/62e6e5d80448b91eda532682e8e250af.jpg" >}}
+{{< gallery_item src="/media/2012/03/e2c637950d07ec5c417060eef93b182a.jpg" >}}
+{{< gallery_item src="/media/2012/03/3fabd73770bf5b901740141d92bb29a5.jpg" >}}
+{{% /gallery %}}

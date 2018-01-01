@@ -15,6 +15,8 @@ cover: "/media/2012/03/7ec9d4471da595d37f40036e1a08d821-1024x1517.png"
 
 Aujourd'hui, 31 Mars 2012, s'est tenue la seconde édition de l'Asus Noob Overclocking Challenge au Surcouf Daumesnil, une compétition entre quatre équipes composées d'un pro et d'un débutant en Overclocking. Chaque duo devait obtenir le meilleur score à divers benchs (tests de performance) tout en conservant un système stable. j'était sur place ; bilan et score du Challenge.
 
+<!--more-->
+
 Étaient présentes les équipe de **Clubic** ([www.clubic.com](http://www.clubic.com)), **PC Inpact** ([www.pcinpact.com](http://www.pcinpact.com)), **PC World** ([www.pcworld.fr](http://www.pcworld.fr)) et **Rog** ([www.republic-of-gamers.fr](http://www.republic-of-gamers.fr)). Les quatre sites web étaient supportés par les clients curieux de Surcouf ainsi que les technophiles venus voir ce challenge d’overclocking.
 
 Les candidats ont tout d'abord monte leur machine de test dont les composants ont été choisis par Asus. Ils avaient à disposition :
@@ -33,14 +35,14 @@ Le deuxième test consistait à calculer le plus rapidement le premier million d
 
 Viennent ensuite les équipes de Rog, PC World et PC Inpact.
 
-{{% tw_gallery columns="3" title="L'Asus Noob Overclocking Challenge en image*" %}}
-{{< tw_gallery_item src="/media/2012/03/9cd2365c894996689b2bf2e53f1d74d2-300x225.jpg" link="/media/2012/03/9cd2365c894996689b2bf2e53f1d74d2.jpg" >}}
-{{< tw_gallery_item src="/media/2012/03/3c5308aa5134276074d5be847267b27b-300x225.jpg" link="/media/2012/03/3c5308aa5134276074d5be847267b27b.jpg" >}}
-{{< tw_gallery_item src="/media/2012/03/7742196dc540d0a9c440f036eb7bab59-300x225.jpg" link="/media/2012/03/7742196dc540d0a9c440f036eb7bab59.jpg" >}}
-{{< tw_gallery_item src="/media/2012/03/73b3090c2ab3b9b992815b3db20e81fb-300x225.jpg" link="/media/2012/03/73b3090c2ab3b9b992815b3db20e81fb.jpg" >}}
-{{< tw_gallery_item src="/media/2012/03/3e3de468c150c68fae5ac597faa69c27-300x225.jpg" link="/media/2012/03/3e3de468c150c68fae5ac597faa69c27.jpg" >}}
-{{< tw_gallery_item src="/media/2012/03/fa0ea57fb2046ced0344f0b3adfe3396-300x225.jpg" link="/media/2012/03/fa0ea57fb2046ced0344f0b3adfe3396.jpg" >}}
-{{% /tw_gallery %}}
+{{% gallery columns="3" title="L'Asus Noob Overclocking Challenge en image*" %}}
+{{< gallery_item src="/media/2012/03/9cd2365c894996689b2bf2e53f1d74d2-300x225.jpg" link="/media/2012/03/9cd2365c894996689b2bf2e53f1d74d2.jpg" >}}
+{{< gallery_item src="/media/2012/03/3c5308aa5134276074d5be847267b27b-300x225.jpg" link="/media/2012/03/3c5308aa5134276074d5be847267b27b.jpg" >}}
+{{< gallery_item src="/media/2012/03/7742196dc540d0a9c440f036eb7bab59-300x225.jpg" link="/media/2012/03/7742196dc540d0a9c440f036eb7bab59.jpg" >}}
+{{< gallery_item src="/media/2012/03/73b3090c2ab3b9b992815b3db20e81fb-300x225.jpg" link="/media/2012/03/73b3090c2ab3b9b992815b3db20e81fb.jpg" >}}
+{{< gallery_item src="/media/2012/03/3e3de468c150c68fae5ac597faa69c27-300x225.jpg" link="/media/2012/03/3e3de468c150c68fae5ac597faa69c27.jpg" >}}
+{{< gallery_item src="/media/2012/03/fa0ea57fb2046ced0344f0b3adfe3396-300x225.jpg" link="/media/2012/03/fa0ea57fb2046ced0344f0b3adfe3396.jpg" >}}
+{{% /gallery %}}
 
 ## Jamais deux sans trois
 

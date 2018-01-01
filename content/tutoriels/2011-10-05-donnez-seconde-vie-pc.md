@@ -13,6 +13,8 @@ cover: "/media/2011/10/c2ba637e4e689abf1e2018b6e5112be7.jpg"
 
 Votre PC est trop vieux à votre goût trop lent, mais le remplacer vous fait mal au cœur (et au porte-monnaie) car vous l’avez acheté il y a moins de cinq ans ... et bien ne le remplacez pas, offrez-lui plutôt une cure de rajeunissement et donnez-lui une seconde vie.
 
+<!--more-->
+
 Vous attendiez avec impatience le dernier jeu vidéo à la mode mais, au lancement, c’est la déception. Votre PC vous propose une résolution risible de 800 x 600 pixels en 4/3 avec une image saccadée et un son décalé ! Vous constatez peut-être aussi un ralentissement général de votre ordinateur, un temps de réponse trop long, une ouverture de fichier qui s’éternise, le texte qui apparaît bien après l’avoir tapé au clavier … Votre PC commence à s’essouffler. Mais si ce dernier à moins de 5 ans, inutile d’en changer ! Offrez une 2ème jeunesse à votre ordinateur en remplaçant certain composants. Cette solution, moins couteuse que le rachat complet du PC, vous permettra de garder ce dernier encore quelques années. Mémoire vive, processeur ou carte graphique, rajeunissez votre PC.
 
 | ![Donnez une seconde vie à votre PC pour 40 euros][1] | ![Donnez une seconde vie à votre PC pour 60 euros][2] | ![Donnez une seconde vie à votre PC pour 120 euros][3] |

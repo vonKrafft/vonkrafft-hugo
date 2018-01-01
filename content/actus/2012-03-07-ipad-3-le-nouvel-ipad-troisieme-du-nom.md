@@ -15,10 +15,12 @@ cover: "/media/2012/03/bded7649b6d525b01fa031e8cb0f6946.png"
 
 Comment passer à coté de l'annonce de l'un des produits les plus attendus du moment. Après de nombreuses rumeurs sur la date et les caractéristiques du remplaçant de l'iPad deuxième du nom, Apple a annoncé il y a quelques jour sa prochaine Keynote qui aura lieue ce soir : « We have something you really have to see. And touch. » : présentation de l'iPad 3 alias le « Nouvel iPad ».
 
-{{% tw_gallery columns="2" title="iPad 3, iPad HD, iPad 2S … et bien non, ce troisième iPad est nommé « Le Nouvel iPad »." %}}
-{{< tw_gallery_item src="/media/2012/03/95ced5494ce52e01883a4ed2cf60ad6a-300x254.png" alt="iPad 3 (face)" link="/media/2012/03/95ced5494ce52e01883a4ed2cf60ad6a-300x254.png" >}}
-{{< tw_gallery_item src="/media/2012/03/2ccdff5ced995ba5d41563e698849a5f-300x290.png" alt="iPad 3 (dos)" link="/media/2012/03/2ccdff5ced995ba5d41563e698849a5f-300x290.png" >}}
-{{% /tw_gallery %}}
+<!--more-->
+
+{{% gallery columns="2" title="iPad 3, iPad HD, iPad 2S … et bien non, ce troisième iPad est nommé « Le Nouvel iPad »." %}}
+{{< gallery_item src="/media/2012/03/95ced5494ce52e01883a4ed2cf60ad6a-300x254.png" alt="iPad 3 (face)" link="/media/2012/03/95ced5494ce52e01883a4ed2cf60ad6a-300x254.png" >}}
+{{< gallery_item src="/media/2012/03/2ccdff5ced995ba5d41563e698849a5f-300x290.png" alt="iPad 3 (dos)" link="/media/2012/03/2ccdff5ced995ba5d41563e698849a5f-300x290.png" >}}
+{{% /gallery %}}
 
 ## L’écran Retina
 
@@ -34,10 +36,10 @@ Pas de processeur A6, mais un A5X Quad Core. Cette nouvelle puce permet de garde
 
 Le Nouvel iPad intègre iSight, un capteur dorsal de 5 Mpx. Celui-ci est doté d’un capteur de luminosité, d’une mise au point et d’ajustement automatique, d’une détection de visage (10 maximum) et d’une ouverture f/2,4 suivie d’une lentille à cinq composantes pour plus de netteté. La vidéo quant à elle profite de la HD 1080p.
 
-{{% tw_gallery columns="2" title="Le nouveau capteur photo du Nouvel iPad" %}}
-{{< tw_gallery_item src="/media/2012/03/e75d81f8161207cd92c29b805b394170-300x89.jpg" alt="iPad 3 (face)" >}}
-{{< tw_gallery_item src="/media/2012/03/d02cf40b7c6b2586baf56c2785a3d896-300x103.png" alt="iPad 3 (dos)" >}}
-{{% /tw_gallery %}}
+{{% gallery columns="2" title="Le nouveau capteur photo du Nouvel iPad" %}}
+{{< gallery_item src="/media/2012/03/e75d81f8161207cd92c29b805b394170-300x89.jpg" alt="iPad 3 (face)" >}}
+{{< gallery_item src="/media/2012/03/d02cf40b7c6b2586baf56c2785a3d896-300x103.png" alt="iPad 3 (dos)" >}}
+{{% /gallery %}}
 
 ## Mise à jour iOS 5.1
 

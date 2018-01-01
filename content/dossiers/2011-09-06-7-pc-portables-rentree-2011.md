@@ -13,6 +13,8 @@ cover: "/media/2011/09/439b89d7de0f4ec36adb27b8f92d89f0.png"
 
 Pour bien débuter la rentrée, voici en complément du [guide d'achat PC portable](/guides/guide-achat-pc-portable-2011/) une sélection de sept PC portables afin de vous aider dans votre quête du PC le mieux adapté pour vous.
 
+<!--more-->
+
 ### Un Netbook-tablette innovant
 
 {{< img src="/media/2011/09/62a9aa98084064e2f1bba8c6af8fd6bc.png" class="pull-right">}}

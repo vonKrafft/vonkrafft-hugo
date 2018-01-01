@@ -13,7 +13,9 @@ cover: "/media/2011/01/367f6e82d2f38a17aad6be39de432e37.jpg"
 
 On trouve les mini-PC partout dans le commerce mais rien ne vous empêche de faire le vôtre. Un ordinateur miniature, suffisant pour toutes les tâches du quotidien ; la bureautique, internet & mails et le visionnage de films  ... et peu gourmand en énergie.
 
-{{< tw_supply cost="320" level="3" time="1 à 3 heures" supplies="Un boîtier miniature, alimentation intégrée, une carte mère mini-ITX, des composants de taille réduite, une image d'installation Windows ou Linux (DVD ou USB)" >}}
+<!--more-->
+
+{{< supply cost="320" level="3" time="1 à 3 heures" supplies="Un boîtier miniature, alimentation intégrée, une carte mère mini-ITX, des composants de taille réduite, une image d'installation Windows ou Linux (DVD ou USB)" >}}
 
 ## Le boîtier
 
@@ -37,10 +39,10 @@ Quant au lecteur optique, Ce n'est plus un élément essentiel : Windows 7 ou Li
 
 Inutile d'investir dans une carte graphique dédiée, celle de la carte mère suffira à un usage bureautique. De toute façon, un boîtier mini-IXT est trop petit pour ajouter une carte fille. Le chipset graphique intégré à la carte mère est certes basique, mais il permet un affichage normal de Windows ou linux (heureusement) et parfois il permet aussi de décoder la HD. Mais n'espérez pas jouer en 3D ...
 
-{{% tw_gallery columns="2" title="Linux Ubuntu ou Microsoft Windows" %}}
-{{< tw_gallery_item src="/media/2011/01/b47556aae8327b99ebaa91a9f705b9ad-150x150.jpg" link="/media/2011/01/b47556aae8327b99ebaa91a9f705b9ad.jpg" >}}
-{{< tw_gallery_item src="/media/2011/01/bf36442370564ee1b192d3dbe2754957-150x150.jpg" link="/media/2011/01/bf36442370564ee1b192d3dbe2754957.jpg" >}}
-{{% /tw_gallery %}}
+{{% gallery columns="2" title="Linux Ubuntu ou Microsoft Windows" %}}
+{{< gallery_item src="/media/2011/01/b47556aae8327b99ebaa91a9f705b9ad-150x150.jpg" link="/media/2011/01/b47556aae8327b99ebaa91a9f705b9ad.jpg" >}}
+{{< gallery_item src="/media/2011/01/bf36442370564ee1b192d3dbe2754957-150x150.jpg" link="/media/2011/01/bf36442370564ee1b192d3dbe2754957.jpg" >}}
+{{% /gallery %}}
 
 Enfin, le système d'exploitation : Linux ou Windows ? Personnellement, je vous conseille d'opter pour [Ubuntu](http://www.ubuntu.fr/) (ou un autre système Linux), gratuit et convivial, il permet de faire l'économie d'un achat de licence Windows. Vous pouvez aussi installer une ancienne version de Windows (XP, Me, 2000 ...) qui traîne dans un de vos tiroirs. Mais si quitter Windows vous insupporte, comptez 120€ pour la version familiale de Windows 7 !
 

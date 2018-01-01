@@ -11,7 +11,9 @@ slug: "comment-fonctionne-usb"
 cover: "/media/2011/04/6a758e155636cd29a0e897e498151f6e.jpeg"
 ---
 
-*Né en 1991, le port USB s’est imposer dans le monde de l’informatique personnel, décliné sous plusieurs formes, types & normes … Mais comment fonctionne cette interface que nous utilisons depuis plus de 20 ans ?*
+*Né en 1991, le port USB s’est imposé dans le monde de l’informatique personnel, décliné sous plusieurs formes, types & normes … Mais comment fonctionne cette interface que nous utilisons depuis plus de 20 ans ?*
+
+<!--more-->
 
 ## Un peu de culture générale
 
@@ -45,12 +47,12 @@ On distingue aussi deux type de port USB :
 
 Il existe encore les ports de type mini A et mini B. On les trouve le plus souvent pour connecter les appareils photos, certaines clés audio USB, etc.
 
-{{% tw_gallery columns="2" title="Schéma du connecteur USB" %}}
-{{< tw_gallery_item src="/media/2011/04/6b45ebaa03b0d371340fc0596a8e56fa.png" link="/media/2011/04/6b45ebaa03b0d371340fc0596a8e56fa.png" >}}
-{{< tw_gallery_item src="/media/2011/04/1f588a9d86faed1fd4f1acf12956170c.png" link="/media/2011/04/1f588a9d86faed1fd4f1acf12956170c.png" >}}
-{{% /tw_gallery %}}
+{{% gallery columns="2" title="Schéma du connecteur USB" %}}
+{{< gallery_item src="/media/2011/04/6b45ebaa03b0d371340fc0596a8e56fa.png" link="/media/2011/04/6b45ebaa03b0d371340fc0596a8e56fa.png" >}}
+{{< gallery_item src="/media/2011/04/1f588a9d86faed1fd4f1acf12956170c.png" link="/media/2011/04/1f588a9d86faed1fd4f1acf12956170c.png" >}}
+{{% /gallery %}}
 
-{{% tw_alert "info" %}}<i class="fa fa-question-circle"></i> Pourquoi y a-t-il deux broches D+ et D- pour transmettre les données (data) alors que c'est un port série ?{{% /tw_alert %}}
+{{% alert "info" %}}<i class="fa fa-question-circle"></i> Pourquoi y a-t-il deux broches D+ et D- pour transmettre les données (data) alors que c'est un port série ?{{% /alert %}}
 
 Le port USB utilise un type d'encodage (NRZI) qui nécessite deux broches. C'est-à-dire que cet encodage utilise la borne D- pour représenter un 0 binaire, avec une tension négative, et la borne D+ pour le 1 binaire, avec une tension positive. NRZI signifie Non Return to Zero Inverted : jamais de retour à zéro, inversé. C'est un codage bien spécial :
 

@@ -13,7 +13,9 @@ cover: "/media/2011/09/1c624a315b25dee4702269e5b6753953-1024x683.jpg"
 
 Il y a quelques années, l'overclocking demandait beaucoup de moyens et était réservé aux informaticiens expérimentés. Mais depuis, les choses ont bien changées et overclocker son CPU est devenu plus facile. Pour plus de fluidité ou pour faire renaître un vieux processeur, voici comment augmenter la fréquence de son CPU.
 
-{{< tw_supply level="3" time="2 heures" supplies="Un PC sous Windows et les logiciels CPU-Z, setFSB, OCCT & Speecy" >}}
+<!--more-->
+
+{{< supply level="3" time="2 heures" supplies="Un PC sous Windows et les logiciels CPU-Z, setFSB, OCCT & Speecy" >}}
 
 ## Qu’est-ce que l’overclocking
 
@@ -28,18 +30,18 @@ Le but d'un overclocking est d’améliorer la puissance de calcul du processeur
 
 Afin d’éviter la casse, les constructeurs baissent volontairement la fréquence du processeur. Ainsi, votre CPU résistera aux contraintes extérieures (canicule, poussière …). Sachez qu’une gamme de processeur n’est basée que sur une architecture.
 
-{{% tw_alert "info" %}}<i class="fa fa-cogs"></i> **EXEMPLE :** Les AMD Athlon II X2 2xx dont la fréquence varie entre 3.0 et 3.4 GHz.{{% /tw_alert %}}
+{{% alert "info" %}}<i class="fa fa-cogs"></i> **EXEMPLE :** Les AMD Athlon II X2 2xx dont la fréquence varie entre 3.0 et 3.4 GHz.{{% /alert %}}
 
 On peut donc effectuer un overclocking sur un CPU milieu de gamme et obtenir la fréquence d’un CPU haut de gamme (voire plus).
 
-{{% tw_alert "info" %}}<i class="fa fa-info-circle"></i> **NOTE :** Cela ne signifie pas qu’un processeur milieu de gamme overclocké est aussi puissant qu’un haut de gamme. En effet, les performances d’un CPU ne dépendent pas uniquement de sa fréquence.{{% /tw_alert %}}
+{{% alert "info" %}}<i class="fa fa-info-circle"></i> **NOTE :** Cela ne signifie pas qu’un processeur milieu de gamme overclocké est aussi puissant qu’un haut de gamme. En effet, les performances d’un CPU ne dépendent pas uniquement de sa fréquence.{{% /alert %}}
 
 ### Le principe de l’overclocking
 
 Tout d’abord, il faut savoir que le processeur communique avec la RAM (mémoire vive), la carte graphique et le chipset (puces de la carte mère). Ce dernier communique avec le reste des composants. L’ensemble des connexions qui relient le chipset au processeur s’appelle le **Front Side Bus** (FSB).
 Pour des raisons historiques, la fréquence du processeur est égale à la <strong>*fréquence du FSB* x *un multiplicateur*</strong>, que nous allons appeler ici "coeff. CPU".
 
-{{% tw_alert "info" %}}<i class="fa fa-cogs"></i> **EXEMPLE :** Pentium 4 Dual Core E5200 : 200MHz (FSB) x 12,5 (Coeff. CPU) = 2500 MHz{{% /tw_alert %}}
+{{% alert "info" %}}<i class="fa fa-cogs"></i> **EXEMPLE :** Pentium 4 Dual Core E5200 : 200MHz (FSB) x 12,5 (Coeff. CPU) = 2500 MHz{{% /alert %}}
 
 Pour overclocker un processeur, il existe deux solutions :
 
@@ -65,7 +67,7 @@ Avant de continuer, téléchargez et installez :
 
 Ça y est, il est temps de passer aux choses sérieuses : nous allons **overclocker** le processeur !
 
-{{% tw_alert "danger" %}}<i class="fa fa-warning"></i> **ATTENTION :** le fait d’overclocker votre processeur supprime sa garantie. Il est fortement recommandé d’effectuer une sauvegarde de ses données avant de débuter un overclocking de votre processeur. Tuto Wibb ne peut être tenu pour responsable des éventuels dommages survenus suite à l'utilisation de ce tutoriel.{{% /tw_alert %}}
+{{% alert "danger" %}}<i class="fa fa-warning"></i> **ATTENTION :** le fait d’overclocker votre processeur supprime sa garantie. Il est fortement recommandé d’effectuer une sauvegarde de ses données avant de débuter un overclocking de votre processeur. Tuto Wibb ne peut être tenu pour responsable des éventuels dommages survenus suite à l'utilisation de ce tutoriel.{{% /alert %}}
 
 ### Modifier le BIOS
 
@@ -91,7 +93,7 @@ Vous obtenez alors ceci :
 
 Pour modifier la fréquence du FSB, déplacer le curseur du haut sur la fréquence souhaitée et cliquer sur « Set FSB ».
 
-{{% tw_alert "info" %}}<i class="fa fa-info-circle"></i> **NOTE :** Il est inutile de se précipiter, avancez par palier de 5 MHz.{{% /tw_alert %}}
+{{% alert "info" %}}<i class="fa fa-info-circle"></i> **NOTE :** Il est inutile de se précipiter, avancez par palier de 5 MHz.{{% /alert %}}
 
 ### Pourquoi ça ne fonctionne pas ?
 
@@ -112,10 +114,10 @@ Nous allons débuter doucement par une légère augmentation du FSB.
 - Cliquez sur « **ON** »
 - Si au bout d’une demi-heure OCCT ne détecte pas d’erreurs, vous pouvez passer à 20%
 
-{{% tw_gallery columns="2" title="CPU-Z à 10% - OCCT à 10%" %}}
-{{< tw_gallery_item src="/media/2011/09/618d2a1113c26c423473dcb0e40cdddd.png" link="/media/2011/09/618d2a1113c26c423473dcb0e40cdddd.png" >}}
-{{< tw_gallery_item src="/media/2011/09/b00f20b3296cb93beb01c0ea82f092b8.png" link="/media/2011/09/b00f20b3296cb93beb01c0ea82f092b8.png" >}}
-{{% /tw_gallery %}}
+{{% gallery columns="2" title="CPU-Z à 10% - OCCT à 10%" %}}
+{{< gallery_item src="/media/2011/09/618d2a1113c26c423473dcb0e40cdddd.png" link="/media/2011/09/618d2a1113c26c423473dcb0e40cdddd.png" >}}
+{{< gallery_item src="/media/2011/09/b00f20b3296cb93beb01c0ea82f092b8.png" link="/media/2011/09/b00f20b3296cb93beb01c0ea82f092b8.png" >}}
+{{% /gallery %}}
 
 ### Overclocking de 20%
 
@@ -128,13 +130,13 @@ Votre processeur tourne actuellement à 110% de ses capacités initiales et il e
 - Cliquez sur « **ON** »
 - Si au bout d’une heure OCCT ne détecte pas d’erreurs, vous avez **réussi** votre overclocking
 
-{{% tw_gallery columns="5" title="OCCT à 20% - CPU-Z à 20% - Test de OCCT - Température au repos - Température en charge" %}}
-{{< tw_gallery_item src="/media/2011/09/a29e1ddf3eeee1ac457d751fd265e724-150x150.png" link="/media/2011/09/a29e1ddf3eeee1ac457d751fd265e724.png" >}}
-{{< tw_gallery_item src="/media/2011/09/4c8666d46865ab5008993cf2f373239c-150x150.png" link="/media/2011/09/4c8666d46865ab5008993cf2f373239c.png" >}}
-{{< tw_gallery_item src="/media/2011/09/c9449ce52c76a2897d84810c959a2b15-150x150.png" link="/media/2011/09/c9449ce52c76a2897d84810c959a2b15.png" >}}
-{{< tw_gallery_item src="/media/2011/09/ab67281fa7514190951edaa614b941be-150x150.png" link="/media/2011/09/ab67281fa7514190951edaa614b941be.png" >}}
-{{< tw_gallery_item src="/media/2011/09/b6ed449c4defbde9f578c47ce22d6b36-150x150.png" link="/media/2011/09/b6ed449c4defbde9f578c47ce22d6b36.png" >}}
-{{% /tw_gallery %}}
+{{% gallery columns="5" title="OCCT à 20% - CPU-Z à 20% - Test de OCCT - Température au repos - Température en charge" %}}
+{{< gallery_item src="/media/2011/09/a29e1ddf3eeee1ac457d751fd265e724-150x150.png" link="/media/2011/09/a29e1ddf3eeee1ac457d751fd265e724.png" >}}
+{{< gallery_item src="/media/2011/09/4c8666d46865ab5008993cf2f373239c-150x150.png" link="/media/2011/09/4c8666d46865ab5008993cf2f373239c.png" >}}
+{{< gallery_item src="/media/2011/09/c9449ce52c76a2897d84810c959a2b15-150x150.png" link="/media/2011/09/c9449ce52c76a2897d84810c959a2b15.png" >}}
+{{< gallery_item src="/media/2011/09/ab67281fa7514190951edaa614b941be-150x150.png" link="/media/2011/09/ab67281fa7514190951edaa614b941be.png" >}}
+{{< gallery_item src="/media/2011/09/b6ed449c4defbde9f578c47ce22d6b36-150x150.png" link="/media/2011/09/b6ed449c4defbde9f578c47ce22d6b36.png" >}}
+{{% /gallery %}}
 
 ### Finitions
 

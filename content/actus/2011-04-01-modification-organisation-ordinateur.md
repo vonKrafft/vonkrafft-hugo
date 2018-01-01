@@ -13,6 +13,8 @@ cover: "/media/2011/04/8f52d9d12e7cda00d35e05e32d5935d1-1024x576.jpeg"
 
 Dans un PC, ce n’est pas au processeur que reviennent toutes les tâches. Il est épaulé par tous les autres composants avec qui il dialogue grâce au chipset, un ensemble de puces essentielles qui dirigent les données entre les divers éléments du PC … et qui sont en train de subir un changement radical. Explication de l'organisation des composants sur la carte mère.
 
+<!--more-->
+
 Lorsque vous entreprenez une action sur votre ordinateur, quelle qu’elle soit, que se passe-t-il dans les entrailles de votre machine ? C’est tout une mécanique qui se met en route afin de mettre en relation tous les composant nécessaire à l’exécution de la tâche que vous avez sollicitée. Les yeux rivés sur votre écran, une main sur la souris, l’autre sur le clavier, nous ne voyons pas forcément ce qui se trame au sein même de l’ordinateur.
 
 ## Le Chipset au centre de la carte mère

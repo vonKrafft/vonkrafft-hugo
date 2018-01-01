@@ -13,7 +13,9 @@ cover: "/media/2012/05/518fef6001c6886c5c379acadcbec04b.jpg"
 
 Le « Média Center » désigne les disques dur et les TV connectés, comme par exemple les TV d’Apple ou de Google, les lecteurs multimédia, mais aussi les box TV de opérateur. Successeur du lecteur DVD, le « Média Center » permet de regarder la TV, lire ses films et ses enregistrements et naviguer sur internet. Cependant, de nombreux problème se pose, notamment à cause des formats vidéo supporté, mais aussi parce que leur utilisation est trop restreinte. Pour pallier à ces inconvénients, vous pouvez opter pour un PC Home Cinéma.
 
-{{< tw_supply cost="500" level="3" time="1 à 2 heures" supplies="Une config PC silencieuse et adaptée à la vidéo HD, un boîtier HTPC et des périphériques sans-fil" >}}
+<!--more-->
+
+{{< supply cost="500" level="3" time="1 à 2 heures" supplies="Une config PC silencieuse et adaptée à la vidéo HD, un boîtier HTPC et des périphériques sans-fil" >}}
 
 Le PC Home Cinéma est destiné à votre salon, c’est pourquoi les composants de cet ordinateur qui se placera à coté de votre écran TV doivent être sélectionnés avec soin. Performances multimédia, silence et esthétisme sont les maitres mots de ce PC, et ce guide vous permettra d’assembler votre « Média Center ».
 
@@ -38,11 +40,11 @@ A présent que vous avez tous vos fichiers multimédia sur un disque dur, il fau
 Mais vous pouvez choisir un processeur quelconque, dans la même gamme que ceux précédemment cités, et y ajouter une carte graphique dédiée. Pour celle-ci, un modèle milieu de gamme est suffisant, telles que la AMD Radeon HD 64xx ou la NVidia GT 6xx. Un refroidissement passif et une vigilance vis-à-vis du format sont nécessaires, plus de détails dans les deux chapitres suivants.
 Au tour de la mémoire vive : 2 Go minimum, 4 Go pour plus de confort. La DDR3 est maintenant largement répandue et quant à la norme, tout dépend de celles supportées pas la carte mère que vous choisirez. Pour la lecture des DVD, voire des Blu-ray, je vous conseille de prendre un lecteur Blu-Ray pour pouvoir lire un maximum de disque.
 
-{{% tw_gallery title="Carte son - Carte tuner TNT - Carte graphique passive" %}}
-{{< tw_gallery_item src="/media/2012/05/c718da90fc4e2809caafea411d2aa941-300x266.jpg" link="/media/2012/05/c718da90fc4e2809caafea411d2aa941.jpg" >}}
-{{< tw_gallery_item src="/media/2012/05/5d92a3715716957db5f465f87708e52e-300x322.jpg" link="/media/2012/05/5d92a3715716957db5f465f87708e52e.jpg" >}}
-{{< tw_gallery_item src="/media/2012/05/64a8395c956d5de8a96fce90926c1951-300x300.jpg" link="/media/2012/05/64a8395c956d5de8a96fce90926c1951.jpg" >}}
-{{% /tw_gallery %}}
+{{% gallery title="Carte son - Carte tuner TNT - Carte graphique passive" %}}
+{{< gallery_item src="/media/2012/05/c718da90fc4e2809caafea411d2aa941-300x266.jpg" link="/media/2012/05/c718da90fc4e2809caafea411d2aa941.jpg" >}}
+{{< gallery_item src="/media/2012/05/5d92a3715716957db5f465f87708e52e-300x322.jpg" link="/media/2012/05/5d92a3715716957db5f465f87708e52e.jpg" >}}
+{{< gallery_item src="/media/2012/05/64a8395c956d5de8a96fce90926c1951-300x300.jpg" link="/media/2012/05/64a8395c956d5de8a96fce90926c1951.jpg" >}}
+{{% /gallery %}}
 
 Enfin, vous pouvez ajouter des cartes d’extension. Premièrement, une carte tuner TNT peut vous permettre de regarder la télévision sans passer par un appareil tiers. Vous pouvez aussi insérer une carte son, mais à moins que vous soyez un grand mélomane, la carte son 7.1 intégrée à la carte mère est amplement suffisante. Toutefois, si vous projetez de brancher votre PC Home Cinéma sur votre chaîne Hifi, une carte son peut apporter la connectique necessaire.
 
@@ -68,7 +70,7 @@ Enfin, l’aspect du boîtier HTPC revient au jugement subjectif de chacun.
 
 Un PC Home Cinéma ayant un rôle précis, n’importe quel composant ne convient pas pour un tel ordinateur. En résumé, voici la fiche technique d'un PC « Home Cinéma » :
 
-{{% tw_config title="Matériel" cost="500" color="#f7b63e" %}}
+{{% config title="Matériel" cost="500" color="#f7b63e" %}}
 
 - **Processeur** Intel Pentium G6xxT ou Core i3 21xxT
 - **Mémoire vive** 4 Go DDR3
@@ -80,7 +82,7 @@ Un PC Home Cinéma ayant un rôle précis, n’importe quel composant ne convien
 - **Boîtier** HTPC
 - **Lecteur optique** lecteur Blu-Ray/DVD/CD
 
-{{% /tw_config %}}
+{{% /config %}}
 
 Ne reste plus à présent qu’à monter cette configuration. Si vous avez besoin d’aide pour le montage, je vous encourage à jeter un œil au [Guide de Montage PC](/monter-son-pc/).
 

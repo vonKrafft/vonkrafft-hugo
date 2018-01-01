@@ -13,6 +13,8 @@ cover: "/media/2012/08/fa67a1326d850bc102e9c8e4d6407527-1024x480.jpg"
 
 Depuis la sortie de Windows 8, Microsoft fait souffler une tempête de changement sur l’ensemble de ses services. C’est au tour d’Hotmail d’adopter les couleurs de Windows 8 en se métamorphosant en Outlook. Avec ce nouveau client mail en ligne, Microsoft espère concurrencer Gmail et les autres ténors de la messagerie en ligne.
 
+<!--more-->
+
 ## Une nouvelle messagerie épurée et sérieuse
 
 « Nous pensons que le temps est venu de réinventer le courriel, et de faire un courriel plus moderne, connecté, intelligent, puissant et sous contrôle», a déclaré Chris Jones, un responsable de Microsoft. Et il est clair qu’Outlook.com respecte ces propos.
@@ -33,13 +35,13 @@ Pour migrer d’une adresse Hotmail.com, Live.com ou Msn.com vers un compte Outl
 
 Pour créer une nouvelle adresse mail Outlook.com, c’est ici : [Outlook.com](https://signup.live.com/signup)
 
-{{% tw_gallery columns="5" title="Tour d'horizon d'Outlook.com (cliquez pour agrandir)" %}}
-{{< tw_gallery_item src="/media/2012/08/fa67a1326d850bc102e9c8e4d6407527-150x150.jpg" link="/media/2012/08/fa67a1326d850bc102e9c8e4d6407527.jpg" >}}
-{{< tw_gallery_item src="/media/2012/08/358de7fbd2b0c61fd45ca37765e817dc-150x150.jpg" link="/media/2012/08/358de7fbd2b0c61fd45ca37765e817dc.jpg" >}}
-{{< tw_gallery_item src="/media/2012/08/5c50ff4a37e4ded8e2b36fc0b697e67e-150x150.jpg" link="/media/2012/08/5c50ff4a37e4ded8e2b36fc0b697e67e.jpg" >}}
-{{< tw_gallery_item src="/media/2012/08/058c1e3be7822bc391a4c80bec038915-150x150.jpg" link="/media/2012/08/058c1e3be7822bc391a4c80bec038915.jpg" >}}
-{{< tw_gallery_item src="/media/2012/08/93cb06da89e231c855cbe1d85db5739e-150x150.jpg" link="/media/2012/08/93cb06da89e231c855cbe1d85db5739e.jpg" >}}
-{{% /tw_gallery %}}
+{{% gallery columns="5" title="Tour d'horizon d'Outlook.com (cliquez pour agrandir)" %}}
+{{< gallery_item src="/media/2012/08/fa67a1326d850bc102e9c8e4d6407527-150x150.jpg" link="/media/2012/08/fa67a1326d850bc102e9c8e4d6407527.jpg" >}}
+{{< gallery_item src="/media/2012/08/358de7fbd2b0c61fd45ca37765e817dc-150x150.jpg" link="/media/2012/08/358de7fbd2b0c61fd45ca37765e817dc.jpg" >}}
+{{< gallery_item src="/media/2012/08/5c50ff4a37e4ded8e2b36fc0b697e67e-150x150.jpg" link="/media/2012/08/5c50ff4a37e4ded8e2b36fc0b697e67e.jpg" >}}
+{{< gallery_item src="/media/2012/08/058c1e3be7822bc391a4c80bec038915-150x150.jpg" link="/media/2012/08/058c1e3be7822bc391a4c80bec038915.jpg" >}}
+{{< gallery_item src="/media/2012/08/93cb06da89e231c855cbe1d85db5739e-150x150.jpg" link="/media/2012/08/93cb06da89e231c855cbe1d85db5739e.jpg" >}}
+{{% /gallery %}}
 
 ## De nouvelles fonctionnalités à venir
 
