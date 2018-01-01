@@ -1,9 +1,13 @@
+{{ define "title" }}
+    {{ .Site.Title }} | {{ .Title }}
+{{ end }}
+
 {{ define "main" }}
   {{ partial "header.html" . }}
-  <section class="main post-detail">
+  <section class="main post-detail post-{{ lower (index .Params.categories 0) }}">
     <header class="post-header">
       <h1 class="post-title">{{ .Title }}</h1>
-      <p class="post-meta post-{{ lower (index .Params.categories 0) }}">
+      <p class="post-meta">
         <span class="category"><a href="/categories/{{ lower (index .Params.categories 0) }}/">{{ index .Params.categories 0 }}</a></span>
         @{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }} · {{ .Date.Day }} {{ index $.Site.Data.month (printf "%d" .Date.Month) }} {{ .Date.Year }}
       </p>

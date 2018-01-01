@@ -14,7 +14,15 @@
         {{ if eq .Data.Singular "tag" }}
             <header class="page-header clearfix">Tag "{{ .Data.Term }}"</header>
         {{ else if eq .Data.Singular "category" }}
-            <header class="category-header category-{{ .Data.Term }} clearfix">{{ .Data.Term }}</header>
+            <nav class="page-nav-header clearfix">
+                <ul class="nav-list">
+                    <li class="nav-item nav-actus {{ if eq .Data.Term `actus` }}active{{ end }}"><a href="/categories/actus/"><i class="fa fa-bullhorn"></i><span class="text">Actus</span></a></li>
+                    <li class="nav-item nav-dossiers {{ if eq .Data.Term `dossiers` }}active{{ end }}"><a href="/categories/dossiers/"><i class="fa fa-book"></i><span class="text">Dossiers</span></a></li>
+                    <li class="nav-item nav-guides {{ if eq .Data.Term `guides` }}active{{ end }}"><a href="/categories/guides/"><i class="fa fa-desktop"></i><span class="text">Guides</span></a></li>
+                    <li class="nav-item nav-tutoriels {{ if eq .Data.Term `tutoriels` }}active{{ end }}"><a href="/categories/tutoriels/"><i class="fa fa-wrench"></i><span class="text">Tutoriels</span></a></li>
+                    <li class="nav-item nav-console {{ if eq .Data.Term `console` }}active{{ end }}"><a href="/categories/console/"><i class="fa fa-code"></i><span class="text">Console</span></a></li>
+                </ul>
+            </nav>
         {{ else }}
             <header class="page-header clearfix">Posts</header>
         {{ end }}
