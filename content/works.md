@@ -8,6 +8,10 @@ slug: "works"
 
 <small class="align-right"><i class="fa fa-language"></i> [English](/works-en)</small>
 
+{{% works title="vonKrafft.fr" date="Décembre 2017" cover="/media/works/vonkrafft.png" author="Wandrille K." authorURI="https://vonkrafft.fr/contact/" client="Projet personnel" clientURI="https://vonkrafft.fr/" tags="Tuto Wibb, Actus, Dossiers, Guides, Tutoriels, Console, Cyber-sécurité, goHugo, HTML, CSS, Javascript, Markdown" %}}
+Pour les 7 ans du site, tout change, à commencer par le nom. RIP **Tuto Wibb** ... Mon site vitrine perso et mon site de news fusionnent sous la bannière **vonKrafft**, *Chronicles of a cybersecurity consultant*. Pour cette migration, je conçois un nouveau design et j'abandonne WordPress pour Hugo, un générateur de site statique implémenté en Golang.
+{{% /works %}}
+
 {{% works title="Sotic Dashboard" date="Janvier 2016" cover="/media/works/sotic.png" author="Wandrille K." authorURI="https://vonkrafft.fr/contact/" client="Sotic" clientURI="http://www.sotic.com/" tags="Motoréducteur, Application Web, Bootstrap, Admin, Programmation Orientée Objet (POO), MySQL, HTML, CSS, PHP" %}}
 Sotic est une société spécialisée dans la conception et l'installation de motoréducteurs. Ces motoréducteurs sont équipés de cartes pouvant gérer plusieurs capteurs (consommation, température, vitesse, ...). Toutes les mesures provenant de ces capteurs sont enregistrées dans une base de données. Le but du projet était de concevoir et réaliser une application web permettant de visualiser de façon intuitive ces mesures.
 {{% /works %}}

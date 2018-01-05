@@ -8,6 +8,10 @@ slug: "works-en"
 
 <small class="align-right"><i class="fa fa-language"></i> [Français](/works)</small>
 
+{{% works title="vonKrafft.fr" date="December 2017" cover="/media/works/vonkrafft.png" author="Wandrille K." authorURI="https://vonkrafft.fr/contact/" client="Personnal project" clientURI="https://vonkrafft.fr/" tags="Tuto Wibb, News, Guides, Tutorials, Programming, Cybersecurity, goHugo, HTML, CSS, Javascript, Markdown" %}}
+For 7 years of the site, everything changes, starting with the name. RIP **Tuto Wibb** ... My personal website and my news website merge under the **vonKrafft** banner, *Chronicles of a cybersecurity consultant*. For this migration, I create a new design and I leave WordPress for Hugo, a static site generator implemented with Golang.
+{{% /works %}}
+
 {{% works_en title="Sotic Dashboard" date="January 2016" cover="/media/works/sotic.png" author="Wandrille K." authorURI="https://vonkrafft.fr/contact/" client="Sotic" clientURI="http://www.sotic.com/" tags="Gearmotor, Web application, Bootstrap, Admin, Object Oriented Programming (OOP), MySQL, HTML, CSS, PHP" %}}
 otic is a company specializing in the design and installation of geared motors. These geared motors are equipped with cards that can handle multiple sensors (consumption, temperature, speed, ...). All measurements from these sensors are recorded in a database. The goal of the project was to design and develop a web application for viewing intuitively these measures.
 {{% /works_en %}}
