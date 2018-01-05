@@ -62,7 +62,7 @@ Nouveau design, pour intégrer mes [travaux](/works). Plus épuré, tous les art
 
 {{< img src="/media/2017/12/e7fcab3af58c54ce5a30714b50a093ab-300x82.png" >}}
 
-Nouvelle migration également : adieu WordPress, bienvenue à **Hugo**. Implémenté en Golang (Go), Hugo est un générateur de site statique. Je vous laisse aller voir sur le site de [Hugo](https://gohugo.io/). Un petit tutoriel "migration de WordPress vers Hugo" viendra prochainement.
+Nouvelle migration également : adieu WordPress, bienvenue à **Hugo**. Implémenté en Golang (Go), Hugo est un générateur de site statique. Je vous laisse aller voir sur le site de [Hugo](https://gohugo.io/). Si vous souhaitez savoir comment j'ai migrer le site, j'ai rédigé un petit guide de [migration de WordPress vers Hugo](/guides/repertoire-git-accessible/).
 
 En attendant, **#StayTuned** et espérons que le site vivent encore dans 7 ans :)
 
