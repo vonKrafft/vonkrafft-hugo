@@ -1,22 +1,23 @@
 <article class="item-entry item-{{ lower (index .Params.categories 0) }}">
-    <div class="pointer"><i class="fa"></i></div>
     <div class="item-body">
         {{ if isset .Params "cover" }}
-            <aside class="item-side">
+            <aside class="item-media">
                 <a href="{{ .Permalink }}" class="item-cover" style="background-image: url({{ .Params.cover }})" alt="{{ .Title }}">&nbsp;</a>
             </aside>
         {{ end }}
-        <header class="item-header">
-            <p class="item-meta"><i class="fa fa-clock-o"></i> {{ .Date.Day }} {{ index $.Site.Data.month (printf "%d" .Date.Month) }} {{ .Date.Year }}</p>
-            <h3 class="item-title"><a href="{{ .Permalink }}" class="item-link">{{ .Title }}</a></h3>
-        </header>
-        <p class="item-summary">{{ .Summary | plainify | htmlUnescape }}</p>
-        <footer class="item-footer">
-            <p class="item-meta">
-                <i class="fa"></i>
-                <a href="/categories/{{ lower (index .Params.categories 0) }}/">{{ index .Params.categories 0 }}</a> · 
-                @{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}
-            </p>
-        </footer>
+        <div class="item-content">
+            <header class="item-header">
+                <p class="item-meta"><a href="/categories/{{ lower (index .Params.categories 0) }}/">{{ index .Params.categories 0 }}</a></p>
+                <h3 class="item-title"><a href="{{ .Permalink }}" class="item-link">{{ .Title }}</a></h3>
+            </header>
+            <p class="item-summary">{{ .Summary | plainify | htmlUnescape }}</p>
+            <footer class="item-footer">
+                <ul class="item-meta">
+                    <li><i class="fa fa-user"></i> {{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}</li>
+                    <li><i class="fa"></i> {{ index .Params.categories 0 }}</li>
+                    <li><i class="fa fa-clock-o"></i> {{ .Date.Day }} {{ index $.Site.Data.month (printf "%d" .Date.Month) }} {{ .Date.Year }}</li>
+                </ul>
+            </footer>
+        </div>
     </div>
 </article>

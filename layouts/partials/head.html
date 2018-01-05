@@ -13,13 +13,13 @@
     <meta name="twitter:site" content="@{{ .Site.Params.twitter | default $gohugoio }}" />
     <meta name="twitter:title" content="{{ .Title }}" />
     <meta name="twitter:description" content="{{ .Summary | plainify }}" />
-    <meta name="twitter:image" content="{{ .Params.cover | absURL }}" />
+    <meta name="twitter:image" content="https://vonkrafft.fr{{ .Params.cover | relURL }}" />
   {{ else }}
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@{{ .Site.Params.twitter | default $gohugoio }}" />
     <meta name="twitter:title" content="{{ .Title }}" />
     <meta name="twitter:description" content="{{ .Summary | plainify }}" />
-    <meta name="twitter:image" content="{{ $avatar | absURL }}" />
+    <meta name="twitter:image" content="https://vonkrafft.fr{{ $avatar | relURL }}" />
   {{ end }}
 
 {{ else }}

@@ -14,9 +14,21 @@
     <ul class="menu-list">
       {{ $type := .Type }}
       {{ $kind := .Kind }}
+      {{ $slug := .Slug }}
+      {{ $page := lower .Title }}
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
-        <li class="menu-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}{{ if and (eq .Identifier "home") (eq $type "post") }} is-active{{ end }}{{ if and (eq .Identifier "home") (and (eq $type "page") (eq $kind "taxonomy"))}} is-active{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
+        <li class="menu-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}{{ if and (eq .Identifier "home") (eq $type "post") }} is-active{{ end }}{{ if and (eq .Identifier "home") (and (eq $type "page") (eq $kind "taxonomy"))}} is-active{{ end }}{{ if and (eq .Identifier "home") (and (eq $type "categories") (eq $kind "taxonomy"))}} is-active{{ end }}{{ if and (eq .Identifier "works") (eq $slug "works") }} is-active{{ end }}{{ if and (eq .Identifier "works") (eq $slug "works-en") }} is-active{{ end }}{{ if and (eq .Identifier "contact") (eq $slug "contact") }} is-active{{ end }}{{ if and (eq .Identifier "contact") (eq $slug "contact-en") }} is-active{{ end }}">
+          <a href="{{ .URL }}">{{ .Name }}</a>
+          <div class="menu-icon">{{ .Pre }}</div>
+          <ul class="menu-sublist">
+            {{ range .Children }}
+              <li class="menu-subitem menu-{{ .Identifier }}{{ if eq .Identifier (lower $currentPage.Title) }} is-active{{ end }}">
+                <a href="{{.URL}}">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </li>
       {{ end }}
     </ul>
   </nav>
