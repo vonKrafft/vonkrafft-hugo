@@ -21,7 +21,7 @@ function createDiv()
     {
         var div = document.createElement('div');
         div.setAttribute('id', 'cookie-banner');
-        div.setAttribute('style', 'width:100%; position:fixed; bottom:0; background:rgba(0,0,0,0.9); left:0; color:white; text-align:center; z-index: 10;');
+        div.setAttribute('style', 'width:100%; position:fixed; bottom:0; background:rgba(0,0,0,0.9); left:0; color:white; text-align:center; z-index: 20;');
         var bodytag = document.getElementsByTagName('body')[0];
         bodytag.insertBefore(div,bodytag.firstChild);
     }

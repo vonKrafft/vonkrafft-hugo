@@ -34,6 +34,10 @@ h1.title, h2.title {
     color: #e5e5e5;
 }
 
+.site-header a.brand {
+    opacity: 1;
+}
+
 .site-header a:hover, 
 .site-header a:focus, 
 .site-header .is-active a {
@@ -398,7 +402,8 @@ img.pull-left {
 }
 
 .post-content p+ul {
-    margin-top: -1rem;
+    margin-top: -1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .post-content a {

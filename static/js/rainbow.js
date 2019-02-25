@@ -700,7 +700,7 @@ Rainbow.extend('shell', [
 	 */
 	{
 		name: 'support.command',
-		pattern: /\b(echo|rm|ls|(mk|rm)dir|cd|find|cp|exit|pwd|exec|trap|source|shift|unset|sudo [^ ]+|apt(-get|-key)?|nginx|openssl|curl|time|ssh(-keygen|-copy-id|-agent|-add)?)\s/g
+		pattern: /(?:^\b|\s)(echo|rm|ls|(mk|rm)dir|cd|find|cp|exit|pwd|exec|trap|source|shift|unset|echo|printf|sudo [^ ]+|apt(-get|-key)?|nginx|openssl|curl|time|ssh(-keygen|-copy-id|-agent|-add)?|gpg(2|-connect-agent)?|ykpersonalize|docker *(?:builder|config|container|engine|image|network|node|plugin|secret|service|stack|swarm|system|trust|volume|attach|build|commit|cp|create|deploy|diff|events|exec|export|history|images|import|info|inspect|kill|load|login|logout|logs|pause|port|ps|pull|push|rename|restart|rm|rmi|run|save|search|start|stats|stop|tag|top|unpause|update|version|wait)?|docker-compose *(build|bundle|config|create|down|events|exec|help|images|kill|logs|pause|port|ps|pull|push|restart|rm|run|scale|start|stop|top|unpause|up|version)?|grep|egrep|touch|chmod)(?= |$)\b/g
 	},
 	{
 		matches: {
@@ -716,7 +716,7 @@ Rainbow.extend('shell', [
 		matches: {
 			1: 'keyword.options'
 		},
-		pattern: /\s(-+[a-z0-9-]+)\s/g
+		pattern: /\s(-[a-z0-9-]+|[ugoa][+-][rwx]+)\b/g
 	}
 ]);
 
@@ -734,6 +734,66 @@ Rainbow.extend('console', [
 				language: 'shell'
 			}
 		},
-		pattern: /^([^:]+:[\/~][\w\/ \.\-\(\)]*(?:\(git:[^\)]+\))?[$#]) *([^\n\r]+)?/gm
+        pattern: /^([^:\n]+:[\/~][\w\/ \.\-\(\)]*(?:\(git:[^\)]+\))?[$#]|(?:gpg|mysql|python|php)>) *([^\n\r]+)?/gm
 	}
 ]);
+
+/**
+ * Nginx patterns
+ *
+ * @author Wandrille K.
+ */
+Rainbow.extend('nginx', [
+	{
+		matches: {
+			1: 'keyword.options',
+			2: 'string'
+		},
+		pattern: /^ *([a-z_]+) +([^;\n{}]+(\n *[^;\n{}]+)*);/gm
+	},
+	{
+		name: 'comment',
+		pattern: /\#[\s\S]*?$/gm
+	}
+]);
+
+/**
+ * YAML patterns
+ *
+ * @author Wandrille K.
+ */
+Rainbow.extend('yaml', [
+    {
+        matches: {
+            0: {
+                name: 'string',
+                matches: {
+                    name: 'constant.character.escape',
+                    pattern: /\\('|"){1}/g
+                }
+            }
+        },
+        pattern: /(\"|\')(\\?.)*?\1/g
+    },
+    {
+        name: 'keyword',
+        matches: {
+        	1: 'support.property'
+        },
+        pattern: /^([^:\n]+):\s/gm
+    },
+    {
+        name: 'constant.numeric',
+        pattern: /\b(-?(0x)?\d*\.?[\da-f]+)\b/gi
+    },
+    {
+        name: 'constant.language',
+        pattern: /\b(true|false|null)\b/g
+    },
+	{
+		name: 'comment',
+		pattern: /\#[\s\S]*?$/gm
+	}
+]);
+
+Rainbow.addAlias('yml', 'yaml');

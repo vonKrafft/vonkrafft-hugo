@@ -5,5 +5,5 @@
         {{.Get "title"}}
     </div>
     {{ end }}
-    <pre class="code"><code data-language="{{.Get `lang`}}">{{.Inner}}</code></pre>
+    <pre class="code"><code data-language="{{.Get `lang`}}">{{replaceRE "^[ \t]*\n" "" .Inner}}</code></pre>
 </div>
