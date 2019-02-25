@@ -45,7 +45,7 @@ Septembre 2012, je rentre en école d'ingénieur. J'y apprends notamment le C, l
 
 Un an plus tard, je rentre au club info pour administrer le site des élèves et j'en profite pour migrer mon site vers WordPress. Kazeo était devenu bien trop limité pour mon usage et mes compétences Web était alors largement suffisantes pour m'occuper d'un WordPress. J'en profite alors pour faire un thème personnalisé et je mets le site en ligne sur Free.
 
-En novembre 2013, je vais à la Paris Games Week et j'en profite pour reprendre la rédaction d'article dont le rythme de publication avec diminué depuis 1 an. Mais peu de temps après, le site tombe dans l'abandon et aucun article n'est mis en ligne pendant 2 ans<sup>1</sup> !!! C'est seulement en décembre 2015 que le site reprend vie. Je suis alors en master 2 à Grenoble et j'ai depuis peu un serveur chez OVH. En mai 2016, je décide de rapatrier le site sur ce serveur qui y gagne au passage un coup de pinceau avec un nouveau thème WordPress entièrement personnel. Une nouvelle catégorie fait également son apparition : console, avec un premier article pour [donner un nom DNS à son serveur local](https://vonkrafft.fr/console/donner-nom-dns-a-serveur-local/).
+En novembre 2013, je vais à la Paris Games Week et j'en profite pour reprendre la rédaction d'article dont le rythme de publication avec diminué depuis 1 an. Mais peu de temps après, le site tombe dans l'abandon et aucun article n'est mis en ligne pendant 2 ans<sup>1</sup> !!! C'est seulement en décembre 2015 que le site reprend vie. Je suis alors en master 2 à Grenoble et j'ai depuis peu un serveur chez OVH. En mai 2016, je décide de rapatrier le site sur ce serveur qui y gagne au passage un coup de pinceau avec un nouveau thème WordPress entièrement personnel. Une nouvelle catégorie fait également son apparition : console, avec un premier article pour [donner un nom DNS à son serveur local](/console/donner-nom-dns-a-serveur-local/).
 
 {{% gallery columns="2" title="Le site avant et après sa migration en mai 2016" %}}
 {{< gallery_item src="/media/2017/12/ae1e7950cd6ca0c48b4c7aed43f9797c.png" link="/media/2017/12/65e7a314ef517c94664de23a17560d78.png" >}}
@@ -56,7 +56,7 @@ En novembre 2013, je vais à la Paris Games Week et j'en profite pour reprendre 
 
 Depuis la reprise en 2015, j'ai essayé de trouver du temps pour écrire des articles. Six articles en deux ans, c'est pas la folie ... mais c'est déjà ça et j'ai plusieurs sujets dans le tiroir. Alors les actus ne reprendront sans doute pas, mais les catégories "console", "guides" et "tutoriels" verront sans doute une deuxième jeunesse.
 
-Pour les 7 ans du site, tout change, à commencer par le nom. RIP **Tuto Wibb** ... Mon site vitrine perso et mon site de news fusionnent sous la bannière **vonKrafft**, *Chronicles of a cybersecurity consultant*. Il était initialement prévu de supprimer les catégories et de ne garder que les articles de "console", mais je suis un nostalgique et je garde tous mes articles (même les premiers plein de fautes d'orthographes).
+Pour les 7 ans du site, tout change, à commencer par le nom. RIP **Tuto Wibb** ... Mon site vitrine perso et mon site de news fusionnent sous la bannière **vonKrafft**, *Chronicles of a cybersecurity engineer*. Il était initialement prévu de supprimer les catégories et de ne garder que les articles de "console", mais je suis un nostalgique et je garde tous mes articles (même les premiers plein de fautes d'orthographes).
 
 Nouveau design, pour intégrer mes [travaux](/works). Plus épuré, tous les articles se retrouvent dans la partie [blog](/) du site.
 
@@ -64,6 +64,6 @@ Nouveau design, pour intégrer mes [travaux](/works). Plus épuré, tous les art
 
 Nouvelle migration également : adieu WordPress, bienvenue à **Hugo**. Implémenté en Golang (Go), Hugo est un générateur de site statique. Je vous laisse aller voir sur le site de [Hugo](https://gohugo.io/). Si vous souhaitez savoir comment j'ai migrer le site, j'ai rédigé un petit guide de [migration de WordPress vers Hugo](/guides/repertoire-git-accessible/).
 
-En attendant, **#StayTuned** et espérons que le site vivent encore dans 7 ans :)
+En attendant, **#StayTuned** et espérons que le site vive encore dans 7 ans :)
 
-<small class="align-right">**[1]** Deux articles sur [Btrfs](https://vonkrafft.fr/dossiers/systeme-de-fichier-emergence-btrfs/), datés de novembre 2014, seront ajoutés sur le sites lors de sa migration vers Hugo</small>
+<small class="align-right">**[1]** Deux articles sur [Btrfs](/dossiers/systeme-de-fichier-emergence-btrfs/), datés de novembre 2014, seront ajoutés sur le sites lors de sa migration vers Hugo</small>
