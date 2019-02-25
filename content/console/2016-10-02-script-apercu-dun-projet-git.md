@@ -11,13 +11,13 @@ slug: "script-apercu-dun-projet-git"
 cover: "/media/2016/10/8047d08e7a9c14108656e68be19a1e58-1024x640.jpg"
 ---
 
-Vous connaissez sans doute la célèbre plateforme [github.com](https://github.com/), qui permet d'explorer et gérer un projet Git. D'autres alternatives existent, comme [GitLab ](https://about.gitlab.com/) ou [Gogs](https://try.gogs.io/), qui permettent de disposer d'une interface web pour ses projets Git.
+Vous connaissez sans doute la célèbre plateforme [github.com](https://github.com/), qui permet d'explorer et gérer un projet Git. D'autres alternatives existent, comme [GitLab](https://about.gitlab.com/) ou [Gogs](https://try.gogs.io/), qui permettent de disposer d'une interface Web pour ses projets Git que l'on pourra hébergé chez soi, sur un serveur personnel ou un poste local. Au lieu d'une interface Web, je vous propose d'afficher quelques inforamtions d'un répertoire Git dans votre console.
 
 <!--more-->
 
 ## Fonctionnalités
 
-Ce sont ces outils qui m'ont inspiré pour le script que je vous présente aujourd'hui. L'idée était d'avoir un aperçu de l'état d'un projet Git. Le script, hébergé sur "[GitHub Gist](https://gist.github.com/vonKrafft/45d673da94be9620d578fa76d1a22277)", permet d'obtenir :
+Ce sont ces outils (GitHub, GitLab, Gogs ...) qui m'ont inspiré pour le script que je vous présente aujourd'hui. L'idée était d'avoir un aperçu de l'état d'un projet Git. Le script permet d'obtenir :
 
 - Le nom du dépôt et de la branche actuelle ;
 - Le nombre de commits, de branches, de tags et de contributeurs ;
@@ -34,8 +34,8 @@ N'hésitez pas à laisser un commentaire si vous avez des remarques et/ou des id
 
 ## Ajouter un alias
 
-Pour facilement obtenir ces infos lorsque vous vous trouvez dans un répertoire d'un projet Git, je vous propose de créer un alias dans votre fichier `.bashrc` ou `.zshrc` :
+Pour facilement obtenir ces infos lorsque vous vous trouvez dans un répertoire d'un projet Git, je vous propose de créer un alias :
 
-{{< code lang="bash" icon="file-text-o" title="~/.zshrc" >}}
+{{< code lang="bash" icon="file-text-o" title="~/.bashrc" >}}
 alias 'git-overview'='/path/to/the/script/git-overview.sh'
 {{< /code >}}
