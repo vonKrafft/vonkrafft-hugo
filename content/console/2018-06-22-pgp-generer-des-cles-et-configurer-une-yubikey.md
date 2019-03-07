@@ -299,6 +299,22 @@ Host serveur
 
 ---
 
+**Edit 2019-03-07**
+
+Si vos clés PGP ne sont pas ajoutées à l'agent GPG (i.e. non visibles dans le résultat de la commande `ssh-add -L`) et que vous obtenez l'erreur `gpg --card-status` pour la commande `gpg: error getting version from 'scdaemon': No SmartCard daemon`, pensez à installer les paquets `pcscd`, `scdaemon` et `pcsc-tools` :
+
+{{< code lang="console" icon="code" title="Console" >}}
+debian:~$ gpg --card-status
+gpg: error getting version from 'scdaemon': No SmartCard daemon
+gpg: la carte OpenPGP n'est pas disponible : No SmartCard daemon
+debian:~$ sudo apt install pcscd scdaemon pcsc-tools
+debian:~$ gpg --card-status
+Reader ...........: Yubico Yubikey NEO OTP CCID 00 00
+# ... [cropped result]
+{{< /code >}}
+
+---
+
 #### Sources
 
 1. [Using Your YubiKey with OpenPGP](https://support.yubico.com/support/solutions/articles/15000006420-using-your-yubikey-with-openpgp) (EN)
