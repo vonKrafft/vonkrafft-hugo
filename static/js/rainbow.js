@@ -700,7 +700,7 @@ Rainbow.extend('shell', [
 	 */
 	{
 		name: 'support.command',
-		pattern: /(?:^\b|\s)(echo|rm|ls|(mk|rm)dir|cd|find|cp|exit|pwd|exec|trap|source|shift|unset|echo|printf|sudo [^ ]+|apt(-get|-key)?|nginx|openssl|curl|time|ssh(-keygen|-copy-id|-agent|-add)?|gpg(2|-connect-agent)?|ykpersonalize|docker *(?:builder|config|container|engine|image|network|node|plugin|secret|service|stack|swarm|system|trust|volume|attach|build|commit|cp|create|deploy|diff|events|exec|export|history|images|import|info|inspect|kill|load|login|logout|logs|pause|port|ps|pull|push|rename|restart|rm|rmi|run|save|search|start|stats|stop|tag|top|unpause|update|version|wait)?|docker-compose *(build|bundle|config|create|down|events|exec|help|images|kill|logs|pause|port|ps|pull|push|restart|rm|run|scale|start|stop|top|unpause|up|version)?|grep|egrep|touch|chmod)(?= |$)\b/g
+		pattern: /(?:^\b|\s)(echo|rm|ls|(mk|rm)dir|cd|find|cp|exit|pwd|exec|trap|source|shift|unset|echo|printf|sudo [^ ]+|apt(-get|-key)?|nginx|openssl|curl|time|ssh(-keygen|-copy-id|-agent|-add)?|gpg(2|-connect-agent)?|ykpersonalize|docker *(?:builder|config|container|engine|image|network|node|plugin|secret|service|stack|swarm|system|trust|volume|attach|build|commit|cp|create|deploy|diff|events|exec|export|history|images|import|info|inspect|kill|load|login|logout|logs|pause|port|ps|pull|push|rename|restart|rm|rmi|run|save|search|start|stats|stop|tag|top|unpause|update|version|wait)?|docker-compose *(build|bundle|config|create|down|events|exec|help|images|kill|logs|pause|port|ps|pull|push|restart|rm|run|scale|start|stop|top|unpause|up|version)?|grep|egrep|touch|chmod|wget|python([2-3][0-9\.]*)?|pip|pip3)(?= |$)\b/g
 	},
 	{
 		matches: {
@@ -716,7 +716,7 @@ Rainbow.extend('shell', [
 		matches: {
 			1: 'keyword.options'
 		},
-		pattern: /\s(-[a-z0-9-]+|[ugoa][+-][rwx]+)\b/g
+		pattern: /\s(-[a-zA-Z0-9-]+|[ugoa][+-][rwx]+)\b/g
 	}
 ]);
 
@@ -750,6 +750,30 @@ Rainbow.extend('nginx', [
 			2: 'string'
 		},
 		pattern: /^ *([a-z_]+) +([^;\n{}]+(\n *[^;\n{}]+)*);/gm
+	},
+	{
+		name: 'comment',
+		pattern: /\#[\s\S]*?$/gm
+	}
+]);
+
+/**
+ * Dockerfile patterns
+ *
+ * @author Wandrille K.
+ */
+Rainbow.extend('dockerfile', [
+	{
+		matches: {
+			1: 'support.command'
+		},
+		pattern: /\b(FROM|RUN|CMD|LABEL|MAINTAINER|EXPOSE|ENV|ADD|COPY|ENTRYPOINT|VOLUME|USER|WORKDIR|ARG|ONBUILD|STOPSIGNAL|HEALTHCHECK|SHELL)(?=\b)/g
+	},
+	{
+		matches: {
+			2: 'string'
+		},
+		pattern: /(\(|\s|\[|\=)(('|")[\s\S]*?(\3))/gm
 	},
 	{
 		name: 'comment',
