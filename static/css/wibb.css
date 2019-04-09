@@ -1311,6 +1311,14 @@ figure.gallery .gallery-item > .gallery-image img {
     position: relative;
 }
 
+.work h2 {
+    margin-bottom: 0;
+}
+
+.work ul {
+    margin-top: 0;
+}
+
 .work a {
     color: #429ab4;
 }
@@ -1371,4 +1379,71 @@ figure.gallery .gallery-item > .gallery-image img {
 
 .work .work-body p {
     text-align: justify;
+}
+
+.work-year {
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+.work-year:before {
+  display: block;
+  content: "";
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: calc(50% - 25px);
+  top: 50%;
+  left: 0;
+}
+
+.work-year:after {
+  display: block;
+  content: "";
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: calc(50% - 25px);
+  top: 50%;
+  right: 0;
+}
+
+.tag {
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  font-size: .8rem;
+  height: 18px;
+  line-height: 18px;
+  margin: 0 5px 5px 0;
+  padding: 0 20px 0 23px;
+  position: relative;
+  text-decoration: none;
+}
+
+.tag::before {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    top: 6px;
+    width: 6px;
+}
+
+.tag::after {
+    background: #fff;
+    border-bottom: 9px solid transparent;
+    border-left: 6px solid #eee;
+    border-top: 9px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
 }

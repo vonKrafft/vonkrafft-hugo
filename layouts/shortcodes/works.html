@@ -5,15 +5,15 @@
     <article class="work-body">
         <header class="work-heading">
             <h2 class="work-title">{{ .Get "title" }}</h2>
+            <ul class="list-inline">
+                <li><i class="fa fa-user-circle-o"></i>&nbsp;<strong>{{ .Get "author" }}</strong></li>
+                <li><i class="fa fa-calendar"></i>&nbsp;<strong>{{ .Get "date" }}</strong></li>
+                <li><i class="fa fa-{{ default `briefcase` (.Get `icon`) }}"></i>&nbsp;<strong><a href="{{ .Get `url` }}">{{ .Get "work" }}</a></strong></li>
+            </ul>
         </header>        
         {{ .Inner }}
         <footer class="work-footer">
-            <ul class="list-inline">
-                <li>Développeur(s) : <strong><a href="{{ .Get `authorURI` }}">{{ .Get "author" }}</a></strong></li>
-                <li>Date : <strong>{{ .Get "date" }}</strong></li>
-                <li>Client : <strong><a href="{{ .Get `clientURI` }}">{{ .Get "client" }}</a></strong></li>
-                <li>Étiquettes : <strong>{{ .Get "tags" }}</strong></li>
-            </ul>
+            <span class="tag">{{ .Get "tags" | replaceRE " *, *" "</span><span class='tag'>" | safeHTML }}</span>
         </footer>
     </article>
 </div>
