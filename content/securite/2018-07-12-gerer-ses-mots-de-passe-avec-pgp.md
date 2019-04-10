@@ -5,8 +5,10 @@ tags: [ "PGP", "OpenPGP", "GnuPG", "GPG", "Pass", "Git" ]
 lastmod: "2018-07-18 23:40:17"
 date: "2018-07-18 23:40:17"
 categories:
-    - "Console"
+    - "Securite"
 type: post
+aliases:
+    - "/console/gerer-ses-mots-de-passe-avec-pgp/"
 slug: "gerer-ses-mots-de-passe-avec-pgp"
 cover: "/media/2018/07/12df53fea8b3adfa6c2ec456dd22e204.jpg"
 ---

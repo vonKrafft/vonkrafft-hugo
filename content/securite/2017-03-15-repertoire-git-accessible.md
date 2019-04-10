@@ -5,8 +5,10 @@ tags: [ "Serveur", "Git", "Exploit", "Directory Listing", "Pentest" ]
 lastmod: "2017-03-15 12:54:26"
 date: "2017-03-15 12:43:46"
 categories:
-    - "Console"
+    - "Securite"
 type: post
+aliases:
+    - "/console/repertoire-git-accessible/"
 slug: "repertoire-git-accessible"
 cover: "/media/2017/03/a22eaab5c6227da7b38ffb1db7ba6ccd.png"
 ---

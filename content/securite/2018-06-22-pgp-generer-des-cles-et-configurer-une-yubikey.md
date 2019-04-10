@@ -5,8 +5,10 @@ tags: [ "PGP", "Yubikey", "OpenPGP", "GnuPG", "GPG", "SSH" ]
 lastmod: "2018-06-22 18:07:17"
 date: "2018-06-22 18:07:17"
 categories:
-- "Console"
+    - "Securite"
 type: post
+aliases:
+    - "/console/pgp-generer-des-cles-et-configurer-une-yubikey/"
 slug: "pgp-generer-des-cles-et-configurer-une-yubikey"
 cover: "/media/2018/06/3d693b8cc27de08455d746df6295da08.jpg"
 ---

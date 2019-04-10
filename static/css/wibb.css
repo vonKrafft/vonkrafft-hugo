@@ -1,6 +1,6 @@
 html {
     font-size: 15px;
-    font-family: 'Rajdhani',-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei","Helvetica Neue",sans-serif;
+    font-family: 'Rajdhani',-apple-systemBlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei","Helvetica Neue",sans-serif;
     font-weight: 500;
 }
 
@@ -160,14 +160,18 @@ img.pull-left {
 }
 
 .menu-sublist {
-  display: block;
-  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
+  padding: 10px 30px 0;
   position: relative;
 }
 
 .site-menu .menu-subitem {
   display: inline-block;
+  padding: 0 2px;
+  margin-top: -10px;
 }
 
 .site-menu .menu-subitem a {
@@ -182,7 +186,7 @@ img.pull-left {
   opacity: 0.5;
 }
 
-.site-menu .menu-subitem:first-child::before {
+.site-menu .menu-subitem:nth-child(4n+1)::before {
   content: none;
 }
 
@@ -194,11 +198,13 @@ img.pull-left {
     font-weight: 500;
 }
 
-.site-menu .menu-actus     a:hover, .site-menu .is-active.menu-actus     a { color: #f44336; }
-.site-menu .menu-dossiers  a:hover, .site-menu .is-active.menu-dossiers  a { color: #8bc34a; }
-.site-menu .menu-guides    a:hover, .site-menu .is-active.menu-guides    a { color: #00bcd4; }
-.site-menu .menu-tutoriels a:hover, .site-menu .is-active.menu-tutoriels a { color: #ffc107; }
-.site-menu .menu-console   a:hover, .site-menu .is-active.menu-console   a { color: #009688; }
+.site-menu .menu-actus     a:hover, .site-menu .is-active.menu-actus     a { color: #f44336; } /* Red 500 */
+.site-menu .menu-dossiers  a:hover, .site-menu .is-active.menu-dossiers  a { color: #8bc34a; } /* Light Green 500 */
+.site-menu .menu-guides    a:hover, .site-menu .is-active.menu-guides    a { color: #00bcd4; } /* Cyan 500 */
+.site-menu .menu-tutoriels a:hover, .site-menu .is-active.menu-tutoriels a { color: #ffc107; } /* Amber 500 */
+.site-menu .menu-console   a:hover, .site-menu .is-active.menu-console   a { color: #009688; } /* Teal 500 */
+.site-menu .menu-securite  a:hover, .site-menu .is-active.menu-securite  a { color: #f4511e; } /* Deep Orange 500 */
+.site-menu .menu-write-up  a:hover, .site-menu .is-active.menu-write-up  a { color: #e81e62; } /* Pink 500 */
 
 .avatar:hover {
     transform: none;
@@ -232,11 +238,13 @@ img.pull-left {
     }
 }
 
-.post-list .category-actus     { background-color: #f44336; color: #ffffff; }
-.post-list .category-dossiers  { background-color: #8bc34a; color: inherit; }
-.post-list .category-guides    { background-color: #00bcd4; color: #ffffff; }
-.post-list .category-tutoriels { background-color: #ffc107; color: inherit; }
-.post-list .category-console   { background-color: #009688; color: #ffffff; }
+.post-list .category-actus     { background-color: #f44336; color: #ffffff; } /* Red 500 */
+.post-list .category-dossiers  { background-color: #8bc34a; color: inherit; } /* Light Green 500 */
+.post-list .category-guides    { background-color: #00bcd4; color: #ffffff; } /* Cyan 500 */
+.post-list .category-tutoriels { background-color: #ffc107; color: inherit; } /* Amber 500 */
+.post-list .category-console   { background-color: #009688; color: #ffffff; } /* Teal 500 */
+.post-list .category-securite  { background-color: #f4511e; color: inherit; } /* Deep Orange 500 */
+.post-list .category-write-up  { background-color: #e81e62; color: inherit; } /* Pink 500 */
 
 .page-detail .page-header .page-title, .post-list .page-header .title {
     margin: 0;
@@ -370,6 +378,20 @@ img.pull-left {
 .teal-dark     { color: #00796b; } /* need light font */
 .teal-darker   { color: #004d40; } /* need light font */
 
+/* SÉCURITÉ */
+.orange         { color: #ff5722; }
+.orange-light   { color: #ff8a65; }
+.orange-lighter { color: #ffccbc; }
+.orange-dark    { color: #e64a19; } /* need light font */
+.orange-darker  { color: #004d40; } /* need light font */
+
+/* WRITE-UP */
+.pink          { color: #e91e63; }
+.pink-light    { color: #f06292; }
+.pink-lighter  { color: #f8bbd0; }
+.pink-dark     { color: #c2185b; }
+.pink-darker   { color: #bf360c; } /* need light font */
+
 /*****************************************
  * Post
  *****************************************/
@@ -379,11 +401,13 @@ img.pull-left {
     border-bottom: solid 3px #555;
 }
 
-.post-actus     .post-header .post-meta { border-bottom-color: #f44336; }
-.post-dossiers  .post-header .post-meta { border-bottom-color: #8bc34a; }
-.post-guides    .post-header .post-meta { border-bottom-color: #00bcd4; }
-.post-tutoriels .post-header .post-meta { border-bottom-color: #ffc107; }
-.post-console   .post-header .post-meta { border-bottom-color: #009688; }
+.post-actus     .post-header .post-meta { border-bottom-color: #f44336; } /* Red 500 */
+.post-dossiers  .post-header .post-meta { border-bottom-color: #8bc34a; } /* Light Green 500 */
+.post-guides    .post-header .post-meta { border-bottom-color: #00bcd4; } /* Cyan 500 */
+.post-tutoriels .post-header .post-meta { border-bottom-color: #ffc107; } /* Amber 500 */
+.post-console   .post-header .post-meta { border-bottom-color: #009688; } /* Teal 500 */
+.post-securite  .post-header .post-meta { border-bottom-color: #f4511e; } /* Deep Orange 500 */
+.post-write-up  .post-header .post-meta { border-bottom-color: #e81e62; } /* Pink 500 */
 
 .post-detail .post-header .post-meta .category > a {
   display: inline-block;
@@ -396,6 +420,8 @@ img.pull-left {
 .post-guides    .post-header .post-meta .category > a { background-color: #b2ebf2; color: #0097a7; }
 .post-tutoriels .post-header .post-meta .category > a { background-color: #ffecb3; color: #ffa000; }
 .post-console   .post-header .post-meta .category > a { background-color: #b2dfdb; color: #00796b; }
+.post-securite  .post-header .post-meta .category > a { background-color: #ffccbc; color: #e64a19; }
+.post-write-up  .post-header .post-meta .category > a { background-color: #f8bbd0; color: #c2185b; }
 
 .post-content {
     line-height: 1.618;
@@ -418,6 +444,8 @@ img.pull-left {
 .post-guides    .post-content a { color: #00bcd4; border-color: #4dd0e1; }
 .post-tutoriels .post-content a { color: #ffc107; border-color: #ffd54f; }
 .post-console   .post-content a { color: #009688; border-color: #4db6ac; }
+.post-securite  .post-content a { color: #f4511e; border-color: #ff8a65; }
+.post-write-up  .post-content a { color: #e81e62; border-color: #f06292; }
 
 .post-content a:focus, .post-content a:hover {
     border-bottom: 1px solid #429ab4;
@@ -428,6 +456,8 @@ img.pull-left {
 .post-guides    .post-content a:focus, .post-guides    .post-content a:hover { color: #0097a7; border-color: #00bcd4; }
 .post-tutoriels .post-content a:focus, .post-tutoriels .post-content a:hover { color: #ffa000; border-color: #ffc107; }
 .post-console   .post-content a:focus, .post-console   .post-content a:hover { color: #00796b; border-color: #009688; }
+.post-securite  .post-content a:focus, .post-securite  .post-content a:hover { color: #e64a19; border-color: #f4511e; }
+.post-write-up  .post-content a:focus, .post-write-up  .post-content a:hover { color: #c2185b; border-color: #e81e62; }
 
 .post-content figure img, 
 .post-content img {
@@ -529,12 +559,16 @@ img.pull-left {
 .page-nav-header .nav-guides    > a { color: #00bcd4; }
 .page-nav-header .nav-tutoriels > a { color: #ffc107; }
 .page-nav-header .nav-console   > a { color: #009688; }
+.page-nav-header .nav-securite  > a { color: #f4511e; }
+.page-nav-header .nav-write-up  > a { color: #e81e62; }
 
 .page-nav-header .nav-actus     > a:hover, .page-nav-header .active.nav-actus     > a { background-color: #ffcdd2; color: #d32f2f; }
 .page-nav-header .nav-dossiers  > a:hover, .page-nav-header .active.nav-dossiers  > a { background-color: #dcedc8; color: #689f38; }
 .page-nav-header .nav-guides    > a:hover, .page-nav-header .active.nav-guides    > a { background-color: #b2ebf2; color: #0097a7; }
 .page-nav-header .nav-tutoriels > a:hover, .page-nav-header .active.nav-tutoriels > a { background-color: #ffecb3; color: #ffa000; }
 .page-nav-header .nav-console   > a:hover, .page-nav-header .active.nav-console   > a { background-color: #b2dfdb; color: #00796b; }
+.page-nav-header .nav-securite  > a:hover, .page-nav-header .active.nav-securite  > a { background-color: #ffccbc; color: #e64a19; }
+.page-nav-header .nav-write-up  > a:hover, .page-nav-header .active.nav-write-up  > a { background-color: #f8bbd0; color: #c2185b; }
 
 /*****************************************
  * Box
@@ -1036,6 +1070,8 @@ img.pull-left {
 .timeline > .item-guides:hover::before     { color: #00bcd4; }
 .timeline > .item-tutoriels:hover::before  { color: #ffc107; }
 .timeline > .item-console:hover::before    { color: #009688; }
+.timeline > .item-securite:hover::before   { color: #f4511e; }
+.timeline > .item-write-up:hover::before   { color: #e81e62; }
 
 .timeline > .item-entry::after {
     -webkit-transition: all 0.2s ease;
@@ -1066,6 +1102,8 @@ img.pull-left {
 .timeline > .item-guides:hover::after     { background-color: #00bcd4; }
 .timeline > .item-tutoriels:hover::after  { background-color: #ffc107; }
 .timeline > .item-console:hover::after    { background-color: #009688; }
+.timeline > .item-securite:hover::after   { background-color: #f4511e; }
+.timeline > .item-write-up:hover::after   { background-color: #e81e62; }
 
 .timeline > .item-entry > .item-body {
     background: #f4f3f1 url(../img/grey-prism.svg) repeat scroll;
@@ -1102,6 +1140,8 @@ img.pull-left {
 .timeline > .item-guides    > .item-body > .item-media { background-color: #00bcd4; }
 .timeline > .item-tutoriels > .item-body > .item-media { background-color: #ffc107; }
 .timeline > .item-console   > .item-body > .item-media { background-color: #009688; }
+.timeline > .item-securite  > .item-body > .item-media { background-color: #f4511e; }
+.timeline > .item-write-up  > .item-body > .item-media { background-color: #e81e62; }
 
 .timeline > .item-entry > .item-body > .item-media > a.item-cover {
     -webkit-transition: all 0.2s ease;
@@ -1142,6 +1182,8 @@ img.pull-left {
 .timeline > .item-guides    > .item-body > .item-content > .item-header > .item-meta { color: #00bcd4; }
 .timeline > .item-tutoriels > .item-body > .item-content > .item-header > .item-meta { color: #ffc107; }
 .timeline > .item-console   > .item-body > .item-content > .item-header > .item-meta { color: #009688; }
+.timeline > .item-securite  > .item-body > .item-content > .item-header > .item-meta { color: #f4511e; }
+.timeline > .item-write-up  > .item-body > .item-content > .item-header > .item-meta { color: #e81e62; }
 
 .timeline > .item-entry > .item-body > .item-content > .item-header > .item-meta a { color: inherit; }
 
@@ -1205,6 +1247,8 @@ img.pull-left {
 .timeline > .item-guides    > .item-body > .item-content > .item-footer > ul.item-meta > li:nth-of-type(2) > i.fa:before { content:"\f108"; }
 .timeline > .item-tutoriels > .item-body > .item-content > .item-footer > ul.item-meta > li:nth-of-type(2) > i.fa:before { content:"\f0ad"; }
 .timeline > .item-console   > .item-body > .item-content > .item-footer > ul.item-meta > li:nth-of-type(2) > i.fa:before { content:"\f121"; }
+.timeline > .item-securite  > .item-body > .item-content > .item-footer > ul.item-meta > li:nth-of-type(2) > i.fa:before { content:"\f132"; }
+.timeline > .item-write-up  > .item-body > .item-content > .item-footer > ul.item-meta > li:nth-of-type(2) > i.fa:before { content:"\f0f6"; }
 
 .timeline > .item-entry > .item-body > .item-footer > .item-meta > a {
     font-weight: bold;
@@ -1411,7 +1455,7 @@ figure.gallery .gallery-item > .gallery-image img {
   right: 0;
 }
 
-.tag {
+.work .tag {
   background: #eee;
   border-radius: 3px 0 0 3px;
   color: #999;
@@ -1425,7 +1469,7 @@ figure.gallery .gallery-item > .gallery-image img {
   text-decoration: none;
 }
 
-.tag::before {
+.work .tag::before {
     background: #fff;
     border-radius: 10px;
     box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
@@ -1437,7 +1481,7 @@ figure.gallery .gallery-item > .gallery-image img {
     width: 6px;
 }
 
-.tag::after {
+.work .tag::after {
     background: #fff;
     border-bottom: 9px solid transparent;
     border-left: 6px solid #eee;
