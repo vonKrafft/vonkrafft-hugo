@@ -700,7 +700,7 @@ Rainbow.extend('shell', [
 	 */
 	{
 		name: 'support.command',
-		pattern: /(?:^\b|\s)(echo|rm|ls|(mk|rm)dir|cd|find|cp|exit|pwd|exec|trap|source|shift|unset|echo|printf|sudo [^ ]+|apt(-get|-key)?|nginx|openssl|curl|time|ssh(-keygen|-copy-id|-agent|-add)?|gpg(2|-connect-agent)?|ykpersonalize|docker *(?:builder|config|container|engine|image|network|node|plugin|secret|service|stack|swarm|system|trust|volume|attach|build|commit|cp|create|deploy|diff|events|exec|export|history|images|import|info|inspect|kill|load|login|logout|logs|pause|port|ps|pull|push|rename|restart|rm|rmi|run|save|search|start|stats|stop|tag|top|unpause|update|version|wait)?|docker-compose *(build|bundle|config|create|down|events|exec|help|images|kill|logs|pause|port|ps|pull|push|restart|rm|run|scale|start|stop|top|unpause|up|version)?|grep|egrep|touch|chmod|wget|python([2-3][0-9\.]*)?|pip|pip3)(?= |$)\b/g
+		pattern: /(?:^\b|\s)(echo|rm|ls|(mk|rm)dir|cd|tar|cat|find|cp|exit|pwd|exec|trap|source|shift|unset|echo|printf|sudo [^ ]+|proxychains [^ ]+|apt(-get|-key)?|nginx|openssl|curl|time|ssh(-keygen|-copy-id|-agent|-add)?|gpg(2|-connect-agent)?|ykpersonalize|docker *(?:builder|config|container|engine|image|network|node|plugin|secret|service|stack|swarm|system|trust|volume|attach|build|commit|cp|create|deploy|diff|events|exec|export|history|images|import|info|inspect|kill|load|login|logout|logs|pause|port|ps|pull|push|rename|restart|rm|rmi|run|save|search|start|stats|stop|tag|top|unpause|update|version|wait)?|docker-compose *(build|bundle|config|create|down|events|exec|help|images|kill|logs|pause|port|ps|pull|push|restart|rm|run|scale|start|stop|top|unpause|up|version)?|ss|grep|egrep|touch|chmod|wget|python([2-3][0-9\.]*)?|pip|pip3)(?= |$)\b/g
 	},
 	{
 		matches: {
@@ -778,6 +778,35 @@ Rainbow.extend('dockerfile', [
 	{
 		name: 'comment',
 		pattern: /\#[\s\S]*?$/gm
+	}
+]);
+
+/**
+ * Dockerfile patterns
+ *
+ * @author Wandrille K.
+ */
+Rainbow.extend('http', [
+	{
+		matches: {
+			1: 'support.command',
+			2: 'string',
+			3: 'keyword.options'
+		},
+		pattern: /^(GET|POST|PUT|DELETE|OPTION|TRACE) +([^\s]+) (HTTP\/[0-2.]+)/gm
+	},
+	{
+		matches: {
+			1: 'support.prefix'
+		},
+		pattern: /^([\x21-\x7e]+):.*/gm
+	},
+	{
+		matches: {
+			1: 'variable',
+			2: 'string'
+		},
+		pattern: /^([^&=\s]+)=([^&]+)&?(?:amp;)?/gm
 	}
 ]);
 
