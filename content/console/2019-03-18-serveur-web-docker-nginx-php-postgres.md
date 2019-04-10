@@ -2,8 +2,8 @@
 title: "Serveur Web avec Docker : Nginx, PHP et PostgreSQL"
 description: "Utiliser Docker pour mettre en place un serveur Web intégrant une base de données PostgreSQL, PHP-FPM et servi par Nginx."
 tags: [ "Docker", "PHP", "Nginx", "PostgreSQL" ]
-lastmod: "2019-03-09 10:38:07"
-date: "2019-03-09 10:21:54"
+lastmod: 2019-04-10 20:20:49
+date: "2019-03-18 20:21:54"
 categories:
     - "Console"
 type: post
