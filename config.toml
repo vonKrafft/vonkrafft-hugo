@@ -1,0 +1,128 @@
+
+baseURL = "https://vonkrafft.fr/"
+languageCode = "fr"
+defaultContentLanguage = "fr"
+title = "vonKrafft"
+theme = "hugo-nuo"
+enableRobotsTXT = true
+canonifyURLs = true
+
+# Disqus Username
+disqusShortname = "vonkrafft"
+
+# Google Analytics UA number
+googleAnalytics = "UA-24449159-3"
+
+# Copyright of your post
+copyright = "© This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you likes to quote or reproduce."
+
+# Initial site menu, you can extend menu with content.
+[[menu.main]]
+  name = "Blog"
+  weight = 10
+  identifier = "home"
+  pre = "<i class='fa fa-newspaper-o'></i>"
+  url = "/"
+
+[[menu.main]]
+  parent = "home"
+  name = "Actus"
+  weight = 11
+  identifier = "actus"
+  url = "/categories/actus/"
+
+[[menu.main]]
+  parent = "home"
+  name = "Dossiers"
+  weight = 12
+  identifier = "dossiers"
+  url = "/categories/dossiers/"
+
+[[menu.main]]
+  parent = "home"
+  name = "Guides"
+  weight = 13
+  identifier = "guides"
+  url = "/categories/guides/"
+
+[[menu.main]]
+  parent = "home"
+  name = "Tutoriels"
+  weight = 14
+  identifier = "tutoriels"
+  url = "/categories/tutoriels/"
+
+[[menu.main]]
+  parent = "home"
+  name = "Console"
+  weight = 15
+  identifier = "console"
+  url = "/categories/console/"
+
+[[menu.main]]
+  parent = "home"
+  name = "Sécurité"
+  weight = 16
+  identifier = "securite"
+  url = "/categories/securite/"
+
+[[menu.main]]
+  parent = "home"
+  name = "Write-up"
+  weight = 17
+  identifier = "write-up"
+  url = "/categories/write-up/"
+
+[[menu.main]]
+  name = "Works"
+  weight = 20
+  identifier = "works"
+  pre = "<i class='fa fa-rocket'></i>"
+  url = "/works/"
+
+[[menu.main]]
+  name = "Contact"
+  weight = 30
+  identifier = "contact"
+  pre = "<i class='fa fa-id-card-o'></i>"
+  url = "/contact/"
+
+# Add your own params here
+[params]
+  author = "vonKrafft"
+  avatar = "/img/avatar.jpg"
+  seotitle = "vonKrafft | Chronicles of a cybersecurity engineer"
+  subtitle = "Chronicles of a cybersecurity engineer"
+  description = ""
+  paginate = 10
+
+  # Choose your social networks
+  email = "contact at vonkrafft.fr"
+  github = "vonKrafft"
+  twitter = "v0nkrafft"
+  linkedin = "wandrillekrafft"
+  # weibo = "weibo_username"
+  # wechat= "/img/qrcode.jpg" # Replace with your wechat qrcode image
+  # facebook = "facebook_username"
+  # google = "googlplus_id_number"
+  # instagram = "instagram_username"
+  # youtube = "youtube_username"
+  # vimeo = "vimeo_username"
+  # medium = "medium_username"
+  # quora = "quora_username"
+  # pinterest = "pinterest_username"
+  # dribbble = "dribbble_username"
+  # behance = "behance_username"
+  # jsfiddle = "jsfiddle_username"
+  # codepen = "codepen_username"
+  # zhihu = "zhihu_username"
+  # douban = "douban_username"
+  # bilibili = "bilibili_id_number"
+
+  # Google Webmaster
+  # https://www.google.com/webmasters/
+  # googleSiteVerification = "_moDmnnBNVLBN1rzNxyGUGdPHE20YgbmrtzLIbxaWFc"
+
+  # Bing Webmaster
+  # https://www.bing.com/toolbox/webmaster/
+  # msValidate = "22596E34341DD1D17D6022C44647E587"
