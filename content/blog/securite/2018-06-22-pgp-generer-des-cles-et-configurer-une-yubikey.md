@@ -23,9 +23,9 @@ Ayant récemment acquis une [Yubikey NEO](https://www.yubico.com/product/yubikey
 
 Ça ne peut pas faire de mal de résumer les bases de [OpenPGP](http://www.openpgp.org/), et plus particulièrement la structure d'une clé PGP.
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> PGP fait initialement référence à [Pretty Good Privacy](https://fr.wikipedia.org/wiki/Pretty_Good_Privacy), mais aussi au standard OpenPGP. Par la suite, j'utiliserais le terme PGP pour désigner OpenPGP.{{% /alert %}}
+{{< alert "info" info-circle >}}PGP fait initialement référence à [Pretty Good Privacy](https://fr.wikipedia.org/wiki/Pretty_Good_Privacy), mais aussi au standard OpenPGP. Par la suite, j'utiliserais le terme PGP pour désigner OpenPGP.{{< /alert >}}
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> [GnuPG](https://fr.wikipedia.org/wiki/GNU_Privacy_Guard) (ou GPG, de l'anglais GNU Privacy Guard) est l'implémentation GNU du standard OpenPGP défini dans la [RFC 4880](http://tools.ietf.org/html/rfc4880). Par la suite, nous générerons des clés OpenPGP à l'aide de GnuPG.{{% /alert %}}
+{{< alert "info" info-circle >}}[GnuPG](https://fr.wikipedia.org/wiki/GNU_Privacy_Guard) (ou GPG, de l'anglais GNU Privacy Guard) est l'implémentation GNU du standard OpenPGP défini dans la [RFC 4880](http://tools.ietf.org/html/rfc4880). Par la suite, nous générerons des clés OpenPGP à l'aide de GnuPG.{{< /alert >}}
 
 ### Structure d'une clé PGP
 
@@ -91,7 +91,7 @@ uid                   [ultimate] Wandrille &lt;contact at vonkrafft dot fr&gt;
 
 On a donc une clé **pub**lique et une clé **sec**rète (privée) dont le rôle est de certifier **[C]** les autres informations de la clé PGP. On a également une identité **uid**.
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> J'ai mis une date d'expiration de ma clé primaire à un an car je suis masochiste et j'adore générer des clés PGP tous les ans ... Blague à part, j'ai généré cette nouvelle clé PGP pour ma Yubikey à des fins de test, et je vais très probablement générer une nouvelle clé dans l'année.{{% /alert %}}
+{{< alert "info" info-circle >}}J'ai mis une date d'expiration de ma clé primaire à un an car je suis masochiste et j'adore générer des clés PGP tous les ans ... Blague à part, j'ai généré cette nouvelle clé PGP pour ma Yubikey à des fins de test, et je vais très probablement générer une nouvelle clé dans l'année.{{< /alert >}}
 
 L'étape suivante est de générer nos trois sous-clés :
 
@@ -102,7 +102,7 @@ gpg> addkey
 
 GnuPG dispose d'une interface de commande pour l'édition des clés. Pour ajouter une clé, saisir `addkey`, puis choisir l'option **(8) RSA (set your own capabilities)**, désactiver tous les rôles sauf **Sign** et générer une clé de 2048 bits.
 
-{{% alert "warning" %}}<i class="fa fa-question-circle"></i> **Mais pourquoi utiliser RSA 2048 bits ?**<br>La Yubikey NEO, à l'heure où j'écris ces lignes, ne supporte que RSA 2048 and ECC p256. J'ai utilisé ici des clés RSA, mais libre à vous de générer des clés ECC en sélectionnant l'option **(11) ECC (set your own capabilities)**.{{% /alert %}}
+{{< alert "warning" question-circle >}}**Mais pourquoi utiliser RSA 2048 bits ?**<br>La Yubikey NEO, à l'heure où j'écris ces lignes, ne supporte que RSA 2048 and ECC p256. J'ai utilisé ici des clés RSA, mais libre à vous de générer des clés ECC en sélectionnant l'option **(11) ECC (set your own capabilities)**.{{< /alert >}}
 
 Répéter l'opération pour générer les deux autres clés avec les rôles **Encrypt** et **Authenticate**, puis enregistrer les modifications :
 
@@ -140,7 +140,7 @@ Nous n'avons plus besoin à présent de la clé privée primaire qui a été uti
 debian:~$ gpg2 --armor --output /mnt/usb/secret-keys.txt --export-secret-key 788FC46C8BB350B8
 {{< /code >}}
 
-{{% alert "danger" %}}<i class="fa fa-exclamation-circle"></i> **Attention** Ne pas laisser trainer et ne pas perdre le support USB. Ça peut paraitre inutile de le préciser, mais il s'agit de vos clés privées ! Selon l'usage que vous ferez de votre clé PGP, la perte ou le vol de ces clés peut conduire à l'**usurpation de votre identité** !{{% /alert %}}
+{{< alert "danger" exclamation-circle >}}**Attention** Ne pas laisser trainer et ne pas perdre le support USB. Ça peut paraitre inutile de le préciser, mais il s'agit de vos clés privées ! Selon l'usage que vous ferez de votre clé PGP, la perte ou le vol de ces clés peut conduire à l'**usurpation de votre identité** !{{< /alert >}}
 
 Maintenant que l'on dispose d'un backup sur un support USB bien planqué chez nous (ou dans un coffre à la banque, mais ce n'est pas forcément à la portée de tout le monde), on peut supprimer la clé privée primaire de notre clé PGP. Il nous faut pour cela :
 

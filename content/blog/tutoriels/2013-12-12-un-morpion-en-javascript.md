@@ -44,4 +44,4 @@ Je récupère l’événement d'un clique de la souris grâce au code `$("#canva
 
 A la fin de chaque manche, deux boutons apparaissent afin de commencer une nouvelle manche ou une nouvelle partie. Pour la nouvelle manche, on exécute la fonction `newMatch()`. La grille est redessinée, le tableau contenant la liste des cases occupées et réinitialisé et le message d'information est actualisé. Pour la nouvelle partie, on exécute la fonction `newGame()`. Cette fonction appelle la fonction `newMatch()` et en plus, les compteurs de points et de manches sont remis à zéro.
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> Vous êtes libre d'utiliser librement ce code. Seulement, si vous le diffusez, merci de citer vos sources et de conserver les commentaires des fichiers HTML, JavaScript et CSS.{{% /alert %}}
+{{< alert "info" info-circle >}}Vous êtes libre d'utiliser librement ce code. Seulement, si vous le diffusez, merci de citer vos sources et de conserver les commentaires des fichiers HTML, JavaScript et CSS.{{< /alert >}}

@@ -33,7 +33,7 @@ Instaurée en 2006, l’éco-participation permet de financer 6,5 Kg de DEEE par
 
 En 2007, les REP ont collectées 175 million de tonnes de DEEE. Et très vite, les chiffres ont grimpés : en 2008, c’est 301 millions de déchets qui ont été récoltés, puis 393 en 2009 et 417 en 2010. Des chiffres qui encouragent à continuer. Récemment, le gouvernement a lancé avec les REP une campagne de sensibilisation pour inciter les gens à recycler leur matériel, et des sociétés comme LDLC propose des offres recyclage.
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> LDLC (magasin de produits informatiques) lance du 17 au 19 juin à Lyon une opération recyclage à l’occasion des journées « Nature Capitale ». Ainsi, LDLC propose 1€ de bon d’achat pour 3 Kg de DEEE apportés.{{% /alert %}}
+{{< alert "info" info-circle >}}LDLC (magasin de produits informatiques) lance du 17 au 19 juin à Lyon une opération recyclage à l’occasion des journées « Nature Capitale ». Ainsi, LDLC propose 1€ de bon d’achat pour 3 Kg de DEEE apportés.{{< /alert >}}
 
 ## Des objectif ambitieux
 
@@ -57,7 +57,7 @@ Tous comme le tri du papier/carton, le recyclage des DEEE doit devenir automatiq
 
 Aujourd’hui, nombreux sont ceux qui se déploient pour sensibiliser les consommateurs. Je vous parlais plus haut de LDLC qui fait une opération 3Kg = 1€, mais il existe aussi d’autres filières et sociétés qui font de même. Par exemple, l’éco-organisme ERP-France organise tous les ans des « Recycling Party », une série de concert gratuits à condition que vous rapportiez un appareil électrique à recycler.
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> Seul 21% des petits appareils électroniques (mp3, téléphones, netbook …) sont récupérés, contre 72% pour les téléviseurs{{% /alert %}}
+{{< alert "info" info-circle >}}Seul 21% des petits appareils électroniques (mp3, téléphones, netbook …) sont récupérés, contre 72% pour les téléviseurs{{< /alert >}}
 
 ## Agissez
 

@@ -50,7 +50,7 @@ debian:~$ rm motsdepasse.txt                                                    
 debian:~$ gpg2 --output motsdepasse.txt --decrypt motsdepasse.gpg                      # Lorsqu'on en a bseoin, déchiffrer le fichier
 {{< /code >}}
 
-{{% alert info %}}<i class="fa fa-info-circle"></i> Pour GnuPG 1.0 et 2.0, l'algorithme de chiffrement par défaut est **Cast5**, pour GnuPG 2.1 c'est **AES-128**. Il est possible de choisir un autre algorithme lors du chiffrement avec l'option `--cipher-algo` ou modifier l'algorithme par défaut dans le fichier de configuration `~/.gnupg/gpg.conf` avec les directives `personal-cipher-preferences` et `s2k-cipher-algo`.{{% /alert %}}
+{{< alert info info-circle >}}Pour GnuPG 1.0 et 2.0, l'algorithme de chiffrement par défaut est **Cast5**, pour GnuPG 2.1 c'est **AES-128**. Il est possible de choisir un autre algorithme lors du chiffrement avec l'option `--cipher-algo` ou modifier l'algorithme par défaut dans le fichier de configuration `~/.gnupg/gpg.conf` avec les directives `personal-cipher-preferences` et `s2k-cipher-algo`.{{< /alert >}}
 
 Bon, on est bien content avec notre fichier, mais si l'on doit déchiffrer à chaque fois notre fichier, rechercher le mot de passe que l'on souhaite, copier/coller et  puis chiffrer à nouveau le fichier ... on va vite s'en lasser et revenir à nos règles toutes pourries citées plus haut. Heureusement, quelqu'un a déjà planché sur un gestionnaire de mot de passe basé sur PGP.
 
@@ -90,9 +90,9 @@ A présent, on dispose de quatre répertoires dans `~/.password-store`, chacun c
 
 Le fichier `.gpg-id` du réperoire `~/.password-store/shared` contient les identités des trois clés PGP d'Alice, Bob et John. Ainsi, les mots de passe ajoutés dans ce répertoire seront chiffrés avec ces trois clés et donc toute l'équipe pourra les déchiffrer.
 
-{{% alert info %}}<i class="fa fa-info-circle"></i> Au moment de chiffrer, `pass` va rechercher le premier fichier `.gpg-id` qu'il trouvera en remontant l'arborescence jusqu'à la racine du répertoire `~/.password-store`. Si aucun fichier `.gpg-id` n'est trouvé ou si ce dernier est vide, une erreur indiquera d'utiliser `pass init`.{{% /alert %}}
+{{< alert info info-circle >}}Au moment de chiffrer, `pass` va rechercher le premier fichier `.gpg-id` qu'il trouvera en remontant l'arborescence jusqu'à la racine du répertoire `~/.password-store`. Si aucun fichier `.gpg-id` n'est trouvé ou si ce dernier est vide, une erreur indiquera d'utiliser `pass init`.{{< /alert >}}
 
-{{% alert warning %}}<i class="fa fa-exclamation-circle"></i> Attention, si vous avez bien suivi, seul l'identité d'Alice est présent dans `~/.password-store/.gpg-id`. Tous mots de passe créé ailleurs que dans `alice`, `bob`, `john` ou `shared` sera chiffré avec la clé d'Alice et donc lisible par cette dernière. Par conséquent, si Bob ou John ajoutent des mots de passe ailleurs que dans leurs répertoires, ils seront lisibles par Alice. L'idéal est de supprimer le fichier `~/.password-store/.gpg-id`.{{% /alert %}}
+{{< alert warning exclamation-circle >}}Attention, si vous avez bien suivi, seul l'identité d'Alice est présent dans `~/.password-store/.gpg-id`. Tous mots de passe créé ailleurs que dans `alice`, `bob`, `john` ou `shared` sera chiffré avec la clé d'Alice et donc lisible par cette dernière. Par conséquent, si Bob ou John ajoutent des mots de passe ailleurs que dans leurs répertoires, ils seront lisibles par Alice. L'idéal est de supprimer le fichier `~/.password-store/.gpg-id`.{{< /alert >}}
 
 ### Partage des mots de passe chiffrés avec Git
 
@@ -115,7 +115,7 @@ alice:~$ pass init -p shared $(cat ~/.password-store/shared/.gpg-id)         # R
 
 C'est la même manipulation lorsque l'on souhaite retirer une clé PGP : après avoir retiré l'identité dans le fichier `shared/.gpg-id`, il suffit de lancer la commande `pass init -p shared $(cat ~/.password-store/shared/.gpg-id)`. Bien sûr, je vous recommande également de changer les mots de passe concernés après avoir mis à jour le fichier `.gpg-id`.
 
-{{% alert info %}}<i class="fa fa-info-circle"></i> Dans l'exemple ci-dessus, je crée un seul répertoire partagé pour tout le monde. Vous pouvez bien sûr créer autant de répertoires partagés que vous souhaitez, avec autant de combinaisons d'identités désirées.{{% /alert %}}
+{{< alert info info-circle >}}Dans l'exemple ci-dessus, je crée un seul répertoire partagé pour tout le monde. Vous pouvez bien sûr créer autant de répertoires partagés que vous souhaitez, avec autant de combinaisons d'identités désirées.{{< /alert >}}
 
 Personnellement, j'adore `pass` pour sa simplicité de conception et d'utilisation. Quand on y pense, ce n'est rien de plus que `gpg`, `git` et quelques commandes de base pour copier, modifier et supprimer des fichiers. Vous pouvez même utiliser votre éditeur de texte préféré pour modifier les mots de passe, `pass` utilise la variable d'environnement `$EDITOR` (`vi` par défaut).
 

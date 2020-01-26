@@ -32,7 +32,7 @@ Aujourd’hui, la situation se résume à ça : un utilisateur lambda d’un PC 
 
 Maintenant, observons votre lieu de travail : il y a de fortes chances pour qu’au boulot, vous ayez accès à un « disque réseau partagé ». Un espace de stockage sur serveur, accessible via le réseau, et sur lequel vous stockez vos PowerPoint, vos PDF, vos documents, vos images débiles, vos films de vacances, et même quelques fichiers pour le travail...
 
-{{% alert "warning" %}}<i class="fa fa-question-circle"></i> Pourquoi ne pas monter son serveur à la maison ?{{% /alert %}}
+{{< alert "warning" question-circle >}}Pourquoi ne pas monter son serveur à la maison ?{{< /alert >}}
 
 ## Intégrer un NAS dans son réseau
 
@@ -117,7 +117,7 @@ Copiez, depuis votre PC fixe, Freenas sur votre clef USB en suivant les instruct
 
 Ensuite, vous pourrez vous connecter au serveur depuis votre PC fixe via un explorateur web style Firefox pour configurer la matrice RAID et le système de fichier (LISEZ [la documentation de Freenas](http://freenas.org/documentation:setup_and_user_guide)). Une fois ceci fait, vous pourrez créer un drive partagé sur le réseau, que tous les PC de la maison pourront voir. Il sera bien au chaud derrière le Firewall de votre routeur. En outre, Freenas étant un OS très simple et sans autres applications sur le serveur, les risques de piratage et/ou infection sont quasi nuls (enfin n’oubliez pas d’inclure le nouveau lecteur dans vos recherches de virus périodiques).
 
-{{% alert "info" %}}<i class="fa fa-question-circle"></i> **NOTE :** Il y a une fonction « recycle bin » / poubelle dans Freenas, pour créer une « poubelle » comme dans Windows (un espace où sont conservés les fichiers « effacés » par vos soins et éventuellement par mégarde).{{% /alert %}}
+{{< alert "info" question-circle >}}**NOTE :** Il y a une fonction « recycle bin » / poubelle dans Freenas, pour créer une « poubelle » comme dans Windows (un espace où sont conservés les fichiers « effacés » par vos soins et éventuellement par mégarde).{{< /alert >}}
 
 ## Conclusion
 

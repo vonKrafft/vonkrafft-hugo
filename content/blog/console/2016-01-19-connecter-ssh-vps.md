@@ -15,7 +15,7 @@ Dans le tutoriel suivant, nous allons voir comment nous connecter en SSH à un s
 
 <!--more-->
 
-{{% alert "warning" %}}<i class="fa fa-question-circle"></i> Un serveur VPS, une connexion SSH, mais qu’est-ce que c‘est ?{{% /alert %}}
+{{< alert "warning" question-circle >}}Un serveur VPS, une connexion SSH, mais qu’est-ce que c‘est ?{{< /alert >}}
 
 Un serveur VPS (de l’anglais Virtual Private Server) est une façon de partitionner un serveur en plusieurs serveurs virtuels indépendants qui ont chacun les caractéristiques logicielles d'un serveur dédié, en utilisant des techniques de virtualisation. Chaque serveur peut fonctionner avec un système d'exploitation différent et redémarrer indépendamment.
 
@@ -28,7 +28,7 @@ Dans la suite des manipulations, j’aurais la configuration suivante :
 
 Un client et un serveur SSH sont respectivement installés sur “stargazer” et “farragut”. L’utilisateur client est “vonkrafft” et un autre utilisateur “vonkrafft” existe sur le VPS.
 
-{{% alert "success" %}}<i class="fa fa-check-circle"></i> **ASTUCE** : Comme vous pouvez le voir, j’ai une adresse personnalisée pour mon VPS alors que je travail en local (càd sur mon réseau privé derrière ma box Internet). Pour en savoir plus, je vous invite à lire [comment renommer votre serveur sur votre réseau local](/console/donner-nom-dns-a-serveur-local/).{{% /alert %}}
+{{< alert "success" check-circle >}}**ASTUCE** : Comme vous pouvez le voir, j’ai une adresse personnalisée pour mon VPS alors que je travail en local (càd sur mon réseau privé derrière ma box Internet). Pour en savoir plus, je vous invite à lire [comment renommer votre serveur sur votre réseau local](/console/donner-nom-dns-a-serveur-local/).{{< /alert >}}
 
 ## Connexion au serveur
 
@@ -55,7 +55,7 @@ Comme vous pouvez le constater, j’ai du rentrer mon mot de passe, et cela va �
 
 Avant toute chose, il nous faut une paire de clés RSA privée/publiques.
 
-{{% alert "warning" %}}<i class="fa fa-question-circle"></i> Une clé RSA, c’est quoi, et pour quoi faire ?{{% /alert %}}
+{{< alert "warning" question-circle >}}Une clé RSA, c’est quoi, et pour quoi faire ?{{< /alert >}}
 
 Le chiffrement RSA (nommé par les initiales de ses trois inventeurs Ronald Rivest, Adi Shamir et Leonard Adleman) est un algorithme de cryptographie asymétrique. Il repose sur l'utilisation d'une clé publique (qui est diffusée) et d'une clé privée (gardée secrète), l'une permettant de chiffrer le message et l'autre de le déchiffrer. Ainsi, l'expéditeur peut utiliser la clé publique du destinataire pour chiffrer un message que seul le destinataire (en possession de la clé privée) peut déchiffrer, garantissant la confidentialité du contenu.
 
@@ -75,11 +75,11 @@ The key fingerprint is:
 09:69:5a:98:af:43:0f:72:1b:e7:fd:58:1b:41:d0:26 vonkrafft@stargazer
 {{< /code >}}
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> **NOTE :** J’ai choisi une taille de clé RSA de 4096 bits, vous pouvez bien évidement choisir DSA et/ou une autre taille de clé.{{% /alert %}}
+{{< alert "info" info-circle >}}**NOTE :** J’ai choisi une taille de clé RSA de 4096 bits, vous pouvez bien évidement choisir DSA et/ou une autre taille de clé.{{< /alert >}}
 
 Lors de la génération des clés, je suis invité à renseigner une passphrase.
 
-{{% alert "warning" %}}<i class="fa fa-question-circle"></i> Une passphrase, mais qu’est-ce que c’est encore que ça ?{{% /alert %}}
+{{< alert "warning" question-circle >}}Une passphrase, mais qu’est-ce que c’est encore que ça ?{{< /alert >}}
 
 Vous connaissez déjà les password (ou mot de passe dans la langue de Molière). Les passphrase sont des mots de passe très long qui ont été nommé ainsi pour les différencier des des mots de passe plus courts. Aisni, nous avaons les phrases (longues) de passe, et les mots (courts) de passe. Cela permet à l’utilisateur de saisir une phrase de quelques mots facile à retenir mais difficile à casser. Pourquoi donc ? Parce que le niveau de complexité augmente de façon plus qu’exponentielle avec le nombre des caractères, en particulier quand on commence à découper en mots.
 
@@ -113,7 +113,7 @@ Au passage, nous pouvons en profiter pour désactiver la connexion SSH en tant q
 PermitRootLogin no
 {{< /code >}}
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> **NOTE** : Il est possible de désactiver l’authentification par mot de passe sur le VPS afin que seuls les clients avec une clé soient autorisés à se connecter. Pour cela il faut modifier la valeur de `PasswordAuthentication` à `no`.{{% /alert %}}
+{{< alert "info" info-circle >}}**NOTE** : Il est possible de désactiver l’authentification par mot de passe sur le VPS afin que seuls les clients avec une clé soient autorisés à se connecter. Pour cela il faut modifier la valeur de `PasswordAuthentication` à `no`.{{< /alert >}}
 
 J’indique au daemon SSH qu’il trouvera la clé publique dans le fichier `~/.ssh/authorized_keys` de l’utilisateur concerné. Il faut ensuite redémarrer le daemon SSH pour appliquer les modifications :
 

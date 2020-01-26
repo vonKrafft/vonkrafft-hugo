@@ -33,7 +33,7 @@ Et le système d'exploitation ? Vous avez le chois entre la distribution Windows
 
 ### Montage et réglages
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> Je vous invite à voir l'article [Monter son NAS soi-même](/tutoriels/assemblez-votre-serveur-nas/).{{% /alert %}}
+{{< alert "info" info-circle >}}Je vous invite à voir l'article [Monter son NAS soi-même](/tutoriels/assemblez-votre-serveur-nas/).{{< /alert >}}
 
 ## Recyclez-le en PC Home Cinéma
 

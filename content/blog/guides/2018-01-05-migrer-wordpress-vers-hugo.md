@@ -178,7 +178,7 @@ Ensuite, j'ai parcouru tous les articles pour vérifier la syntaxe du Markdown, 
 
 ## Rediriger son ancien site WordPress vers Hugo
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> Si vous ne changez pas de nom de domaine, vous pouvez ignorer cette dernière partie. Pour ma part, je suis passé de http://tuto-wibb.krafft.ovh/ à https://vonkrafft.fr/, et donc j'avais besoin de mettre en place une redirection.{{% /alert %}}
+{{< alert "info" info-circle >}}Si vous ne changez pas de nom de domaine, vous pouvez ignorer cette dernière partie. Pour ma part, je suis passé de http://tuto-wibb.krafft.ovh/ à https://vonkrafft.fr/, et donc j'avais besoin de mettre en place une redirection.{{< /alert >}}
 
 Voilà, un joli site statique avec Hugo, tout beau tout neuf, mais que faire de l'ancien site ? Il faut surtout éviter de le supprimer, ou en tout cas pas tout de suite. Aussi longtemps que possible, il faut mettre en place une redirection permanente vers vos nouveaux articles.
 

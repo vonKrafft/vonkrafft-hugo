@@ -19,7 +19,7 @@ Le CPU, pour Central Process Unit, effectue l’ensemble des calculs nécessaire
 
 Elle s’exprime en Gigahertz (GHz). Elle indique le nombre d’opération que le CPU peut effectuer par seconde (1GHz = 1 million d’opération par seconde). Longtemps considérer comme un indicateur de la puissance du CPU, la fréquence native d’un processeur actuel varie entre 1,5 GHz et 3,6 GHz pour les PC de bureau. Je parle de fréquence native car il est possible d’overclocker son processeur pour augmenter sa fréquence (voir l’article sur [l'overclocking](/tutoriels/overclocker-son-cpu/)).
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> **INFO :** Pour l’anecdote, le record d’overclocking avec un CPU grand public est détenu par l’AMD FX-8150 qui a atteint une fréquence de 8,429 GHz. Pour atteindre un tel niveau, il a fallu utiliser de l’hélium liquide pour refroidir le processeur.{{% /alert %}}
+{{< alert "info" info-circle >}}**INFO :** Pour l’anecdote, le record d’overclocking avec un CPU grand public est détenu par l’AMD FX-8150 qui a atteint une fréquence de 8,429 GHz. Pour atteindre un tel niveau, il a fallu utiliser de l’hélium liquide pour refroidir le processeur.{{< /alert >}}
 
 Cependant, il ne faut pas oublier que généralement plus la fréquence est élevée plus la température est élevée. Je dis « généralement » car avec la multiplication des cœurs (voir plus bas), le rapport fréquence/température s’est un peu complexifié.
 

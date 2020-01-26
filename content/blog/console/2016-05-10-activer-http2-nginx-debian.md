@@ -15,7 +15,7 @@ Cela fait maintenant 20 ans que le protocole HTTP (HyperText Transfer Protocol) 
 
 <!--more-->
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> Le tutoriel suivant est conçu pour Debian, ou tout autre distribution qui s'en inspire. Pour les autres distributions Linux, les commandes nécessitent d'être adaptée, notamment le gestionnaire de paquets.{{% /alert %}}
+{{< alert "info" info-circle >}}Le tutoriel suivant est conçu pour Debian, ou tout autre distribution qui s'en inspire. Pour les autres distributions Linux, les commandes nécessitent d'être adaptée, notamment le gestionnaire de paquets.{{< /alert >}}
 
 ## Activer HTTP2 avec nginx
 
@@ -36,11 +36,11 @@ root:~# nginx -v
 nginx version: nginx/1.10.0
 {{< /code >}}
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> Vous pouver aussi simplement l'installer avec `apt-get install nginx`, sans oublier de lancer `apt-get update` avant.{{% /alert %}}
+{{< alert "info" info-circle >}}Vous pouver aussi simplement l'installer avec `apt-get install nginx`, sans oublier de lancer `apt-get update` avant.{{< /alert >}}
 
 Bon aller, tant que j'y suis, je vais vous dire comment installer la version mainline.
 
-{{% alert "warning" %}}<i class="fa fa-question-circle"></i> Mais tu viens de nous dire que la version 1.10.0 était disponible, stable, et supportait HTTP2 ... ?{{% /alert %}}
+{{< alert "warning" question-circle >}}Mais tu viens de nous dire que la version 1.10.0 était disponible, stable, et supportait HTTP2 ... ?{{< /alert >}}
 
 Oui mais ... J'ai préciser au début du tutoriel que la distribution utilisée est Debian, et tout le monde connait la rapidité légendaire de mise à jour des dépôts Debian. Donc à moins d'attendre que les dépôts soient mis à jour pour Nginx, ce qui peut prendre du temps, nous allons installer la version mainline. Et puis cela vous permettra de bénéficier des dernières fonctionnalités du serveur.
 
@@ -98,7 +98,7 @@ server {
 
 Bien sûr, ces paramètres sont à rajouter ou à modifier dans le fichier de configuration et ils ne se suffisent pas à eux-même. Pour sécuriser votre serveur Nginx, je vous invite à jeter un coup d’œil à ce projet, qui donne des [recommendations pour améliorer la sécurité de Nginx](https://gist.github.com/plentz/6737338).
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> Ne pas oublier de redémarrer le serveur avec la commande `service nginx restart`{{% /alert %}}
+{{< alert "info" info-circle >}}Ne pas oublier de redémarrer le serveur avec la commande `service nginx restart`{{< /alert >}}
 
 {{% gallery columns="2" %}}
 {{< gallery_item src="/media/2016/05/12df53fea8b3adfa6c2ec456dd22e204-300x186.jpg" link="/media/2016/05/12df53fea8b3adfa6c2ec456dd22e204.jpg" height="150px;" >}}

@@ -42,4 +42,4 @@ Vous pouvez installer autant de barrettes que vous le permet votre carte mère.
 - 3 ou 6 barrettes : rare mais présent, le Triple-Channel est basé sur le même principe que le Dual-Channel, comme son nom l’indique, mais fait fonctionner les barrettes par trois.
 - Plus de barrettes : honnêtement, cela n’a pas grand intérêt.
 
-{{% alert "warning" %}}<i class="fa fa-exclamation-circle"></i> Pour le Dual-Channel et le triple-Channel, les barrettes de mémoire vive doivent être identiques (et compatible avec le Dual ou le triple Channel bien sûr).{{% /alert %}}
+{{< alert "warning" exclamation-circle >}}Pour le Dual-Channel et le triple-Channel, les barrettes de mémoire vive doivent être identiques (et compatible avec le Dual ou le triple Channel bien sûr).{{< /alert >}}

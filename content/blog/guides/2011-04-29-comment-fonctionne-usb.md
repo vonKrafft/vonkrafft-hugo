@@ -52,7 +52,7 @@ Il existe encore les ports de type mini A et mini B. On les trouve le plus so
 {{< gallery_item src="/media/2011/04/1f588a9d86faed1fd4f1acf12956170c.png" link="/media/2011/04/1f588a9d86faed1fd4f1acf12956170c.png" >}}
 {{% /gallery %}}
 
-{{% alert "info" %}}<i class="fa fa-question-circle"></i> Pourquoi y a-t-il deux broches D+ et D- pour transmettre les données (data) alors que c'est un port série ?{{% /alert %}}
+{{< alert "info" question-circle >}}Pourquoi y a-t-il deux broches D+ et D- pour transmettre les données (data) alors que c'est un port série ?{{< /alert >}}
 
 Le port USB utilise un type d'encodage (NRZI) qui nécessite deux broches. C'est-à-dire que cet encodage utilise la borne D- pour représenter un 0 binaire, avec une tension négative, et la borne D+ pour le 1 binaire, avec une tension positive. NRZI signifie Non Return to Zero Inverted : jamais de retour à zéro, inversé. C'est un codage bien spécial :
 

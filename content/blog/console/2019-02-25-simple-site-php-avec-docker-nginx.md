@@ -15,13 +15,13 @@ J'ai récemment revu l'organisation des containers Docker présents sur mon serv
 
 <!--more-->
 
-{{% alert info %}}<i class="fa fa-github"></i> Les fichiers nécessaires et le script de mise en place des containers sont disponibles sur [gist.github.com](https://gist.github.com/vonKrafft/5fd248c438711148be878683f6f58b0f). {{% /alert %}}
+{{< alert info github >}}Les fichiers nécessaires et le script de mise en place des containers sont disponibles sur [gist.github.com](https://gist.github.com/vonKrafft/5fd248c438711148be878683f6f58b0f).{{< /alert >}}
 
 ## Objectif de l'infra
 
 Le but est d'avoir un container avec Nginx pour servir du contenu statique et dynamique (PHP). Il faudra configurer Nginx pour rediriger les requêtes de ressources PHP vers un second container qui embarquera PHP-FPM (FastCGI Process Manager).
 
-{{% alert danger %}}<i class="fa fa-exclamation-circle"></i> Je tiens à préciser que le Nginx que nous allons mettre en place sert le contenu en HTTP. Personnellement, j'utilise un reverse-proxy qui s'occupe de gérer HTTPS (_un article futur viendra peut-être pour expliquer comment faire_). Si vous comptez mettre en ligne votre site en utilisant Docker et la méthode ci-après, je vous recommande de modifier la configuration du Nginx pour **mettre en place HTTPS**.{{% /alert %}}
+{{< alert danger exclamation-circle >}}Je tiens à préciser que le Nginx que nous allons mettre en place sert le contenu en HTTP. Personnellement, j'utilise un reverse-proxy qui s'occupe de gérer HTTPS (_un article futur viendra peut-être pour expliquer comment faire_). Si vous comptez mettre en ligne votre site en utilisant Docker et la méthode ci-après, je vous recommande de modifier la configuration du Nginx pour **mettre en place HTTPS**.{{< /alert >}}
 
 Nous aurons donc besoin de deux images Docker :
 
@@ -84,7 +84,7 @@ http {
 
 Pour gérer nos containers, nous allons utiliser `docker-compose` plutôt que de multiples `docker run ...`. Docker Compose utilise un fichier de configuration YAML `docker-compose.yml` dans lequel sont définis nos containers et leurs options de démarrage.
 
-{{% alert info %}}<i class="fa fa-info-circle"></i> Dans notre cas, le fichier `docker-compose.yml` et le répertoire `docker-web` doivent être placés dans le même répertoire parent. Vous pouvez aussi le placer dans un répertoire quelconque et remplacer les chemins relatifs des volumes partagés par des chemins absolus.{{% /alert %}}
+{{< alert info info-circle >}}Dans notre cas, le fichier `docker-compose.yml` et le répertoire `docker-web` doivent être placés dans le même répertoire parent. Vous pouvez aussi le placer dans un répertoire quelconque et remplacer les chemins relatifs des volumes partagés par des chemins absolus.{{< /alert >}}
 
 On peut à présent configurer et démarrer le container Nginx :
 
@@ -210,7 +210,7 @@ services:
 host:~# docker-compose up -d
 {{< /code >}}
 
-{{% alert success %}}<i class="fa fa-check-circle"></i> It works!{{% /alert %}}
+{{< alert success check-circle >}}It works!{{< /alert >}}
 
 {{< img src="/media/2019/02/3be2a3b771431f2096ff984899869fa6.png" alt="index.php" link="/media/2019/02/3be2a3b771431f2096ff984899869fa6.png" >}}
 

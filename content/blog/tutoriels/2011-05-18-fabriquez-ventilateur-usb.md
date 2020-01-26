@@ -30,7 +30,7 @@ Tout d'abord, il faut :
 - Une paire de ciseaux ;
 - Un ordinateur avec de l'USB (pour tester).
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> Un ventilateur de PC fonctionne en 12 V - 500 mA, or l'USB ne peut délivrer que 5 V - 500 mA. Donc l’USB ne pourra alimenter pleinement le ventilateur : ce n’est pas très important, notez juste que votre ventilateur ne tournera pas à sa vitesse maximale.{{% /alert %}}
+{{< alert "info" info-circle >}}Un ventilateur de PC fonctionne en 12 V - 500 mA, or l'USB ne peut délivrer que 5 V - 500 mA. Donc l’USB ne pourra alimenter pleinement le ventilateur : ce n’est pas très important, notez juste que votre ventilateur ne tournera pas à sa vitesse maximale.{{< /alert >}}
 
 ## Le montage
 

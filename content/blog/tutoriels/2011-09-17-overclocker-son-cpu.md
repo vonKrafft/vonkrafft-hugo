@@ -30,18 +30,18 @@ Le but d'un overclocking est d’améliorer la puissance de calcul du processeur
 
 Afin d’éviter la casse, les constructeurs baissent volontairement la fréquence du processeur. Ainsi, votre CPU résistera aux contraintes extérieures (canicule, poussière …). Sachez qu’une gamme de processeur n’est basée que sur une architecture.
 
-{{% alert "info" %}}<i class="fa fa-cogs"></i> **EXEMPLE :** Les AMD Athlon II X2 2xx dont la fréquence varie entre 3.0 et 3.4 GHz.{{% /alert %}}
+{{< alert "info" cogs >}}**EXEMPLE :** Les AMD Athlon II X2 2xx dont la fréquence varie entre 3.0 et 3.4 GHz.{{< /alert >}}
 
 On peut donc effectuer un overclocking sur un CPU milieu de gamme et obtenir la fréquence d’un CPU haut de gamme (voire plus).
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> **NOTE :** Cela ne signifie pas qu’un processeur milieu de gamme overclocké est aussi puissant qu’un haut de gamme. En effet, les performances d’un CPU ne dépendent pas uniquement de sa fréquence.{{% /alert %}}
+{{< alert "info" info-circle >}}**NOTE :** Cela ne signifie pas qu’un processeur milieu de gamme overclocké est aussi puissant qu’un haut de gamme. En effet, les performances d’un CPU ne dépendent pas uniquement de sa fréquence.{{< /alert >}}
 
 ### Le principe de l’overclocking
 
 Tout d’abord, il faut savoir que le processeur communique avec la RAM (mémoire vive), la carte graphique et le chipset (puces de la carte mère). Ce dernier communique avec le reste des composants. L’ensemble des connexions qui relient le chipset au processeur s’appelle le **Front Side Bus** (FSB).
 Pour des raisons historiques, la fréquence du processeur est égale à la <strong>*fréquence du FSB* x *un multiplicateur*</strong>, que nous allons appeler ici "coeff. CPU".
 
-{{% alert "info" %}}<i class="fa fa-cogs"></i> **EXEMPLE :** Pentium 4 Dual Core E5200 : 200MHz (FSB) x 12,5 (Coeff. CPU) = 2500 MHz{{% /alert %}}
+{{< alert "info" cogs >}}**EXEMPLE :** Pentium 4 Dual Core E5200 : 200MHz (FSB) x 12,5 (Coeff. CPU) = 2500 MHz{{< /alert >}}
 
 Pour overclocker un processeur, il existe deux solutions :
 
@@ -67,7 +67,7 @@ Avant de continuer, téléchargez et installez :
 
 Ça y est, il est temps de passer aux choses sérieuses : nous allons **overclocker** le processeur !
 
-{{% alert "danger" %}}<i class="fa fa-warning"></i> **ATTENTION :** le fait d’overclocker votre processeur supprime sa garantie. Il est fortement recommandé d’effectuer une sauvegarde de ses données avant de débuter un overclocking de votre processeur. Tuto Wibb ne peut être tenu pour responsable des éventuels dommages survenus suite à l'utilisation de ce tutoriel.{{% /alert %}}
+{{< alert "danger" warning >}}**ATTENTION :** le fait d’overclocker votre processeur supprime sa garantie. Il est fortement recommandé d’effectuer une sauvegarde de ses données avant de débuter un overclocking de votre processeur. Tuto Wibb ne peut être tenu pour responsable des éventuels dommages survenus suite à l'utilisation de ce tutoriel.{{< /alert >}}
 
 ### Modifier le BIOS
 
@@ -93,7 +93,7 @@ Vous obtenez alors ceci :
 
 Pour modifier la fréquence du FSB, déplacer le curseur du haut sur la fréquence souhaitée et cliquer sur « Set FSB ».
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> **NOTE :** Il est inutile de se précipiter, avancez par palier de 5 MHz.{{% /alert %}}
+{{< alert "info" info-circle >}}**NOTE :** Il est inutile de se précipiter, avancez par palier de 5 MHz.{{< /alert >}}
 
 ### Pourquoi ça ne fonctionne pas ?
 

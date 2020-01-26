@@ -52,7 +52,7 @@ Prenons par exemple le mot de passe `P@ssword01` : c’est un mot de passe de 10
 
 Vous me direz qu’il suffit de complexifier le mot de passe, par exemple `k4dUj@gD_8` (pardon, j’ai éternué sur mon clavier). Hum ... d’accord, et comment retenir ce mot de passe ? Parce que si nous n’avions seulement qu’un seul mot de passe à retenir ça serait réalisable, mais nous utilisons des dizaines de comptes !
 
-{{% alert warning %}}<i class="fa fa-warning"></i> Si vous utilisez un seul mot de passe pour tous vos comptes, j’espère au moins que vous culpabilisez ... Quoi qu'il en soit, je vous invite à rapidement changer tous vos mots de passe et à définir un mot de passe unique pour chacun de vos comptes !{{% /alert %}}
+{{< alert warning warning >}}Si vous utilisez un seul mot de passe pour tous vos comptes, j’espère au moins que vous culpabilisez ... Quoi qu'il en soit, je vous invite à rapidement changer tous vos mots de passe et à définir un mot de passe unique pour chacun de vos comptes !{{< /alert >}}
 
 Bref, un mot de passe ne peut pas à la fois se retenir facilement, respecter la règle de 8 caractères dont 3 types de signes parmi les 4 possibles, et être absent des dictionnaires de mots de passe. Les politiques de mots de passe établies depuis ces dernières années forcent les utilisateurs à choisir des mots de passe difficiles à mémoriser et faciles à casser ...
 
@@ -72,7 +72,7 @@ Dans notre cas, nous prendrons <code>H = log<sub>2</sub>(N<sup>L</sup>) = L &tim
 
 On voit bien qu’un mot de passe simple à retenir de 18 caractères mêlant uniquement minuscule et majuscule possède une entropie nettement plus élevée que notre mot de passe `k4dUj@gD_8`.
 
-{{% alert success %}}<i class="fa fa-lightbulb-o"></i> La longueur d’un mot de passe est à privilégier par rapport à la diversité de ses caractères.{{% /alert %}}
+{{< alert success lightbulb-o >}}La longueur d’un mot de passe est à privilégier par rapport à la diversité de ses caractères.{{< /alert >}}
 
 Attention, je ne dis pas qu’il ne faut pas utiliser des caractères variés pour un mot de passe : un mot de passe constitué d'un seul caractère répété N fois a une entropie de 1 ! L'idéal est de choisir plusieurs mots que l'on colle les uns après les autres. Le mot de passe est donc amené à devenir une phrase de passe (passphrase en anglais), plus facile à retenir pour un utilisateur et plus long à casser pour un ordinateur.
 
@@ -126,7 +126,7 @@ Lorsque vous souhaitez vous connecter à votre espace personnel sur une applicat
 
 Le plus simple est d’enregistrer votre mot de passe dans une base de données, tout comme le reste de vos informations personnelles (nom, prénom, mail, etc.). C’est facile, et puis en plus, si l’utilisateur a oublié son mot de passe, l’application Web est en mesure de lui renvoyer par mail. MAUVAISE IDE&Eacute; !!!
 
-{{% alert danger %}}<i class="fa fa-exclamation-circle"></i> Un mot de passe ne doit jamais, je dis bien **JAMAIS**, être stocké en clair !{{% /alert %}}
+{{< alert danger exclamation-circle >}}Un mot de passe ne doit jamais, je dis bien **JAMAIS**, être stocké en clair !{{< /alert >}}
 
 Imaginez qu’une faille du site permette d’accéder à l’ensemble de la base de données (injections SQL ([OWASP](https://www.owasp.org/index.php/SQL_Injection)), administrateur réseau malveillant, etc.) et votre mot de passe est alors compromis. 
 
@@ -134,7 +134,7 @@ Si un site vous envoie votre mot de passe en clair lorsque vous cliquez sur « m
 
 Je dis « probablement », car votre mot de passe peut également être stocké chiffré. Une clé de chiffrement permet de chiffrer votre mot de passe, et sans clé de déchiffrement, votre mot de passe chiffré est inutilisable s’il venait à être volé. Cependant, les clés de chiffrement sont souvent stockées sur le serveur hébergeant la base de données, et donc une faille pourrait mener, comme avec un stockage en clair, à une divulgation de votre mot de passe.
 
-{{% alert danger %}}<i class="fa fa-exclamation-circle"></i> Chiffrer les mots de passe est une fausse bonne idée ...{{< /alert >}}
+{{< alert danger exclamation-circle >}}Chiffrer les mots de passe est une fausse bonne idée ...{{< /alert >}}
 
 Mais alors comment l’application peut-elle stocker votre mot de passe sans que celui-ci ne puisse être lu par une tierce personne ? Et bien il suffit que l’application stocke le condensat du mot de passe, et non le mot de passe lui-même.
 
@@ -151,7 +151,7 @@ Parmi les fonctions les plus connues, je citerais MD5, SHA-1 et SHA-2. Certains 
 
 Vous avez remarqué qu’un condensat est une chaîne de caractères de taille fixe. J’y ajouterai que ces caractères sont alphanumériques. Donc si une application Web limite la taille des mots de passe, ou interdit certains caractères spéciaux, cela signifie probablement que ce dernier est stocké en clair dans une base de données.
 
-{{% alert success %}}<i class="fa fa-lightbulb-o"></i> Il est donc recommander de stocker les condensats des mots de passe et d’utiliser la fonction de hachage SHA-2, ou ses dérivés (SHA-256, SHA-224, SHA-512 ou SHA-384).{{< /alert >}}
+{{< alert success lightbulb-o >}}Il est donc recommander de stocker les condensats des mots de passe et d’utiliser la fonction de hachage SHA-2, ou ses dérivés (SHA-256, SHA-224, SHA-512 ou SHA-384).{{< /alert >}}
 
 ### Assaisonnons les condensats
 

@@ -15,7 +15,7 @@ Un serveur Web incluant généralement un **logiciel serveur** (_Nginx_), un **i
 
 <!-- more -->
 
-{{% alert info %}}<i class="fa fa-github"></i> Les fichiers nécessaires et le script de mise en place des containers sont disponibles sur [gist.github.com](https://gist.github.com/vonKrafft/18019dedb49eae01035489bbb9ff856c). {{% /alert %}}
+{{< alert info github >}}Les fichiers nécessaires et le script de mise en place des containers sont disponibles sur [gist.github.com](https://gist.github.com/vonKrafft/18019dedb49eae01035489bbb9ff856c).{{< /alert >}}
 
 {{< img src="/media/2019/03/49abbcc5707255341cfebe39f9e2b1ce.png" >}}
 
@@ -23,7 +23,7 @@ Un serveur Web incluant généralement un **logiciel serveur** (_Nginx_), un **i
 
 Récemment, j'expliquais comment simplement mettre en place un serveur **Nginx** qui supporte **PHP** à l'aide de Docker. L'image `php:fpm-alpine` utilisée y était minimaliste et n'embarquait que très peu d'extension PHP. De plus, aucune base de données n'était présente dans notre infra : c'est ce point là que nous allons corrigé ici.
 
-{{% alert warning %}}<i class="fa fa-exclamation-circle"></i> Il est recommandé d'avoir lu l'article [Un simple site en PHP avec Docker et Nginx](/console/simple-site-php-avec-docker-nginx) pour la suite, et d'avoir démarrer les containers Nginx et PHP.{{% /alert %}}
+{{< alert warning exclamation-circle >}}Il est recommandé d'avoir lu l'article [Un simple site en PHP avec Docker et Nginx](/console/simple-site-php-avec-docker-nginx) pour la suite, et d'avoir démarrer les containers Nginx et PHP.{{< /alert >}}
 
 Pour rappel, nous avions créé l'arborescence suivante dans laquelle nous retrouvons le fichier de configuration `nginx.conf`, les journaux Nginx et le contenu du site Web dans `www` :
 
@@ -176,7 +176,7 @@ Pas besoin de faire compliqué ici, nous allons simplement utiliser l'image offi
     - **`POSTGRES_USER`**, cette variable créera l'utilisateur `foobar`. S'il n'est pas spécifié, l'utilisateur par défaut de `postgres` sera utilisé ;
     - **`POSTGRES_DB`**, cette variable créera la base de données `foobar`. S'il n'est pas spécifié,la valeur de `POSTGRES_USER` sera utilisée.
 
-{{% alert danger %}}<i class="fa fa-exclamation-circle"></i> Pour les besoins de cet article, j'ai utilisé les identifiants `foobar:foobar` pour me connecter à la base de données. Pensez à remplacer les variable d'environnement par vos propres valeurs ;) {{% /alert %}}
+{{< alert danger exclamation-circle >}}Pour les besoins de cet article, j'ai utilisé les identifiants `foobar:foobar` pour me connecter à la base de données. Pensez à remplacer les variable d'environnement par vos propres valeurs ;){{< /alert >}}
 
 {{< code lang="yaml" icon="file-text-o" title="docker-compose.yml" >}}
 version: '3'

@@ -383,7 +383,7 @@ Linux debian 3.2.0-4-amd64 #1 SMP Debian 3.2.63-2+deb7u1 x86_64 GNU/Linux
 
 Btrfs, bien qu'étant un système de fichier encore en développement, est intégré à l'image d'installation de Debian. Il suffit simplement de sélectionner Btrfs lors du partitionnement des disques.
 
-{{% alert "danger" %}}**ATTENTION** : GRUB ne supportant pas encore Btrfs, il faut impérativement créer une partition indépendante en Ext4 pour monter `/boot` !{{% /alert %}}
+{{< alert danger >}}**ATTENTION** : GRUB ne supportant pas encore Btrfs, il faut impérativement créer une partition indépendante en Ext4 pour monter `/boot` !{{< /alert >}}
 
 ### Les sous-volumes
 

@@ -34,7 +34,7 @@ Donc, après cette rapide présentation des adresses IP, il est temps de s’att
 
 Si vous avez un serveur local (pour diverses raisons), vous pouvez y accéder avec une machine client grâce à son adresse IP, comme par exemple http://192.168.1.20 (c'est aussi le cas pour tous les ordinateurs connecter à votre réseau local et hébergeant un serveur HTTP).
 
-{{% alert "danger" %}}<i class="fa fa-exclamation-circle"></i> Non mais attend, tu viens de nous dire que nous ne pouvions pas accéder à notre PC en utilisant son IP privée ?!?{{% /alert %}}
+{{< alert "danger" exclamation-circle >}}Non mais attend, tu viens de nous dire que nous ne pouvions pas accéder à notre PC en utilisant son IP privée ?!?{{< /alert >}}
 
 Oui, mais cela est vrai uniquement depuis l’extérieur, c’est-à-dire depuis une machine client qui se trouve au delà de notre box Internet. Mais nous supposons que notre serveur et notre client sont sur le même réseaux privé.
 
@@ -49,7 +49,7 @@ Donc, vous pouvez accéder à votre serveur (en HTTP, FTP, SSH … en fonction d
 
 Nous allons configurer notre interface réseau. Pour moi, il s’agit de eth0 (connexion physique n°0), mais cela peut être différent pour vous : eth1 (si vous avez plusieurs cartes réseau), wlan0 (si vous êtes connecté en wifi), ou autre …
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> Le serveur `vps-001` est un serveur Debian. Pour les autres distributions Linux, opu pour un serveur Windows, il sera necessaire d'adapter certaines commandes et/ou chemins de fichiers.{{% /alert %}}
+{{< alert "info" info-circle >}}Le serveur `vps-001` est un serveur Debian. Pour les autres distributions Linux, opu pour un serveur Windows, il sera necessaire d'adapter certaines commandes et/ou chemins de fichiers.{{< /alert >}}
 
 Le fichier de configuration est le suivant : /etc/networks/interfaces. Par défaut, notre serveur (comme n’importe quel équipement réseau) demande une adresse IP à notre box Internet :
 
@@ -83,7 +83,7 @@ L’adresse de votre gateway est celle repérée par le flag UG. Pour moi il s�
 vonkrafft@vps-001:~$ sudo service networking restart
 {{< /code >}}
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> Il est aussi possible d'attribuer une adresse IP fixe en utilisant votre box Internet. Mais toutes les box des FAI français ne proposent pas cette options.{{% /alert %}}
+{{< alert "info" info-circle >}}Il est aussi possible d'attribuer une adresse IP fixe en utilisant votre box Internet. Mais toutes les box des FAI français ne proposent pas cette options.{{< /alert >}}
 
 ## Un nom DNS pour votre serveur
 
@@ -91,7 +91,7 @@ Lorsque vous naviguez sur le web, vous ne vous amusez surement pas à saisir l�
 
 Il existe de nombreux serveurs DNS dans le monde, mais ils ne nous intéressent pas ici car nous allons utiliser notre DNS local.
 
-{{% alert "warning" %}}<i class="fa fa-question-circle"></i> Un DNS local ? Où ça ?{{% /alert %}}
+{{< alert "warning" question-circle >}}Un DNS local ? Où ça ?{{< /alert >}}
 
 Tous les PC possède un DNS local qui est consulté avant de demander aux autres DNS de traduire un nom. Nous allons donc renseigner notre nom dans le DNS de notre machine client, qui n’est autre qu’un fichier : `/etc/hosts`. Il faut ajouter notre traduction comme suit : `<adresse_ip> <nom>`
 
@@ -99,15 +99,15 @@ Tous les PC possède un DNS local qui est consulté avant de demander aux autres
 192.168.1.100    vps-001.server
 {{< /code >}}
 
-{{% alert "warning" %}}<i class="fa fa-question-circle"></i> Mais quel nom choisir ?{{% /alert %}}
+{{< alert "warning" question-circle >}}Mais quel nom choisir ?{{< /alert >}}
 
 Qu’importe. Quoi qu’il arrive ce DNS est local, vous êtes le seul à le consulter. Vous pourriez très bien nommer votre serveur `facebook.com`. Il sera accessible avec ce nom depuis votre client mais vous n’aurez plus accès à Facebook.
 
-{{% alert "success" %}}<i class="fa fa-lightbulb-o"></i> Le plus simple est de choisir le nom de la machine suivi d’un domaine local que vous utiliserez pour tous vos équipements réseau. Pour mon réseau local, j’utilise le nom de la machine suivi de “.server”{{% /alert %}}
+{{< alert "success" lightbulb-o >}}Le plus simple est de choisir le nom de la machine suivi d’un domaine local que vous utiliserez pour tous vos équipements réseau. Pour mon réseau local, j’utilise le nom de la machine suivi de “.server”{{< /alert >}}
 
 Et voilà, c’est tout. Cependant, votre serveur n’a été renommé que pour un client, et il vous faudra répéter la manipulation pour chaques clients en modifiant leur fichier `/etc/hosts`. Une autre solution consiste à utiliser un serveur DNS local.
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> Il est aussi possible d'attribuer une adresse nom de domaine en utilisant votre box Internet. Mais toutes les box des FAI français ne proposent pas cette options.{{% /alert %}}
+{{< alert "info" info-circle >}}Il est aussi possible d'attribuer une adresse nom de domaine en utilisant votre box Internet. Mais toutes les box des FAI français ne proposent pas cette options.{{< /alert >}}
 
 A présent, vous pouvez accéder à votre serveur ainsi :
 

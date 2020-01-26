@@ -154,4 +154,4 @@ Un PC dédié aux jeux se doit d’être plus performant et de ce fait, il faut 
 - 3 ou 4 port USB (3.0 si possible), un lecteur DVD, un lecteur de cartes, un port HDMI, une prise Ethernet et des ports micro et casque.
 - Wi-Fi 802.11n (et du Bluetooth éventuellement).
 
-{{% alert "success" %}}}}<i class="fa fa-check-circle-o"></i> Voilà pour ce guide spécial rentrée 2012, bonne reprise à tous.{{% /alert %}}
+{{< alert success check-circle-o >}}Voilà pour ce guide spécial rentrée 2012, bonne reprise à tous.{{< /alert >}}

@@ -23,11 +23,11 @@ Vous me direz qu'à l'heure d'Internet illimité, il suffit de mettre des images
 
 Bref, il ne faut pas mettre sur votre site une image (beaucoup) plus grande que sa taille affichée. Ainsi, une photo 3840x2160 pixels affichée sur votre page dans un cadre de 300x169 pixels, ce n'est pas très optimisé ...
 
-{{% alert "warning" %}}<i class="fa fa-question-circle"></i> Oui mais mes images, lorsque l'on clique dessus, elles s'affichent en plein écran et donc si ma photo dans mon cadre de 300x169 pixels se retrouve en plein écran en 1920x1080 pixel, bah ce sera tout flou ... donc comment faire ?{{% /alert %}}
+{{< alert "warning" question-circle >}}Oui mais mes images, lorsque l'on clique dessus, elles s'affichent en plein écran et donc si ma photo dans mon cadre de 300x169 pixels se retrouve en plein écran en 1920x1080 pixel, bah ce sera tout flou ... donc comment faire ?{{< /alert >}}
 
 Et bien il suffit de charger l'image en haute définition lorsque l'on en a besoin. Au chargement de la page, on affiche une image de 300x169 pixels, et lorsque quelqu'un clique sur l'image pour la voir en plein écran, on renvoie une requête au serveur pour afficher l'image en haute définition.
 
-{{% alert "warning" %}}<i class="fa fa-exclamation-circle"></i> Non mais attend, ça veut dire que je dois avoir 2 images pour chaque illustration de mon site, mais c'est long et casse-coui****es à faire ...{{% /alert %}}
+{{< alert "warning" exclamation-circle >}}Non mais attend, ça veut dire que je dois avoir 2 images pour chaque illustration de mon site, mais c'est long et casse-coui****es à faire ...{{< /alert >}}
 
 Oui, et parfois plus que deux images. Reprenons notre photo de 3840x2160 pixels, l'idéal sera d'avoir :
 

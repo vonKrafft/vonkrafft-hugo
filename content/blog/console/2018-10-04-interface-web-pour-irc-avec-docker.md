@@ -19,7 +19,7 @@ L'objectif que nous allons essayer d'atteindre est de faire tourner avec Docker 
 
 La première chose à faire est bien sûr d'installer [Docker](https://www.docker.com/). Je vais également utiliser dans cet article **Docker Compose**. Cela facilite la gestion des applications Docker lorsqu'on utilise de multiples conteneurs.
 
-{{% alert "success" %}}Pour notre exemple, le site Web sera accessible à l'adresse [http://irc.docker.local/](http://irc.docker.local/).{{% /alert %}}
+{{< alert success >}}Pour notre exemple, le site Web sera accessible à l'adresse [http://irc.docker.local/](http://irc.docker.local/).{{< /alert >}}
 
 ## Le conteneur WeeChat
 
@@ -42,7 +42,7 @@ Il n'existe pas de dépôt officiel pour WeeChat. Afin de ne pas dépendre d'une
 9. Le conteneur écoutera sur le port *9001* ;
 10. Au lancement du conteneur, la commande `weechat` sera exécutée.
 
-{{% alert "warning" %}}<i class="fa fa-exclamation-circle"></i> J'ai défini l'uid et le gid du compte `weechat` à *1000*. La valeur de ces uid/gid importent peu pour notre images, à condition d'être supérieurs ou égaux à *1000*. Par la suite, nous allons créer un utilisateur sur l'hôte avec les mêmes uid/gid, donc assurez vous que ces valeurs sont disponibles sur l'hôte et changez-les si besoin.{{% /alert %}}
+{{< alert "warning" exclamation-circle >}}J'ai défini l'uid et le gid du compte `weechat` à *1000*. La valeur de ces uid/gid importent peu pour notre images, à condition d'être supérieurs ou égaux à *1000*. Par la suite, nous allons créer un utilisateur sur l'hôte avec les mêmes uid/gid, donc assurez vous que ces valeurs sont disponibles sur l'hôte et changez-les si besoin.{{< /alert >}}
 
 Ensuite, il nous suffit de construire notre image avec la commande `docker build` (attention de ne pas oublier le point à la fin de la commande) :
 
@@ -110,7 +110,7 @@ debian:~$ chmod a+rw web-irc/log/*
 
 Les fichiers de journalisation doivent être accessibles en lecture et en écriture par le conteneur Nginx. Alors certes, un `a+rw` n'est pas très propre, mais c'est la meilleure solution que j'ai actuellement (n'hésitez pas à m'en suggérer d'autres).
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> Il n'est pas nécessaire de monter un répertoire pour les fichiers de journalisation. Néanmoins, je trouve pratique de les avoir à disposition sur l'hôte et cela permet de ne pas les perdre si le conteneur est détruit.{{% /alert %}}
+{{< alert "info" info-circle >}}Il n'est pas nécessaire de monter un répertoire pour les fichiers de journalisation. Néanmoins, je trouve pratique de les avoir à disposition sur l'hôte et cela permet de ne pas les perdre si le conteneur est détruit.{{< /alert >}}
 
 ### Le fichier de configuration
 
@@ -118,7 +118,7 @@ Ensuite, il nous faut un fichier de configuration. Nous indiquons le port en éc
 
 {{< gist vonKrafft bc74bd9c90c6bbe19f07729c42ffc0f4 "default.conf" >}}
 
-{{% alert "info" %}}<i class="fa fa-info-circle"></i> Dans la directive `proxy_pass`, j'ai renseigné l'URL du relais WeeChat. Dans mon cas, mon conteneur s'appelle **weechat** et Docker s'occupera de la résolution DNS pour cette URL. Si vous avez nommé votre conteneur différemment, il vous faudra reporter ce nom dans le fichier de configuration Nginx.{{% /alert %}}
+{{< alert "info" info-circle >}}Dans la directive `proxy_pass`, j'ai renseigné l'URL du relais WeeChat. Dans mon cas, mon conteneur s'appelle **weechat** et Docker s'occupera de la résolution DNS pour cette URL. Si vous avez nommé votre conteneur différemment, il vous faudra reporter ce nom dans le fichier de configuration Nginx.{{< /alert >}}
 
 ### Le code source
 
@@ -137,7 +137,7 @@ Maintenant que notre image WeeChat est prête, que nos répertoires partagés so
 
 Pour terminer, la commande `docker-compose up -d` va créer et lancer les conteneurs. Si tous se passe bien, vous devriez donc avoir deux conteneur en cours d'exécution et le conteneur Nginx devrait exposer le port TCP/80 vous permettant d'accéder à l'URL [http://irc.docker.local/](http://irc.docker.local/).
 
-{{% alert "danger" %}}<i class="fa fa-exclamation-triangle"></i> Attention !!! En l'état, le conteneur Nginx héberge votre serveur HTTP sur le port TCP/80, donc non chiffré. Je vous conseille fortement de mettre en place le HTTPS (surtout si votre site est exposé sur Internet). Par exemple, vous pouvez utiliser un proxy : [LetsEncrypt container to use with nginx as proxy](https://hub.docker.com/r/jrcs/letsencrypt-nginx-proxy-companion/).{{% /alert %}}
+{{< alert "danger" exclamation-triangle >}}Attention !!! En l'état, le conteneur Nginx héberge votre serveur HTTP sur le port TCP/80, donc non chiffré. Je vous conseille fortement de mettre en place le HTTPS (surtout si votre site est exposé sur Internet). Par exemple, vous pouvez utiliser un proxy : [LetsEncrypt container to use with nginx as proxy](https://hub.docker.com/r/jrcs/letsencrypt-nginx-proxy-companion/).{{< /alert >}}
 
 {{< img src="/media/2018/10/db25bfb420b2f3d4d9df2ee1d7c91135-1024x339.png" alt="Glowing Bear authentication form" link="/media/2018/10/db25bfb420b2f3d4d9df2ee1d7c91135.png" >}}
 

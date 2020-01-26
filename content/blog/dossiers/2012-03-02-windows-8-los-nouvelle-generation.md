@@ -15,7 +15,7 @@ Microsoft a dévoilé mercredi la version Consumer Preview de son futur système
 
 <!--more-->
 
-{{% alert "info" %}}**Mise à jour du 1er Juin 2012** : Microsoft a mis en ligne la Release Preview de Windows 8, téléchargeable [ici](http://windows.microsoft.com/fr-FR/windows-8/download).{{% /alert %}}
+{{< alert info >}}**Mise à jour du 1er Juin 2012** : Microsoft a mis en ligne la Release Preview de Windows 8, téléchargeable [ici](http://windows.microsoft.com/fr-FR/windows-8/download).{{< /alert >}}
 
 ## Un vent de changement
 
