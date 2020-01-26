@@ -1,0 +1,49 @@
+<!--
+    params 0-7
+    Must be named
+
+    position 0, name: title
+        The current project's title.
+
+    position 1, name: date
+        The current project's date.
+
+    position 2, name: cover
+        Path to the cover picture.
+
+    position 3, name: author
+        The current project's author.
+
+    position 4, name: icon
+        Optional icon to prefix the project's URL.
+        (default "briefcase")
+
+    position 5, name: url
+        The current project's URL.
+        Could be the website link or a Github repository.
+
+    position 6, name: work
+        The link's name.
+
+    position 7, name: tags
+        Comma separated tags to briefly describe the project.
+-->
+<div class="work">
+    <aside class="work-cover" style="background-image: url({{ .Get `cover` | safeCSS }});">
+        <a href="{{ .Get `cover` }}" data-lightbox="post-gallery" data-title="{{ .Get `title` }}"><i class="fa fa-search-plus fa-3x"></i></a>
+    </aside>
+    <article class="work-body">
+        <header class="work-heading">
+            <h4 class="work-title">{{ .Get "title" }}</h4>
+            <ul>
+                <li><i class="fa fa-user-circle-o"></i>&nbsp;<strong>{{ .Get "author" }}</strong></li>
+                <li><i class="fa fa-calendar"></i>&nbsp;<strong>{{ .Get "date" }}</strong></li>
+                <li><i class="fa fa-{{ default `briefcase` (.Get `icon`) }}"></i>&nbsp;<strong><a href="{{ .Get `url` }}">{{ .Get "work" }}</a></strong></li>
+            </ul>
+        </header>        
+        <p class="work-content">{{ .Inner | markdownify }}</p>
+        <footer class="work-footer">
+            <span class="tag">{{ .Get "tags" | replaceRE " *, *" "</span><span class='tag'>" | safeHTML }}</span>
+        </footer>
+    </article>
+</div>
