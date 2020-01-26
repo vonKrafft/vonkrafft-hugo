@@ -55,6 +55,7 @@
                 {{ ($.Scratch.Get "dateType").Format "January 2, 2006" }}
               </time>
             </header>
+            <a href="{{ .RelPermalink }}" class="image"><img src="{{ .Params.cover }}" alt=""></a>
             {{ .Render "featured" }}
           </article>
         {{ end }}
