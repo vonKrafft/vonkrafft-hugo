@@ -27,19 +27,19 @@ Tout d'abord, j'ai accès à la page suivante : [http://champions.fr/.git/](htt
 
 Pour « cloner » le dépôt en local, il me suffit de télécharger récursivement tous les fichiers du répertoire git :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root:~# wget -r http://champions.fr/.git/
 root:~# cd champions.fr
 root:~/champion.fr(git:stable_prod)#
-{{< /code >}}
+{{< /highlight >}}
 
 ## Restaurer avec git
 
 Je me retrouve avec un dépôt git en local. Cependant, j'ai seulement récupéré le répertoire `.git`, et donc lorsque je fais un `git status`, cela m'informe que tous les fichiers ont été supprimés ! Qu’à cela ne tienne, Git permet de restaurer l'état du dernier commit. Pour cela, nous utiliserons la commande `git reset`.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root:~/champion.fr(git:stable_prod)# git reset --hard
-{{< /code >}}
+{{< /highlight >}}
 
 {{< img src="/media/2017/03/0a95e43f86e9262e800fea6b27b3d11f.png" alt="Directory listing du .git" link="/media/2017/03/0a95e43f86e9262e800fea6b27b3d11f.png" >}}
 
@@ -49,9 +49,9 @@ Bon, on ne parlera pas des webshells qui ont été versionnés, des dumps de bas
 
 Ce qui nous intéresse (en plus du code source naturellement), c’est de savoir que c’est un WordPress. Les informations que nous voulons (ie. les mots de passe de la base de données), sont dans « wp-config.php ». Damned, le fichier n’existe pas ! En réalité, le fichier a été déplacé dans le répertoire parent (incroyable, il y a tout de même des notions de sécu chez les admins sys !). Mais là encore ce n’est pas grave, car nous avons le répertoire `.git` et donc il y a une chance que ce fichier ait été versionné. Pour restaurer le fichier `wp-config.php`, il faut remonter au dernier commit qui le concerne (ie le commit qui marque sa suppression).
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root:~/champion.fr(git:stable_prod)# git checkout $(git rev-list -n 1 HEAD -- wp-config.php)^ -- wp-config.php
-{{< /code >}}
+{{< /highlight >}}
 
 {{< img src="/media/2017/03/905262a4583b7b31dfa7ffab7aa80a5a.png" alt="Directory listing du .git" link="/media/2017/03/905262a4583b7b31dfa7ffab7aa80a5a.png" >}}
 

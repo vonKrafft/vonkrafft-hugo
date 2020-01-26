@@ -23,28 +23,28 @@ Nous allons installer **Python 3.7** sur un système **Debian 9 (Stretch)**. Pou
 
 La première étape est de mettre à jour le système et d'installer `libffi`.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ sudo apt update && sudo apt upgrade
 debian:~$ sudo apt install libffi-dev
-{{< /code >}}
+{{< /highlight >}}
 
 Ensuite, nous téléchargeons la dernière version de Python 3.7 (liste des version sur https://www.python.org/ftp/python), nous décompressons l'archive _tgz_ dans le répertoire `/usr/src` et nous installons Python.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
 debian:~$ sudo tar -xzf Python-3.7.2.tgz -C /usr/src
 debian:~$ cd /usr/src/Python-3.7.2
 debian:/usr/src/Python-3.7.2$ sudo ./configure --enable-optimizations
 debian:/usr/src/Python-3.7.2$ sudo make altinstall
-{{< /code >}}
+{{< /highlight >}}
 
 Je vous propose d'aller prendre un café, car ça va durer un petit moment. Si l'installation s'est correctement terminée (i.e. aucun message d'erreur, notamment dans les dernières lignes affichées dans la console), vous devriez être en mesure de lancer la commande suivante :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ python3.7 -V
 Python 3.7.2
 debian:~$ pip3 --version
 pip 19.0.3 from /usr/local/lib/python3.7/site-packages/pip (python 3.7)
-{{< /code >}}
+{{< /highlight >}}
 
 Et voilà :)

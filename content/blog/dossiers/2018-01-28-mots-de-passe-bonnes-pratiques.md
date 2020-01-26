@@ -166,15 +166,15 @@ Que faire ? Et bien il suffit de « saler » le mot de passe, voire même le « 
 
 Afin de pallier au premier problème et éviter que deux utilisateurs avec le même mot de passe aient le même condensat, il suffit de concaténer le mot de passe avec une chaîne aléatoire propre à chaque utilisateur, que l’on appelle « sel » (en anglais salt).
 
-{{< code lang="python" icon="code" >}}
+{{< highlight python >}}
 hash_pwd = SHA512(clear_pwd + salt)
-{{< /code >}}
+{{< /highlight >}}
 
 Il est également possible de concaténer une seconde chaîne de caractère commune à tous les utilisateurs : le « poivre » (en anglais pepper). Le poivre ne doit JAMAIS être stocké dans la base de données. Ainsi, si la base de données venait à être compromise (et uniquement la base de données), alors les condensats salés et poivrés seraient inexploitables.
 
-{{< code lang="python" icon="code" >}}
+{{< highlight python >}}
 hash_pwd = SHA512(clear_pwd + salt + pepper)
-{{< /code >}}
+{{< /highlight >}}
 
 Enfin, une dernière mesure de protection qu’il est possible de mettre en place est l’itération. Hacher une fois le mot de passe salé et poivré, c’est bien, et le hacher 1000 fois, c’est mieux. Cela rallongera le temps nécessaire pour casser le condensat du mot de passe.
 
@@ -182,7 +182,7 @@ Enfin, une dernière mesure de protection qu’il est possible de mettre en plac
 
 Maintenant que l’on a listé les bonnes et mauvaises pratiques qu’un site Web peut mettre en œuvre pour protéger votre mot de passe, je vous propose trois petites fonctions pour résumer tout ça :
 
-{{< code lang="python" icon="code" >}}
+{{< highlight python >}}
 pepper = conf['PEPPER']
 
 def hash_password(password, salt, iterations=1000):
@@ -198,7 +198,7 @@ def create_password(password, iterations=1000):
 def check_password(hashed_password, user_password, iterations=1000):
 	password, salt = hash_password.split(':')
 	return password == hash_password(user_password, salt, iterations)
-{{< /code >}}
+{{< /highlight >}}
 
 Selon les langages de programmation, des fonctions de hachage existent déjà et ce n'est pas obligatoire de réinventer la roue. Parmi les fonctions les plus connues, je peux citer [Bcrypt](https://fr.wikipedia.org/wiki/Bcrypt), [Argon2](https://fr.wikipedia.org/wiki/Argon2), [Scrypt](https://fr.wikipedia.org/wiki/Scrypt) ou encore [PBKDF2](https://fr.wikipedia.org/wiki/PBKDF2). Il faudra néanmoins fournir le sel en paramètre, fournir le poivre dans le mot de passe, et certaines fonction limite la taille de l'entrée (comme [Bcrypt](https://fr.wikipedia.org/wiki/Bcrypt) par exemple).
 

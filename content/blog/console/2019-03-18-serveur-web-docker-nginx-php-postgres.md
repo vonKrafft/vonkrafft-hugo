@@ -27,7 +27,7 @@ Récemment, j'expliquais comment simplement mettre en place un serveur **Nginx**
 
 Pour rappel, nous avions créé l'arborescence suivante dans laquelle nous retrouvons le fichier de configuration `nginx.conf`, les journaux Nginx et le contenu du site Web dans `www` :
 
-{{< code lang="plaintext" >}}
+{{< highlight plaintext >}}
 ├── docker-compose.yml
 └── docker-web
     ├── log
@@ -36,9 +36,9 @@ Pour rappel, nous avions créé l'arborescence suivante dans laquelle nous retro
     ├── nginx.conf
     └── www
         └── index.php
-{{< /code >}}
+{{< /highlight >}}
 
-{{< code lang="yaml" icon="file-text-o" title="docker-compose.yml" >}}
+{{< highlight yaml >}}
 version: '3'
 
 services:
@@ -57,9 +57,9 @@ services:
         container_name: web-php
         volumes:
             - "./docker-web/www:/script:ro"
-{{< /code >}}
+{{< /highlight >}}
 
-{{< code lang="nginx" icon="file-text-o" title="docker-web/nginx.conf" >}}
+{{< highlight nginx >}}
 user                       nginx;
 worker_processes           1;
 
@@ -104,11 +104,11 @@ http {
         }
     }
 }
-{{< /code >}}
+{{< /highlight >}}
 
 Après avoir vérifié que nos deux containers `web-nginx` et `web-php` sont bien démarrés et que le serveur Nginx est accessible depuis un navigateur Web, nous allons modifier le fichier `index.php` pour qu'il se connecte à la base de données et affiche la version du <abbr title="Système de Gestion de Base de Données">SGBD</abbr>.
 
-{{< code lang="php" icon="file-text-o" title="docker-web/www/index.php" >}}
+{{< highlight php >}}
 <?php
 $dbconn = pg_connect('host=web-pgsql port=5432 dbname=foobar user=foobar password=foobar')
     or die('Could not connect');
@@ -117,7 +117,7 @@ echo '<pre>' . var_export(pg_version($dbconn), true) . '</pre>';
 
 pg_close($dbconn);
 ?>
-{{< /code >}}
+{{< /highlight >}}
 
 Si tous ce passe bien, vous devriez obtenir une erreur ... _wait, what?_
 
@@ -133,27 +133,27 @@ Commençons par créer un fichier `Dockerfile` dans le répertoire `docker-web/.
 - Nous y ajoutons les paquets `postgresql-dev` afin de disposer des bibliothèques nécessaire aux extensions PHP PostgreSQL
 - L'image `php:fpm-alpine` embarque des scripts pour faciliter l'ajout d'extension, nous les utilisons pour ajouter `pgsql` et `pdo_pgsql`.
 
-{{< code lang="dockerfile" icon="file-text-o" title="docker-web/.build-php/Dockerfile" >}}
+{{< highlight dockerfile >}}
 FROM php:fpm-alpine
 RUN apk update && apk add --no-cache \
         postgresql-dev \
     && docker-php-ext-install -j$(nproc) pgsql \
     && docker-php-ext-install -j$(nproc) pdo_pgsql
-{{< /code >}}
+{{< /highlight >}}
 
 Il faut également modifier le fichier `docker-compose.yml` pour préciser que nous voulons utiliser notre image plutôt que `php:fpm-alpine`. Nous renseignons pour cela la directive `build` afin d'indiquer à Docker Compose **de construire l'image si nécessaire** (premier démarrage, modification du fichier `Dockerfile`, etc...), ou **d'utiliser la dernière image construite** si aucune modification n'a été opérée depuis le dernier build.
 
-{{< code lang="yaml" >}}
+{{< highlight yaml >}}
 web-php:
     build: ./docker-web/.build-php
     container_name: web-php
     volumes:
         - "./docker-web/www:/script:ro"
-{{< /code >}}
+{{< /highlight >}}
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 host:~# docker-compose up -d
-{{< /code >}}
+{{< /highlight >}}
 
 Si tous ce passe bien, vous devriez obtenir une erreur ... _wait, again?_
 
@@ -163,9 +163,9 @@ Si tous ce passe bien, vous devriez obtenir une erreur ... _wait, again?_
 
 Évidement, il nous manque le container PostgreSQL, que nous avons déjà nommé ci-dessus dans le fichier `index.php` : **web-pgsql**.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 host:~# mkdir -p docker-web/data # Pour stocker le contenu de la base de données
-{{< /code >}}
+{{< /highlight >}}
 
 Pas besoin de faire compliqué ici, nous allons simplement utiliser l'image officielle et Docker Compose pour configurer et démarrer le container PostgreSQL :
 
@@ -178,7 +178,7 @@ Pas besoin de faire compliqué ici, nous allons simplement utiliser l'image offi
 
 {{< alert danger exclamation-circle >}}Pour les besoins de cet article, j'ai utilisé les identifiants `foobar:foobar` pour me connecter à la base de données. Pensez à remplacer les variable d'environnement par vos propres valeurs ;){{< /alert >}}
 
-{{< code lang="yaml" icon="file-text-o" title="docker-compose.yml" >}}
+{{< highlight yaml >}}
 version: '3'
 
 services:
@@ -207,11 +207,11 @@ services:
             POSTGRES_USER: foobar
             POSTGRES_PASSWORD: foobar
             POSTGRES_DB: foobar
-{{< /code >}}
+{{< /highlight >}}
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 host:~# docker-compose up -d
-{{< /code >}}
+{{< /highlight >}}
 
 Si tous ce passe bien, vous devriez obtenir une erreur ... Ah non, pas cette fois-ci, maintenant que tout est en place la fonction [`pg_version()`](https://secure.php.net/manual/fr/function.pg-version.php) renvoie les infos des versions client/serveur de PostgreSQL.
 

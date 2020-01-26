@@ -27,22 +27,22 @@ Se pose alors le problème de la migration. Le contenu des articles est actuelle
 
 La première étape consite à exporter les articles (les types `post` dans WordPress) et de créer des fichiers Markdown compréhensibles par Hugo. Le contenu des articles se trouve dans la table `wp_posts`, et nous voulons récupérer uniquement les articles de type `post` publiés.
 
-{{< code lang="PHP" icon="" title="" >}}
+{{< highlight PHP >}}
 $wpdb->get_var("SELECT GROUP_CONCAT(`ID`) FROM `wp_posts` WHERE `post_status` LIKE 'publish' AND `post_type` LIKE 'post'");
-{{< /code >}}
+{{< /highlight >}}
 
 Cela permet d'obtenir la liste des ID des articles à exporter. Nous itérerons par la suite sur la liste de ces ID. Pour chaque article, il faut à présent récupérer le contenu et les informations additionnelles de la table `wp_posts`. Dans mon cas, j'ai aussi besoin de la catégorie, la liste des tags et la description SEO de l'article.
 
-{{< code lang="PHP" icon="" title="" >}}
+{{< highlight PHP >}}
 $current_post = $wpdb->get_row($wpdb->prepare("SELECT * FROM `wp_posts` WHERE `ID` = %d", array($id)));
 $current_term = $wpdb->get_results($wpdb->prepare("SELECT `name`, `slug` FROM `wp_term_taxonomy` AS tt JOIN `wp_term_relationships` AS tr ON tt.`term_taxonomy_id` = tr.`term_taxonomy_id` JOIN `wp_terms` AS t ON tt.`term_id` = t.`term_id` WHERE tr.`object_id` = %d AND tt.`taxonomy` = %s", array($id, 'category')));
 $current_tags = $wpdb->get_results($wpdb->prepare("SELECT `name`, `slug` FROM `wp_term_taxonomy` AS tt JOIN `wp_term_relationships` AS tr ON tt.`term_taxonomy_id` = tr.`term_taxonomy_id` JOIN `wp_terms` AS t ON tt.`term_id` = t.`term_id` WHERE tr.`object_id` = %d AND tt.`taxonomy` = %s", array($id, 'post_tag')), OBJECT_K);
 $current_desc = $wpdb->get_var($wpdb->prepare("SELECT `meta_value` FROM `wp_postmeta` WHERE `post_id` = %d AND `meta_key` = %s", array($id, '_yoast_wpseo_metadesc')));
-{{< /code >}}
+{{< /highlight >}}
 
 Ensuite, il faut construire le contenu du fichier. Hugo utilise un format d'en-tête spécifique pour les métadonnées de la page : les Front Matter (de l'anglais "avant-propos"). En TOML, YAML ou JSON, ils doivent être placés au début du fichier. Pour ma part, j'ai choisi le format YAML délimité par `---`.
 
-{{< code lang="PHP" icon="file-code-o" title="migration-functions.php" >}}
+{{< highlight PHP >}}
 function get_post_content($id)
 {
 	global $wpdb;
@@ -72,11 +72,11 @@ function get_post_content($id)
 
 	return array($markdown, $path, $filename);
 }
-{{< /code >}}
+{{< /highlight >}}
 
 Vous pouvez constater que je ne prends pas le contenu brut de l'article, mais je le fait passé par la fonction `md()`.
 
-{{< code lang="PHP" icon="file-code-o" title="migration-functions.php" >}}
+{{< highlight PHP >}}
 function md($content)
 {
 	for ($i=1; $i < 7; $i++) { 
@@ -104,20 +104,20 @@ function md($content)
 	}
 	return $content;
 }
-{{< /code >}}
+{{< /highlight >}}
 
 Bon, la fonction n'est pas parfaite, loin de là, mais je n'ai pas trouvé mieux (sinon utiliser une bibliothèque PHP-Markdown pour faire le boulot). Si vous avez des idées, n'hésitez pas à me le dire : c'est trop tard pour ma migration mais ça peut en aider d'autres. Quoi qu'il en soit, je dois repasser par chaque article pour vérifier que tout est bien passé en Markdown.
 
 Après quelques tests, il ne nous reste plus qu'à automatiser le tout et créer les fichiers de sortie. Une boucle sur la liste des ID des articles, et le tour est joué :)
 
-{{< code lang="PHP" icon="file-code-o" title="migration-hugo.php" >}}
+{{< highlight PHP >}}
 $posts = $wpdb->get_var("SELECT GROUP_CONCAT(`ID`) FROM `wp_posts` WHERE `post_status` LIKE 'publish' AND `post_type` LIKE 'post'");
 foreach ($posts as $id) {
 	list($content, $category, $filename) = get_content($id);
 	mkdir('hugo/' . $category, 0755, TRUE);
 	file_put_contents('hugo/' . $category . '/' . $filename, $content);
 }
-{{< /code >}}
+{{< /highlight >}}
 
 Et voilà, on se retrouve avec nos fichiers Markdown ! Il suffit de tout mettre dans le répertoire `content` de Hugo et c'est terminé.
 
@@ -128,7 +128,7 @@ C'est presque identique à l'exportation des articles. L'en-tête du fichier cha
 - La page n'a pas de page parente, dans ce cas là elle est enregistrée dans `/nom-de-la-page/_index.md` ;
 - La page a une page parente, dans ce cas là elle est enregistrée dans `/nom-du-parent/nom-de-la-page.md`.
 
-{{< code lang="PHP" icon="file-code-o" title="migration-functions.php" >}}
+{{< highlight PHP >}}
 function get_page_content($id)
 {
 	global $wpdb;
@@ -155,18 +155,18 @@ function get_page_content($id)
 
 	return array($markdown, $path, $filename);
 }
-{{< /code >}}
+{{< /highlight >}}
 
 Pour créer tous mes fichiers, il me suffit alors de boucler sur la liste des ID des pages.
 
-{{< code lang="PHP" icon="file-code-o" title="migration-hugo.php" >}}
+{{< highlight PHP >}}
 $pages = explode(',', $wpdb->get_var("SELECT GROUP_CONCAT(`ID`) FROM `wp_posts` WHERE `post_status` LIKE 'publish' AND `post_type` LIKE 'page'"));
 foreach ($pages as $id) {
 	list($content, $path, $filename) = get_page_content($id);
 	mkdir('hugo/pages/' . $path, 0755, TRUE);
 	file_put_contents('hugo/pages/' . $path . '/' . $filename, $content);
 }
-{{< /code >}}
+{{< /highlight >}}
 
 ## Vérfier le contenu et importer les images
 
@@ -184,7 +184,7 @@ Voilà, un joli site statique avec Hugo, tout beau tout neuf, mais que faire de 
 
 Pour cela, on va créer un fichier `index.php` à la racine du WordPress (sans oublié de faire une copie de l'ancien fichier vers un fichier `index.php.initial` par exemple).
 
-{{< code lang="PHP" icon="file-code-o" title="index.php" >}}
+{{< highlight PHP >}}
 &lt;?php    
 require_once(dirname(__FILE__) . '/wp-load.php');
 global $wpdb;
@@ -209,7 +209,7 @@ $new_link = "https://vonkrafft.fr/$path$slug/";
 header('Status: 301 Moved Permanently', False, 301);      
 header('Location: ' . $new_link);      
 exit();
-{{< /code >}}
+{{< /highlight >}}
 
 Bon, ça casse pas trois pattes à un canard. Tout d'abord, on récupère l'URL et l'ID associé à l'URL. Si c'est une page, la nouvelle URL débutera par le slug de la page parente, si page parente il y a. Si c'est un article, la nouvelle URL débutera par le slug de la catégorie. Enfin, on récupère le slug du post pour terminer la nouvelle URL.
 

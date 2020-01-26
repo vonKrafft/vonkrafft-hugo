@@ -72,13 +72,13 @@ Maintenant que les bases sont posées, il est temps de générer une clé PGP et
 
 Nous allons donc générer une clé primaire qui ne sera utilisée que pour signer les autres informations de notre clé PGP. Nous utilisons les options `--expert` et `--full-generate-key` pour obtenir toutes les options disponibles lors de la génération, notamment pour pouvoir définir précisément le rôle de la clé primaire. 
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ gpg2 --expert --full-generate-key
-{{< /code >}}
+{{< /highlight >}}
 
 Choisir l'option **(8) RSA (set your own capabilities)**, désactiver tous les rôles sauf **Certify** et générer une clé de 4096 bits. On peut ensuite vérifier que la clé a bien été créée :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ gpg2 --list-keys
 pub   rsa4096/0x788FC46C8BB350B8 2018-06-15 [C] [expires: 2019-06-15]
 Key fingerprint = 1523 4153 E3D0 76C2 72E0  1D31 788F C46C 8BB3 50B8
@@ -87,7 +87,7 @@ debian:~$ gpg2 --list-secret-keys
 sec   rsa4096/0x788FC46C8BB350B8 2018-06-15 [C] [expires: 2019-06-15]
 Key fingerprint = 1523 4153 E3D0 76C2 72E0  1D31 788F C46C 8BB3 50B8
 uid                   [ultimate] Wandrille &lt;contact at vonkrafft dot fr&gt;
-{{< /code >}}
+{{< /highlight >}}
 
 On a donc une clé **pub**lique et une clé **sec**rète (privée) dont le rôle est de certifier **[C]** les autres informations de la clé PGP. On a également une identité **uid**.
 
@@ -95,10 +95,10 @@ On a donc une clé **pub**lique et une clé **sec**rète (privée) dont le rôle
 
 L'étape suivante est de générer nos trois sous-clés :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ gpg2 --expert --edit-key 788FC46C8BB350B8
 gpg> addkey
-{{< /code >}}
+{{< /highlight >}}
 
 GnuPG dispose d'une interface de commande pour l'édition des clés. Pour ajouter une clé, saisir `addkey`, puis choisir l'option **(8) RSA (set your own capabilities)**, désactiver tous les rôles sauf **Sign** et générer une clé de 2048 bits.
 
@@ -106,14 +106,14 @@ GnuPG dispose d'une interface de commande pour l'édition des clés. Pour ajoute
 
 Répéter l'opération pour générer les deux autres clés avec les rôles **Encrypt** et **Authenticate**, puis enregistrer les modifications :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 gpg> quit
 Save changes? (y/N) y
-{{< /code >}}
+{{< /highlight >}}
 
 Vous devriez ensuite obtenir ceci :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ gpg2 --list-keys
 pub   rsa4096/0x788FC46C8BB350B8 2018-06-15 [C] [expires: 2019-06-15]
 Key fingerprint = 1523 4153 E3D0 76C2 72E0  1D31 788F C46C 8BB3 50B8
@@ -128,7 +128,7 @@ uid                   [ultimate] Wandrille &lt;contact at vonkrafft dot fr&gt;
 ssb   rsa2048/0x9DAAB9EBD88FFC37 2018-06-15 [S]
 ssb   rsa2048/0x9C892908F2535889 2018-06-15 [E]
 ssb   rsa2048/0xE69F0992A12AD72E 2018-06-15 [A]
-{{< /code >}}
+{{< /highlight >}}
 
 On retrouve donc nos sous-clés privées (**ssb**) et publiques (**sub**) pour signer **[S]**, chiffrer **[E]** et s'authentifier **[A]**.
 
@@ -136,9 +136,9 @@ On retrouve donc nos sous-clés privées (**ssb**) et publiques (**sub**) pour s
 
 Nous n'avons plus besoin à présent de la clé privée primaire qui a été utilisée pour signer l'identité et les sous-clés. Mais on va tout de même éviter de la supprimer : on ne sait jamais, elle pourrait nous servir ... On va donc exporter toutes nos clés sur une clé USB vierge dédiée au stockage de notre clé PGP. 
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ gpg2 --armor --output /mnt/usb/secret-keys.txt --export-secret-key 788FC46C8BB350B8
-{{< /code >}}
+{{< /highlight >}}
 
 {{< alert "danger" exclamation-circle >}}**Attention** Ne pas laisser trainer et ne pas perdre le support USB. Ça peut paraitre inutile de le préciser, mais il s'agit de vos clés privées ! Selon l'usage que vous ferez de votre clé PGP, la perte ou le vol de ces clés peut conduire à l'**usurpation de votre identité** !{{< /alert >}}
 
@@ -150,7 +150,7 @@ Maintenant que l'on dispose d'un backup sur un support USB bien planqué chez no
 
 Après l'importation, nous aurons récupéré les sous-clés mais pas la clé primaire.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ gpg2 --armor --output ./secret-subkeys.txt --export-secret-subkeys 788FC46C8BB350B8
 debian:~$ gpg2 --delete-secret-key 788FC46C8BB350B8
 debian:~$ gpg2 --import ./secret-subkeys.txt
@@ -162,7 +162,7 @@ uid                   [ultimate] Wandrille &lt;contact at vonkrafft dot fr&gt;
 ssb   rsa2048/0x9DAAB9EBD88FFC37 2018-06-15 [S]
 ssb   rsa2048/0x9C892908F2535889 2018-06-15 [E]
 ssb   rsa2048/0xE69F0992A12AD72E 2018-06-15 [A]
-{{< /code >}}
+{{< /highlight >}}
 
 On observe que la clé **sec**rète est à présent suivie d'un **#**. Cela indique que la clé privée n'est pas stockée sur le poste. Nous sommes prêts pour importer les sous-clés sur la Yubikey.
 
@@ -170,26 +170,26 @@ On observe que la clé **sec**rète est à présent suivie d'un **#**. Cela indi
 
 Après avoir branché la Yubikey, vérifions que nous pouvons communiquer avec elle (*E.T. téléphone maison*) :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ gpg-connect-agent --hex "scd apdu 00 f1 00 00" /bye
 D[0000]  04 03 04 90 00                                     .....
 OK
-{{< /code >}}
+{{< /highlight >}}
 
 Ensuite, on va dire à la Yubikey de se comporter comme une carte à puce pour pouvoir y copier nos clés. Pour cela, nous avons besoin de [ykpersonalize](https://github.com/Yubico/yubikey-personalization).
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ ykpersonalize -m82
 Firmware version 4.3.4 Touch level 773 Program sequence 1
 The USB mode will be set to: 0x82
 Commit? (y/n) [n]: y
-{{< /code >}}
+{{< /highlight >}}
 
 La dernière étape consiste à personnaliser la clé. Vous pouvez y renseigner votre nom, langue, pseudo, sexe et l'URL à laquelle votre clé publique est disponible (nous verrons sans doute dans un autre article comment mettre notre clé publique en ligne).
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ gpg2 --card-edit
-{{< /code >}}
+{{< /highlight >}}
 
 Le plus important ici est de **modifier les codes PIN par défaut**. Et oui, ça ne sert pas à grand-chose de protéger ses clés privées sur une Yubikey si tout le monde peut les utiliser (à condition de détenir physiquement votre Yubikey).
 
@@ -199,7 +199,7 @@ Dans l'interface d'édition de la Yubikey, tapez `admin` afin d'activer les comm
 
 Dernière étape : importer les trois sous-clés sur la Yubikey. Pour cela, il nous faut la console d'édition de notre clé PGP.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ gpg2 --edit-key 788FC46C8BB350B8
 pub  rsa4096/0x788FC46C8BB350B8
 created: 2018-06-15  expires: 2019-06-15  usage: C   
@@ -211,11 +211,11 @@ created: 2018-06-15  expires: never       usage: E
 ssb  rsa2048/0xE69F0992A12AD72E
 created: 2018-06-15  expires: never       usage: A   
 [ultimate] (1). Wandrille &lt;contact at vonkrafft dot fr&gt;
-{{< /code >}}
+{{< /highlight >}}
 
 Ensuite, nous sélectionnons les clés une à une pour les importer sur la Yubikey.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 gpg> key 1      # Sélection de la première sous-clé à transférer
 gpg> keytocard  # Déplacement de la clé sur la carte à puce
 Please select where to store the key: 1 (Signing)
@@ -232,11 +232,11 @@ Please select where to store the key: 3 (Authentication)
     
 gpg> quit
 Save changes? (y/N) y
-{{< /code >}}
+{{< /highlight >}}
 
 Maintenant que les sous-clés ont été déplacées sur la Yubikey, si nous listons les clés, nous verrons qu'elles ne sont plus stockées localement mais pointent vers la carte à puce (Le suffixe **>** signifie "pointeur vers une clé") :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ gpg2 --list-secret-keys
 sec#  rsa4096/0x788FC46C8BB350B8 2018-06-15 [C] [expires: 2019-06-15]
 Key fingerprint = 1523 4153 E3D0 76C2 72E0  1D31 788F C46C 8BB3 50B8
@@ -244,23 +244,23 @@ uid                   [ultimate] Wandrille &lt;contact at vonkrafft dot fr&gt;
 ssb>  rsa2048/0x9DAAB9EBD88FFC37 2018-06-15 [S]
 ssb>  rsa2048/0x9C892908F2535889 2018-06-15 [E]
 ssb>  rsa2048/0xE69F0992A12AD72E 2018-06-15 [A]
-{{< /code >}}
+{{< /highlight >}}
 
 ## Utiliser la Yubikey avec GPG/SSH Agent
 
 Maintenant que vous avez votre clé PGP fraichement générée et sécurisée sur votre Yubikey, vous pouvez utiliser vos sous-clés pour notamment signer et/ou le chiffrer vos mails et documents. La sous-clé d'authentification peut également être utilisé pour se connecter en SSH. C'est ce cas-là qui va nous intéresser ici et nous allons configurer `gpg-agent`. Vous utilisez déjà sans doute `ssh-agent`, et bien `gpg-agent` intègre les fonctionnalités de `ssh-agent` et permet d'utiliser vos
 clés PGP en plus de vos clés SSH classiques.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ echo "use-agent" >> ~/.gnupg/gpg.conf                                  # GnuPG essayera de se connecter à l'agent avant de demander une passphrase
 debian:~$ echo "enable-ssh-support" >> ~/.gnupg/gpg-agent.conf                   # Activer le support de SHH
 debian:~$ echo "write-env-file $HOME/.gpg-agent-info" >> ~/.gnupg/gpg-agent.conf # Fichier dans lequel se trouvent les variables d'environnement, notamment le nom du socket
 debian:~$ echo "source ~/.gpg-yubikey" >> ~/.zshrc                               # Ou ~/.bashrc, ou autre ...
-{{< /code >}}
+{{< /highlight >}}
 
 La dernière ligne, ajoutée au fichier `~/.zshrc` (ou `~/.bashrc` selon votre shell), permet de démarrer automatiquement l'agent GPG lors de l'ouverture d'un émulateur de terminal. Pour cela, j'ai préféré ajouter les commandes dans un fichier séparé `~/.gpg-yubikey` pour définir les variables d'environnement et de démarrer l'agent GPG :
 
-{{< code lang="shell" icon="file-text-o" title="~/.gpg-yubikey" >}}
+{{< highlight shell >}}
 if [ ! -f "${HOME}/.gpg-agent-info" ] && [ -S "${HOME}/.gnupg/S.gpg-agent" ] && [ -S "${HOME}/.gnupg/S.gpg-agent.ssh" ]; then
     echo "GPG_AGENT_INFO=${HOME}/.gnupg/S.gpg-agent" >> "${HOME}/.gpg-agent-info";
     echo "SSH_AUTH_SOCK=${HOME}/.gnupg/S.gpg-agent.ssh" >> "${HOME}/.gpg-agent-info";
@@ -273,31 +273,31 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
     export GPG_TTY=$(tty)
     gpg-connect-agent updatestartuptty /bye >& /dev/null
 fi
-{{< /code >}}
+{{< /highlight >}}
 
 Maintenant, à chaque ouverture d'un émulateur de terminal, l'agent GPG sera lancé (s'il ne l'est pas déjà) avec support du SSH. Nous pouvons toujours utiliser la commande `ssh-add` comme avant pour ajouter des clés SSH à l'agent et lorsque la Yubikey est branchée, les clés sont automatiquement ajoutées à l'agent GPG.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ ssh-add -L
 ssh-rsa AAAA[...]UhB9OUWmkFt5DFMrJpYAhSuz cardno:000..........
 ecdsa-sha2-nistp521 AAAA[...]EHrYHEkXOQ== ~/.ssh/id_ecdsa
 ssh-rsa AAA[...]ZC0ktDvMBKLKHdp9iIJnbswm3 ~/.ssh/id_rsa
-{{< /code >}}
+{{< /highlight >}}
 
 Il ne nous reste plus qu'à exporter la clé publique et la copier sur le serveur dans le fichier `~/.ssh/authorized_keys`.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ gpg2 --export-ssh-key 788FC46C8BB350B8 > ~/.ssh/yubikey.pub
-{{< /code >}}
+{{< /highlight >}}
 
 Vous pouvez également modifier votre fichier de configuration `~/.ssh/config` pour utiliser la clé publique et l'agent GPG se chargera du reste ...
 
-{{< code lang="plaintext" icon="file-text-o" title="~/.ssh/config" >}}
+{{< highlight plaintext >}}
 Host serveur
     Hostname 192.168.0.1
     User root
     IdentityFile ~/.ssh/yubikey.pub
-{{< /code >}}
+{{< /highlight >}}
 
 ---
 
@@ -305,7 +305,7 @@ Host serveur
 
 Si vos clés PGP ne sont pas ajoutées à l'agent GPG (i.e. non visibles dans le résultat de la commande `ssh-add -L`) et que vous obtenez l'erreur `gpg --card-status` pour la commande `gpg: error getting version from 'scdaemon': No SmartCard daemon`, pensez à installer les paquets `pcscd`, `scdaemon` et `pcsc-tools` :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 debian:~$ gpg --card-status
 gpg: error getting version from 'scdaemon': No SmartCard daemon
 gpg: la carte OpenPGP n'est pas disponible : No SmartCard daemon
@@ -313,7 +313,7 @@ debian:~$ sudo apt install pcscd scdaemon pcsc-tools
 debian:~$ gpg --card-status
 Reader ...........: Yubico Yubikey NEO OTP CCID 00 00
 # ... [cropped result]
-{{< /code >}}
+{{< /highlight >}}
 
 ---
 

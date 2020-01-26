@@ -70,9 +70,9 @@ La copie sur écriture apporte deux améliorations à Btrfs. Premièrement, dans
 
 La création d’une partition Btrfs se fait classiquement :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:~# mkfs.btrfs *dev*
-{{< /code >}}
+{{< /highlight >}}
 
 Cette commande admet un grand nombre d’options, listées sur [le site officiel](https://btrfs.wiki.kernel.org/index.php/Mount_options). Nous allons détailler plusieurs de ces options par la suite.
 
@@ -80,21 +80,21 @@ Btrfs propose aussi la commande *btrfs* ([manuel officiel](https://btrfs.wiki.ke
 
 Ainsi, Btrfs propose l’équivalent de la commande *df*, avec plus d’informations :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs filesystem df *filesystem*
-{{< /code >}}
+{{< /highlight >}}
 
 Pour obtenir plus de détails sur un système Btrfs, il faut utiliser la commande suivante :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs filesystem show *filesystem*
-{{< /code >}}
+{{< /highlight >}}
 
 Enfin, il est possible de défragementer un système Btrfs entier ou uniquement quelques fichiers avec la commande :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs filesystem defragment *[filesystem|files]*
-{{< /code >}}
+{{< /highlight >}}
 
 ## Les fonctionnalités implémentées
 
@@ -122,9 +122,9 @@ Le schéma suivant illustre l'organisation du disque après la conversion :
 
 #### Utilisation
 
-{{< code lang="console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs-convert [-d] [-n] [-i] [-r] &lt;dev&gt;
-{{< /code >}}
+{{< /highlight >}}
 
 Definition des paramètres les plus fréquemment utilisés :
 
@@ -137,15 +137,15 @@ Definition des paramètres les plus fréquemment utilisés :
 
 Il est possible de redimmensionner les partitions Btrfs montées grâce à la commande suivante :
 
-{{< code lang="console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs filesystem resize &lt;taille&gt; /mnt/btrfs
-{{< /code >}}
+{{< /highlight >}}
 
 L’option **taille** doit être renseignée, et peut être utilisée de trois manières : en mettant `+` devant, pour agrandir la partition, `-` pour la diminuer, et enfin en spécifiant uniquement la taille finale souhaitée. Par exemple, pour réduire de 3 Go la partition :
 
-{{< code lang="console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs filesystem resize -3g /mnt/btrfs
-{{< /code >}}
+{{< /highlight >}}
 
 ### Sous-volumes
 
@@ -161,16 +161,16 @@ Un quota de blocs peut être affecté à un sous-volume. Une fois ce quota attei
 
 #### Création et manipulations
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:~# mkfs.btrfs /dev/sdb5
 root@debian:~# mount /dev/sdb5 /mnt/1
 root@debian:~# cd /mnt/1
 root@debian:~# touch a
-{{< /code >}}
+{{< /highlight >}}
 
 Nous avons donc un système de fichiers Btrfs classique contenant un seul fichier "`a`". Nous pouvons à présent créer un sous-volume et y ajouter un fichier :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs subvolume create subv
 root@debian:~# touch subv/b
 root@debian:~# tree
@@ -180,18 +180,18 @@ root@debian:~# tree
     └── b
 
     1 directory, 2 files
-{{< /code >}}
+{{< /highlight >}}
 
 Nous avons créé un sous-volume "`subv`" et nous y avons ajouté le fichier "`b`" en précisant qu'il devait se trouver dans ce sous-volume. Cette création ressemble très fortement à la création d'un répertoire "`subv`" dans lequel nous aurions placé le fichier "`b`". Mais l'on constatera des différences lors de l'utilisation et de la manipulation des sous-volumes. Par exemple :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:~# ln a subv/
 ln: failed to create hard link ‘subv/a’ => ‘a’: Invalid cross-device link
-{{< /code >}}
+{{< /highlight >}}
 
 Ainsi, même si le sous-volume ressemble à un répertoire ordinaire, il est traité par le système de fichier comme étant sur un support physique distinct. Se déplacer dans "`subv`" revient à traverser un point de montage Unix classique. Il est d'ailleurs possible de monter le sous-volume de façon indépendante :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs subvolume list /mnt/1
 ID 257 gen 8 top level 5 path subv
 root@debian:~# mount -o subvolid=257 /dev/sdb5 /mnt/2
@@ -200,21 +200,21 @@ root@debian:~# tree /mnt/2
 └── b
 
 0 directories, 1 file
-{{< /code >}}
+{{< /highlight >}}
 
 Normalement, Btrfs va monter la racine par défault à moins que nous lui disions de faire autrement avec l'option `subvolid=&lt;mount option&gt;`. Pour modifier le volume ou le sous-volume à monter par défaut, il faut utiliser la commande :
 
-{{< code lang="console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs subvolume set-default 257 /mnt/1
-{{< /code >}}
+{{< /highlight >}}
 
 Par la suite, monter `/dev/sdb5` sans préciser d'options de montage avec `subvolid=&lt;mount option&gt;` reviendra à monter le sous-volume qui possède l'identifiant #257 (ici "`subv`"). Le volume racine possède l'identifiant #0.
 
 Pour supprimer un sous-volume, il faut premièrement supprimer tous les fichiers qu'il contient, puis utiliser la commande suivante :
 
-{{< code lang="console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs subvolume delete &lt;path&gt;
-{{< /code >}}
+{{< /highlight >}}
 
 ### Compression
 
@@ -224,15 +224,15 @@ La compression permet de sauvegarder de l'espace disque, mais aussi de limiter l
 
 Btrfs utilise actuellement deux algorithmes : ZLIB (par défaut) et LZO. Le premier est plus lent, mais compresse plus que LZO, qui a été conçu pour être rapide. La compression se fait en découpant les fichiers en morceaux de 128kb et en faisant traiter ces derniers par des threads, ce qui permet de diviser la charge de travail sur tous les CPUs même dans le cas d’un seul fichier. L’utilisation de la compression et le choix de la méthode se font simplement lors du montage de la partition :
 
-{{< code lang="console" >}}
+{{< highlight bash >}}
 root@debian:~# mount -o compress=lzo,zlib *dev* /mnt/btrfs
-{{< /code >}}
+{{< /highlight >}}
 
 Tous les fichiers compressibles écrits après le montage se feront avec la méthode de compression choisie. Pour forcer la compression même sur les fichiers peu compressibles, il faut utiliser l’option *compress-force*. De plus, il est possible de compresser les fichiers déjà présents sur le volume grâce à la commande suivante :
 
-{{< code lang="console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs filesystem defragment -c zlib,lzo
-{{< /code >}}
+{{< /highlight >}}
 .
 
 ### Gestion des quotas
@@ -247,17 +247,17 @@ La gestion des quotas dans Btrfs est implémentée au niveau des sous-volumes pa
 
 Activer les quotas sur un sous-volume Btrfs nouvellement créer se fait uniquement grâce à :
 
-{{< code lang="console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs quota enable &lt;path&gt;
-{{< /code >}}
+{{< /highlight >}}
 
 Sur un sous-volume existant, il faut d'abord activer les quotas et vérifier si la commande "``" retourne quelque chose. Si ce n'est pas le cas, alors Btrfs n'a pas créé automatiquement le `qgroup` et il va falloir le créer manuellement :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs quota enable &lt;path&gt;
 root@debian:~# btrfs subvolume list &lt;path&gt; | cut -d' ' -f2 | xargs -I{} -n1 btrfs qgroup create 0/{} &lt;path&gt;
 root@debian:~# btrfs quota rescan &lt;path&gt;
-{{< /code >}}
+{{< /highlight >}}
 
 ### Gestion de volumes multiples
 
@@ -297,35 +297,35 @@ Le nombre de disques durs impliqués dans un RAID, ainsi que les paramètres de 
 
 La commande pour créer un RAID est la suivante :
 
-{{< code lang="console" >}}
+{{< highlight bash >}}
 root@debian:~# mkfs.btrfs [-d mode] [-m mode] *dev1 dev2* ...
-{{< /code >}}
+{{< /highlight >}}
 
 C’est donc la même commande que pour créer un volume Btrfs, mais avec des options en plus. « -d mode » indique le mode de RAID pour les données ; « -m mode » celui pour les métadonnées. *mode* peut donc valoir *raid0*, *raid1*,*raid10*, ou un autre type de RAID implémenté mais non stable (*raid5*, *raid6*). La commande permettant de lister les disques impliqués dans le RAID est :
 
-{{< code lang="console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs filesystem show *dev*
-{{< /code >}}
+{{< /highlight >}}
 
 Pour ajouter ou supprimer le volume */dev/sdd1*, il faut utiliser les commandes suivantes :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs device add /dev/sdd1 /mnt         //ajout
 root@debian:~# btrfs device delete /dev/sdd1 /mnt      //suppression
 root@debian:~# btrfs balance start -d -m /mnt          //reconfiguration du RAID pour prendre en compte la modification
-{{< /code >}}
+{{< /highlight >}}
 
 Enfin, la conversion peut s’effectuer sans démonter le système grâce à la commande suivante :
 
-{{< code lang="console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs balance start -dconvert=*mode* -mconvert=*mode* /mnt
-{{< /code >}}
+{{< /highlight >}}
 
 Comme btrfs doit copier beaucoup de données et recalculer toutes les sommes de contrôle correspondantes, l’opération peut prendre du temps. Enfin, btrfs est capable de reconnaitre de lui-même la présence d’un disque dur ne fonctionnant plus et peut monter le RAID en « mode dégradé » afin de pouvoir lancer les opérations de recouvrement des données et de ré-équilibrage du RAID :
 
-{{< code lang="console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs device delete missing /mnt/disque_defaillant
-{{< /code >}}
+{{< /highlight >}}
 
 ### Instantanés
 
@@ -343,9 +343,9 @@ Puis le mécanisme de copie sur écriture créé une copie privée pour l'instan
 
 La création d’un instantanné se fait grâce à la commande suivante :
 
-{{< code lang="console" >}}
+{{< highlight bash >}}
 root@debian:~# subvolume snapshot *source* [*dest*/]*name*
-{{< /code >}}
+{{< /highlight >}}
 
 Les autres opérations de gestion d’un instantanné (suppression, défragmentation, quotas) se font de la même manière que pour un sous-volume classique.
 
@@ -355,29 +355,29 @@ Les autres opérations de gestion d’un instantanné (suppression, défragmenta
 
 Pour vérifier les sommes de contrôles de l’ensemble du système (opération souvent appelée *scrub*), il faut utiliser la commande *btrfs scrub*, par exemple :
 
-{{< code lang="console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs scrub start /mnt/btrfs
-{{< /code >}}
+{{< /highlight >}}
 
 Il est conseillé de lancer réguliérement cette commande pour détecter rapidement une défaillance. En cas d’erreurs, il existe la commande *btrfsck* ; cependant, celle-ci est récente et est déconseillée pour les données sensibles. Ainsi, avant de l’utiliser il convient d’essayer les commandes suivantes :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs rescue chunk-recover *dev*
 root@debian:~# btrfs restore -l *dev*
-{{< /code >}}
+{{< /highlight >}}
 
 ## Btrfs : Installation &amp; Démonstration
 
 Afin de pouvoir expérimenter les diverses fonctionnalités de Btrfs, nous avons installé Debian sur une machine virtuelle.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 Debian 7.7 Wheezy sur VirtualBox
 Disque : 15 Go
 sda1    Amorce  Primaire    ext4      298,85 Mo
 sda5    NC      Logique     btrfs   13799,27 Mo
 sda6    NC      Logique     swap     2004,88 Mo
 Linux debian 3.2.0-4-amd64 #1 SMP Debian 3.2.63-2+deb7u1 x86_64 GNU/Linux
-{{< /code >}}
+{{< /highlight >}}
 
 ### Installer Debian 7.7 sur un système de fichiers Btrfs
 
@@ -393,7 +393,7 @@ Nous avons créé à la racine :
 - Un répertoire "`subr`" contenant un fichier "`b`"
 - Un sous-volume "`subv`" contenant aussi un fichier "`b`"
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:~# touch a
 root@debian:~# btrfs subvolume create subv
 Create subvolume './subv'
@@ -414,11 +414,11 @@ total 4
 -rw-r--r-- 1 root root 24 nov.  12 19:22 a
 drwxr-xr-x 1 root root  2 nov.  12 20:13 subr
 drwx------ 1 root root  2 nov.  12 19:23 subv
-{{< /code >}}
+{{< /highlight >}}
 
 Ensuite, nous avons pu voir que même si le sous-volume apparait comme un répertoire, il n'en était pas un : test avec `ln` puis montage du sous-volume.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:~# ln a subv/
 ln: impossible de créer le lien direct « subv/a » => « a »: Lien croisé de périphéque invalide
 root@debian:~# ln a subr/
@@ -440,13 +440,13 @@ root@debian:~# tree /mnt/subv/
 └── b
 
 0 directories, 1 file
-{{< /code >}}
+{{< /highlight >}}
 
 ### Les instantanés
 
 Nous avons créé un sous-volume "`subv`" contenant un fichier "`b`" dans lequel nous avons écrit &laquo; Je suis le fichier "b" &raquo;. Puis nous avons pris un instantané (nommé `subvSS`)de ce sous volume grâce à la commande suivante :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:~# btrfs subvolume snapshot subv/ subvSS
 Create a snapshot of 'subv/' in './subvSS'
 root@debian:~# tree
@@ -458,13 +458,13 @@ root@debian:~# tree
 └── b
 
 2 directories, 3 files
-{{< /code >}}
+{{< /highlight >}}
 
 Les fichiers "`b`" contenus dans "`subv`" et "`subvSS`" sont alors identiques. Note : Il est possible de déplacer et renommer l'instantané.
 
 Nous avons ensuite modifié le fichier "`subv/b`" et lui avons ajouté une ligne de texte. Puis nous avons restauré l'instantané :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:~# cat subv/b
 Je suis le fichier "b".
 Je suis une modif faite après la snapshot !
@@ -485,7 +485,7 @@ root@debian:~# tree
 1 directory, 2 files
 root@debian:~# cat subv/b
 Je suis le fichier "b".
-{{< /code >}}
+{{< /highlight >}}
 
 ### La convertion Ext4/Btrfs
 
@@ -493,7 +493,7 @@ Je suis le fichier "b".
 
 On considère le contenu suivant sur un disque (ici `/dev/sdb1`) :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:/mnt/test/ext4# tree
 .
 ├── Bureau
@@ -525,13 +525,13 @@ root@debian:/mnt/test/ext4# tree
 └── n
 
 8 directories, 19 files
-{{< /code >}}
+{{< /highlight >}}
 
 {{< img src="/media/2014/11/7ef40194f24306128c19b5ac12f71faa-1024x293.png" title="État du disque après la convertion en Btrfs" link="/media/2014/11/7ef40194f24306128c19b5ac12f71faa.png" >}}
 
 Nous avons ensuite démonté le volume, convertit puis remonté. Nous pouvons voir que la conversion s'est bien déroulée. Un instantané a aussi été créé au cas où nous voudrions revenir à Ext4 :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:~# umount /mnt/test/ext4/
 root@debian:~# btrfs-convert /dev/sdb1
 creating btrfs metadata.
@@ -575,13 +575,13 @@ root@debian:/mnt/test/btrfs# tree
 9 directories, 20 files
 root@debian:/mnt/test/btrfs# btrfs sub list ext2_saved/
 ID 256 top level 5 path ext2_saved
-{{< /code >}}
+{{< /highlight >}}
 
 {{< img src="/media/2014/11/aee11ff9a2e8ca5ba9070d2a5e877a75-1024x293.png" title="État du disque après la reconvertion en Ext4" link="/media/2014/11/aee11ff9a2e8ca5ba9070d2a5e877a75.png" >}}
 
 Nous avons fait des moficications sur le disque, puis nous avons reconvertit le disque en Ext4 :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root@debian:/mnt/test/btrfs# mv Documents/a Musique/a
 root@debian:/mnt/test/btrfs# mv Public/* Téléchargements/
 root@debian:/mnt/test/btrfs# rm Vidéos/k
@@ -655,7 +655,7 @@ root@debian:/mnt/test/ext4# tree
 └── n
 
 8 directories, 19 files
-{{< /code >}}
+{{< /highlight >}}
 
 ## Benchmark, mesures de performances
 

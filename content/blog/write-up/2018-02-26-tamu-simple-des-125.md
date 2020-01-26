@@ -67,10 +67,10 @@ Since the key and the number of iteration are known, we simply need to build a d
 10. Your new block consists of `Lr`, the result of the XOR above (left) and` Rr` (right)
 11. Decrement `r`
 
-{{< code lang="plaintext" >}}
+{{< highlight plaintext >}}
 [+] Cipher: 01100101 00100010 10001100 01011000 00010001 10000101
 [+] Flag:   01001101 01101001 01001110 00110000 01101110 00100001
             Gigem{MiN0n!}
-{{< /code >}}
+{{< /highlight >}}
 
 {{< gist vonKrafft 9b795e13c7105f5135910eeb0f7def51 "simpleDES.py" >}}

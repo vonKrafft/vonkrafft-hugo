@@ -27,14 +27,14 @@ Comme je vous l'ai déjà précisé, les standards de HTTP2 ont été publié en
 
 Pour commencé, nous allons donc vérifier la version de Nginx et si besoin nous allons le mettre à jour.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root:~# nginx -v
 nginx version: nginx/1.9.13
 root:~# apt-get update
 root:~# apt-get dist-upgrade
 root:~# nginx -v
 nginx version: nginx/1.10.0
-{{< /code >}}
+{{< /highlight >}}
 
 {{< alert "info" info-circle >}}Vous pouver aussi simplement l'installer avec `apt-get install nginx`, sans oublier de lancer `apt-get update` avant.{{< /alert >}}
 
@@ -44,12 +44,12 @@ Bon aller, tant que j'y suis, je vais vous dire comment installer la version mai
 
 Oui mais ... J'ai préciser au début du tutoriel que la distribution utilisée est Debian, et tout le monde connait la rapidité légendaire de mise à jour des dépôts Debian. Donc à moins d'attendre que les dépôts soient mis à jour pour Nginx, ce qui peut prendre du temps, nous allons installer la version mainline. Et puis cela vous permettra de bénéficier des dernières fonctionnalités du serveur.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root:~# curl http://nginx.org/keys/nginx_signing.key | apt-key add -
 root:~# echo -e "deb http://nginx.org/packages/mainline/debian/ `lsb_release -cs` nginx\ndeb-src http://nginx.org/packages/mainline/debian/ `lsb_release -cs` nginx" &gt; /etc/apt/sources.list.d/nginx.list
 root:~# apt-get update
 root:~# apt-get dist-upgrade
-{{< /code >}}
+{{< /highlight >}}
 
 ### Activer HTTPS
 
@@ -57,22 +57,22 @@ La nouvelle version du protocole préconise l'utilisation de TLS, dont la versio
 
 Tout d'abord, nous allons créer le répertoire qui contiendra les certificats SSL. J'ai choisi de le mettre avec le répertoire de configuration de Nginx (dans `/etc/nginx`), mais vous pouvez le mettre ailleurs.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root:~# mkdir /etc/nginx/ssl
-{{< /code >}}
+{{< /highlight >}}
 
 Ensuite, nous allons créer un certificat auto-signé ainsi qu'une clé pour signer ce certificat. Si vous disposé déjà d'un certificat, copiez-le dans le répertoire que nous venons de créer. J'en profite aussi pour générer un fichier de configuration pour les paramètres de Diffie-Hellman.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 root:~# openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout /etc/nginx/ssl/nginx.key -out /etc/nginx/ssl/nginx.crt
 root:~# openssl dhparam -out /etc/nginx/ssl/dhparam.pem 4096
-{{< /code >}}
+{{< /highlight >}}
 
 ### Configurer Nginx
 
 Le serveur est à jour, nous avons notre certificat ... il ne nous reste plus qu'à activer HTTP2 et HTTPS. Ci-dessous, je vous met un extrait du fichier de configuration (dans mon cas, et par défaut, c'est le fichier `/etc/nginx/conf.d/default.conf`).
 
-{{< code lang="plaintext" icon="file-text-o" title="/etc/nginx/conf.d/default.conf" >}}
+{{< highlight plaintext >}}
 server {
     # Activer HTTP2 et SSL
     listen 443 ssl http2 default deferred;
@@ -94,7 +94,7 @@ server {
     server_name localhost;
     return 301 https://$host$request_uri;
 }
-{{< /code >}}
+{{< /highlight >}}
 
 Bien sûr, ces paramètres sont à rajouter ou à modifier dans le fichier de configuration et ils ne se suffisent pas à eux-même. Pour sécuriser votre serveur Nginx, je vous invite à jeter un coup d’œil à ce projet, qui donne des [recommendations pour améliorer la sécurité de Nginx](https://gist.github.com/plentz/6737338).
 
@@ -109,7 +109,7 @@ Bien sûr, ces paramètres sont à rajouter ou à modifier dans le fichier de co
 
 Et voilà, vous avez un serveur Nginx à jour avec HTTP2 et SSL. Vous pouvez vous y rendre à l'adresse [https://localhost/](https://localhost/). Avant de se quitter, je vous propose les commandes suivante pour compiler Nginx depuis les sources, utile notamment pour l'installer sur un Raspberry Pi avec Raspbian (source [https://hanshell.com/](https://hanshell.com/2_compile_nginx_on_raspberry_pi.html)).
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 wandrille:~$ sudo apt-get install libpcre3-dev libssl-dev debhelper libxml2-dev libxslt-dev libgd2-xpm-dev libgeoip-dev libperl-dev
 wandrille:~$ apt-get source nginx
 wandrille:~$ cd nginx-1.9.13/
@@ -119,4 +119,4 @@ wandrille:~$ sudo dpkg -i nginx_1.9.13-1~jessie_armhf.deb
 wandrille:~$ sudo dpkg -i nginx-module-geoip_1.9.13-1~jessie_armhf.deb
 wandrille:~$ sudo service nginx restart
 wandrille:~$ nginx -v
-{{< /code >}}
+{{< /highlight >}}

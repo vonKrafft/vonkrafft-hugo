@@ -2,6 +2,77 @@ body {
     background: #f4f4f4 url(../img/grey-prism.svg) repeat fixed;
 }
 
+.highlight > pre {
+    color: #333 !important;
+    background: transparent !important;
+}
+
+/* Syntax */
+
+.gist table > tbody > tr > td:first-child { font-weight: inherit; }
+.gist table td, .gist table tr { border: none !important; }
+.gist table { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+
+.highlight {
+    border-color: #ddd #ddd #ccc !important;
+    border-radius: 3px;
+    border: 1px solid;
+    margin-bottom: 2em;
+}
+
+.highlight .lnt {
+    color: rgba(27,31,35,.3);
+}
+
+.highlight table > tbody > tr > td:first-child {
+    background: transparent;
+    color: rgba(27,31,35,.3);
+    cursor: pointer;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-weight: inherit;
+    line-height: 20px;
+    min-width: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 1%;
+}
+
+.highlight table td, .highlight table tr {
+    border: none !important;
+    padding: 0;
+    vertical-align: top;
+}
+
+.highlight table {
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.highlight table > tbody > tr:hover > td, .highlight table > tbody > tr:hover > th {
+    background-color: inherit;
+}
+
+.highlight table code {
+    background-color: #fff;
+    padding: .35em;
+}
+
+.highlight table pre, .highlight table code {
+    border: none;
+    margin: 0;
+}
+
 /* links and buttons */
 
 a {

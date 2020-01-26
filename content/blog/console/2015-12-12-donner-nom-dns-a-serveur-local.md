@@ -53,35 +53,35 @@ Nous allons configurer notre interface réseau. Pour moi, il s’agit de eth0 (c
 
 Le fichier de configuration est le suivant : /etc/networks/interfaces. Par défaut, notre serveur (comme n’importe quel équipement réseau) demande une adresse IP à notre box Internet :
 
-{{< code lang="plaintext" icon="file-text-o" title="/etc/networks/interfaces" >}}
+{{< highlight plaintext >}}
 iface eth0 inet dhcp
-{{< /code >}}
+{{< /highlight >}}
 
 Nous allons donc modifier cette ligne pour lui dire quelle adresse IP utiliser :
 
-{{< code lang="plaintext" icon="file-text-o" title="/etc/networks/interfaces" >}}
+{{< highlight plaintext >}}
 iface eth0 inet static
     address 192.168.1.100
     netmask 255.255.255.0
     gateway 192.168.1.254
-{{< /code >}}
+{{< /highlight >}}
 
 Pour connaître l’adresse IP de votre gateway, utilisez la commande trace :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 vonkrafft@vps-001:~$ sudo route -n
 Kernel IP routing table
 Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 0.0.0.0         192.168.1.254   0.0.0.0         UG    0      0      0   eth0
 169.254.0.0     0.0.0.0         255.255.0.0     U     1000   0      0   eth0
 192.168.1.0     0.0.0.0         255.255.255.0   U     0      0      0   eth0
-{{< /code >}}
+{{< /highlight >}}
 
 L’adresse de votre gateway est celle repérée par le flag UG. Pour moi il s’agit de 192.168.1.254. Pour appliquer les changements, nous redémarrons le réseau :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 vonkrafft@vps-001:~$ sudo service networking restart
-{{< /code >}}
+{{< /highlight >}}
 
 {{< alert "info" info-circle >}}Il est aussi possible d'attribuer une adresse IP fixe en utilisant votre box Internet. Mais toutes les box des FAI français ne proposent pas cette options.{{< /alert >}}
 
@@ -95,9 +95,9 @@ Il existe de nombreux serveurs DNS dans le monde, mais ils ne nous intéressent 
 
 Tous les PC possède un DNS local qui est consulté avant de demander aux autres DNS de traduire un nom. Nous allons donc renseigner notre nom dans le DNS de notre machine client, qui n’est autre qu’un fichier : `/etc/hosts`. Il faut ajouter notre traduction comme suit : `<adresse_ip> <nom>`
 
-{{< code lang="plaintext" icon="file-text-o" title="/etc/hosts" >}}
+{{< highlight plaintext >}}
 192.168.1.100    vps-001.server
-{{< /code >}}
+{{< /highlight >}}
 
 {{< alert "warning" question-circle >}}Mais quel nom choisir ?{{< /alert >}}
 

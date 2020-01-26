@@ -28,10 +28,10 @@ The screenshot shows a webshell accessible from the URL https://midcoastfcu.com/
 
 **Answers**
 
-{{< code lang="plaintext" >}}
+{{< highlight plaintext >}}
 1. yes
 2. A
-{{< /code >}}
+{{< /highlight >}}
 
 ### 01\_logs (Scenario - MCCU, 50pt)
 
@@ -51,24 +51,24 @@ The screenshot shows a webshell accessible from the URL https://midcoastfcu.com/
 
 The server has been compromised through the website. It can be seen in the log file `access.log` which lists the HTTP requests received by the server. At first shy, the attacker (172.16.20.24) tests several potential flaws (HTTP downgrade, WordPress xmlrpc, etc.) before finding a vulnerable PHP page. In the `auth.log` file, we can see that a new user "admin" was created at 20:35:21. The server was probably compromised before that date. When we look at the received HTTP requests a bit earlier, we see a PHP file in the upload directory (`/wp-content/uploads/EYcNS.php`). The attacker thus found a way to upload this file, and by going back again the history, we identify the source of the compromise: `/wp-content/plugins/wpshop/includes/ajax.php`.
 
-{{< code lang="plaintext" icon="file-text-o" title="auth.log" >}}
+{{< highlight plaintext >}}
 Nov  8 20:35:21 midcoastfcu useradd[1499]: new group: name=admin, GID=1000
 Nov  8 20:35:21 midcoastfcu useradd[1499]: new user: name=admin, UID=1000, GID=1000, home=/home/admin, shell=/bin/sh
-{{< /code >}}
-{{< code lang="plaintext" icon="file-text-o" title="access.log" >}}
+{{< /highlight >}}
+{{< highlight plaintext >}}
 172.16.20.24 - - [08/Nov/2017:20:32:49 -0900] "POST /wp-content/plugins/wpshop/includes/ajax.php HTTP/1.1" 200 61 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"
 172.16.20.24 - - [08/Nov/2017:20:32:54 -0900] "GET /wp-content/uploads/EYcNS.php HTTP/1.1" 499 0 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"
-{{< /code >}}
+{{< /highlight >}}
 
 **Answers**
 
-{{< code lang="plaintext" >}}
+{{< highlight plaintext >}}
 1. web
 2. access.log
 3. 172.16.20.24
 4. 11/08-20:32:49
 5. /wp-content/plugins/wpshop/includes/ajax.php
-{{< /code >}}
+{{< /highlight >}}
 
 ### 02\_Analysis (Scenario - MCCU, 75pt)
 
@@ -84,7 +84,7 @@ Nov  8 20:35:21 midcoastfcu useradd[1499]: new user: name=admin, UID=1000, GID=1
 
 We now have the complete archive of the compromised Wordpress. So we just use `grep` to list the versions of the different plugins. The versions in the PHP files are not necessarily correct, so you have to look in the `readme.txt` files for the stable tag.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 host:~$ grep -nr "Stable tag" ./*
 ./akismet/readme.txt:6:Stable tag: 3.0.4
 ./contact-form-7/readme.txt:7:Stable tag: 3.1.1
@@ -97,17 +97,17 @@ host:~$ grep -nr "Stable tag" ./*
 ./w3-total-cache/readme.txt:6:Stable tag: 0.7
 ./wpshop/readme.txt:7:Stable tag: 1.3.9.5
 ./wp-super-cache/readme.txt:5:Stable tag: 0.3
-{{< /code >}}
+{{< /highlight >}}
 
 We saw during the previous challenge that the entry point was the wpshop plugin. A small search allows to obtain the following link: https://wpvulndb.com/vulnerabilities/7830
 
 **Answers**
 
-{{< code lang="plaintext" >}}
+{{< highlight plaintext >}}
 1. akismet.3.0.4,contact-form-7.3.1.1,duplicate-post.0.5,jetpack.2.0.7,ninja-forms.1.3.5,w3-total-cache.0.7,wp-super-cache.0.3,wpshop.1.3.9.5
 2. wpshop.1.3.9.5
 3. CWE-434
-{{< /code >}}
+{{< /highlight >}}
 
 ### 03\_Forensics (Scenario - MCCU, 100pt)
 
@@ -124,14 +124,14 @@ We saw during the previous challenge that the entry point was the wpshop plugin.
 
 A simple search by filtering on the last edit date of the files allows to obtain the list of files created by the attacker. In the `access.log` file, we can see that only the `.mysql.db` file has been exfiltrated from the server. Finally, when we look at the content of PHP files created, we find that the shell used was `/bin/dsh`.
 
-{{< code lang="plaintext" icon="file-text-o" title="access.log" >}}
+{{< highlight plaintext >}}
 172.16.20.24 - - [08/Nov/2017:20:38:41 -0900] "GET /.mysql.db HTTP/1.1" 200 186411 "-" "Wget/1.18 (linux-gnu)"
-{{< /code >}}
-{{< code lang="plaintext" icon="file-text-o" title=".wp-config.php" >}}
+{{< /highlight >}}
+{{< highlight plaintext >}}
 $shell='uname -a;w;id;pwd;/bin/dsh';
-{{< /code >}}
+{{< /highlight >}}
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 host:~$ find . -type f -newermt '2017-11-08 20:32:49' -ls
    410155    184 -rw-r--r--   1 root     www-data   186411 Nov  9 06:38 ./.mysql.db
    414710      4 -rw-rw-rw-   1 www-data www-data      538 Nov  8 23:08 ./wp-content/w3tc-cache/index.php
@@ -143,16 +143,16 @@ host:~$ find . -type f -newermt '2017-11-08 20:32:49' -ls
    410152      4 -rw-r--r--   1 www-data www-data     1851 Nov  9 06:39 ./.wp-config.php
    410154      4 -rw-r--r--   1 www-data www-data     1851 Nov  9 06:39 ./wp-register.php
    410150      4 -rw-r--r--   1 www-data www-data     1851 Nov  9 06:39 ./wp-logout.php
-{{< /code >}}
+{{< /highlight >}}
 
 **Answers**
 
-{{< code lang="plaintext" >}}
+{{< highlight plaintext >}}
 1. .mysql.db,.wp-config.php,wp-content/plugins/hello.php,wp-logout.php,wp-register.php
 2. .mysql.db
 3. 05ed0336f549d3dc47e6430e9ae85e9d25402e21
 4. /bin/dsh
-{{< /code >}}
+{{< /highlight >}}
 
 ### 04\_Privilege\_Escalation (Scenario - MCCU, 125pt)
 
@@ -170,7 +170,7 @@ host:~$ find . -type f -newermt '2017-11-08 20:32:49' -ls
 
 The attacker was able to obtain a root access on the server. He uploaded a webshell using the `ajax.php` file from the wpshop plugin, then he uploaded and executed the` / tmp / dc64` file. Then he elevated his privileges using DirtyCow root escalation privilege.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 host:~$ sha1sum 02\_analysis/evidence\_2/wordpress/wp-content/plugins/wpshop/includes/ajax.php
 4efaa331787b5cc077892ded823509967287efb0  02\_analysis/evidence\_2/wordpress/wp-content/plugins/wpshop/includes/ajax.php
 host:~$ sha1sum 04\_Privilege\_Escalation/evidence/dsh
@@ -181,15 +181,15 @@ host:~$ xxd 04\_Privilege\_Escalation/evidence/dsh | grep -C 2 Dirty
 000a42d0: 4469 7274 7943 6f77 2072 6f6f 7420 7072  DirtyCow root pr
 000a42e0: 6976 696c 6567 6520 6573 6361 6c61 7469  ivilege escalati
 000a42f0: 6f6e 0000 0000 0000 5261 6369 6e67 2c74  on......Racing,t
-{{< /code >}}
+{{< /highlight >}}
 
 **Answers**
 
-{{< code lang="plaintext" >}}
+{{< highlight plaintext >}}
 1. root
 2. 4cbf8cb09a9627a1ee596df0988a99e48376b9df,4efaa331787b5cc077892ded823509967287efb0
 3. CVE-2016-5195
-{{< /code >}}
+{{< /highlight >}}
 
 ### 05\_backdoor (Scenario - MCCU, 150pt)
 
@@ -204,21 +204,21 @@ host:~$ xxd 04\_Privilege\_Escalation/evidence/dsh | grep -C 2 Dirty
 
 We have the result of the `netstat` command. We know the IP address of the attacker (172.16.20.24) and therefore we can see the network connections established between him and the server.
 
-{{< code lang="plaintext" >}}
+{{< highlight plaintext >}}
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
 tcp        0      0 172.16.20.132:49815     172.16.20.24:4444       ESTABLISHED 889/php-fpm: pool w
 tcp        0      0 172.16.20.132:49811     172.16.20.24:4444       ESTABLISHED 1448/php-fpm: pool 
 tcp        0      0 172.16.20.132:80        172.16.20.24:54912      ESTABLISHED 868/nginx: worker p
-{{< /code >}}
+{{< /highlight >}}
 
 **Answers**
 
-{{< code lang="plaintext" >}}
+{{< highlight plaintext >}}
 1. 172.16.20.24
 2. 4444
 3. php-fpm
 4. 889
-{{< /code >}}
+{{< /highlight >}}
 
 ### 06\_persistence (Scenario - MCCU, 175pt)
 
@@ -237,7 +237,7 @@ tcp        0      0 172.16.20.132:80        172.16.20.24:54912      ESTABLISHED 
 
 To answer these questions, we need to go back to the log files. In the `auth.log` file, we can see that an "admin" user is created, then delete, and then create again at 20:35:29. The `root.bash\_history` file confirms this creation, first with the` useradd` command and then with `adduser`. The user "admin" is then added to the group "sudo". Then the attacker tries an SSH connection and the `sudo su` command to make sure of its persistence.
 
-{{< code lang="plaintext" icon="file-text-o" title="auth.log" >}}
+{{< highlight plaintext >}}
 Nov  8 20:35:21 midcoastfcu useradd[1499]: new group: name=admin, GID=1000
 Nov  8 20:35:21 midcoastfcu useradd[1499]: new user: name=admin, UID=1000, GID=1000, home=/home/admin, shell=/bin/sh
 Nov  8 20:35:26 midcoastfcu userdel[1507]: delete user 'admin'
@@ -257,13 +257,13 @@ Nov  8 20:36:51 midcoastfcu sudo: pam\_unix(sudo:session): session opened for us
 Nov  8 20:36:51 midcoastfcu su[1765]: Successful su for root by root
 Nov  8 20:36:51 midcoastfcu su[1765]: + /dev/pts/0 root:root
 Nov  8 20:36:51 midcoastfcu su[1765]: pam\_unix(su:session): session opened for user root by admin(uid=0)
-{{< /code >}}
+{{< /highlight >}}
 
 **Answers**
 
-{{< code lang="plaintext" >}}
+{{< highlight plaintext >}}
 1. 11/08-20:35:29
 2. yes
 3. admin,sudo
 4. yes
-{{< /code >}}
+{{< /highlight >}}

