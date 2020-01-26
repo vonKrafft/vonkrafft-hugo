@@ -1,7 +1,0 @@
-<div class="gallery-item">
-	<div class="gallery-image">
-		{{ with .Get "link" }}<a href="{{.}}" data-lightbox="post-gallery" target="_blank">{{ end }}
-			<img src="{{ .Get `src` }}"{{ with .Get `alt` }} alt="{{.}}"{{ end }}>
-		{{ with .Get "link" }}</a>{{ end }}
-	</div>
-</div>

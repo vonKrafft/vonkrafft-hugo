@@ -1,9 +1,0 @@
-<div class="code-container">
-	{{ if .Get "title" }}
-    <div class="code-title">
-        <i class="fa fa-{{.Get `icon`}}"></i>
-        {{.Get "title"}}
-    </div>
-    {{ end }}
-    <pre class="code"><code data-language="{{.Get `lang`}}">{{replaceRE "^[ \t]*\n" "" .Inner}}</code></pre>
-</div>

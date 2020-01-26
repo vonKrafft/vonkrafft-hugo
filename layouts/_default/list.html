@@ -1,44 +1,15 @@
-{{ define "title" }}
-    {{ if eq .Data.Singular "tag" }}Tag → {{ .Data.Term }}
-    {{ else if eq .Data.Singular "category" }}Category → {{ .Data.Term }}
-    {{ else }}Posts{{ end }}
-    {{ if isset .Site.Params "seotitle" }} | {{ .Site.Params.seotitle }}{{ else }} | {{ .Site.Title }}{{ end }}
-{{ end }}
+{{ partial "general-title" . }}
 
-{{ define "main" }}
-    {{ partial "header.html" . }}
-    <section class="main post-list">
-        <header class="list-header offscreen">
-            <h2 class="list-label">Posts List</h2>
-        </header>
-        {{ if eq .Data.Singular "tag" }}
-            <header class="page-header clearfix">Tag "{{ .Data.Term }}"</header>
-        {{ else if eq .Data.Singular "category" }}
-            <header class="page-header clearfix">Category "{{ .Data.Term }}"</header>
-        {{ else }}
-            <header class="page-header clearfix">Posts</header>
+{{ partial "header" . }}
+    {{ partial "navbar" . }}
+    <!-- Main -->
+    <div id="main">
+        {{ $paginator := .Paginate .Data.Pages }}
+        {{ range .Paginator.Pages }}
+            {{ .Render "content-list" }}
         {{ end }}
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") (index .Site.Params "paginate" | default 10) }}
-        {{ if ne $paginator.TotalPages 0 }}
-            <div class="timeline">
-                {{ range $paginator.Pages.ByDate.Reverse }}
-                {{ .Render "summary" }}
-                {{ end }}
-            </div>
-        {{ end }}
-        {{ if gt $paginator.TotalPages 1 }}
-            <footer class="list-footer">
-                <nav class="pagination">
-                    <h3 class="offscreen">Pagination</h3>
-                    {{ if $paginator.HasPrev }}
-                    <a class="pagination-previous" href="{{ $paginator.Prev.URL }}">← Newer Posts</a>
-                    {{ end }}
-                    {{ if $paginator.HasNext }}
-                    <a class="pagination-next" href="{{ $paginator.Next.URL }}">Older Posts →</a>
-                    {{ end }}
-                </nav>
-            </footer>
-        {{ end }}
-    </section>
-    {{ partial "footer.html" . }}
-{{ end }}
+
+        {{ partial "pagination" . }}
+    </div>
+    {{ partial "sidebar" . }}
+{{ partial "footer" . }}

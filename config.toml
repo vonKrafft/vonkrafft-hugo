@@ -1,128 +1,174 @@
-
-baseURL = "https://vonkrafft.fr/"
-languageCode = "fr"
-defaultContentLanguage = "fr"
+baseurl = "/"
+languageCode = "fr-fr"
 title = "vonKrafft"
-theme = "hugo-nuo"
+#theme = "hugo-future-imperfect"
+preserveTaxonomyNames = true
+paginate = 10
+disqusShortname = "vonkrafft"
+googleAnalytics = "UA-24449159-3"
+pluralizeListTitles = false
+# Set the followings to true as part of your site SEO
 enableRobotsTXT = true
 canonifyURLs = true
 
-# Disqus Username
-disqusShortname = "vonkrafft"
+[params]
+  # Sets the meta tag description
+  description          = "Chronicles of a cybersecurity engineer"
+  # Sets the navbarTitle that appears in the top left of the navigation bar
+  navbarTitle          = "vonKrafft"
+  # Sets where "View More Posts" links
+  viewMorePostLink     = "/blog/"
 
-# Google Analytics UA number
-googleAnalytics = "UA-24449159-3"
+# Optional Params
+  # Sets navbarTitle to match the section of the website
+  dynamicTitles        = true
+  # Sets RSS icons to appear on the sidebar with the social media buttons
+  rssAppearAtTop       = true
+  rssAppearAtBottom    = true
+  # Sets Social Media icons to appear on the sidebar
+  socialAppearAtTop    = true
+  socialAppearAtBottom = true
+  # Sets Categories to sort by number of posts instead of alphabetical
+  categoriesByCount    = true
+  # set to show or to hide categories in the sidebar
+  showSidebarCategories = true
+  # Sets Estimated Reading Time to appear in post headers
+  includeReadingTime   = true
+  # Sets the Favicon and Version for the site. Default support is for
+  # apple-touch-icon-precomposed.png, favicon.png, favicon.ico, and mstile.png.
+  # These are stored in the favicon folder. See the following for more information:
+  # https://github.com/audreyr/favicon-cheat-sheet
+  loadFavicon          = false
+  faviconVersion       = ""
+  # Sets Social Share links to appear on posts
+  socialShare          = false
+  # Sets specific share to appear on posts (default behavior is to appear)
+  socialShareTwitter   = true
+  socialShareGoogleplus = true
+  socialShareFacebook  = true
+  socialShareReddit    = true
+  socialShareLinkedin  = true
+  socialShareStumbleupon = true
+  socialSharePinterest = true
+  socialShareEmail     = true
 
-# Copyright of your post
-copyright = "© This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you likes to quote or reproduce."
+  # Load custom CSS or JavaScript files. The variable is an array so that you
+  # can load multiple files if necessary. You can also load the standard theme
+  # files by adding the value, "default".
+  # customCSS            = ["default", "/path/to/file"]
+  # customJS             = ["default", "/path/to/file"]
+  customCSS            = ["default", '/css/vonkrafft.css']
+  customJS             = ["default"]
 
-# Initial site menu, you can extend menu with content.
+  # options for highlight.js (version, additional languages, and theme)
+  disable_highlight = false # set to true to disable Highlight
+  highlightjsVersion = "9.11.0"
+  highlightjsCDN = "//cdn.bootcss.com"
+  highlightjsLang = ["r", "yaml", "css"]
+  highlightjsTheme = "github"
+  MathJaxCDN = "//cdn.bootcss.com"
+  MathJaxVersion = "2.7.1"
+
+# Disqus will take priority over Staticman (github.com/eduardoboucas/staticman)
+# due to its ease of use. Feel free to check out both and decide what you would
+# prefer to use. See Staticman.yml for additional settings.
+[params.staticman]
+  # Sets Statiman to be active
+  staticman = false
+  # Sets the location for Staticman to connect to
+  username  = ""
+  repo      = ""
+  branch    = ""
+
+  [params.staticman.recaptcha]
+    sitekey = "SITE_KEY"
+    secret  = "ENCRYPTED_SECRET"
+
+  # These are optional params related to the sidebar. They are recommended, but not
+  # required for proper functionality. HTML is supported within the params.
+[params.intro]
+  header    = "vonKrafft"
+  paragraph = "Chronicles of a cybersecurity engineer"
+  about     = ""
+
+  # This appears at the top of the sidebar above params.intro.header.
+  # A width of less than 100px is recommended from a design perspective.
+  [params.intro.pic]
+    src       = "/img/avatar.jpg"
+    # Sets Image to be a cirlce
+    circle    = false
+    # Sets Image to be Future Imperfect's hexagon
+    imperfect = true
+    width     = ""
+    alt       = "vonKrafft"
+
+[params.postAmount]
+# Sets the number of recent posts to show in the sidebar. The default value is 5.
+    sidebar = 5
+
+# Sets the menu items in the navigation bar
+# Identifier prepends a Font Awesome icon to the menu item
 [[menu.main]]
   name = "Blog"
-  weight = 10
-  identifier = "home"
-  pre = "<i class='fa fa-newspaper-o'></i>"
-  url = "/"
-
-[[menu.main]]
-  parent = "home"
-  name = "Actus"
-  weight = 11
-  identifier = "actus"
-  url = "/categories/actus/"
-
-[[menu.main]]
-  parent = "home"
-  name = "Dossiers"
-  weight = 12
-  identifier = "dossiers"
-  url = "/categories/dossiers/"
-
-[[menu.main]]
-  parent = "home"
-  name = "Guides"
-  weight = 13
-  identifier = "guides"
-  url = "/categories/guides/"
-
-[[menu.main]]
-  parent = "home"
-  name = "Tutoriels"
-  weight = 14
-  identifier = "tutoriels"
-  url = "/categories/tutoriels/"
-
-[[menu.main]]
-  parent = "home"
-  name = "Console"
-  weight = 15
-  identifier = "console"
-  url = "/categories/console/"
-
-[[menu.main]]
-  parent = "home"
-  name = "Sécurité"
-  weight = 16
-  identifier = "securite"
-  url = "/categories/securite/"
-
-[[menu.main]]
-  parent = "home"
-  name = "Write-up"
-  weight = 17
-  identifier = "write-up"
-  url = "/categories/write-up/"
+  url = "/blog/"
+  identifier = "fa fa-newspaper-o"
+  weight = 1
 
 [[menu.main]]
   name = "Works"
-  weight = 20
-  identifier = "works"
-  pre = "<i class='fa fa-rocket'></i>"
   url = "/works/"
+  identifier = "fa fa-rocket"
+  weight = 3
 
 [[menu.main]]
   name = "Contact"
-  weight = 30
-  identifier = "contact"
-  pre = "<i class='fa fa-id-card-o'></i>"
   url = "/contact/"
+  identifier = "fa fa-id-card-o"
+  weight = 4
 
-# Add your own params here
-[params]
-  author = "vonKrafft"
-  avatar = "/img/avatar.jpg"
-  seotitle = "vonKrafft | Chronicles of a cybersecurity engineer"
-  subtitle = "Chronicles of a cybersecurity engineer"
-  description = ""
-  paginate = 10
-
-  # Choose your social networks
-  email = "contact at vonkrafft.fr"
-  github = "vonKrafft"
-  twitter = "v0nkrafft"
-  linkedin = "wandrillekrafft"
-  # weibo = "weibo_username"
-  # wechat= "/img/qrcode.jpg" # Replace with your wechat qrcode image
-  # facebook = "facebook_username"
-  # google = "googlplus_id_number"
-  # instagram = "instagram_username"
-  # youtube = "youtube_username"
-  # vimeo = "vimeo_username"
-  # medium = "medium_username"
-  # quora = "quora_username"
-  # pinterest = "pinterest_username"
-  # dribbble = "dribbble_username"
-  # behance = "behance_username"
-  # jsfiddle = "jsfiddle_username"
-  # codepen = "codepen_username"
-  # zhihu = "zhihu_username"
-  # douban = "douban_username"
-  # bilibili = "bilibili_id_number"
-
-  # Google Webmaster
-  # https://www.google.com/webmasters/
-  # googleSiteVerification = "_moDmnnBNVLBN1rzNxyGUGdPHE20YgbmrtzLIbxaWFc"
-
-  # Bing Webmaster
-  # https://www.bing.com/toolbox/webmaster/
-  # msValidate = "22596E34341DD1D17D6022C44647E587"
+# Sets Social Media icons to appear and link to your account. Value should be your
+# username unless otherwise noted. These are the icons affected by socialAppearAtTop
+# and socialAppearAtBottom.
+[social]
+  # Coding Communities
+  github           = "vonKrafft"
+  gitlab           = ""
+  stackoverflow    = "" # User Number
+  bitbucket        = ""
+  jsfiddle         = ""
+  codepen          = ""
+  # Visual Art Communities
+  deviantart       = ""
+  flickr           = ""
+  behance          = ""
+  dribbble         = ""
+  # Publishing Communities
+  wordpress        = ""
+  medium           = ""
+  # Professional/Business Oriented Communities
+  linkedin         = "wandrillekrafft"
+  linkedin_company = ""
+  foursquare       = ""
+  xing             = ""
+  slideshare       = ""
+  # Social Networks
+  facebook         = ""
+  googleplus       = ""
+  reddit           = ""
+  quora            = ""
+  youtube          = ""
+  vimeo            = ""
+  whatsapp         = "" # WhatsApp Number
+  instagram        = ""
+  tumblr           = ""
+  twitter          = "v0nkrafft"
+  skype            = ""
+  snapchat         = ""
+  pinterest        = ""
+  telegram         = ""
+  vine             = ""
+  googlescholar    = ""
+  orcid            = ""
+  researchgate     = ""
+  # Email
+  email            = "contact at vonkrafft.fr"
