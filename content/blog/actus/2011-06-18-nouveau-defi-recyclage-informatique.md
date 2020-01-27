@@ -15,7 +15,7 @@ Que devient un PC en fin de vie, que faire de nos appareils électroniques lorsq
 
 <!--more-->
 
-{{< img src="/media/2011/06/e6bbc2643396a7fc58219d6e10826bf3.png" link="/media/2011/06/e6bbc2643396a7fc58219d6e10826bf3.png" >}}
+{{< img-link path="/media/2011/06" file="e6bbc2643396a7fc58219d6e10826bf3.png" link="/media/2011/06/e6bbc2643396a7fc58219d6e10826bf3.png" >}}
 
 En une d’une belle journée de printemps, un ordinateur cuit au soleil au détour d’une rue. L’écran à tube cathodique explosé déverse ses poudres toxiques nécessaires à l’affichage de l’image sur le bitume, les cartes électroniques du PC pendent raccordée entre elles par des nappes de fils électriques. Malheureusement, ce n’est pas rare de voir des dépôts sauvages de ce type-là. Mercure, plomb, cadmium et autre substances toxique trainent dans les composants électroniques et se retrouvent dans la nature si l’on n’y prête pas attention.
 
@@ -37,11 +37,11 @@ En 2007, les REP ont collectées 175 million de tonnes de DEEE. Et très vite, l
 
 ## Des objectif ambitieux
 
-{{< img src="/media/2011/06/dee41f6b7227b5d225b0ed6846696785-150x150.jpg" alt="recyclage-deee-pc" link="/media/2011/06/dee41f6b7227b5d225b0ed6846696785.jpg" class="pull-right">}}
-
 Actuellement en discussion au niveau européen, le traitement des DEEE nous concernera tous ! Le gouvernement a donc décidé de prendre de l’avance dans le domaine et d’augmenter la dose.
 
 ### Plus de récup’
+
+{{< img-link alt="recyclage-deee-pc" path="/media/2011/06" file="dee41f6b7227b5d225b0ed6846696785-150x150.jpg" link="/media/2011/06/dee41f6b7227b5d225b0ed6846696785.jpg" type="right" >}}
 
 Objectif, 10 Kg de DEEE récoltés par habitants en 2014. Un objectif délicat à remplir car si les premiers kilos étaient facile à obtenir, les suivant seront plus pénibles. Les REP sont confrontées à plusieurs problèmes qu’il faudra résoudre.
 
@@ -51,7 +51,7 @@ Second problème, la hausse du cours des matériaux. Si les équipements électr
 
 ### Une éco-éducation vers le recyclage
 
-{{< img src="/media/2011/06/4affb2ebaedfb6af56962f0227dd4e2b-150x150.jpg" alt="recyclage-deee-ecran-cassés" link="/media/2011/06/4affb2ebaedfb6af56962f0227dd4e2b.jpg" class="pull-left">}}
+{{< img-link alt="recyclage-deee-ecran-cassés" path="/media/2011/06" file="4affb2ebaedfb6af56962f0227dd4e2b-150x150.jpg" link="/media/2011/06/4affb2ebaedfb6af56962f0227dd4e2b.jpg" type="left" >}}
 
 Tous comme le tri du papier/carton, le recyclage des DEEE doit devenir automatique. Lorsqu’ on lui Le consommateur agit, à condition qu’il soit bien l’informé ; Par exemple, beaucoup de gens pense faire une bonne action en déposant leurs DEEE sur le trottoir le jour de ramassage des encombrants, mais il n’y a aucune garantie de recyclage « propre » de ce matériel.
 
@@ -61,7 +61,7 @@ Aujourd’hui, nombreux sont ceux qui se déploient pour sensibiliser les consom
 
 ## Agissez
 
-{{< img src="/media/2011/06/08f2a755a835ee2561951e5d99c50c75-150x150.jpg" alt="recyclage-deee-paris" link="/media/2011/06/08f2a755a835ee2561951e5d99c50c75.jpg" class="pull-right">}}
+{{< img-link alt="recyclage-deee-paris" path="/media/2011/06" file="08f2a755a835ee2561951e5d99c50c75-150x150.jpg" link="/media/2011/06/08f2a755a835ee2561951e5d99c50c75.jpg" type="right" >}}
 
 Quelques geste simples qui évite de maltraité encore plus notre planète :
 

@@ -2,9 +2,85 @@ body {
     background: #f4f4f4 url(../img/grey-prism.svg) repeat fixed;
 }
 
-.highlight > pre {
-    color: #333 !important;
-    background: transparent !important;
+/* Image */
+
+.image.left, .image.right, .image.center {
+    max-width: 100%;
+}
+
+.image.left, .image.right {
+    margin: 0;
+}
+
+.image.center {
+    margin: 1em 0;
+}
+
+.image.left img, .image.right img, .image.center img {
+    width: auto;
+    margin: 0 auto;
+}
+
+a.image.featured {
+    border-bottom: none !important;
+    max-width: 100%;
+    overflow: hidden;
+    width: auto;
+}
+
+a.image.featured img {
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+       -moz-transition:    -moz-transform 0.2s ease-out;
+        -ms-transition:     -ms-transform 0.2s ease-out;
+            transition:         transform 0.2s ease-out;
+}
+
+a.image.featured:hover img {
+    -webkit-transform: scale(1.05);
+       -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+}
+
+.image.fit {
+    display: block;
+    margin: 0 0 1em 0;
+    max-width: 100%;
+    padding: 0 .5em;
+    width: auto;
+}
+
+.image.fit:first-child {
+    padding-left: 0;
+}
+
+.image.fit:last-child {
+    padding-right: 0;
+}
+
+.image-caption {
+    font-style: italic;
+    margin: -1em auto 1em;
+    opacity: .7;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.gallery-nowrap {
+    flex-wrap: nowrap;
+}
+
+.gallery-wrap {
+    flex-wrap: wrap;
+}
+
+.gallery-wrap-reverse {
+    flex-wrap: wrap-reverse;
 }
 
 /* Syntax */
@@ -73,6 +149,11 @@ body {
     margin: 0;
 }
 
+.highlight > pre {
+    color: #333 !important;
+    background: transparent !important;
+}
+
 /* links and buttons */
 
 a {
@@ -109,6 +190,16 @@ input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hove
 
 .post {
     padding: 1.5em 1.5em 0 1.5em;
+}
+
+.post #content {
+    text-align: justify;
+}
+
+.post #content h1::before, .post #content h2::before, .post #content h3::before, .post #content h4::before {
+    display: block;
+    content: "";
+    clear: both;
 }
 
 .post > header {

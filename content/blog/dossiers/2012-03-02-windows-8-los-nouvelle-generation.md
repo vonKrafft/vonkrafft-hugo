@@ -31,7 +31,7 @@ Toutes les observations de cet article ont été faites avec Windows 8 Consumer 
 
 Pour commencer, un petit mot sur l'interface Metro. Avec cette nouvelle interface, Microsoft introduit la notion d'application au sein de Windows. Il ne faut pas confondre application et logiciel. Le logiciel est le programme que vous connaissez tous et se lance depuis le bureau. L'application ne se lance pas dans le bureau (qui devient dans Windows 8 une application, j'en parle après), mais en plein écran. Enfin, un logiciel se télécharge n'importe où sur internet (à vos risques et périls parfois) tandis qu'une application se télécharge dans le Windows Store.
 
-{{< img src="/media/2012/03/c311e548470ee7b8d98b324e6ffae229-1024x163.png" title="Panneau de configuration, Windows 8 Consumer Preview est installée" link="/media/2012/03/c311e548470ee7b8d98b324e6ffae229.png" >}}
+{{< img-link caption="Panneau de configuration, Windows 8 Consumer Preview est installée" path="/media/2012/03" file="c311e548470ee7b8d98b324e6ffae229-1024x163.png" link="/media/2012/03/c311e548470ee7b8d98b324e6ffae229.png" >}}
 
 ### Un OS peu gourmand
 
@@ -43,7 +43,7 @@ Il est de notoriété publique que Windows est lourd et très gourmand en ressou
 - 16 Go d'espace de stockage (32 bits) ou 20 Go (64 bits)
 - Une définition d'écran de 1024 x 768 pixels
 
-{{< img src="/media/2012/03/699d926854a32925a425f1ca59a2d338-1024x576.png" link="/media/2012/03/699d926854a32925a425f1ca59a2d338.png" >}}
+{{< img-link path="/media/2012/03" file="699d926854a32925a425f1ca59a2d338-1024x576.png" link="/media/2012/03/699d926854a32925a425f1ca59a2d338.png" >}}
 
 Cette fiche technique ne devrait pas changer pour la version finale de Windows 8. Mais cette configuration est le strict minimum et certaine applications ou logiciels demanderont plus de ressources. Quant au écran tactile, Microsoft exige du multipoint (cinq point conseillé).
 
@@ -57,12 +57,12 @@ Je ne vais pas m’attarder sur le processus d’installation qui demeure le mê
 - Télécharger [l’assistant d’installation](http://windows.microsoft.com/fr-FR/windows-8/download) et installer Windows 8 Consumer Preview depuis le bureau de votre Windows actuel. Cette option effacera votre ancienne version de Windows mais conservera vos données.
 - Vous pouvez aussi installer Windows 8 Consumer Preview dans une machine virtuelle.
 
-{{% gallery columns="4" title="Installation de Windows 8" %}}
-{{< gallery_item src="/media/2012/03/2344f06ef271bbadddbfdda95c95822f-300x169.png" link="/media/2012/03/2344f06ef271bbadddbfdda95c95822f.png" >}}
-{{< gallery_item src="/media/2012/03/c0b2e2e86111baac7fa2f17af6ca8e32-300x169.png" link="/media/2012/03/c0b2e2e86111baac7fa2f17af6ca8e32.png" >}}
-{{< gallery_item src="/media/2012/03/fcfedb43b34efad091edbeeb151e62dd-300x169.png" link="/media/2012/03/fcfedb43b34efad091edbeeb151e62dd.png" >}}
-{{< gallery_item src="/media/2012/03/c385b0a3da1bdba6817c537d7055035d-300x169.png" link="/media/2012/03/c385b0a3da1bdba6817c537d7055035d.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/03/2344f06ef271bbadddbfdda95c95822f.png" "2344f06ef271bbadddbfdda95c95822f-300x169.png" ""
+    "/media/2012/03/c0b2e2e86111baac7fa2f17af6ca8e32.png" "c0b2e2e86111baac7fa2f17af6ca8e32-300x169.png" ""
+    "/media/2012/03/fcfedb43b34efad091edbeeb151e62dd.png" "fcfedb43b34efad091edbeeb151e62dd-300x169.png" ""
+    "/media/2012/03/c385b0a3da1bdba6817c537d7055035d.png" "c385b0a3da1bdba6817c537d7055035d-300x169.png" ""
+    "/media/2012/03/" "nowrap" "Installation de Windows 8" >}}
 
 ### Metro, la nouvelle interface Windows
 
@@ -74,20 +74,20 @@ Le bureau qui s’affichait lors de l’ouverture d’une session se voit rempla
 - Les tuiles Metro « connectées » ; elles sont actualisées en temps réel avec les informations relatives à l’application (mails non-lus, météo, diaporama de photo).
 - Les tuiles « classique » ; elles commandent les logiciels traditionnels qui se lancent sur le bureau Windows. On peut imaginer que ces tuiles disparaîtront avec le temps, remplacées par des applications optimisées pour Metro.
 
-{{% gallery columns="3" title="Les applications Metro, les tuiles connectées et les logiciels classiques" %}}
-{{< gallery_item src="/media/2012/03/5678db1b581df03b3e6693400d2b47ec-150x150.png" link="/media/2012/03/5678db1b581df03b3e6693400d2b47ec.png" >}}
-{{< gallery_item src="/media/2012/03/4edbb66bcb3073bef457ae3af43173f6-150x150.png" link="/media/2012/03/4edbb66bcb3073bef457ae3af43173f6.png" >}}
-{{< gallery_item src="/media/2012/03/71407e2e48cb7816f1c6ce7705cb24c1-150x150.png" link="/media/2012/03/71407e2e48cb7816f1c6ce7705cb24c1.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/03/5678db1b581df03b3e6693400d2b47ec.png" "5678db1b581df03b3e6693400d2b47ec-150x150.png" ""
+    "/media/2012/03/4edbb66bcb3073bef457ae3af43173f6.png" "4edbb66bcb3073bef457ae3af43173f6-150x150.png" ""
+    "/media/2012/03/71407e2e48cb7816f1c6ce7705cb24c1.png" "71407e2e48cb7816f1c6ce7705cb24c1-150x150.png" ""
+    "/media/2012/03/" "nowrap" "Les applications Metro, les tuiles connectées et les logiciels classiques" >}}
 
 Cette page d’accueil, nommée « Démarrer », remplace comme son nom l’indique le menu démarrer classique apparu avec Windows 95. Nous y reviendrons avec la description du bureau.
 
 La navigation, pensée pour le tactile, se fait aussi à la souris et au clavier. Bien que le défilement du menu se fasse à l’horizontale, c’est la molette de la souris qui remplit ce rôle. On peut aussi se servir des flèche du clavier mais – est-ce spécifique à la Consumer Preview ? – c’est plus lent.
 
-{{% gallery columns="2" title="Aperçu du nouveau menu démarrer au look Metro, déplacement d'une application par glisser-déposer" %}}
-{{< gallery_item src="/media/2012/03/c385b0a3da1bdba6817c537d7055035d-300x169.png" link="/media/2012/03/c385b0a3da1bdba6817c537d7055035d.png" >}}
-{{< gallery_item src="/media/2012/03/800b064711cd7685873dad86623da446-300x169.png" link="/media/2012/03/800b064711cd7685873dad86623da446.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/03/c385b0a3da1bdba6817c537d7055035d.png" "c385b0a3da1bdba6817c537d7055035d-300x169.png" ""
+    "/media/2012/03/800b064711cd7685873dad86623da446.png" "800b064711cd7685873dad86623da446-300x169.png" ""
+    "/media/2012/03/" "nowrap" "Aperçu du nouveau menu démarrer au look Metro, déplacement d'une application par glisser-déposer" >}}
 
 Enfin, la position des tuiles est entièrement personnalisable. Un glisser-déposer suffit.
 
@@ -95,34 +95,34 @@ Enfin, la position des tuiles est entièrement personnalisable. Un glisser-dépo
 
 On craignait la disparition du Media Center, et bien non, il a survécu à Windows 8. Windows Media Player aussi mais il se voit préférer deux applications Metro : « Musique » et « Vidéo ». A l’image de l’iTunes Store, ces deux applications proposent la vente de musique et de vidéo. Elles permettent aussi de naviguer dans la bibliothèque et d’écouter ou visionner son contenu multimédia. Cependant, la musique ne se coupe pas lorsqu’une vidéo est lancée, dommage. L’ergonomie est regrettable aussi, puisque inadaptée à un PC et est davantage portée sur le tactile. Effet, lorqu'une lecture est en cours, il faut cliquer sur l'écran (ou toucher l'écran tactile) pour afficher les commande de lecture.
 
-{{% gallery columns="4" title="Accueil de l'application Musique, musique en cours de lecture, Accueil de l'application Vidéo, Film en cours de lecture" %}}
-{{< gallery_item src="/media/2012/03/909dec9a6e74a2635fd7eded4ef02c9e-300x169.png" link="/media/2012/03/909dec9a6e74a2635fd7eded4ef02c9e.png" >}}
-{{< gallery_item src="/media/2012/03/0e850f57b90d1855dfa0247c81b7b2dc-300x169.png" link="/media/2012/03/0e850f57b90d1855dfa0247c81b7b2dc.png" >}}
-{{< gallery_item src="/media/2012/03/34a38080fd1a81b68d12594b94f2cd67-300x169.png" link="/media/2012/03/34a38080fd1a81b68d12594b94f2cd67.png" >}}
-{{< gallery_item src="/media/2012/03/8bc2017ee1ba469dca5eecaa2cc69bb6-300x169.png" link="/media/2012/03/8bc2017ee1ba469dca5eecaa2cc69bb6.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/03/909dec9a6e74a2635fd7eded4ef02c9e.png" "909dec9a6e74a2635fd7eded4ef02c9e-300x169.png" ""
+    "/media/2012/03/0e850f57b90d1855dfa0247c81b7b2dc.png" "0e850f57b90d1855dfa0247c81b7b2dc-300x169.png" ""
+    "/media/2012/03/34a38080fd1a81b68d12594b94f2cd67.png" "34a38080fd1a81b68d12594b94f2cd67-300x169.png" ""
+    "/media/2012/03/8bc2017ee1ba469dca5eecaa2cc69bb6.png" "8bc2017ee1ba469dca5eecaa2cc69bb6-300x169.png" ""
+    "/media/2012/03/" "nowrap" "Accueil de l'application Musique, musique en cours de lecture, Accueil de l'application Vidéo, Film en cours de lecture" >}}
 
 Microsoft intègre des outils Bing, comme « Maps », « IE10 Metro » ou encore « Météo » et « Finances ». L’éditeur a aussi ajouté à son OS l’univers Xbox Live et on note la présence du Cloud made in Microsoft, avec Skydrive. On a aussi les classiques avec une application « Calendrier », des « Contacts », les « Photos » …
 
-{{% gallery columns="3" title="Internet Explorer 10 Metro, Photos, Météo, Maps, Lecteur (pdf), Finances" %}}
-{{< gallery_item src="/media/2012/03/4b821e8cd05109e64c791f8b43ec8aee-300x169.png" link="/media/2012/03/4b821e8cd05109e64c791f8b43ec8aee.png" >}}
-{{< gallery_item src="/media/2012/03/21f5db65dfd9fa8d5993ddfa95130899-300x169.png" link="/media/2012/03/21f5db65dfd9fa8d5993ddfa95130899.png" >}}
-{{< gallery_item src="/media/2012/03/ec44b080c3bdadea398a4daa5c74df8c-300x169.png" link="/media/2012/03/ec44b080c3bdadea398a4daa5c74df8c.png" >}}
-{{< gallery_item src="/media/2012/03/a23df2aacaadbfb42114101deaafd8b4-300x169.png" link="/media/2012/03/a23df2aacaadbfb42114101deaafd8b4.png" >}}
-{{< gallery_item src="/media/2012/03/b61d0acb9718bf42e95c471926b4af1e-300x169.png" link="/media/2012/03/b61d0acb9718bf42e95c471926b4af1e.png" >}}
-{{< gallery_item src="/media/2012/03/a6524b2ceebd64d224582f35015f92d0-300x169.png" link="/media/2012/03/a6524b2ceebd64d224582f35015f92d0.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/03/4b821e8cd05109e64c791f8b43ec8aee.png" "4b821e8cd05109e64c791f8b43ec8aee-300x169.png" ""
+    "/media/2012/03/21f5db65dfd9fa8d5993ddfa95130899.png" "21f5db65dfd9fa8d5993ddfa95130899-300x169.png" ""
+    "/media/2012/03/ec44b080c3bdadea398a4daa5c74df8c.png" "ec44b080c3bdadea398a4daa5c74df8c-300x169.png" ""
+    "/media/2012/03/a23df2aacaadbfb42114101deaafd8b4.png" "a23df2aacaadbfb42114101deaafd8b4-300x169.png" ""
+    "/media/2012/03/b61d0acb9718bf42e95c471926b4af1e.png" "b61d0acb9718bf42e95c471926b4af1e-300x169.png" ""
+    "/media/2012/03/a6524b2ceebd64d224582f35015f92d0.png" "a6524b2ceebd64d224582f35015f92d0-300x169.png" ""
+    "/media/2012/03/" "nowrap" "Internet Explorer 10 Metro, Photos, Météo, Maps, Lecteur (pdf), Finances" >}}
 
 De plus, il ne faut perdre de vue le fait que ce nouvel OS est porté sur l’ultra-connecté. Ainsi, Windows 8 Consumer Preview présente un client Mail ainsi qu’une application de messagerie instantanée.
 
 Le Windows Store dont je parlerais plus tard permet d’enrichir ces applications Metro. La plupart de ces dernières ne sont pas encore définitives et des modifications peuvent encore survenir avant la sortie de la version finale.
 
-{{% gallery columns="4" title="Mention 'Apps Preview' au lancement des applications" %}}
-{{< gallery_item src="/media/2012/03/12c2c512e1331166c29216d969de3cf8-150x150.png" link="/media/2012/03/12c2c512e1331166c29216d969de3cf8.png" >}}
-{{< gallery_item src="/media/2012/03/fd0d2c1848892b2cfefda7d24ffa3662-150x150.png" link="/media/2012/03/fd0d2c1848892b2cfefda7d24ffa3662.png" >}}
-{{< gallery_item src="/media/2012/03/922d636bac1b4dabb6cb02fbb34250d7-150x150.png" link="/media/2012/03/922d636bac1b4dabb6cb02fbb34250d7.png" >}}
-{{< gallery_item src="/media/2012/03/3f956b24b5a6789ab4908f7f30ac01f4-150x150.png" link="/media/2012/03/3f956b24b5a6789ab4908f7f30ac01f4.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/03/12c2c512e1331166c29216d969de3cf8.png" "12c2c512e1331166c29216d969de3cf8-150x150.png" ""
+    "/media/2012/03/fd0d2c1848892b2cfefda7d24ffa3662.png" "fd0d2c1848892b2cfefda7d24ffa3662-150x150.png" ""
+    "/media/2012/03/922d636bac1b4dabb6cb02fbb34250d7.png" "922d636bac1b4dabb6cb02fbb34250d7-150x150.png" ""
+    "/media/2012/03/3f956b24b5a6789ab4908f7f30ac01f4.png" "3f956b24b5a6789ab4908f7f30ac01f4-150x150.png" ""
+    "/media/2012/03/" "nowrap" "Mention 'Apps Preview' au lancement des applications" >}}
 
 Enfin, il reste une tuile, qui ne sera présente que sur les PC : le « Bureau ». Ainsi, le traditionnel bureau de Windows devient une simple application.
 
@@ -132,12 +132,12 @@ Premier changement majeur : la disparition du très célèbre bouton Démarrer !
 
 La première solution est de passer par la page d’accueil Metro. Et là, petit clin d’œil à l’ancien menu démarrer : pour passer du bureau à Metro, il suffit de placer sa souris en bas à gauche de l’écran et de cliquer. Seul bémol, tous les programmes ne sont pas dans le menu Metro.
 
-{{% gallery columns="4" title="Retour au menu démarrer, Retour à la dernière application ouverte, Barre multitâche et 'Charm Bar'" %}}
-{{< gallery_item src="/media/2012/03/fa1abe20df3c20bc2ecaca299d80ce4c-300x169.png" link="/media/2012/03/fa1abe20df3c20bc2ecaca299d80ce4c.png" >}}
-{{< gallery_item src="/media/2012/03/f65652e4bcf441a90c37ad500e95baa3-300x169.png" link="/media/2012/03/f65652e4bcf441a90c37ad500e95baa3.png" >}}
-{{< gallery_item src="/media/2012/03/c140561f0a9b632d329fe44313f2a12e-300x169.png" link="/media/2012/03/c140561f0a9b632d329fe44313f2a12e.png" >}}
-{{< gallery_item src="/media/2012/03/f43ccdfa354bdc6784206942064cf381-300x169.png" link="/media/2012/03/f43ccdfa354bdc6784206942064cf381.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/03/fa1abe20df3c20bc2ecaca299d80ce4c.png" "fa1abe20df3c20bc2ecaca299d80ce4c-300x169.png" ""
+    "/media/2012/03/f65652e4bcf441a90c37ad500e95baa3.png" "f65652e4bcf441a90c37ad500e95baa3-300x169.png" ""
+    "/media/2012/03/c140561f0a9b632d329fe44313f2a12e.png" "c140561f0a9b632d329fe44313f2a12e-300x169.png" ""
+    "/media/2012/03/f43ccdfa354bdc6784206942064cf381.png" "f43ccdfa354bdc6784206942064cf381-300x169.png" ""
+    "/media/2012/03/" "nowrap" "Retour au menu démarrer, Retour à la dernière application ouverte, Barre multitâche et 'Charm Bar'" >}}
 
 Vient alors la seconde solution. Une fois sur le bureau, il faut placer sa souris en haut à droite de l’écran puis descendre le long du côté droit. Apparaît alors une sorte de barre des tâches surnommée « Charm bar » et une grosse horloge :
 
@@ -149,24 +149,24 @@ Vient alors la seconde solution. Une fois sur le bureau, il faut placer sa souri
 
 Vous pouvez aussi accéder aux programme depuis la page Metro avec un clic droit dans le vide ou avec le raccourci Windows + Z.
 
-{{< img src="/media/2012/03/e24281fa015e84ee99c49bc1ed2b073a-1024x576.png" title="Liste de l'ensemeble des application et logiciels présents sur le PC" link="/media/2012/03/e24281fa015e84ee99c49bc1ed2b073a.png" >}}
+{{< img-link caption="Liste de l'ensemeble des application et logiciels présents sur le PC" path="/media/2012/03" file="e24281fa015e84ee99c49bc1ed2b073a-1024x576.png" link="/media/2012/03/e24281fa015e84ee99c49bc1ed2b073a.png" >}}
 
 Nous avons vu une nouvelle barre à droite, il y en a aussi une à gauche. Pour la faire apparaître, il faut placer sa souris en haut ou en bas à gauche, puis descendre ou monter sur la coté. Dans cette barre, il y a toujours le retour vers Metro en bas, puis il y a aussi toutes les applications ouvertes en arrière-plan (dont le bureau), excepté le programme ouvert. Malheureusement, les programme ouvert sur le bureau n'y apparaissent pas. J'aurais aimer aussi l’icône de l'application dans un coin de l'aperçu. Lorsque l’on fait apparaître la barre depuis le menu Metro, la dernière application ouverte remplace le retour vers Metro en bas à gauche.
 
 Enfin, dernier changement dans ce bureau Windows : l’Explorateur. En effet, ce dernier se voit attribué d’un bandeau identique à celui déjà présent dans Microsoft Office 2007 et ultérieur. Masqué par défaut, il permet d’effectuer toutes les opérations courantes.
 
-{{% gallery columns="3" title="Gestionnaire des tâches simplifié et Ruban de l'explorateur Windows" %}}
-{{< gallery_item src="/media/2012/03/c2c798a256470c868af54020e30c6ec8-300x296.png" link="/media/2012/03/c2c798a256470c868af54020e30c6ec8.png" >}}
-{{< gallery_item src="/media/2012/03/4616bb61812c2b58d95c2e48f6ef0d85-300x270.png" link="/media/2012/03/4616bb61812c2b58d95c2e48f6ef0d85.png" >}}
-{{< gallery_item src="/media/2012/03/a13fb2fde751df039ce2720f07e6b72c-300x168.png" link="/media/2012/03/a13fb2fde751df039ce2720f07e6b72c.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/03/c2c798a256470c868af54020e30c6ec8.png" "c2c798a256470c868af54020e30c6ec8-300x296.png" ""
+    "/media/2012/03/4616bb61812c2b58d95c2e48f6ef0d85.png" "4616bb61812c2b58d95c2e48f6ef0d85-300x270.png" ""
+    "/media/2012/03/a13fb2fde751df039ce2720f07e6b72c.png" "a13fb2fde751df039ce2720f07e6b72c-300x168.png" ""
+    "/media/2012/03/" "nowrap" "Gestionnaire des tâches simplifié et Ruban de l'explorateur Windows" >}}
 
 On note aussi la simplification du gestionnaire de tâches ainsi qu’une évolution du gestionnaire de copie de fichier avec la présence d’un bouton pause. Dernier petit détail : Microsoft abandonne les coins arrondis pour revenir aux fenêtres à bords droits.
 
-{{% gallery columns="2" title="Gestionnaire de copie relooké et doté d'un bouton pause" %}}
-{{< gallery_item src="/media/2012/03/1af85824d289103b56c27ae165304cbd-300x116.png" link="/media/2012/03/1af85824d289103b56c27ae165304cbd.png" >}}
-{{< gallery_item src="/media/2012/03/bd7f0795c94c5fdb18aecf4a16decabe-300x191.png" link="/media/2012/03/bd7f0795c94c5fdb18aecf4a16decabe.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/03/1af85824d289103b56c27ae165304cbd.png" "1af85824d289103b56c27ae165304cbd-300x116.png" ""
+    "/media/2012/03/bd7f0795c94c5fdb18aecf4a16decabe.png" "bd7f0795c94c5fdb18aecf4a16decabe-300x191.png" ""
+    "/media/2012/03/" "nowrap" "Gestionnaire de copie relooké et doté d'un bouton pause" >}}
 
 ## D'autres nouveauté ?
 
@@ -178,10 +178,10 @@ Windows 8 offre aussi la possibilité d'avoir deux applications ouverte sur le m
 
 Ensuite, l'application principale occupe la majorité de l'écran et peu être changé en retournant dans le menu Metro, tandis que l'autre application demeure ouverte sur le coté. Pour intervertir les deux, il suffit de faire glisser la barre séparatrice vers l'application principale, et pour fermer l'application secondaire, la faire glisser vers celle-ci.
 
-{{% gallery columns="2" title="Deux exemples d'application ancrée" %}}
-{{< gallery_item src="/media/2012/03/b64546d7c18ce4f1febef0994b83ff58-300x169.png" link="/media/2012/03/b64546d7c18ce4f1febef0994b83ff58.png" >}}
-{{< gallery_item src="/media/2012/03/9ae73ff80eff56d28554198d00430932-300x169.png" link="/media/2012/03/9ae73ff80eff56d28554198d00430932.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/03/b64546d7c18ce4f1febef0994b83ff58.png" "b64546d7c18ce4f1febef0994b83ff58-300x169.png" ""
+    "/media/2012/03/9ae73ff80eff56d28554198d00430932.png" "9ae73ff80eff56d28554198d00430932-300x169.png" ""
+    "/media/2012/03/" "nowrap" "Deux exemples d'application ancrée" >}}
 
 ### Le Windows Store
 
@@ -189,11 +189,11 @@ Windows est un des seuls OS à ne pas avoir de marché d’application, et Windo
 
 Jeux, Musique, Actualité, Productivité … Pour chaque catégorie présente sur la page d’accueil, il y a les applications du moment ainsi qu’une tuile pour accéder à toutes les applications. On apprécie le catalogue déjà présent sur la Consumer Preview (74 applications le jour du lancement) mais le Windows Store est encore très pauvre. Cependant, Windows 8 Consumer Preview est là pour permettre au développeur d’adapter ou de créer des applications pour le futur Windows 8.
 
-{{% gallery columns="3" title="Accueil du Windows Store, Page des mise à jours, Liste des meilleures applications (pour l'instant, elles y sont toutes)" %}}
-{{< gallery_item src="/media/2012/03/64c6dd2e0b1ea722f0a1e6ba83d742db-300x169.png" link="/media/2012/03/64c6dd2e0b1ea722f0a1e6ba83d742db.png" >}}
-{{< gallery_item src="/media/2012/03/452f4e7f1da02ea39645a1d6420faf21-300x169.png" link="/media/2012/03/452f4e7f1da02ea39645a1d6420faf21.png" >}}
-{{< gallery_item src="/media/2012/03/b0d0681de10358bf1804144141f08cbc-300x169.png" link="/media/2012/03/b0d0681de10358bf1804144141f08cbc.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/03/64c6dd2e0b1ea722f0a1e6ba83d742db.png" "64c6dd2e0b1ea722f0a1e6ba83d742db-300x169.png" ""
+    "/media/2012/03/452f4e7f1da02ea39645a1d6420faf21.png" "452f4e7f1da02ea39645a1d6420faf21-300x169.png" ""
+    "/media/2012/03/b0d0681de10358bf1804144141f08cbc.png" "b0d0681de10358bf1804144141f08cbc-300x169.png" ""
+    "/media/2012/03/" "nowrap" "Accueil du Windows Store, Page des mise à jours, Liste des meilleures applications (pour l'instant, elles y sont toutes)" >}}
 
 Bien sûr, un compte mail Microsoft est nécessaire (Hotmail, Xbox Live …). L’installation se fait automatiquement après avoir sélectionner l’application souhaitée. Certaines applications qui utilisent un périphérique particulier vous demandent une autorisation au premier lancement.
 
@@ -218,7 +218,7 @@ Il faut aussi savoir que lorsque vous êtes dans une application (exeption faite
 
 Puisque je parle de verrouillage session, il petit mot à ce sujet : l’écran de verrouillage est une image personnalisable sur laquelle on trouve l’heure, l’état de la connexion Wi-Fi, les mails, les notifications et probablement de la 3G ou de la batterie pour les tablettes et portable. Pour s’identifier, il faut faire glisser cette image vers le haut, soit avec la souris (comme un doigt sur un écran tactile), soit avec la flèche haut du clavier.
 
-{{< img src="/media/2012/03/42aadd5743dee6ae2153a9e171c8b4de.jpg" alt="Windows8" >}}
+{{< img-post alt="Windows8" path="/media/2012/03" file="42aadd5743dee6ae2153a9e171c8b4de.jpg" >}}
 
 ## Conclusion
 

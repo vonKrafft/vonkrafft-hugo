@@ -25,17 +25,20 @@ Bonne visite ...
 
 ## Data-centers de Google
 
-{{% gallery columns="4" title="Aperçu de la galerie" %}}
-{{< gallery_item src="/media/2013/04/7f5e341bdeaeb34e8184b04c3bac9d01-150x150.jpg" link="/media/2013/04/7f5e341bdeaeb34e8184b04c3bac9d01.jpg" >}}
-{{< gallery_item src="/media/2013/04/020007f2ac03d65f8dd709d9cab14cce-150x150.jpg" link="/media/2013/04/020007f2ac03d65f8dd709d9cab14cce.jpg" >}}
-{{< gallery_item src="/media/2013/04/e97915de0c8680cc5236762a3cced73b-150x150.jpg" link="/media/2013/04/e97915de0c8680cc5236762a3cced73b.jpg" >}}
-{{< gallery_item src="/media/2013/04/9c4fcfcd058261b1539c0c173593bf1b-150x150.jpg" link="/media/2013/04/9c4fcfcd058261b1539c0c173593bf1b.jpg" >}}
-{{< gallery_item src="/media/2013/04/f1ca660d603ae50bd19c929c670255dd-150x150.jpg" link="/media/2013/04/f1ca660d603ae50bd19c929c670255dd.jpg" >}}
-{{< gallery_item src="/media/2013/04/5eb7064cbe0147309a45fbb490d3047c-150x150.jpg" link="/media/2013/04/5eb7064cbe0147309a45fbb490d3047c.jpg" >}}
-{{< gallery_item src="/media/2013/04/fb9d7ae70601020cd4d38e142ed86d66-150x150.jpg" link="/media/2013/04/fb9d7ae70601020cd4d38e142ed86d66.jpg" >}}
-{{< gallery_item src="/media/2013/04/879b05782bbc902411820478874f911b-150x150.jpg" link="/media/2013/04/879b05782bbc902411820478874f911b.jpg" >}}
-{{< gallery_item src="/media/2013/04/692133250c635e81867a54c922519007-150x150.jpg" link="/media/2013/04/692133250c635e81867a54c922519007.jpg" >}}
-{{< gallery_item src="/media/2013/04/1ad3355bbfb991c73d67b08b4c7e8a2a-150x150.jpg" link="/media/2013/04/1ad3355bbfb991c73d67b08b4c7e8a2a.jpg" >}}
-{{< gallery_item src="/media/2013/04/b2397a0d479887a2d8ddf00321c704d2-150x150.jpg" link="/media/2013/04/b2397a0d479887a2d8ddf00321c704d2.jpg" >}}
-{{< gallery_item src="/media/2013/04/612bc8f23cf5ba8dae1ed4f7d06a5603-150x150.jpg" link="/media/2013/04/612bc8f23cf5ba8dae1ed4f7d06a5603.jpg" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2013/04/7f5e341bdeaeb34e8184b04c3bac9d01.jpg" "7f5e341bdeaeb34e8184b04c3bac9d01-150x150.jpg" ""
+    "/media/2013/04/020007f2ac03d65f8dd709d9cab14cce.jpg" "020007f2ac03d65f8dd709d9cab14cce-150x150.jpg" ""
+    "/media/2013/04/e97915de0c8680cc5236762a3cced73b.jpg" "e97915de0c8680cc5236762a3cced73b-150x150.jpg" ""
+    "/media/2013/04/9c4fcfcd058261b1539c0c173593bf1b.jpg" "9c4fcfcd058261b1539c0c173593bf1b-150x150.jpg" ""
+    "/media/2013/04/f1ca660d603ae50bd19c929c670255dd.jpg" "f1ca660d603ae50bd19c929c670255dd-150x150.jpg" ""
+    "/media/2013/04/5eb7064cbe0147309a45fbb490d3047c.jpg" "5eb7064cbe0147309a45fbb490d3047c-150x150.jpg" ""
+    "/media/2013/04/" "nowrap" "" >}}
+
+{{< img-fit
+    "/media/2013/04/fb9d7ae70601020cd4d38e142ed86d66.jpg" "fb9d7ae70601020cd4d38e142ed86d66-150x150.jpg" ""
+    "/media/2013/04/879b05782bbc902411820478874f911b.jpg" "879b05782bbc902411820478874f911b-150x150.jpg" ""
+    "/media/2013/04/692133250c635e81867a54c922519007.jpg" "692133250c635e81867a54c922519007-150x150.jpg" ""
+    "/media/2013/04/1ad3355bbfb991c73d67b08b4c7e8a2a.jpg" "1ad3355bbfb991c73d67b08b4c7e8a2a-150x150.jpg" ""
+    "/media/2013/04/b2397a0d479887a2d8ddf00321c704d2.jpg" "b2397a0d479887a2d8ddf00321c704d2-150x150.jpg" ""
+    "/media/2013/04/612bc8f23cf5ba8dae1ed4f7d06a5603.jpg" "612bc8f23cf5ba8dae1ed4f7d06a5603-150x150.jpg" ""
+    "/media/2013/04/" "nowrap" "Aperçu de la galerie" >}}

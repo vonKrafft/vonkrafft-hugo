@@ -15,7 +15,7 @@ Nous allons installer **Python 3.7** sur un système **Debian 9 (Stretch)**. Pou
 
 <!-- more -->
 
-{{< img src="/media/2019/03/3b3d883f353f54a8ad62760ab18ea9c6.png" >}}
+{{< img-post path="/media/2019/03" file="3b3d883f353f54a8ad62760ab18ea9c6.png" >}}
 
 {{< alert info info-circle >}}Une des fonctionnalités sympa dont j'avais besoin est l'ajout des [f-Strings](https://realpython.com/python-f-strings/#arbitrary-expressions). Apparu avec Python 3.6, elle permettent d'ajouter dans les chaînes de caractères des expressions qui seront remplacée par leur valeur. Et quitte à mettre à jour Python, autant installer la dernière version ;){{< /alert >}}
 

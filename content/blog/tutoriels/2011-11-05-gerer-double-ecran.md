@@ -21,25 +21,25 @@ Avec Windows qui permet de gérer jusqu’à huit écran simultanément, pourquo
 
 La grande majorité des cartes graphiques présentent deux connecteurs, un VGA et un DVI-D, eux-mêmes accompagnés parfois d’une prise HDMI et (plus rarement) d’une prise DisplayPort. De plus, des adaptateurs VGA/DVI, DVI/HDMI et HDMI/DVI permettent de résoudre les problèmes de compatibilité avec les écrans que vous souhaitez installer. Si vous avez le choix, préférez les connexions numériques (DVI-D, HDMI, DisplayPort) aux connexions analogiques (VGA) qui sont moins performantes.
 
-{{< img src="/media/2011/11/b7d3c5c474ebfa88d831270ced29bddd.jpg" link="/media/2011/11/b7d3c5c474ebfa88d831270ced29bddd.jpg" >}}
+{{< img-link path="/media/2011/11" file="b7d3c5c474ebfa88d831270ced29bddd.jpg" link="/media/2011/11/b7d3c5c474ebfa88d831270ced29bddd.jpg" >}}
 
 ## 02 | Paramétrer Windows pour gérer le double écran
 
 Ouvrez la fenêtre de configuration d’écran sur Windows 7. Pour cela, faites un clic droit sur le bureau et cliquez sur « Résolution d’écran ». Vous pouvez aussi ouvrir « Affichage » dans le Panneau de configuration et sélectionner « Résolution d’écran ». Vous devriez alors voir vos deux écran (et parfois les sorties non exploitées de la carte graphique). Si ce n’est pas le cas, vérifiez les branchements et cliquez sur « Détecter ».
 
-{{< img src="/media/2011/11/687361821bf6bf7d89ebe9fc8311d76a.jpg" link="/media/2011/11/687361821bf6bf7d89ebe9fc8311d76a.jpg" >}}
+{{< img-link path="/media/2011/11" file="687361821bf6bf7d89ebe9fc8311d76a.jpg" link="/media/2011/11/687361821bf6bf7d89ebe9fc8311d76a.jpg" >}}
 
 ## 03 | Choisir un mode d’affichage
 
 Windows propose plusieurs modes d’affichage lorsque deux écrans sont connectés. Vous pouvez limiter l’affichage à un seul écran ou bien exploiter le double écran. Pour obtenir deux écrans identiques, sélectionnez l’option « Dupliquer ces affichages », utile lorsque vous relier par exemple un PC portable à un téléviseur. Pour profiter du double écran, choisissez plutôt l’option « Étendre ces affichages » : vous obtenez alors un double bureau Windows et pouvez faire glisser les fenêtres de l’un à l’autre. Cliquez sur le bouton « Appliquer » puis sur « Conserver ces modifications » dans la fenêtre qui apparaît.
 
-{{< img src="/media/2011/11/7a168b20eed43e53e2512971a29b4812.jpg" link="/media/2011/11/7a168b20eed43e53e2512971a29b4812.jpg" >}}
+{{< img-link path="/media/2011/11" file="7a168b20eed43e53e2512971a29b4812.jpg" link="/media/2011/11/7a168b20eed43e53e2512971a29b4812.jpg" >}}
 
 ## 04 | Positionner les écrans
 
 Pour que l’extension du bureau soit cohérente, il faut que la disposition des affichages dans le panneau de configuration reflète la position physique des écrans. Pour commencer, cliquez sur le bouton « Identifier » à droite des affichages : un numéro apparaît sur chaque écran. Cliquez et déplacez ensuite les affichages pour que l’agencement soit conforme. Finissez en cliquant sur « Appliquer ».
 
-{{< img src="/media/2011/11/2835951719a0ecb0f21ba85f535d9770.jpg" link="/media/2011/11/2835951719a0ecb0f21ba85f535d9770.jpg" >}}
+{{< img-link path="/media/2011/11" file="2835951719a0ecb0f21ba85f535d9770.jpg" link="/media/2011/11/2835951719a0ecb0f21ba85f535d9770.jpg" >}}
 
 ## 05 | Sélectionner un écran principal
 

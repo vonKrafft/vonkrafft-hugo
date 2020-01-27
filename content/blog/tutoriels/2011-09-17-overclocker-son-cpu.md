@@ -71,7 +71,7 @@ Avant de continuer, téléchargez et installez :
 
 ### Modifier le BIOS
 
-{{< img src="/media/2011/09/5f8d177789055b98bd23693375337c2b.png" alt="Overclocker son CPU - Bios" link="/media/2011/09/5f8d177789055b98bd23693375337c2b.png" >}}
+{{< img-link alt="Overclocker son CPU - Bios" path="/media/2011/09" file="5f8d177789055b98bd23693375337c2b.png" link="/media/2011/09/5f8d177789055b98bd23693375337c2b.png" >}}
 
 Premièrement, redémarrer votre PC et appuyez sur la touche « **suppr** » de votre clavier lorsque le PC démarre afin d’accéder au BIOS.
 
@@ -89,7 +89,7 @@ Maintenant que vous êtes de retour sous Windows, nous allons augmenter le FSB 
 
 Vous obtenez alors ceci :
 
-{{< img src="/media/2011/09/2f8924ac181b3a1bfd99be88a8debd59.png" alt="Overclocker son CPU - SetFSB" link="/media/2011/09/2f8924ac181b3a1bfd99be88a8debd59.png" >}}
+{{< img-link alt="Overclocker son CPU - SetFSB" path="/media/2011/09" file="2f8924ac181b3a1bfd99be88a8debd59.png" link="/media/2011/09/2f8924ac181b3a1bfd99be88a8debd59.png" >}}
 
 Pour modifier la fréquence du FSB, déplacer le curseur du haut sur la fréquence souhaitée et cliquer sur « Set FSB ».
 
@@ -114,10 +114,10 @@ Nous allons débuter doucement par une légère augmentation du FSB.
 - Cliquez sur « **ON** »
 - Si au bout d’une demi-heure OCCT ne détecte pas d’erreurs, vous pouvez passer à 20%
 
-{{% gallery columns="2" title="CPU-Z à 10% - OCCT à 10%" %}}
-{{< gallery_item src="/media/2011/09/618d2a1113c26c423473dcb0e40cdddd.png" link="/media/2011/09/618d2a1113c26c423473dcb0e40cdddd.png" >}}
-{{< gallery_item src="/media/2011/09/b00f20b3296cb93beb01c0ea82f092b8.png" link="/media/2011/09/b00f20b3296cb93beb01c0ea82f092b8.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2011/09/618d2a1113c26c423473dcb0e40cdddd.png" "618d2a1113c26c423473dcb0e40cdddd.png" ""
+    "/media/2011/09/b00f20b3296cb93beb01c0ea82f092b8.png" "b00f20b3296cb93beb01c0ea82f092b8.png" ""
+    "/media/2011/09/" "nowrap" "CPU-Z à 10% - OCCT à 10%" >}}
 
 ### Overclocking de 20%
 
@@ -130,13 +130,13 @@ Votre processeur tourne actuellement à 110% de ses capacités initiales et il e
 - Cliquez sur « **ON** »
 - Si au bout d’une heure OCCT ne détecte pas d’erreurs, vous avez **réussi** votre overclocking
 
-{{% gallery columns="5" title="OCCT à 20% - CPU-Z à 20% - Test de OCCT - Température au repos - Température en charge" %}}
-{{< gallery_item src="/media/2011/09/a29e1ddf3eeee1ac457d751fd265e724-150x150.png" link="/media/2011/09/a29e1ddf3eeee1ac457d751fd265e724.png" >}}
-{{< gallery_item src="/media/2011/09/4c8666d46865ab5008993cf2f373239c-150x150.png" link="/media/2011/09/4c8666d46865ab5008993cf2f373239c.png" >}}
-{{< gallery_item src="/media/2011/09/c9449ce52c76a2897d84810c959a2b15-150x150.png" link="/media/2011/09/c9449ce52c76a2897d84810c959a2b15.png" >}}
-{{< gallery_item src="/media/2011/09/ab67281fa7514190951edaa614b941be-150x150.png" link="/media/2011/09/ab67281fa7514190951edaa614b941be.png" >}}
-{{< gallery_item src="/media/2011/09/b6ed449c4defbde9f578c47ce22d6b36-150x150.png" link="/media/2011/09/b6ed449c4defbde9f578c47ce22d6b36.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2011/09/a29e1ddf3eeee1ac457d751fd265e724.png" "a29e1ddf3eeee1ac457d751fd265e724-150x150.png" ""
+    "/media/2011/09/4c8666d46865ab5008993cf2f373239c.png" "4c8666d46865ab5008993cf2f373239c-150x150.png" ""
+    "/media/2011/09/c9449ce52c76a2897d84810c959a2b15.png" "c9449ce52c76a2897d84810c959a2b15-150x150.png" ""
+    "/media/2011/09/ab67281fa7514190951edaa614b941be.png" "ab67281fa7514190951edaa614b941be-150x150.png" ""
+    "/media/2011/09/b6ed449c4defbde9f578c47ce22d6b36.png" "b6ed449c4defbde9f578c47ce22d6b36-150x150.png" ""
+    "/media/2011/09/" "nowrap" "OCCT à 20% - CPU-Z à 20% - Test de OCCT - Température au repos - Température en charge" >}}
 
 ### Finitions
 

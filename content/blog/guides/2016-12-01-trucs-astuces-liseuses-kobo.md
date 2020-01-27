@@ -15,7 +15,7 @@ Si vous aussi vous avez franchi le pas du numérique et que vous avez acheté un
 
 <!--more-->
 
-{{< img src="/media/2016/12/32052f235759e191308724ac5e4d2d0f-1024x479.jpg" alt="Calibre" link="/media/2016/12/32052f235759e191308724ac5e4d2d0f.jpg" >}}
+{{< img-link alt="Calibre" path="/media/2016/12" file="32052f235759e191308724ac5e4d2d0f-1024x479.jpg" link="/media/2016/12/32052f235759e191308724ac5e4d2d0f.jpg" >}}
 
 ## Le bon format pour les livres
 
@@ -27,7 +27,7 @@ Tout d’abord, la pagination : en bas du livre, la barre du bas indique un num�
 
 Vous me direz "c'est bien joli tout ça, mais mes livres à moi sont au format EPUB !". Pas de panique, j'ai la solution : **Calibre**.
 
-{{< img src="/media/2016/12/fccc8f9fde7b6108c5f1932d7e9da5b1-300x225.png" alt="Calibre" link="/media/2016/12/fccc8f9fde7b6108c5f1932d7e9da5b1.png" >}}
+{{< img-link alt="Calibre" path="/media/2016/12" file="fccc8f9fde7b6108c5f1932d7e9da5b1-300x225.png" link="/media/2016/12/fccc8f9fde7b6108c5f1932d7e9da5b1.png" >}}
 
 ## Convertir ses livres pour le Kobo
 

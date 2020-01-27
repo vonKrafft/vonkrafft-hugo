@@ -17,16 +17,16 @@ Comment passer à coté de l'annonce de l'un des produits les plus attendus du m
 
 <!--more-->
 
-{{% gallery columns="2" title="iPad 3, iPad HD, iPad 2S … et bien non, ce troisième iPad est nommé « Le Nouvel iPad »." %}}
-{{< gallery_item src="/media/2012/03/95ced5494ce52e01883a4ed2cf60ad6a-300x254.png" alt="iPad 3 (face)" link="/media/2012/03/95ced5494ce52e01883a4ed2cf60ad6a-300x254.png" >}}
-{{< gallery_item src="/media/2012/03/2ccdff5ced995ba5d41563e698849a5f-300x290.png" alt="iPad 3 (dos)" link="/media/2012/03/2ccdff5ced995ba5d41563e698849a5f-300x290.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/03/95ced5494ce52e01883a4ed2cf60ad6a-300x254.png" "95ced5494ce52e01883a4ed2cf60ad6a-300x254.png" "iPad 3 (face)"
+    "/media/2012/03/2ccdff5ced995ba5d41563e698849a5f-300x290.png" "2ccdff5ced995ba5d41563e698849a5f-300x290.png" "iPad 3 (dos)"
+    "/media/2012/03/" "nowrap" "iPad 3, iPad HD, iPad 2S … et bien non, ce troisième iPad est nommé « Le Nouvel iPad »." >}}
 
 ## L’écran Retina
 
 Apple avait déçu bon nombre de gens avec l’iPad 2 qui ne possédait pas d’écran Retina pourtant présent sur l’iPhone 4. Le Nouvel iPad rectifie le tir avec une définition de 2048 x 1536 pixels, soit une résolution de 264 pixels par pouce. Cela fait quatre fois plus de pixels que sur l’iPad 2 ! L’écran offre aussi une saturation plus élevée de 44%.
 
-{{< img src="/media/2012/03/1fbf33336e22e34d921e37b2bbfe87eb-300x73.jpg" alt="Retina iPad 3" title="L'écran Retina equipe le Nouvel iPad" >}}
+{{< img-post alt="Retina iPad 3" path="/media/2012/03" file="1fbf33336e22e34d921e37b2bbfe87eb-300x73.jpg" caption="L'écran Retina equipe le Nouvel iPad" >}}
 
 ## Un nouveau processeur
 
@@ -36,10 +36,10 @@ Pas de processeur A6, mais un A5X Quad Core. Cette nouvelle puce permet de garde
 
 Le Nouvel iPad intègre iSight, un capteur dorsal de 5 Mpx. Celui-ci est doté d’un capteur de luminosité, d’une mise au point et d’ajustement automatique, d’une détection de visage (10 maximum) et d’une ouverture f/2,4 suivie d’une lentille à cinq composantes pour plus de netteté. La vidéo quant à elle profite de la HD 1080p.
 
-{{% gallery columns="2" title="Le nouveau capteur photo du Nouvel iPad" %}}
-{{< gallery_item src="/media/2012/03/e75d81f8161207cd92c29b805b394170-300x89.jpg" alt="iPad 3 (face)" >}}
-{{< gallery_item src="/media/2012/03/d02cf40b7c6b2586baf56c2785a3d896-300x103.png" alt="iPad 3 (dos)" >}}
-{{% /gallery %}}
+{{< img-fit
+    "" "e75d81f8161207cd92c29b805b394170-300x89.jpg" "iPad 3 (face)"
+    "" "d02cf40b7c6b2586baf56c2785a3d896-300x103.png" "iPad 3 (dos)"
+    "/media/2012/03" "nowrap" "Le nouveau capteur photo du Nouvel iPad" >}}
 
 ## Mise à jour iOS 5.1
 

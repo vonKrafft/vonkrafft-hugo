@@ -1,14 +1,10 @@
-<!-- params 4-n(3rd odd value + 1)
+<!-- params 4-n(3rd odd value + 3)
      Strictly positional
      Can create a gallery of multiple rows
      with multiple images using this shortcode
 
      position 0
-        Pass in the width of the column in the row, e.g 6u
-        - The width has a max size of 12
-        - Set the value by also adding the letter u at the end like so: 4u
-        - Can also end the row and start a new one
-          by adding the character $ like so: 8u$
+        URL of the file including the path and the file extension
 
      position 1
         Pass in the name of the file including the extension of the file type
@@ -28,48 +24,60 @@
      position n-4
 
      position n-3
-
-     position n-2
-
-     position n-1
         Can pass in the following values:
             title: will use /img/LinkTitle as the path
             date: will use /img/year/month as the path
             /path/to/img: can pass in the explicit path to the image
+
+     position n-2
+        CSS flex-wrap property
+
+     position n-1
+        Optional caption
 -->
-{{ $numOfParams := sub (len .Params) 1 }}
-{{ if and (ge $numOfParams 3) (not (modBool $numOfParams 2)) }}
-    {{ $.Scratch.Set "path" (.Get $numOfParams) }}
+{{ $numOfParams := sub (len .Params) 3 }}
+{{ if and (ge $numOfParams 3) (modBool $numOfParams 3) }}
+
+    {{ $.Scratch.Set "path" (.Get (sub (len .Params) 3)) }}
+    {{ $.Scratch.Set "class" (.Get (sub (len .Params) 2)) }}
+    {{ $.Scratch.Set "caption" (.Get (sub (len .Params) 1)) }}
 
     {{ $.Scratch.Set "structType" "shortcode" }}
     {{ partial "img-path" . }}
     {{ $path := $.Scratch.Get "path" }}
 
-    <div class="box alt">
-        <div class="row uniform">
+    <figure>
+        <div class='gallery gallery-{{ $.Scratch.Get "class" }}'>
         {{ $.Scratch.Set "count" 1 }}
         {{ $.Scratch.Set "imgFile" "" }}
+        {{ $.Scratch.Set "htmlTag" "a" }}
         {{ range first $numOfParams .Params }}
             {{ if eq ($.Scratch.Get "count") 1 }}
-                <div class="{{ . }}">
+                {{ if eq . "" }}
+                    <span class="image fit featured">
+                    {{ $.Scratch.Set "htmlTag" "span" }}
+                {{ else }}
+                    <a href="{{ . }}" class="image fit featured">
+                    {{ $.Scratch.Set "htmlTag" "a" }}
+                {{ end }}
             {{ else if eq ($.Scratch.Get "count") 2 }}
                 {{ if eq . "" }}
-                    </div>
+                    {{ if eq ($.Scratch.Get "htmlTag") "a" }}</a>{{ else }}</span>{{ end }}
                     {{ $.Scratch.Set "imgFile" "" }}
                 {{ else }}
                     {{ $.Scratch.Set "imgFile" . }}
-                    <span class="image fit">
                 {{ end }}
             {{ else }}
                 {{ if ne ($.Scratch.Get "imgFile") "" }}
-                        <img src='{{ $path }}/{{ $.Scratch.Get "imgFile" }}'
-                            alt="{{ . }}">
-                    </span></div>
+                    <img src='{{ $path }}/{{ $.Scratch.Get "imgFile" }}' alt="{{ . }}">
+                    {{ if eq ($.Scratch.Get "htmlTag") "a" }}</a>{{ else }}</span>{{ end }}
                 {{ end }}
                 {{ $.Scratch.Set "count" 0 }}
             {{ end }}
             {{ $.Scratch.Add "count" 1 }}
         {{ end }}
         </div>
-    </div>
+        {{ if ne ($.Scratch.Get "caption") "" }}<figcaption class="image-caption">{{ $.Scratch.Get "caption" }}</figcaption>{{ end }}
+    </figure>
+
 {{ end }}

@@ -21,7 +21,7 @@ cover: "/media/2012/03/4552016b0902f973b7fdd9e443b95a9e-1024x426.jpg"
 
 Même si les disques durs sont de plus en plus partitionné, une partie étant réservée au système et l’autre destinée au stockage de vos données, il peut arriver que vous n’ayez qu’un seul disque dur où se mêlent vos données personnelles et les fichiers système. Une réinstallation de votre système d’exploitation doit donc débuter par la mise en lieu sûr de vos données.
 
-{{< img src="/media/2012/03/50a00bbbe78ef49034bf6ed7e02020c3.jpg" >}}
+{{< img-post path="/media/2012/03" file="50a00bbbe78ef49034bf6ed7e02020c3.jpg" >}}
 
 Vous avez besoin d’un disque dur externe (ou interne), ou bien d’une clé USB si jamais vos données sont peu volumineuses. Ensuite, il vous faut explorer tous les recoins de votre PC à la recherche de vos données.
 
@@ -85,8 +85,8 @@ Pour clore de tutoriel, voici de quoi conserver votre système au sommet de sa f
 - [Glary Utilities](http://www.clubic.com/telecharger-fiche73266-glary-utilities.html) (gratuit) : tout comme Ccleaner, il propose une solution de « Maintenance en un clic » accompagné d’un mode de fonctions avancées.
 - [TuneUp Utilities](http://www.clubic.com/telecharger-fiche14995-tuneup-utilities-2012.html) (40 euros env.) : complet, il propose tout un panel de programme pour optimiser et personnaliser son système. Je vous le recommande.
 
-{{% gallery columns="3" %}}
-{{< gallery_item src="/media/2012/03/62e6e5d80448b91eda532682e8e250af.jpg" >}}
-{{< gallery_item src="/media/2012/03/e2c637950d07ec5c417060eef93b182a.jpg" >}}
-{{< gallery_item src="/media/2012/03/3fabd73770bf5b901740141d92bb29a5.jpg" >}}
-{{% /gallery %}}
+{{< img-fit
+    "" "62e6e5d80448b91eda532682e8e250af.jpg" ""
+    "" "e2c637950d07ec5c417060eef93b182a.jpg" ""
+    "" "3fabd73770bf5b901740141d92bb29a5.jpg" ""
+    "/media/2012/03" "nowrap" "" >}}

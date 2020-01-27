@@ -41,7 +41,7 @@ Sorti il y a un an, le Fractal Design Arc Midi, boitier commercialisé par Frac
 
 ## Le Bundle
 
-{{< img src="/media/2012/08/534bb47edf6b23364c88f641e076e573-300x225.jpg" alt="Accessoires du Fractal Design Arc Midi" link="/media/2012/08/534bb47edf6b23364c88f641e076e573.jpg" class="pull-right" >}}
+{{< img-link alt="Accessoires du Fractal Design Arc Midi" path="/media/2012/08" file="534bb47edf6b23364c88f641e076e573-300x225.jpg" link="/media/2012/08/534bb47edf6b23364c88f641e076e573.jpg" type="right" >}}
 
 Voici la liste des accessoires présents avec le Fractal Design Arc Midi (image ci-contre) :
 
@@ -61,31 +61,31 @@ Le Fractal Design Arc Midi est un boîtier moyen tour mais conserve un encombre
 
 La façade est sobre, composée d’une grille en métal mesh surmontée de deux emplacement 5,25 pouces (dont une convertible en 3,5 pouces) et d’un « Fractal Design » gravé dans la tour. La grille cache un emplacement pour un ventilateur de 140mm (fournis) et est équipée d’un filtre anti-poussière. Cette façade plastique est une belle imitation d’un métal brossé et présente l’avantage de peu se salir.
 
-{{% gallery columns="3" %}}
-{{< gallery_item src="/media/2012/08/78b034399b7e64a926aca444f8b40e15-150x150.jpg" link="/media/2012/08/78b034399b7e64a926aca444f8b40e15.jpg" >}}
-{{< gallery_item src="/media/2012/08/3a619f1c839e0d3b2258dadcd02eb464-150x150.jpg" link="/media/2012/08/3a619f1c839e0d3b2258dadcd02eb464.jpg" >}}
-{{< gallery_item src="/media/2012/08/58b1f4cba5f8455e1f738ca83c4a3589-150x150.jpg" link="/media/2012/08/58b1f4cba5f8455e1f738ca83c4a3589.jpg" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/08/78b034399b7e64a926aca444f8b40e15.jpg" "78b034399b7e64a926aca444f8b40e15-150x150.jpg" ""
+    "/media/2012/08/3a619f1c839e0d3b2258dadcd02eb464.jpg" "3a619f1c839e0d3b2258dadcd02eb464-150x150.jpg" ""
+    "/media/2012/08/58b1f4cba5f8455e1f738ca83c4a3589.jpg" "58b1f4cba5f8455e1f738ca83c4a3589-150x150.jpg" ""
+    "/media/2012/08/" "nowrap" "" >}}
 
 Sur le dessus, nous retrouvons trois USB dont un USB 3.0, ainsi qu’une paire de prises micro/casque et les boutons power et reset. Le dessus est aussi équipé d’une grille en métal mesh doublé d’un filtre anti-poussière et pouvant accueillir deux ventilateur 120mm ou 140mm (un seul fourni).
 
-{{% gallery columns="3" title="Panneau gauche - Panneau droit - Baies en façade (Cliquez pour agrandir)" %}}
-{{< gallery_item src="/media/2012/08/98d0f4babe4e306f7a09eccf012c5be1-150x150.jpg" link="/media/2012/08/98d0f4babe4e306f7a09eccf012c5be1.jpg" >}}
-{{< gallery_item src="/media/2012/08/bf3fccfbec6d29e15f450a97ebabd90f-150x150.jpg" link="/media/2012/08/bf3fccfbec6d29e15f450a97ebabd90f.jpg" >}}
-{{< gallery_item src="/media/2012/08/b07d2324b113caed2c66a951c99814b3-150x150.jpg" link="/media/2012/08/b07d2324b113caed2c66a951c99814b3.jpg" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/08/98d0f4babe4e306f7a09eccf012c5be1.jpg" "98d0f4babe4e306f7a09eccf012c5be1-150x150.jpg" ""
+    "/media/2012/08/bf3fccfbec6d29e15f450a97ebabd90f.jpg" "bf3fccfbec6d29e15f450a97ebabd90f-150x150.jpg" ""
+    "/media/2012/08/b07d2324b113caed2c66a951c99814b3.jpg" "b07d2324b113caed2c66a951c99814b3-150x150.jpg" ""
+    "/media/2012/08/" "nowrap" "Panneau gauche - Panneau droit - Baies en façade (Cliquez pour agrandir)" >}}
 
-{{% gallery columns="3" title="Arrière - Dessus - Façade (Cliquez pour agrandir)" %}}
-{{< gallery_item src="/media/2012/08/10e92158770bd10fd000e47f741eef1c-150x150.jpg" link="/media/2012/08/10e92158770bd10fd000e47f741eef1c.jpg" >}}
-{{< gallery_item src="/media/2012/08/e2a3cec1574dc4b82477d5679419dbcb-150x150.jpg" link="/media/2012/08/e2a3cec1574dc4b82477d5679419dbcb.jpg" >}}
-{{< gallery_item src="/media/2012/08/152668df0dad6b61b5502b995ca6e0eb-150x150.jpg" link="/media/2012/08/152668df0dad6b61b5502b995ca6e0eb.jpg" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/08/10e92158770bd10fd000e47f741eef1c.jpg" "10e92158770bd10fd000e47f741eef1c-150x150.jpg" ""
+    "/media/2012/08/e2a3cec1574dc4b82477d5679419dbcb.jpg" "e2a3cec1574dc4b82477d5679419dbcb-150x150.jpg" ""
+    "/media/2012/08/152668df0dad6b61b5502b995ca6e0eb.jpg" "152668df0dad6b61b5502b995ca6e0eb-150x150.jpg" ""
+    "/media/2012/08/" "nowrap" "Arrière - Dessus - Façade (Cliquez pour agrandir)" >}}
 
-{{% gallery columns="3" title="Front Panel - Ventilateur supérieur (démonté) - passe tuyaux pour Watercooling (Cliquez pour agrandir)" %}}
-{{< gallery_item src="/media/2012/08/6bd94f9b365ec390a734f0f7ffc632d0-150x150.jpg" link="/media/2012/08/6bd94f9b365ec390a734f0f7ffc632d0.jpg" >}}
-{{< gallery_item src="/media/2012/08/f6b61c1e29d415fcf6b9d89ed4b7fc8b-150x150.jpg" link="/media/2012/08/f6b61c1e29d415fcf6b9d89ed4b7fc8b.jpg" >}}
-{{< gallery_item src="/media/2012/08/0f0586582eb9195e28091604f0125245-150x150.jpg" link="/media/2012/08/0f0586582eb9195e28091604f0125245.jpg" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/08/6bd94f9b365ec390a734f0f7ffc632d0.jpg" "6bd94f9b365ec390a734f0f7ffc632d0-150x150.jpg" ""
+    "/media/2012/08/f6b61c1e29d415fcf6b9d89ed4b7fc8b.jpg" "f6b61c1e29d415fcf6b9d89ed4b7fc8b-150x150.jpg" ""
+    "/media/2012/08/0f0586582eb9195e28091604f0125245.jpg" "0f0586582eb9195e28091604f0125245-150x150.jpg" ""
+    "/media/2012/08/" "nowrap" "Front Panel - Ventilateur supérieur (démonté) - passe tuyaux pour Watercooling (Cliquez pour agrandir)" >}}
 
 L’arrière présente sept port d’extension, plus un pour les potentiomètres, tous peints d’un blanc fidèle à la marque. L’alimentation est placée en bas, et Fractal Design offre un second ventilateur de 1400mm pour expulser l’air chaud. Notons aussi les deux passe-tuyaux qui rendent la tour compatible au Watercooling.
 
@@ -97,13 +97,13 @@ Les panneaux latéraux sont tenus par des vis à main. Quant au panneau supérie
 
 A l’intérieur, nous trouvons huit emplacements 3,5 pouces rackable, tous compatible 2,5 pouces. Ces deux cages de disque dur sont à 90° et l’une est amovible pour laisser sa place aux longes cartes graphiques. Chaque rack est doté de galets en caoutchouc pour limiter les vibrations.
 
-{{% gallery columns="5" title="Boîtier ouvert (vue droite et vue gauche) - rack de disque - emplacement de l'alimentation - connectique interne (Cliquez pour agrandir)" %}}
-{{< gallery_item src="/media/2012/08/1c516c86a6838a51496aa1ff21aaf899-150x150.jpg" link="/media/2012/08/1c516c86a6838a51496aa1ff21aaf899.jpg" >}}
-{{< gallery_item src="/media/2012/08/10a39d646513ca91da7543fd09b24ab9-150x150.jpg" link="/media/2012/08/10a39d646513ca91da7543fd09b24ab9.jpg" >}}
-{{< gallery_item src="/media/2012/08/e4a848465e1e4f483e08b81d57e99f93-150x150.jpg" link="/media/2012/08/e4a848465e1e4f483e08b81d57e99f93.jpg" >}}
-{{< gallery_item src="/media/2012/08/3e432e5edadbbba36a0a76b45ab6492b-150x150.jpg" link="/media/2012/08/3e432e5edadbbba36a0a76b45ab6492b.jpg" >}}
-{{< gallery_item src="/media/2012/08/76e5f03c05f59fd9cfefcec6dfece6f1-150x150.jpg" link="/media/2012/08/76e5f03c05f59fd9cfefcec6dfece6f1.jpg" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/08/1c516c86a6838a51496aa1ff21aaf899.jpg" "1c516c86a6838a51496aa1ff21aaf899-150x150.jpg" ""
+    "/media/2012/08/10a39d646513ca91da7543fd09b24ab9.jpg" "10a39d646513ca91da7543fd09b24ab9-150x150.jpg" ""
+    "/media/2012/08/e4a848465e1e4f483e08b81d57e99f93.jpg" "e4a848465e1e4f483e08b81d57e99f93-150x150.jpg" ""
+    "/media/2012/08/3e432e5edadbbba36a0a76b45ab6492b.jpg" "3e432e5edadbbba36a0a76b45ab6492b-150x150.jpg" ""
+    "/media/2012/08/76e5f03c05f59fd9cfefcec6dfece6f1.jpg" "76e5f03c05f59fd9cfefcec6dfece6f1-150x150.jpg" ""
+    "/media/2012/08/" "nowrap" "Boîtier ouvert (vue droite et vue gauche) - rack de disque - emplacement de l'alimentation - connectique interne (Cliquez pour agrandir)" >}}
 
 Le Fractal Design Arc Midi peut accueillir les cartes mères ATX, µATX ou Mini ITX. L’emplacement est doté d’une fenêtre d’accès pour la backplate de la carte mère et est entouré de passe cloisons en caoutchouc. A première vue, tout est pensé pour un câblage efficace.
 
@@ -115,12 +115,12 @@ Malgré l’absence totale de système de fixation rapide, le montage se révèl
 
 Quant au câblage, tout se range sans problème derrière le panneau de la carte mère. La connectique 4 ou 8 broches trouve un accès direct au CPU juste au-dessus de celui-ci.
 
-{{% gallery columns="4" title="Configuration montée dans l'Arc Midi Tower (Cliquez pour agrandir)" %}}
-{{< gallery_item src="/media/2012/08/a4fc9d0ff76a4123dc719b1763e2c19f-150x150.jpg" link="/media/2012/08/a4fc9d0ff76a4123dc719b1763e2c19f.jpg" >}}
-{{< gallery_item src="/media/2012/08/0f5be67f305e564b587e58ce107d0c40-150x150.jpg" link="/media/2012/08/0f5be67f305e564b587e58ce107d0c40.jpg" >}}
-{{< gallery_item src="/media/2012/08/27897501024a83a56e2d5bbfd0952061-150x150.jpg" link="/media/2012/08/27897501024a83a56e2d5bbfd0952061.jpg" >}}
-{{< gallery_item src="/media/2012/08/aec375ace49e3487ec2b740364a01624-150x150.jpg" link="/media/2012/08/aec375ace49e3487ec2b740364a01624.jpg" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/08/a4fc9d0ff76a4123dc719b1763e2c19f.jpg" "a4fc9d0ff76a4123dc719b1763e2c19f-150x150.jpg" ""
+    "/media/2012/08/0f5be67f305e564b587e58ce107d0c40.jpg" "0f5be67f305e564b587e58ce107d0c40-150x150.jpg" ""
+    "/media/2012/08/27897501024a83a56e2d5bbfd0952061.jpg" "27897501024a83a56e2d5bbfd0952061-150x150.jpg" ""
+    "/media/2012/08/aec375ace49e3487ec2b740364a01624.jpg" "aec375ace49e3487ec2b740364a01624-150x150.jpg" ""
+    "/media/2012/08/" "nowrap" "Configuration montée dans l'Arc Midi Tower (Cliquez pour agrandir)" >}}
 
 ## Performances
 

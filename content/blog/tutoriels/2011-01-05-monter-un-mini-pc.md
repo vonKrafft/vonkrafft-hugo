@@ -21,11 +21,11 @@ On trouve les mini-PC partout dans le commerce mais rien ne vous empêche de fai
 
 Pour créer un mini PC, la taille du boitier est obligatoirement petite (et oui, incroyable ! Sinon, ça ne s'appellerait pas mini-PC). Pour le format du boîtier, nous nous tournerons vers un boitier de petite taille - le plus facile à trouver - qui est le mini-ITX (17cm de coté) mais libre à vous de voir plus grand ou plus petit ... Parmi les plus compacts, je citerais (et ne voyez aucune pub là-dedans) : l'ISK-100 d'Antec (90€ env.), le 3905B d'Advance (60€ env.), le Cupid 1 d'A+Case (80€ env.) ou encore l'Element Q de Thermaltake qui est un peu plus gros (60€ env.). Veillez à noter quelques points importants pour votre boitier : la ventilation, la connectique en façade (minimum 2 USB + Audio) et les emplacements (il faut un interne 2.5" et un externe 5.25" Slim si vous souhaitez un petit boitier). Enfin prêtez attention à l'alimentation, externe (comme les PC portable) ou interne ainsi qu'à sa puissance (entre 60W et 150W).
 
-{{< img src="/media/2011/01/d5564468cc58b2384c0a9ea6b10a72fd-1024x307.jpg" link="/media/2011/01/d5564468cc58b2384c0a9ea6b10a72fd.jpg" title="L'Element Q de Thermaltake - Le 3905B d'Advance - Le Cupid 1 d'A+Case - L'ISK-100 d'Antec" width="60%" >}}
+{{< img-post alt="4 exemple de mini-boîtier" path="/media/2011/01" file="d5564468cc58b2384c0a9ea6b10a72fd-1024x307.jpg" caption="L'Element Q de Thermaltake - Le 3905B d'Advance - Le Cupid 1 d'A+Case - L'ISK-100 d'Antec" >}}
 
 ## La carte mère, le processeur, la mémoire
 
-{{< img src="/media/2011/01/ba0790905fb3fbf0097d0a23d463b473-300x200.jpg" link="/media/2011/01/ba0790905fb3fbf0097d0a23d463b473.jpg" class="pull-right" >}}
+{{< img-link path="/media/2011/01" file="ba0790905fb3fbf0097d0a23d463b473-300x200.jpg" link="/media/2011/01/ba0790905fb3fbf0097d0a23d463b473.jpg" type="right" >}}
 
 Plus le boîtier est petit, plus il faut faire attention à la chaleur que dégagent les composants. Ainsi, il faut opter pour un processeur basse consommation qui est souvent - pour les cartes mères mini-ITX - intégré à la carte mère, comme par exemple les Atom d'Intel (D510 et D525 pour les plus puissants). Ces processeur sont peu puissant comparé à ceux pour PC ATX mais il suffise à un usage bureautique. Parmi les cartes mères mini-ITX, je citerais (là aussi sans pub particulière) l'AT510NT-I d'Asus (160€ env.) ou la D510MO d'Intel (80€ env.). Ces deux carte utilisent un refroidissement passif, totalement silencieux, mais d'autre comme la GA-D525TUD de Gigabyte (80€ env.) possèdent un ventilateur. Personnellement, je vous conseille un refroidissement passif afin d'avoir un PC petit et silencieux. Enfin, du choix de votre carte mère dépendra celui de votre mémoire vive. Je vous conseille de la DDR3 (maintenant un standard) et quant au format (Dimm ou So-Dimm), peu importe.
 
@@ -39,10 +39,10 @@ Quant au lecteur optique, Ce n'est plus un élément essentiel : Windows 7 ou Li
 
 Inutile d'investir dans une carte graphique dédiée, celle de la carte mère suffira à un usage bureautique. De toute façon, un boîtier mini-IXT est trop petit pour ajouter une carte fille. Le chipset graphique intégré à la carte mère est certes basique, mais il permet un affichage normal de Windows ou linux (heureusement) et parfois il permet aussi de décoder la HD. Mais n'espérez pas jouer en 3D ...
 
-{{% gallery columns="2" title="Linux Ubuntu ou Microsoft Windows" %}}
-{{< gallery_item src="/media/2011/01/b47556aae8327b99ebaa91a9f705b9ad-150x150.jpg" link="/media/2011/01/b47556aae8327b99ebaa91a9f705b9ad.jpg" >}}
-{{< gallery_item src="/media/2011/01/bf36442370564ee1b192d3dbe2754957-150x150.jpg" link="/media/2011/01/bf36442370564ee1b192d3dbe2754957.jpg" >}}
-{{% /gallery %}}
+{{< img-fit
+    "" "b47556aae8327b99ebaa91a9f705b9ad-150x150.jpg" ""
+    "" "bf36442370564ee1b192d3dbe2754957-150x150.jpg" ""
+    "/media/2011/01" "nowrap" "Linux Ubuntu ou Microsoft Windows" >}}
 
 Enfin, le système d'exploitation : Linux ou Windows ? Personnellement, je vous conseille d'opter pour [Ubuntu](http://www.ubuntu.fr/) (ou un autre système Linux), gratuit et convivial, il permet de faire l'économie d'un achat de licence Windows. Vous pouvez aussi installer une ancienne version de Windows (XP, Me, 2000 ...) qui traîne dans un de vos tiroirs. Mais si quitter Windows vous insupporte, comptez 120€ pour la version familiale de Windows 7 !
 

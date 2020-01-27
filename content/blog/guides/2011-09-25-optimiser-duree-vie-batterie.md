@@ -21,7 +21,7 @@ Lorsque vous acheter un PC portable (ou autre appareil électronique), il est n�
 
 Pour modifier les réglages de votre PC, il faut aller dans le panneau de configuration et clique sur « Modifier les paramètres d’alimentation avancé ». Là, vous pourrez régler les taux de charge pour lesquels votre PC vous avertira un niveau faible et critique.
 
-{{< img src="/media/2011/09/22c8f998c520d151c93cb4d29652e5a1.png" link="/media/2011/09/22c8f998c520d151c93cb4d29652e5a1.png" >}}
+{{< img-link path="/media/2011/09" file="22c8f998c520d151c93cb4d29652e5a1.png" link="/media/2011/09/22c8f998c520d151c93cb4d29652e5a1.png" >}}
 
 ## Cycle de charge/décharge
 
@@ -29,7 +29,7 @@ Recharger sa batterie de 0% à 100% correspond à un cycle de charge/décharge. 
 
 Lors de la charge, la température ambiante doit être comprise entre 0°C et 40°C. En-dessous, le lithium entre en contact avec les électrodes et au-dessus, la pression dans la batterie devient trop importante. Dans les deux cas, la batterie s’abîme et peut devenir instable. La température optimale de charge est 20°C.
 
-{{< img src="/media/2011/09/b17633b5b48b08987f83ccd1b1f98c40.png" title="Cycle de charge-décharge d'une batterie" >}}
+{{< img-post caption="Cycle de charge-décharge d'une batterie" path="/media/2011/09" file="b17633b5b48b08987f83ccd1b1f98c40.png" >}}
 
 Enfin, il est conseillé d’effectuer un cycle complet de charge/décharge tous les mois. Pour cela, laissez votre batterie se charger à 100%. Ensuite, déchargez-la jusqu’à ce qu’il ne reste plus que 10 à 20 % de sa charge. Enfin rechargez-la entièrement sans interruption.
 

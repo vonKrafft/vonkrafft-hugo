@@ -19,7 +19,7 @@ Le « Média Center » désigne les disques dur et les TV connectés, comme par 
 
 Le PC Home Cinéma est destiné à votre salon, c’est pourquoi les composants de cet ordinateur qui se placera à coté de votre écran TV doivent être sélectionnés avec soin. Performances multimédia, silence et esthétisme sont les maitres mots de ce PC, et ce guide vous permettra d’assembler votre « Média Center ».
 
-{{< img src="/media/2012/05/6b4fa78399f56b5c2d5e53dab26b9f07.jpg" link="/media/2012/05/6b4fa78399f56b5c2d5e53dab26b9f07.jpg" >}}
+{{< img-link path="/media/2012/05" file="6b4fa78399f56b5c2d5e53dab26b9f07.jpg" link="/media/2012/05/6b4fa78399f56b5c2d5e53dab26b9f07.jpg" >}}
 
 ## Les performances d'un PC Home Cinéma
 
@@ -40,11 +40,11 @@ A présent que vous avez tous vos fichiers multimédia sur un disque dur, il fau
 Mais vous pouvez choisir un processeur quelconque, dans la même gamme que ceux précédemment cités, et y ajouter une carte graphique dédiée. Pour celle-ci, un modèle milieu de gamme est suffisant, telles que la AMD Radeon HD 64xx ou la NVidia GT 6xx. Un refroidissement passif et une vigilance vis-à-vis du format sont nécessaires, plus de détails dans les deux chapitres suivants.
 Au tour de la mémoire vive : 2 Go minimum, 4 Go pour plus de confort. La DDR3 est maintenant largement répandue et quant à la norme, tout dépend de celles supportées pas la carte mère que vous choisirez. Pour la lecture des DVD, voire des Blu-ray, je vous conseille de prendre un lecteur Blu-Ray pour pouvoir lire un maximum de disque.
 
-{{% gallery title="Carte son - Carte tuner TNT - Carte graphique passive" %}}
-{{< gallery_item src="/media/2012/05/c718da90fc4e2809caafea411d2aa941-300x266.jpg" link="/media/2012/05/c718da90fc4e2809caafea411d2aa941.jpg" >}}
-{{< gallery_item src="/media/2012/05/5d92a3715716957db5f465f87708e52e-300x322.jpg" link="/media/2012/05/5d92a3715716957db5f465f87708e52e.jpg" >}}
-{{< gallery_item src="/media/2012/05/64a8395c956d5de8a96fce90926c1951-300x300.jpg" link="/media/2012/05/64a8395c956d5de8a96fce90926c1951.jpg" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/05/c718da90fc4e2809caafea411d2aa941.jpg" "c718da90fc4e2809caafea411d2aa941-300x266.jpg" ""
+    "/media/2012/05/5d92a3715716957db5f465f87708e52e.jpg" "5d92a3715716957db5f465f87708e52e-300x322.jpg" ""
+    "/media/2012/05/64a8395c956d5de8a96fce90926c1951.jpg" "64a8395c956d5de8a96fce90926c1951-300x300.jpg" ""
+    "/media/2012/05/" "nowrap" "Carte son - Carte tuner TNT - Carte graphique passive" >}}
 
 Enfin, vous pouvez ajouter des cartes d’extension. Premièrement, une carte tuner TNT peut vous permettre de regarder la télévision sans passer par un appareil tiers. Vous pouvez aussi insérer une carte son, mais à moins que vous soyez un grand mélomane, la carte son 7.1 intégrée à la carte mère est amplement suffisante. Toutefois, si vous projetez de brancher votre PC Home Cinéma sur votre chaîne Hifi, une carte son peut apporter la connectique necessaire.
 
@@ -60,7 +60,7 @@ Vous avez donc un ventilateur, celui du processeur. Il n’est pas nécessaire d
 
 Quoi de plus laid qu’une tour PC à côté du dernier écran plat tendance ? Il est clair qu’un boîtier de PC traditionnel ne trouvera pas sa place dans votre salon, mais il existe des boîtiers dits HTPC aux allures de chaines Hifi.
 
-{{< img src="/media/2012/05/98a0d11ef20a853d21b81213338cc7ca.jpg" link="/media/2012/05/98a0d11ef20a853d21b81213338cc7ca.jpg" >}}
+{{< img-link path="/media/2012/05" file="98a0d11ef20a853d21b81213338cc7ca.jpg" link="/media/2012/05/98a0d11ef20a853d21b81213338cc7ca.jpg" >}}
 
 Cependant, il faut prêter attention au format des cartes d’extension si jamais vous désirez ajouter une carte graphique ou une carte son, car certain de ces boîtier son moins haut que le standard et requièrent des cartes spécifiques. Attention aussi à la hauteur du ventilateur pour processeur.
 

@@ -21,7 +21,7 @@ Avant de commencer, je vous conseille de jeter un œil au [fonctionnement de l'U
 
 ## La préparation
 
-{{< img src="/media/2011/05/4e719fcb6194ea9281a1872a55e37d48-300x168.jpg" link="/media/2011/05/4e719fcb6194ea9281a1872a55e37d48.jpg" class="pull-right" width="250px">}}
+{{< img-link path="/media/2011/05" file="4e719fcb6194ea9281a1872a55e37d48-300x168.jpg" link="/media/2011/05/4e719fcb6194ea9281a1872a55e37d48.jpg" type="right" >}}
 
 Tout d'abord, il faut :
 
@@ -43,16 +43,16 @@ Tout d'abord, il faut :
 - Procédez au dessoudage des fils à l’aide de votre fer à souder.
 - Maintenant, prenez vos deux fils de l’USB préalablement dénudés est souder les à la place des fils +12V et 0V de votre ventilateur (si vous avez noté la position des fils comme je vous l’ai dit, il ne devrait pas y avoir de problème)
 
-{{% gallery columns="4" %}}
-{{< gallery_item src="/media/2011/05/e776e2478a89d87f3d3cb0c619851d9f-150x150.jpg" link="/media/2011/05/e776e2478a89d87f3d3cb0c619851d9f.jpg" >}}
-{{< gallery_item src="/media/2011/05/a4d59281d401a278dbe8a46c47c1eeb0-150x150.jpg" link="/media/2011/05/a4d59281d401a278dbe8a46c47c1eeb0.jpg" >}}
-{{< gallery_item src="/media/2011/05/12371e0b53ec20a2910edc2afe24a872-150x150.jpg" link="/media/2011/05/12371e0b53ec20a2910edc2afe24a872.jpg" >}}
-{{< gallery_item src="/media/2011/05/327d7d6fccbf0cfc4288ce8963e461c2-150x150.jpg" link="/media/2011/05/327d7d6fccbf0cfc4288ce8963e461c2.jpg" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2011/05/e776e2478a89d87f3d3cb0c619851d9f.jpg" "e776e2478a89d87f3d3cb0c619851d9f-150x150.jpg" ""
+    "/media/2011/05/a4d59281d401a278dbe8a46c47c1eeb0.jpg" "a4d59281d401a278dbe8a46c47c1eeb0-150x150.jpg" ""
+    "/media/2011/05/12371e0b53ec20a2910edc2afe24a872.jpg" "12371e0b53ec20a2910edc2afe24a872-150x150.jpg" ""
+    "/media/2011/05/327d7d6fccbf0cfc4288ce8963e461c2.jpg" "327d7d6fccbf0cfc4288ce8963e461c2-150x150.jpg" ""
+    "/media/2011/05/" "nowrap" "" >}}
 
 Désormais, vous pouvez brancher, et constater que ça tourne !
 
-{{< img src="/media/2011/05/a099fddac11afcf194cadb0b90a72601-1024x196.jpg" link="/media/2011/05/a099fddac11afcf194cadb0b90a72601.jpg">}}
+{{< img-post path="/media/2011/05" file="a099fddac11afcf194cadb0b90a72601-1024x196.jpg" >}}
 
 Le ventilateur ne tourne pas, c'est raté. Vérifiez que vous avez correctement soudé les fils au bon endroit. Il se peut aussi que Windows vous affiche un message d'erreur comme quoi le périphérique à dépasser l'ampérage maximum, et là, il faut changer de ventilateur et réactiver le port USB que Windows a désactivé.
 

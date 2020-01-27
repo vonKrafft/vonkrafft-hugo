@@ -118,7 +118,7 @@ Le premier méga-octet du disque est copié à un autre emplacement afin que les
 
 Le schéma suivant illustre l'organisation du disque après la conversion :
 
-{{< img src="/media/2014/11/31168275dcaac634489082b54c4c66d0.png" link="/media/2014/11/31168275dcaac634489082b54c4c66d0.png" >}}
+{{< img-link path="/media/2014/11" file="31168275dcaac634489082b54c4c66d0.png" link="/media/2014/11/31168275dcaac634489082b54c4c66d0.png" >}}
 
 #### Utilisation
 
@@ -233,7 +233,6 @@ Tous les fichiers compressibles écrits après le montage se feront avec la mét
 {{< highlight bash >}}
 root@debian:~# btrfs filesystem defragment -c zlib,lzo
 {{< /highlight >}}
-.
 
 ### Gestion des quotas
 
@@ -269,7 +268,7 @@ Pour le moment, Btrfs n’est officiellement stable que pour les RAID 0, 1 et 1+
 
 Le RAID 0 a pour but d’augmenter les performances et la capacité de stockage. Dans cette configuration, les données à écrire sont séparées en bandes (*strip*, d’où l’autre nom du RAID 0 : *striping*), chacune étant écrite sur un disque différent. Ainsi, s’il y a *n* disques, chacun d’entre eux ne devra écrire que 1/*n* des données, et la capacité totale de stockage sera de *n* fois celle du disque le plus petit. Voici un exemple avec deux disques :
 
-{{< img src="/media/2014/11/6e1cf4aee5712cfedbb1d569e992f5bb.png" link="/media/2014/11/6e1cf4aee5712cfedbb1d569e992f5bb.png" >}}
+{{< img-link path="/media/2014/11" file="6e1cf4aee5712cfedbb1d569e992f5bb.png" link="/media/2014/11/6e1cf4aee5712cfedbb1d569e992f5bb.png" >}}
 
 Ce RAID utilise tous l’espace de stockage (pas de redondance des données), ce qui le rend peu onéreux. Cependant, la perte d’un seul disque entraine la corruption de toutes les données.
 
@@ -277,7 +276,7 @@ Ce RAID utilise tous l’espace de stockage (pas de redondance des données), ce
 
 Ce RAID repose lui aussi sur l’utilisation de *n* disques, mais cette fois-ci les données sont écrit de manière redondante sur chaque disque. Voici un exemple avec deux disques :
 
-{{< img src="/media/2014/11/a4259c6031ccb9e4492845d44935a175.png" link="/media/2014/11/a4259c6031ccb9e4492845d44935a175.png" >}}
+{{< img-link path="/media/2014/11" file="a4259c6031ccb9e4492845d44935a175.png" link="/media/2014/11/a4259c6031ccb9e4492845d44935a175.png" >}}
 
 Cette méthode accepte une défaillance de *n-1* disques, ce qui offre une très fiabilité. Cependant, elle est coûteuse en espace de stockage et n’améliore en rien les performances.
 
@@ -285,7 +284,7 @@ Cette méthode accepte une défaillance de *n-1* disques, ce qui offre une très
 
 Ce RAID est la combinaison entre les deux RAID précédents. Les disques sont séparés en grappes RAID 1 d’au moins deux disques (donc il en faut au minimum 4). Les données sont écrites simultanément sur les différentes grappes selon la technique du RAID 0 ; au sein de chaque sous-grappe, elles sont écrites sur les différents disques de manière redondante (RAID 1). Voici un exemple avec quatre disques :
 
-{{< img src="/media/2014/11/bdaac16231053c86dc9c3a9ec7455b1d.png" link="/media/2014/11/bdaac16231053c86dc9c3a9ec7455b1d.png" >}}
+{{< img-link path="/media/2014/11" file="bdaac16231053c86dc9c3a9ec7455b1d.png" link="/media/2014/11/bdaac16231053c86dc9c3a9ec7455b1d.png" >}}
 
 Cette technique regroupe les avantages des deux RAID précédents : rapidité d’écriture et fiabilité. Pour qu’une perte de données survienne, il faut que chaque grappe perde le même disque.
 
@@ -335,11 +334,11 @@ Btrfs utilise la copie sur écriture pour gérer les instantannés. En effet, le
 
 Par exemple, juste avant que le système actif ne modifie la donnée D, voici la situation :
 
-{{< img src="/media/2014/11/534f372ff118b0ce10716cc1924171e9-300x230.png" link="/media/2014/11/534f372ff118b0ce10716cc1924171e9.png" >}}
+{{< img-link path="/media/2014/11" file="534f372ff118b0ce10716cc1924171e9-300x230.png" link="/media/2014/11/534f372ff118b0ce10716cc1924171e9.png" >}}
 
 Puis le mécanisme de copie sur écriture créé une copie privée pour l'instantanné, et le système actif peut modifier la donnée sans que l’instantanné ne soit modifié :
 
-{{< img src="/media/2014/11/ce344378b5a0fb007a9caa4fbca15598-300x230.png" link="/media/2014/11/ce344378b5a0fb007a9caa4fbca15598.png" >}}
+{{< img-link path="/media/2014/11" file="ce344378b5a0fb007a9caa4fbca15598-300x230.png" link="/media/2014/11/ce344378b5a0fb007a9caa4fbca15598.png" >}}
 
 La création d’un instantanné se fait grâce à la commande suivante :
 
@@ -489,7 +488,7 @@ Je suis le fichier "b".
 
 ### La convertion Ext4/Btrfs
 
-{{< img src="/media/2014/11/b59395ede55b41af3ce7530227d4e73b-1024x293.png" title="État du disque avant la convertion en Btrfs" link="/media/2014/11/b59395ede55b41af3ce7530227d4e73b.png" >}}
+{{< img-link caption="État du disque avant la convertion en Btrfs" path="/media/2014/11" file="b59395ede55b41af3ce7530227d4e73b-1024x293.png" link="/media/2014/11/b59395ede55b41af3ce7530227d4e73b.png" >}}
 
 On considère le contenu suivant sur un disque (ici `/dev/sdb1`) :
 
@@ -527,7 +526,7 @@ root@debian:/mnt/test/ext4# tree
 8 directories, 19 files
 {{< /highlight >}}
 
-{{< img src="/media/2014/11/7ef40194f24306128c19b5ac12f71faa-1024x293.png" title="État du disque après la convertion en Btrfs" link="/media/2014/11/7ef40194f24306128c19b5ac12f71faa.png" >}}
+{{< img-link caption="État du disque après la convertion en Btrfs" path="/media/2014/11" file="7ef40194f24306128c19b5ac12f71faa-1024x293.png" link="/media/2014/11/7ef40194f24306128c19b5ac12f71faa.png" >}}
 
 Nous avons ensuite démonté le volume, convertit puis remonté. Nous pouvons voir que la conversion s'est bien déroulée. Un instantané a aussi été créé au cas où nous voudrions revenir à Ext4 :
 
@@ -577,7 +576,7 @@ root@debian:/mnt/test/btrfs# btrfs sub list ext2_saved/
 ID 256 top level 5 path ext2_saved
 {{< /highlight >}}
 
-{{< img src="/media/2014/11/aee11ff9a2e8ca5ba9070d2a5e877a75-1024x293.png" title="État du disque après la reconvertion en Ext4" link="/media/2014/11/aee11ff9a2e8ca5ba9070d2a5e877a75.png" >}}
+{{< img-link caption="État du disque après la reconvertion en Ext4" path="/media/2014/11" file="aee11ff9a2e8ca5ba9070d2a5e877a75-1024x293.png" link="/media/2014/11/aee11ff9a2e8ca5ba9070d2a5e877a75.png" >}}
 
 Nous avons fait des moficications sur le disque, puis nous avons reconvertit le disque en Ext4 :
 
@@ -673,10 +672,10 @@ Basé sur : [http://openbenchmarking.org/result/1411054-LI-BTRFSRAID55](http://o
 
 Les tests de lecture ont échoués en partie, mais on peut voir que l’implémentation du RAID 6 de btrfs est assez performante (environ 15% plus rapide en écriture). Plus globalement btrfs se démarque bien en écriture, dans toutes les configurations exceptées en RAID 0. En plus de n’être déjà pas très bon avec mdadm pour gérer le RAID 0, les performances en écriture se dégradent encore quand on utilise la gestion native du RAID 0.
 
-{{% gallery columns="2" %}}
-{{< gallery_item src="/media/2014/11/1eb88773a85bfb9d0535473987ced4ac-300x388.png" link=="/media/2014/11/1eb88773a85bfb9d0535473987ced4ac.png" >}}
-{{< gallery_item src="/media/2014/11/22dfd04a2f4e16400e0a61158433fcd0-300x387.png" link=="/media/2014/11/22dfd04a2f4e16400e0a61158433fcd0.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2014/11/1eb88773a85bfb9d0535473987ced4ac.png" "1eb88773a85bfb9d0535473987ced4ac-300x388.png"
+    "/media/2014/11/22dfd04a2f4e16400e0a61158433fcd0.png" "22dfd04a2f4e16400e0a61158433fcd0-300x387.png"
+    "/media/2014/11/" "nowrap" "" >}}
 
 #### Test de débits aléatoires
 
@@ -686,12 +685,10 @@ Le RAID 10 n’est pas non plus à son avantage mais reste devant XFS de 20%, et
 
 Pour ce qui est des RAID 5 et 1, toutes les configurations sont à peu près équivalentes. Du coté de l’écriture aléatoire donne les meilleurs résultats avec btrfs, et ce quelque soit la configuration.
 
-{{% gallery columns="2" %}}
-{{< gallery_item src="/media/2014/11/d2eb2a64b75bc3c027d69d1005e46c2d-300x385.png" link="/media/2014/11/d2eb2a64b75bc3c027d69d1005e46c2d.png" >}}
-{{< gallery_item src="/media/2014/11/86e02e9dcc4f24c7b51610195a8f5e7a-300x386.png" link="/media/2014/11/86e02e9dcc4f24c7b51610195a8f5e7a.png" >}}
-{{% /gallery %}}
-
-### Configuration avec un seul disque (SSD)
+{{< img-fit
+    "/media/2014/11/d2eb2a64b75bc3c027d69d1005e46c2d.png" "d2eb2a64b75bc3c027d69d1005e46c2d-300x385.png" ""
+    "/media/2014/11/86e02e9dcc4f24c7b51610195a8f5e7a.png" "86e02e9dcc4f24c7b51610195a8f5e7a-300x386.png" ""
+    "/media/2014/11/" "nowrap" "Configuration avec un seul disque (SSD)" >}}
 
 Basé sur : [http://openbenchmarking.org/result/1102238-IV-1102232IV10](http://openbenchmarking.org/result/1102238-IV-1102232IV10) et [http://openbenchmarking.org/result/1203144-BY-UBUNTUFS745](http://openbenchmarking.org/result/1203144-BY-UBUNTUFS745)
 

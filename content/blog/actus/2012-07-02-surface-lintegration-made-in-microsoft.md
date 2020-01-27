@@ -15,10 +15,10 @@ L’essor des tablettes à prit Microsoft de cours, et ce dernier se devait de t
 
 <!--more-->
 
-{{% gallery columns="2" %}}
-{{< gallery_item src="/media/2012/07/ff02f58cc7a9e7449b45df0affc8f267-300x219.jpg" link="/media/2012/07/ff02f58cc7a9e7449b45df0affc8f267.jpg" >}}
-{{< gallery_item src="/media/2012/07/ad8f0ac5562865244b0721f96ed70f90-300x219.jpg" link="/media/2012/07/ad8f0ac5562865244b0721f96ed70f90.jpg" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/07/ff02f58cc7a9e7449b45df0affc8f267.jpg" "ff02f58cc7a9e7449b45df0affc8f267-300x219.jpg" ""
+    "/media/2012/07/ad8f0ac5562865244b0721f96ed70f90.jpg" "ad8f0ac5562865244b0721f96ed70f90-300x219.jpg" ""
+    "/media/2012/07/" "nowrap" "" >}}
 
 Un fois de plus, Microsoft se lance dans le domaine du matériel. Cela avait débuté avec la première version de Windows qui avait besoin d’une souris, et Microsoft la lui donna. Par la suite, l’éditeur logiciel a tenté de se faire une place sur le marché, avec par exemple la célèbre console Xbox, qui a connu le succès attendu, le baladeur Zune, qui a eu moins de chance, et à présent la tablette Surface.
 
@@ -42,13 +42,13 @@ Cependant, pas de prix dévoilés pour aucune de ces deux tablettes.
 
 Microsoft prévoit de décliner deux versions de sa Surface : l'une avec un processeur ARM et donc Windows RT (avec la suite Office 2013), l'autre avec processeur Intel et Windows 8 Pro. La première est destinée au grand public et présente des caractéristiques classiques d’une tablette : 9,3 mm d’épaisseur pour un poids de 676 g. La seconde, conçue pour l’univers professionnel, est plus lourde (903 g) mais aussi plus épaisse (13.5 mm) et présente des grille d’aération. A noté que Microsoft n’a pas encore fait le choix des processeurs pour ses tablettes.
 
-{{% gallery columns="5" title="Surface by Microsoft (Cliquez pour agrandir)" %}}
-{{< gallery_item src="/media/2012/07/ff02f58cc7a9e7449b45df0affc8f267-150x150.jpg" link="/media/2012/07/ff02f58cc7a9e7449b45df0affc8f267.jpg" >}}
-{{< gallery_item src="/media/2012/07/ad8f0ac5562865244b0721f96ed70f90-150x150.jpg" link="/media/2012/07/ad8f0ac5562865244b0721f96ed70f90.jpg" >}}
-{{< gallery_item src="/media/2012/07/77c7cc930fd1443f34d12a07c7987354-150x150.jpg" link="/media/2012/07/77c7cc930fd1443f34d12a07c7987354.jpg" >}}
-{{< gallery_item src="/media/2012/07/e59d9e28aae9a4f03d30f5bf89467808-150x150.jpg" link="/media/2012/07/e59d9e28aae9a4f03d30f5bf89467808.jpg" >}}
-{{< gallery_item src="/media/2012/07/59950b608e39ac06f3e3801f34e138a8-150x150.jpg" link="/media/2012/07/59950b608e39ac06f3e3801f34e138a8.jpg" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/07/ff02f58cc7a9e7449b45df0affc8f267.jpg" "ff02f58cc7a9e7449b45df0affc8f267-150x150.jpg" ""
+    "/media/2012/07/ad8f0ac5562865244b0721f96ed70f90.jpg" "ad8f0ac5562865244b0721f96ed70f90-150x150.jpg" ""
+    "/media/2012/07/77c7cc930fd1443f34d12a07c7987354.jpg" "77c7cc930fd1443f34d12a07c7987354-150x150.jpg" ""
+    "/media/2012/07/e59d9e28aae9a4f03d30f5bf89467808.jpg" "e59d9e28aae9a4f03d30f5bf89467808-150x150.jpg" ""
+    "/media/2012/07/59950b608e39ac06f3e3801f34e138a8.jpg" "59950b608e39ac06f3e3801f34e138a8-150x150.jpg" ""
+    "/media/2012/07/" "nowrap" "Surface by Microsoft (Cliquez pour agrandir)" >}}
 
 Du côté de la connectique, Microsoft ne présente pour la version RT qu’un port USB 2.0 et un lecteur MicroSD. La version Pro est plus fournie, avec un USB 3.0, lecteur MicroSDXC et un port Mini DisplayPort.
 
@@ -64,7 +64,7 @@ Impossible de ne pas remarquer les influences d’Apple sur la société de Stev
 Déjà avec le Marketplace, Microsoft rejoignait la philosophie de contrôle des contenus mis en place par Apple pour Mac OSX et iOS. Mais le fait de commercialiser sa propre tablette prouve que Microsoft s’oriente de plus en plus vers une politique d’intégration.
 
 > ##### L'avis de l'auteur
-> {{< img src="/media/2012/07/d10a2b7204c992679d55eff0c95dcd04-150x150.jpg" class="pull-left" >}}
+> {{< img-post path="/media/2012/07" file="d10a2b7204c992679d55eff0c95dcd04-150x150.jpg" type="left" >}}
 > Après le pari d’un système unifié avec Windows 8, Microsoft se lance dans un nouveau pari, celui de l’intégration : depuis l’OS jusqu’à la tablette, en passant par le Marketplace, Microsoft contrôle tout. Cela représente un changement majeur puisque jusqu’à présent, Windows tirait sa force de la grande offre matérielle proposée par de multiples constructeurs et de son ouverture totale à tous logiciels. Pour le premier point, Microsoft n’a aucune raison de stopper la commercialisation de terminaux Windows par des constructeurs tiers. Quant au second point, Windows ne restreint au Marketplace que les tablettes sous Windows RT, tandis que les autres versions de Windows 8 restent ouvertes à toutes logithèques. Mais à terme, le Marketplace pourrait bien, à l’image de l’App Store, devenir l’unique lieu où se procurer ses logiciels. Alors ce changement de politique sera-t-il bénéfique à Microsoft ? Réponse en octobre et dans les années à venir …
 
 <small class="align-right">Source : [surface.com](http://surface.com)</small>

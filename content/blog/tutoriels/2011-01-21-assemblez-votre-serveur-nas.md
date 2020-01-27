@@ -40,7 +40,7 @@ Après une introduction un peu longue, nous allons pouvoir commencer. Je suppose
 
 NOTE : Il existe des serveurs NAS « clef en main » à acheter dans le commerce. En dehors du fait qu’ils prennent rarement en charge le RAID, ils sont souvent plus chers que la solution proposée ici. Et souvent, ils ne sont pas évolutifs. Pas moyen d’y ajouter plus de deux disques (pour les premiers prix).
 
-{{< img src="/media/2011/01/0f4036499be2e755d0fae2c749664b65.png" link="/media/2011/01/0f4036499be2e755d0fae2c749664b65.png" title="Exemple de réseau domestique" >}}
+{{< img-link path="/media/2011/01" file="0f4036499be2e755d0fae2c749664b65.png" link="/media/2011/01/0f4036499be2e755d0fae2c749664b65.png" caption="Exemple de réseau domestique" >}}
 
 Pour commencer, il va falloir « monter » un serveur NAS. Pour ce faire, vous avez besoin d’une carte mère, un peu de RAM, un processeur, une carte graphique (elle peut être intégrée à la carte mère), d’un boîtier, d’une alimentation, de deux disques durs de grosse capacité (tant qu’à faire), d’un Operating System dédié et d’une clef USB... C’est tout !
 

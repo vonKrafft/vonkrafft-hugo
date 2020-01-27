@@ -24,7 +24,7 @@ cover: "/media/2019/04/521d3bc39a409ad016ea111cc08c63cb.png"
 
 L'énoncé nous donne deux ports TCP, un service HTTP et un accès SSH. Nous pouvons donc d'ores et déjà supposer que nous trouverons de quoi nous connecter en SSH via le site Web.
 
-{{< img alt="Page d'accueil ZedCorp" src="/media/2019/04/f985a3e2f9df45bc87ae58c729e769a6.png" >}}
+{{< img-post alt="Page d'accueil ZedCorp" path="/media/2019/04" file="f985a3e2f9df45bc87ae58c729e769a6.png" >}}
 
 En cherchant un peu sur le site, nous pouvons remarquer la présence d'un fichier `robots.txt` qui nous donne des pistes à creuser, notamment le répertoire `logs`.
 
@@ -39,7 +39,7 @@ Disallow: /images
 
 Fort heureusement, l'auteur du challenge à été gentil et nous a laissé du Directory Listing. Nous avons donc 8 fichiers de logs :
 
-{{< img alt="Répertoire /logs" src="/media/2019/04/4e60273c13a50766930ae339ae340310.png" >}}
+{{< img-post alt="Répertoire /logs" path="/media/2019/04" file="4e60273c13a50766930ae339ae340310.png" >}}
 
 Dans le fichier `access-details.log`, nous trouvons des échanges HTTP complet, dont plusieurs tentatives d'authentification sur http://ctf.hacklab-esgi.org:5008/login.php :
 
@@ -265,7 +265,7 @@ Il ne nous reste plus que le Tomcat : http://10.0.0.2:8080/
 
 Le serveur Tomcat nous donne accès à la TODO-list de _ZedCorp_ :
 
-{{< img alt="TODO-list ZedCorp" src="/media/2019/04/9d417b0cb15a89426450957da034b3eb.png" >}}
+{{< img-post alt="TODO-list ZedCorp" path="/media/2019/04" file="9d417b0cb15a89426450957da034b3eb.png" >}}
 
 Dans la liste des choses à faire, nous notons que le formulaire d'authentification du serveur d'administration présente un bug. En effet, la page http://10.0.0.3/index.php renvoyait, en plus de l'erreur 401, le formulaire d'authentification du site.
 
@@ -380,7 +380,7 @@ Logiquement, le compte **user** possède le statut `user` et le compte **admin**
 
 En modifiant la valeur du cookie par **ceo** (`status=Y2Vv`), nous obtenons une page avec plusieurs liens vers des documents PDF, dont un qui nous intéresse ici : http://10.0.0.3/273181bb39e87be4fe872ae250ec428ff55f0e0ef937999114248d1dfd4a6f74/rizone.pdf.
 
-{{< img alt="FLAG" src="/media/2019/04/f878ab48c6e042afef6f05a0cc6993d6.png" >}}
+{{< img-post alt="FLAG" path="/media/2019/04" file="f878ab48c6e042afef6f05a0cc6993d6.png" >}}
 
     ESGI{W3_H0p3_t0_S33_y0u_N3xT_Y34R}
 

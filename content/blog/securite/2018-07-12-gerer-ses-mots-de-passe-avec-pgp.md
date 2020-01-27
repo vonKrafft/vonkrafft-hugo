@@ -17,7 +17,7 @@ Si de nouvelles méthodes d'authentification font peu à peu leur apparition, le
 
 <!--more-->
 
-{{< img src="/media/2018/07/12df53fea8b3adfa6c2ec456dd22e204.jpg" link="/media/2018/07/12df53fea8b3adfa6c2ec456dd22e204.jpg" >}}
+{{< img-link path="/media/2018/07" file="12df53fea8b3adfa6c2ec456dd22e204.jpg" link="/media/2018/07/12df53fea8b3adfa6c2ec456dd22e204.jpg" >}}
 
 ## Une avalanche de mots de passe
 
@@ -32,12 +32,12 @@ Vous l'aurez compris, ce n'est pas facile de jongler avec cette multitude de mot
 
 Bien sûr, en plus de choisir un mot de passe maître robuste (une passphrase de plus de 20 caractères faisant l'affaire), il convient de bien choisir son gestionnaire de mot de passe afin de sélectionner un éditeur de confiance utilisant des algorithmes de chiffrement éprouvés. Parmi les gestionnaires les plus utilisés, je pourrais citer [KeePass](https://keepass.info/), [1Password](https://1password.com/), [LastPass](https://www.lastpass.com/fr) ou encore [Dashlane](https://www.dashlane.com/).
 
-{{% gallery columns="4" %}}
-{{< gallery_item src="/media/2018/07/55df45851ba0b5217648e7f6781cfe51-150x150.png" >}}
-{{< gallery_item src="/media/2018/07/ef9c4dbcfa0b6025c36f40ab2dfc02bf-150x150.png" >}}
-{{< gallery_item src="/media/2018/07/d08f7c91fcf5bd23107a3e9bef4b3bea-150x150.png" >}}
-{{< gallery_item src="/media/2018/07/8177e32666901164e845c4829dd6a72d-150x150.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "" "55df45851ba0b5217648e7f6781cfe51-150x150.png" ""
+    "" "ef9c4dbcfa0b6025c36f40ab2dfc02bf-150x150.png" ""
+    "" "d08f7c91fcf5bd23107a3e9bef4b3bea-150x150.png" ""
+    "" "8177e32666901164e845c4829dd6a72d-150x150.png" ""
+    "/media/2018/07" "nowrap" "" >}}
 
 ## Chiffrer nos mots de passe
 
@@ -126,7 +126,7 @@ son navigateur ...
 
 Nos mots de passe sont à présent protégés chiffrés avec nos clés PGP, bien organisés dans `~/.password-store`, et nous disposons de plusieurs commandes pour gérer leur organisation. Mais gérer ses mots de passe au travers d'un émulateur de terminal n'est pas forcément au goût de chacun et il serait agréable de bénéficier d'une interface graphique pour `pass`. C'est ce que propose [QtPass](), en se basant sur `git`/`gpg` ou bien sur `pass`.
 
-{{% img src="/media/2018/07/ace5cefdb350559e106bedfd03b3ee4d.png" link="/media/2018/07/ace5cefdb350559e106bedfd03b3ee4d.png" %}}
+{{% img-link path="/media/2018/07" file="ace5cefdb350559e106bedfd03b3ee4d.png" link="/media/2018/07/ace5cefdb350559e106bedfd03b3ee4d.png" %}}
 
 ## Nos mots de passe nomades avec Android
 
@@ -134,11 +134,11 @@ Un gestionnaire de mot de passe sur son PC, c'est pratique. Mais lorsqu'il s'agi
 
 L'implémentation de `pass` sur Android est [Password Store](https://play.google.com/store/apps/details?id=com.zeapo.pwdstore). Pour les curieux, le code source de l'application est disponible sur [GitHub zeapo/Android-Password-Store](https://github.com/zeapo/Android-Password-Store).
 
-{{% gallery columns="3" title="Application Password Store pour Android" %}}
-{{< gallery_item src="/media/2018/07/cfeb30ebaab19c8e177d372eea3ccfa3-300x533.png" link="/media/2018/07/cfeb30ebaab19c8e177d372eea3ccfa3.png" >}}
-{{< gallery_item src="/media/2018/07/45e3706caddbbcf13c47fec36a40d4d1-300x533.png" link="/media/2018/07/45e3706caddbbcf13c47fec36a40d4d1.png" >}}
-{{< gallery_item src="/media/2018/07/e0ab24074a3b1be066c969707ad99170-300x535.png" link="/media/2018/07/e0ab24074a3b1be066c969707ad99170.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2018/07/cfeb30ebaab19c8e177d372eea3ccfa3.png" "cfeb30ebaab19c8e177d372eea3ccfa3-300x533.png" ""
+    "/media/2018/07/45e3706caddbbcf13c47fec36a40d4d1.png" "45e3706caddbbcf13c47fec36a40d4d1-300x533.png" ""
+    "/media/2018/07/e0ab24074a3b1be066c969707ad99170.png" "e0ab24074a3b1be066c969707ad99170-300x535.png" ""
+    "/media/2018/07/" "nowrap" "Application Password Store pour Android" >}}
 
 Cela permet de synchroniser ses mots de passe avec Git et de gérer leur stockage sur le téléphone. Bien sûr, il vous faudra une clé PGP sur votre téléphone et vous aurez besoin pour cela de l'application [OpenKeychain](https://play.google.com/store/apps/details?id=org.sufficientlysecure.keychain) afin de générer et utiliser une clé PGP. Cette application est également compatible avec les [Yubikey](/console/pgp-generer-des-cles-et-configurer-une-yubikey/) et il vous suffira d'utiliser NFC
 et votre Yubikey à chaque fois que vous aurez besoin de déchiffrer un mot de passe.

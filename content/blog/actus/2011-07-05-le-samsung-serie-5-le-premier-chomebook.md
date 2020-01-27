@@ -15,7 +15,7 @@ Le Samsung Serie 5 n’est autre que le premier ordinateur portable qui embarque
 
 <!--more-->
 
-{{< img src="/media/2011/07/a7981129e6936e7c4eb21b9b4aa96914.png" link="/media/2011/07/a7981129e6936e7c4eb21b9b4aa96914.png" >}}
+{{< img-link path="/media/2011/07" file="a7981129e6936e7c4eb21b9b4aa96914.png" link="/media/2011/07/a7981129e6936e7c4eb21b9b4aa96914.png" >}}
 
 ## Caractéristiques du Samsung Serie 5
 

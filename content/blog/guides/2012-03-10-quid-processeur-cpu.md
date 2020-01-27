@@ -65,15 +65,15 @@ Les principaux processeurs multi-cœur AMD et Intel les plus récents sont les s
 - **Huit cœurs** : AMD FX et AMD Opteron.
 - **Douze cœurs** : AMD Opteron.
 
-{{< img src="/media/2012/03/ee18b896cc5899bec1f776840dbec215.jpg" >}}
-{{< img src="/media/2012/03/42c1b10b6c736953a0c1756258ad74cb.jpg" >}}
+{{< img-post path="/media/2012/03" file="ee18b896cc5899bec1f776840dbec215.jpg" >}}
+{{< img-post path="/media/2012/03" file="42c1b10b6c736953a0c1756258ad74cb.jpg" >}}
 
 ## Le socket
 
 En fonction du socket que vous allez choisir, vous devrez acheter une carte mère compatible avec celui-ci. Actuellement, les sockets les plus fréquents sont les AM3 (AMD), LGA1155 et LGA1156 (Intel). Mais on trouve également des sockets AM2 et AMD2+ (AMD) et des sockets LGA775, LGA1366 et LGA2011 (Intel).
 Pour plus d’info, voir l’article sur les [cartes mères](/guides/quid-carte-mere/).
 
-{{< img src="/media/2012/03/639a82223fa951396ed4bf99e9c4eb20.jpg" >}}
+{{< img-post path="/media/2012/03" file="639a82223fa951396ed4bf99e9c4eb20.jpg" >}}
 
 ## Un processeur pour chaque utilisation
 

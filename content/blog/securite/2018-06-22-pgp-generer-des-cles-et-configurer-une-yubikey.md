@@ -15,7 +15,7 @@ cover: "/media/2018/06/3d693b8cc27de08455d746df6295da08.jpg"
 
 Ayant récemment acquis une [Yubikey NEO](https://www.yubico.com/product/yubikey-neo/), j'ai souhaité me créer de (nouvelles) clés GPG, les stocker sur ma Yubikey et configurer l'authentification SSH pour utiliser la clé présente sur la Yubikey. Après avoir lu pas mal d'articles et croisé les différentes sources qui étaient parfois incomplètes ou dédiées à d'autres environnement UNIX, je suis enfin parvenu à configurer ma clé. Je regroupe ici les différentes étapes qui m'ont permis d'y arriver (on ne sait jamais, ça pourra servir à d'autres, ou me resservir si je dois configurer un nouveau PC ou reformater ma Yubikey).
 
-{{< img src="/media/2018/06/3d693b8cc27de08455d746df6295da08.jpg" >}}
+{{< img-post path="/media/2018/06" file="3d693b8cc27de08455d746df6295da08.jpg" >}}
 
 <!--more-->
 
@@ -36,7 +36,7 @@ Une clé PGP n'est pas simplement une bi-clé publique/privée comme le sont les
 - Une ou plusieurs **identités secondaires** optionnelles : Si généralement le nom est le même pour toutes les identités (je ne vous prive pas de vous inventer des surnoms), il est commun d'associer plusieurs adresses email à la clé PGP.
 - Éventuellement des **sous-clés** : il s'agit là aussi de bi-clé utilisées pour signer, chiffrer ou s'authentifier. Ces clés sont certifiées par la clé primaire.
 
-{{< img src="/media/2018/06/e91ebb5eb00250a74a0ebfe7450bfa2f.png" >}}
+{{< img-post path="/media/2018/06" file="e91ebb5eb00250a74a0ebfe7450bfa2f.png" >}}
 
 On peut se rendre compte qu'une clé PGP est en réalité une véritable structure pouvant contenir une ou plusieurs bi-clés ainsi que des métadonnées concernant le propriétaire de la clé. Initialement, lorsque Zimmermann décrit PGP dans la [RCF 1991](https://tools.ietf.org/html/rfc1991), une clé PGP ne comporte qu'une seule bi-clé. Lorsque la notion de sous-clés a été ajouté, le terme de "clé PGP" au singulier est resté.
 

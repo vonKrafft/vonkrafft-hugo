@@ -21,13 +21,13 @@ La mémoire vive bénéficie d’une connexion privilégiée avec le processeur 
 
 Lorsque vous monter ou achetez un PC, ne vous privez donc pas de mémoire vive. Actuellement, la majorité des ordinateur, portables ou fixes, disposent de 4 Go de mémoire vive,  les Netbook et autres petits PC sont souvent dotés de 1 ou 2 Go ce qui suffit à la majorité des usages. Toutefois, pour une utilisation plus intense, comme le jeu ou le graphisme 3D, préférez 8 Go de RAM ou plus.
 
-{{< img src="/media/2012/01/4970b20d9e382c16cfcc1712e1dba3f5-300x117.png" link="/media/2012/01/4970b20d9e382c16cfcc1712e1dba3f5.png" >}}
+{{< img-link path="/media/2012/01" file="4970b20d9e382c16cfcc1712e1dba3f5-300x117.png" link="/media/2012/01/4970b20d9e382c16cfcc1712e1dba3f5.png" >}}
 
 ## Format, Norme et CAS Lacency
 
 Le format de la mémoire vive est imposé par la carte mère. Celui a évoluer au fil du temps en passant de la SDRAM, DDR, DDR2 à la DDR3. La DDR2, longtemps utilisée, est encore très présente mais tous les PC actuellement sur le marché l’ont troqués contre la DDR3, plus rapide. A ce format s’ajour le modèle de la mémoire, DIMM pour les ordinateur de bureau, SO-DIMM pour les ordinateur portable.
 
-{{< img src="/media/2012/01/26f3fa7e1e45cd50273eef044d333d64-300x82.png" link="/media/2012/01/26f3fa7e1e45cd50273eef044d333d64.png" >}}
+{{< img-link path="/media/2012/01" file="26f3fa7e1e45cd50273eef044d333d64-300x82.png" link="/media/2012/01/26f3fa7e1e45cd50273eef044d333d64.png" >}}
 
 Caque format de RAM est décliné en plusieurs normes impactant sur leurs performances. Ces déclinaisons sont portées principalement sur les fréquences de fonctionnement. Ainsi, de la DDR3 PC3-14400 (1800 MHz) présente des taux de transfert moins élevé que de la DDR3 PC3-10600 (1333 MHz). Généralement, les mémoires à hautes fréquences ne sont pas beaucoup plus chères et il est préférable d’opter pour ces dernières. En effet, elles sont souvent rétro compatible et fonctionneront à la fréquence la plus élevée imposée par votre carte mère ou votre processeur.
 

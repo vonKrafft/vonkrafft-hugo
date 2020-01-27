@@ -26,7 +26,7 @@ Pour commencer, il faut d’abord se demander ce que l’on voudrait faire avec 
 
 Enfin, pour déterminer votre budget, il faut savoir un ordinateur portable n’a une durée de vie que de 4 ou 5 ans, et que leurs performance croissent de façon exponentielle d’année en année. Par conséquent, il est inutile de débourser trop d’argent dans un PC portable. Il est préférable de limiter son budget et de racheter un autre PC dans 4 ans.
 
-{{< img src="/media/2011/08/7df688935287ced93372cd14640de771.png" link="/media/2011/08/7df688935287ced93372cd14640de771.png" >}}
+{{< img-link path="/media/2011/08" file="7df688935287ced93372cd14640de771.png" link="/media/2011/08/7df688935287ced93372cd14640de771.png" >}}
 
 ## Quelle taille pour mon PC portable ?
 

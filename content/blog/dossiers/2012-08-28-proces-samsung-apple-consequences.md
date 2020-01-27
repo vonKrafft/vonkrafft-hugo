@@ -11,9 +11,9 @@ slug: "proces-samsung-apple-consequences"
 cover: "/media/2012/08/c7161344758092b2199b0e6d03faaf1a-1024x471.jpg"
 ---
 
-{{< img src="/media/2012/08/c7161344758092b2199b0e6d03faaf1a-1024x471.jpg" link="/media/2012/08/c7161344758092b2199b0e6d03faaf1a.jpg" >}}
-
 Le tribunal californien chargé de l’affaire "Samsung-Apple" a rendu ce week-end son [verdict](http://www.scribd.com/fullscreen/103860673?access_key=key-1ho669app2expaa7tptr) et condamne le constructeur coréen à 1,049 milliard de dommages et intérêts. Quant à la firme de Steve Jobs, elle n’écope d’aucunes condamnations. Cette défaite de Samsung aura de lourdes conséquences sur le marché du smartphone.Voilà qui clôture plusieurs mois de débats qui ont secoués la planète numérique : Samsung a été condamné à versé plus d’un milliard de dollars à Apple pour avoir utilisé illégalement plusieurs de ses brevets. Un record pour une affaire de violation de propriété intellectuelle.
+
+{{< img-link path="/media/2012/08" file="c7161344758092b2199b0e6d03faaf1a-1024x471.jpg" link="/media/2012/08/c7161344758092b2199b0e6d03faaf1a.jpg" >}}
 
 <!--more-->
 
@@ -27,7 +27,7 @@ En effet, malgré ce coup dur, le coréen est en mesure de payer et il restera d
 
 Cependant, la principale conséquence de cette victoire d’Apple est qu’elle va faire réfléchir les constructeurs qui proposent des smartphones et des tablettes sous Android. Car à travers Samsung, Apple visait le système d’exploitation de Google. Ainsi, de nombreuse fonctionnalité pourrait disparaitre des terminaux Android, comme la possibilité de zoomer en écartant les doigts, ou encore l’effet rebondissant lorsqu’un utilisateur fait défiler la page jusqu’en bas. «Google ne peut pas arrêter Apple, écrit Florian Mueller sur son blog. Il doit désormais battre en retraite et s'efforcer d'apporter des modifications logicielles à Android» a indiqué Florian Mueller, auteur du blog Foss Patents, et spécialise des brevets. Les constructeurs vont aussi devoir travailler sur l’aspect des terminaux afin de contourner les brevets d’Apple, comme le rectangle à bord arrondis de l’iPhone.
 
-{{< img src="/media/2012/08/e1e18c746d3595e3c1144f25797d4690-300x181.png" alt="iPad vs Galaxy" link="/media/2012/08/e1e18c746d3595e3c1144f25797d4690.png" >}}
+{{< img-link alt="iPad vs Galaxy" path="/media/2012/08" file="e1e18c746d3595e3c1144f25797d4690-300x181.png" link="/media/2012/08/e1e18c746d3595e3c1144f25797d4690.png" >}}
 
 ## Une aubaine pour Microsoft
 
@@ -39,7 +39,7 @@ En attendant les retombés du verdict de ce week-end sur le marché des smartpho
 
 Samsung a aussi déclaré « Le verdict d'aujourd'hui ne doit pas être considéré comme une victoire pour Apple, mais comme une perte pour le consommateur américain. Elle conduira à moins de choix, moins d'innovation ». Le coréen s’indigne devant le verdict du jury californien : « Il est regrettable que les droits des brevets puissent être manipulés pour donner à une entreprise un monopole sur les rectangles à coins arrondis, ou sur des technologies améliorées chaque jour par Samsung et d'autres sociétés. »
 
-{{< img src="/media/2012/08/0fd2503926a217d2e75988def9ed8450-300x174.png" link="/media/2012/08/0fd2503926a217d2e75988def9ed8450.png" >}}
+{{< img-link path="/media/2012/08" file="0fd2503926a217d2e75988def9ed8450-300x174.png" link="/media/2012/08/0fd2503926a217d2e75988def9ed8450.png" >}}
 
 Enfin, Samsung affirme que la guerre contre la marque à la pomme n’est pas terminée, « Ce n'est pas le dernier mot dans cette affaire ou dans les batailles qui se livrent dans les tribunaux à travers le monde, dont certains ont déjà rejeté plusieurs des revendications d'Apple. Samsung continuera à innover et à offrir des choix pour le consommateur. ».
 

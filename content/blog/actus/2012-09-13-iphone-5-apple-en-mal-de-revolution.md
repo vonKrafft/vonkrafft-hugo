@@ -15,7 +15,7 @@ Bientôt un an que Steve Jobs a quitté ce monde, et Apple. Or, la firme de Cupe
 
 <!--more-->
 
-{{< img src="/media/2012/09/19d088d51aa85332c444fe0f1d4d7ccd.png" alt="Aperçu de l'iPhone 5" link="/media/2012/09/19d088d51aa85332c444fe0f1d4d7ccd.png" >}}
+{{< img-link alt="Aperçu de l'iPhone 5" path="/media/2012/09" file="19d088d51aa85332c444fe0f1d4d7ccd.png" link="/media/2012/09/19d088d51aa85332c444fe0f1d4d7ccd.png" >}}
 
 ## L'iPhone 5 qui réinvente l’iPhone ?
 

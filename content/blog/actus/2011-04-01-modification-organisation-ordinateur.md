@@ -23,7 +23,7 @@ Bien qu’ils soient importants, le processeur, la mémoire vive, la carte graph
 
 Historiquement, le chipset était composé de deux puces principales. La première, le northbridge (pont-nord), dialogue directement avec le processeur grâce à une voie de communication haut débit, le front-side bus (FSB). C’est à lui que l’on confiait les échange les plus rapides : le contrôle de la mémoire vive, le dialogue avec la partie graphique du PC, les interfaces AGP et PCI-Express. La seconde puce, le southbridge (pont-sud), se chargeait des échanges lents, avec les interfaces externes : l’USB, les disques durs, le son, l’Ethernet, etc. … Les deux puces, northbridge et southbridge sont reliées entre elles par une voie de communication dédiée.
 
-{{< img src="/media/2011/04/65d0406686a4c880529679df88ffcad8.jpg" alt="Modification de l'organisation de l'ordinateur" link="/media/2011/04/65d0406686a4c880529679df88ffcad8.jpg" >}}
+{{< img-link alt="Modification de l'organisation de l'ordinateur" path="/media/2011/04" file="65d0406686a4c880529679df88ffcad8.jpg" link="/media/2011/04/65d0406686a4c880529679df88ffcad8.jpg" >}}
 
 ## Bouleversement de cette organisation
 

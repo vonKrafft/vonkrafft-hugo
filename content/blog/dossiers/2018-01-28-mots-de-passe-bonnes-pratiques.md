@@ -15,7 +15,7 @@ Depuis les débuts de l’informatique, le mot de passe est le moyen le répandu
 
 <!--more-->
 
-{{< img src="/media/2018/01/7f81aacab375fb9fb14cc7885fdad12f.png" >}}
+{{< img-post path="/media/2018/01" file="7f81aacab375fb9fb14cc7885fdad12f.png" >}}
 
 Aujourd’hui, avec l’expansion d’Internet et la numérisation des services et des divertissements, nous faisons face à une multitude de sites Web sur lesquels nous avons un espace personnel qu’il nous faut protéger avec un mot de passe. Or, entre l’utilisateur qui, par flemmardise, choisi un mot de passe faible et les sites Web qui chacun de leur côté implémentent une gestion des mots de passe pas toujours au top, nos espaces personnels sur Internet se retrouvent de plus en plus vulnérables.
 
@@ -56,7 +56,7 @@ Vous me direz qu’il suffit de complexifier le mot de passe, par exemple `k4dUj
 
 Bref, un mot de passe ne peut pas à la fois se retenir facilement, respecter la règle de 8 caractères dont 3 types de signes parmi les 4 possibles, et être absent des dictionnaires de mots de passe. Les politiques de mots de passe établies depuis ces dernières années forcent les utilisateurs à choisir des mots de passe difficiles à mémoriser et faciles à casser ...
 
-{{< img src="/media/2018/01/68de6ae4ad54fc3bfc1a8677117dc605.png" alt="xkcd" link="/media/2018/01/68de6ae4ad54fc3bfc1a8677117dc605.png" >}}
+{{< img-link alt="xkcd" path="/media/2018/01" file="68de6ae4ad54fc3bfc1a8677117dc605.png" link="/media/2018/01/68de6ae4ad54fc3bfc1a8677117dc605.png" >}}
 
 Un autre point à prendre en compte est l’entropie. L’entropie correspond à la quantité d’information contenue dans le mot de passe. On peut la comparer à l’incertitude que l’on a sur ce dernier. Il existe plusieurs méthodes pour calculer l’entropie d’un mot de passe, certains calculs prenant en comptes des répétitions de caractères successifs ou encore intégrant des dictionnaires de mots de passe fréquents.
 
@@ -88,18 +88,18 @@ Pour éviter ce genre de mot de passe, on peut envisager l’utilisation de dict
 
 Une solution qui a fait ses preuves est le nudge ([source](https://www.ece.cmu.edu/~lbauer/papers/2012/usenix2012-meters.pdf)). Terme anglais qui n’a pas d’équivalent en français, un nudge est une modification infime de notre environnement qui modifie de façon concrète notre comportement. Sans le savoir, vous en avez déjà croisé :
 
-{{% gallery columns="3" title="Exemples de nudge (en gare, pour encourager l'utilisation des escalier, pour adapter sa vitesse)" %}}
-{{< gallery_item src="/media/2018/01/4f660580d0116a21be0d100add83ee49.png" alt="Guide gare" link="/media/2018/01/4f660580d0116a21be0d100add83ee49.png" >}}
-{{< gallery_item src="/media/2018/01/d1d7e52f82413b010434fa7ec3baf4fb.png" alt="Escaliers piano" link="/media/2018/01/d1d7e52f82413b010434fa7ec3baf4fb.png" >}}
-{{< gallery_item src="/media/2018/01/4edf1d11f265ddfa22bf2ac2f6ec4b43.png" alt="Radar éducatif" link="/media/2018/01/4edf1d11f265ddfa22bf2ac2f6ec4b43.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2018/01/4f660580d0116a21be0d100add83ee49.png" "4f660580d0116a21be0d100add83ee49.png" "Guide gare"
+    "/media/2018/01/d1d7e52f82413b010434fa7ec3baf4fb.png" "d1d7e52f82413b010434fa7ec3baf4fb.png" "Escaliers piano"
+    "/media/2018/01/4edf1d11f265ddfa22bf2ac2f6ec4b43.png" "4edf1d11f265ddfa22bf2ac2f6ec4b43.png" "Radar éducatif"
+    "/media/2018/01/" "nowrap" "Exemples de nudge (en gare, pour encourager l'utilisation des escalier, pour adapter sa vitesse)" >}}
 
 Nous avons vu plus haut la notion d’entropie. On peut facilement mettre en place une échelle qui évolue selon l’entropie du mot de passe saisi par l’utilisateur. Google, KeePass, WordPress et d’autres ont déjà mis en place ce type d’indicateur pour inciter l’utilisateur à choisir un mot de passe fort.
 
-{{% gallery columns="2" %}}
-{{< gallery_item src="/media/2018/01/897181580aa3737af3def1f474307b6f-300x175.png" alt="Nudge Gmail" link="/media/2018/01/897181580aa3737af3def1f474307b6f.png" >}}
-{{< gallery_item src="/media/2018/01/7a57fa91e73a2dc47397fa055e803a10-300x175.png" alt="Nudge KeePass" link="/media/2018/01/7a57fa91e73a2dc47397fa055e803a10.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2018/01/897181580aa3737af3def1f474307b6f.png" "897181580aa3737af3def1f474307b6f-300x175.png" "Nudge Gmail"
+    "/media/2018/01/7a57fa91e73a2dc47397fa055e803a10.png" "7a57fa91e73a2dc47397fa055e803a10-300x175.png" "Nudge KeePass"
+    "/media/2018/01/" "nowrap" "" >}}
 
 ### Les gestionnaire de mot de passe
 
@@ -109,12 +109,12 @@ Une première solution consiste à enregistrer le mot de passe dans le navigateu
 
 L’autre solution est d’utiliser un gestionnaire de mot de passe dédié, tel que KeePass, LastPass, Dashlane, 1Password, etc. Ces gestionnaires vous permettront de générer, gérer et stocker vos mots de passe, ces derniers pouvant alors être longs, complexes et uniques. Vous n’avez plus qu’à retenir un seul mot de passe, celui permettant de déverrouiller votre gestionnaire. Bien évidemment, ce dernier devra être robuste, comme une passphrase par exemple. Pour ce qui est du gestionnaire, je vous laisse choisir parmi ceux qui existent.
 
-{{% gallery columns="4" title="KeePass, LastPass, Dashlane et 1Password" %}}
-{{< gallery_item src="/media/2018/01/a1bcf0f19351f0fa1f9f8e89a49ac1e0-150x150.png" alt="KeePass" link="/media/2018/01/a1bcf0f19351f0fa1f9f8e89a49ac1e0.png" >}}
-{{< gallery_item src="/media/2018/01/72265d7ad91adbfc58fbe93ea8687a55-150x150.png" alt="LastPass" link="/media/2018/01/72265d7ad91adbfc58fbe93ea8687a55.png" >}}
-{{< gallery_item src="/media/2018/01/f11f23a4304b75f7428d21c4f46e189c-150x150.png" alt="Dashlane" link="/media/2018/01/f11f23a4304b75f7428d21c4f46e189c.png" >}}
-{{< gallery_item src="/media/2018/01/91c4c74435e0a2548471d1f6533c102c-150x150.png" alt="1Password" link="/media/2018/01/91c4c74435e0a2548471d1f6533c102c.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2018/01/a1bcf0f19351f0fa1f9f8e89a49ac1e0.png" "a1bcf0f19351f0fa1f9f8e89a49ac1e0-150x150.png" "KeePass"
+    "/media/2018/01/72265d7ad91adbfc58fbe93ea8687a55.png" "72265d7ad91adbfc58fbe93ea8687a55-150x150.png" "LastPass"
+    "/media/2018/01/f11f23a4304b75f7428d21c4f46e189c.png" "f11f23a4304b75f7428d21c4f46e189c-150x150.png" "Dashlane"
+    "/media/2018/01/91c4c74435e0a2548471d1f6533c102c.png" "91c4c74435e0a2548471d1f6533c102c-150x150.png" "1Password"
+    "/media/2018/01/" "nowrap" "KeePass, LastPass, Dashlane et 1Password" >}}
 
 ## La gestion des mots de passes coté serveur
 

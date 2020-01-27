@@ -23,7 +23,7 @@ Depuis, les problèmes sont résolus et je voulais vous partager l’exploitatio
 
 Tout d'abord, j'ai accès à la page suivante : [http://champions.fr/.git/](http://champions.fr/.git/). Comme je l’ai dit plus haut, j’ai du directory listing. L’exploitation d’un git peut se faire sans directory listing mais c’est plus facile lorsque l'on peut lister le contenu des répertoires car aucun outil ou script particulier n'est nécessaire. Sans directory listing, il nous faudra utiliser un script tel que [DVCS Pillage Toolkit](https://github.com/evilpacket/DVCS-Pillage).
 
-{{< img src="/media/2017/03/733aa40510c54d3875c3989cd65fe2e1-1024x468.png" alt="Directory listing du .git" link="/media/2017/03/733aa40510c54d3875c3989cd65fe2e1.png" >}}
+{{< img-link alt="Directory listing du .git" path="/media/2017/03" file="733aa40510c54d3875c3989cd65fe2e1-1024x468.png" link="/media/2017/03/733aa40510c54d3875c3989cd65fe2e1.png" >}}
 
 Pour « cloner » le dépôt en local, il me suffit de télécharger récursivement tous les fichiers du répertoire git :
 
@@ -41,7 +41,7 @@ Je me retrouve avec un dépôt git en local. Cependant, j'ai seulement récupér
 root:~/champion.fr(git:stable_prod)# git reset --hard
 {{< /highlight >}}
 
-{{< img src="/media/2017/03/0a95e43f86e9262e800fea6b27b3d11f.png" alt="Directory listing du .git" link="/media/2017/03/0a95e43f86e9262e800fea6b27b3d11f.png" >}}
+{{< img-link alt="Directory listing du .git" path="/media/2017/03" file="0a95e43f86e9262e800fea6b27b3d11f.png" link="/media/2017/03/0a95e43f86e9262e800fea6b27b3d11f.png" >}}
 
 Bon, on ne parlera pas des webshells qui ont été versionnés, des dumps de base de données ou bien encore du « .bash_history » ni de « .ssh » (oui, c’est vraiment dégueulasse comme site …)
 
@@ -53,7 +53,7 @@ Ce qui nous intéresse (en plus du code source naturellement), c’est de savoir
 root:~/champion.fr(git:stable_prod)# git checkout $(git rev-list -n 1 HEAD -- wp-config.php)^ -- wp-config.php
 {{< /highlight >}}
 
-{{< img src="/media/2017/03/905262a4583b7b31dfa7ffab7aa80a5a.png" alt="Directory listing du .git" link="/media/2017/03/905262a4583b7b31dfa7ffab7aa80a5a.png" >}}
+{{< img-link alt="Directory listing du .git" path="/media/2017/03" file="905262a4583b7b31dfa7ffab7aa80a5a.png" link="/media/2017/03/905262a4583b7b31dfa7ffab7aa80a5a.png" >}}
 
 Non seulement on a le mot de passe MySQL sur un serveur de dev (pour root), mais aussi celui de la production. Ces comptes et mots de passe peuvent aussi êtres utilisés pour d'autres services, comme par exemple d'authentification Web ou bien la connexion SSH (qui sait ?).
 

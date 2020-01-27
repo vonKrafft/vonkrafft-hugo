@@ -35,13 +35,13 @@ Pour migrer d’une adresse Hotmail.com, Live.com ou Msn.com vers un compte Outl
 
 Pour créer une nouvelle adresse mail Outlook.com, c’est ici : [Outlook.com](https://signup.live.com/signup)
 
-{{% gallery columns="5" title="Tour d'horizon d'Outlook.com (cliquez pour agrandir)" %}}
-{{< gallery_item src="/media/2012/08/fa67a1326d850bc102e9c8e4d6407527-150x150.jpg" link="/media/2012/08/fa67a1326d850bc102e9c8e4d6407527.jpg" >}}
-{{< gallery_item src="/media/2012/08/358de7fbd2b0c61fd45ca37765e817dc-150x150.jpg" link="/media/2012/08/358de7fbd2b0c61fd45ca37765e817dc.jpg" >}}
-{{< gallery_item src="/media/2012/08/5c50ff4a37e4ded8e2b36fc0b697e67e-150x150.jpg" link="/media/2012/08/5c50ff4a37e4ded8e2b36fc0b697e67e.jpg" >}}
-{{< gallery_item src="/media/2012/08/058c1e3be7822bc391a4c80bec038915-150x150.jpg" link="/media/2012/08/058c1e3be7822bc391a4c80bec038915.jpg" >}}
-{{< gallery_item src="/media/2012/08/93cb06da89e231c855cbe1d85db5739e-150x150.jpg" link="/media/2012/08/93cb06da89e231c855cbe1d85db5739e.jpg" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/08/fa67a1326d850bc102e9c8e4d6407527.jpg" "fa67a1326d850bc102e9c8e4d6407527-150x150.jpg" ""
+    "/media/2012/08/358de7fbd2b0c61fd45ca37765e817dc.jpg" "358de7fbd2b0c61fd45ca37765e817dc-150x150.jpg" ""
+    "/media/2012/08/5c50ff4a37e4ded8e2b36fc0b697e67e.jpg" "5c50ff4a37e4ded8e2b36fc0b697e67e-150x150.jpg" ""
+    "/media/2012/08/058c1e3be7822bc391a4c80bec038915.jpg" "058c1e3be7822bc391a4c80bec038915-150x150.jpg" ""
+    "/media/2012/08/93cb06da89e231c855cbe1d85db5739e.jpg" "93cb06da89e231c855cbe1d85db5739e-150x150.jpg" ""
+    "/media/2012/08/" "nowrap" "Tour d'horizon d'Outlook.com (cliquez pour agrandir)" >}}
 
 ## De nouvelles fonctionnalités à venir
 

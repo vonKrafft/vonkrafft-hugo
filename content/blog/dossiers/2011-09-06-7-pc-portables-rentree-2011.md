@@ -17,7 +17,7 @@ Pour bien débuter la rentrée, voici en complément du [guide d'achat PC portab
 
 ### Un Netbook-tablette innovant
 
-{{< img src="/media/2011/09/62a9aa98084064e2f1bba8c6af8fd6bc.png" class="pull-right">}}
+{{< img-post path="/media/2011/09" file="62a9aa98084064e2f1bba8c6af8fd6bc.png" type="right" >}}
 
 Utilisable comme tablette tactile, elle cache un clavier coulissant AZERTY et permet donc de passer à une saisie efficace et rapide en une seconde. A la fois tablette tactile haut de gamme (NVIDIA Tegra 2 double cœur, écran 10.1 HD, Android 3.2) mais également Netbook multimédia, la Slider est la solution tout-en-un futée. 
 
@@ -32,7 +32,7 @@ Utilisable comme tablette tactile, elle cache un clavier coulissant AZERTY et pe
 
 ### Un portable pour tous les goûts
 
-{{< img src="/media/2011/09/3da8528b25535defae36f227a56b7fe5.png" class="pull-right">}}
+{{< img-post path="/media/2011/09" file="3da8528b25535defae36f227a56b7fe5.png" type="right" >}}
 
 Equipé un processeur Sandy Bridge de 2 GHz et de 2 Go de RAM, ce portable à la particularité d’être livré sans système d’exploitation, ce qui vous permet de choisir celui que vous voulez ou bien de recycler une vieille licence Windows.
 
@@ -45,7 +45,7 @@ Equipé un processeur Sandy Bridge de 2 GHz et de 2 Go de RAM, ce portable à la
 
 ### Un premier prix familial
 
-{{< img src="/media/2011/09/53eb5fea4b04dad4e3c2aa3c55acab1e.png" class="pull-right">}}
+{{< img-post path="/media/2011/09" file="53eb5fea4b04dad4e3c2aa3c55acab1e.png" type="right" >}}
 
 Avec 750 Go de disque dur et un écran de 17,3 pouces, à ce prix, ce PC est tentant. Idéal pour la bureautique et internet, il vous permettra aussi de profiter de vos musiques et vidéos. Seul limitation, le jeu : son circuit graphique intégré au Core i3 ne lui permet pas de fait tourner les jeux les plus gourmands.
 
@@ -58,7 +58,7 @@ Avec 750 Go de disque dur et un écran de 17,3 pouces, à ce prix, ce PC est ten
 
 ### La performance à un prix abordable
 
-{{< img src="/media/2011/09/026fbdc9f6bef0d5bab75a45ecf4d253.png" class="pull-right">}}
+{{< img-post path="/media/2011/09" file="026fbdc9f6bef0d5bab75a45ecf4d253.png" type="right" >}}
 
 Ce modèle 15,6 pouces propose un excellent rapport qualité/prix. Doté d’un processeur Core i5 à 2,53 GHz et de 4 Go de RAM, ce portable  vous épaulera dans toutes vos tâches quotidiennes et vous permettra aussi de jouer aux jeux peu gourmands.
 
@@ -70,7 +70,7 @@ Ce modèle 15,6 pouces propose un excellent rapport qualité/prix. Doté d’un 
 
 ### Puissamment joueur
 
-{{< img src="/media/2011/09/92b6d704e315d69353d6d9cfe6160cff.png" class="pull-right">}}
+{{< img-post path="/media/2011/09" file="92b6d704e315d69353d6d9cfe6160cff.png" type="right" >}}
 
 Une AMD Radeon dernier cri, un processeur Core i7 puissant, le tout épaulé par 6 Go de mémoire vive DDR3, telle est la recette de ce portable HP qui pourra animer sans broncher les jeux actuels.
 
@@ -82,7 +82,7 @@ Une AMD Radeon dernier cri, un processeur Core i7 puissant, le tout épaulé par
 
 ### Travailler en déplacements
 
-{{< img src="/media/2011/09/5bedbaa64b23065ba707249b265caca6.png" class="pull-right">}}
+{{< img-post path="/media/2011/09" file="5bedbaa64b23065ba707249b265caca6.png" type="right" >}}
 
 Livré avec Windows 7 Professionnel, ce PC de Sony et équipé un processeur Sandy Bridge de 2,1 GHz et de 4 Go de RAM, ce qui permet à un professionnel mobile de continuer à travailler.
 
@@ -93,7 +93,7 @@ Livré avec Windows 7 Professionnel, ce PC de Sony et équipé un processeur San
 
 ### Quand finesse rime avec performance
 
-{{< img src="/media/2011/09/57c57b0e375b3d956eeb6e6e3029c38e.png" class="pull-right">}}
+{{< img-post path="/media/2011/09" file="57c57b0e375b3d956eeb6e6e3029c38e.png" type="right" >}}
 
 Le MacBook Air reste cette rentrée encore le maitre dans la finesse. Et pour Apple, encombrement minime ne signifie pas performance amoindrie. Intel Core i5, Bluetooth 4, port Thunderbolt, clavier rétroéclairé … Quelques manques demeurent encore présents pour un tel prix, comme une prise Ethernet. Quant aux 2 Go de RAM, pas d’inquiétude, ils suffisent à Mac OS.
 

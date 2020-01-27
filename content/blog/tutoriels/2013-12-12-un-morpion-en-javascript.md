@@ -22,7 +22,7 @@ Le **morpion** est un jeu de réflexion se pratiquant à deux joueurs au tour pa
 - Vous pouvez y jouer sur [cette page](/media/2013/12/8cfd9cdead69b491836fe8caf58234c5/)
 - Vous pouvez télécharger le code source avec [ce lien](/media/2013/12/8cfd9cdead69b491836fe8caf58234c5.zip)
 
-{{< img src="/media/2013/12/8cfd9cdead69b491836fe8caf58234c5.jpg" title="Aperçu du jeu" >}}
+{{< img-post caption="Aperçu du jeu" path="/media/2013/12" file="8cfd9cdead69b491836fe8caf58234c5.jpg" >}}
 
 ## La page HTML
 

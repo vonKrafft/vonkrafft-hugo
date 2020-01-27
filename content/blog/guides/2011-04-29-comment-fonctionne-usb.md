@@ -19,7 +19,7 @@ cover: "/media/2011/04/6a758e155636cd29a0e897e498151f6e.jpeg"
 
 Le port USB est un port universel, c’est le plus utilisé dans l’informatique de tous les jours. Tout d'abord, le port USB a vu le jour en 1990 dans le but de remplacer tous les anciens ports qui commençaient à s'essouffler. Il a connu trois versions depuis sa création : la 1.1 la 2.0 et la 3.0.
 
-{{< img src="/media/2011/04/d756e54c471730bae5a6c5af6dc5faf4.png" link="/media/2011/04/d756e54c471730bae5a6c5af6dc5faf4.png" >}}
+{{< img-post path="/media/2011/04" file="d756e54c471730bae5a6c5af6dc5faf4.png" >}}
 
 - La version 1.1 permet deux modes de fonctionnement :
 	- Low speed à 192 Ko/s pour les claviers et souris, etc.;
@@ -47,10 +47,10 @@ On distingue aussi deux type de port USB :
 
 Il existe encore les ports de type mini A et mini B. On les trouve le plus souvent pour connecter les appareils photos, certaines clés audio USB, etc.
 
-{{% gallery columns="2" title="Schéma du connecteur USB" %}}
-{{< gallery_item src="/media/2011/04/6b45ebaa03b0d371340fc0596a8e56fa.png" link="/media/2011/04/6b45ebaa03b0d371340fc0596a8e56fa.png" >}}
-{{< gallery_item src="/media/2011/04/1f588a9d86faed1fd4f1acf12956170c.png" link="/media/2011/04/1f588a9d86faed1fd4f1acf12956170c.png" >}}
-{{% /gallery %}}
+{{< img-fit
+    "" "6b45ebaa03b0d371340fc0596a8e56fa.png" ""
+    "" "1f588a9d86faed1fd4f1acf12956170c.png" ""
+    "/media/2011/04" "nowrap" "" >}}
 
 {{< alert "info" question-circle >}}Pourquoi y a-t-il deux broches D+ et D- pour transmettre les données (data) alors que c'est un port série ?{{< /alert >}}
 
@@ -67,7 +67,7 @@ En apparence, il reste similaire à la version 2.0, ce qui lui permet entre autr
 
 Mais, s'il conserve les quatre broches classiques de l'USB, cinq viennent s'ajouter permettant ainsi au mode Superspeed d'atteindre un très haut débit : 600 Mo/s tout de même !
 
-{{< img src="/media/2011/04/3107d7e498eebaf742fd42a6e29b3547.jpg" alt="Schéma du connecteur USB 3.0" link="/media/2011/04/3107d7e498eebaf742fd42a6e29b3547.jpg" title="Schéma du connecteur USB 3.0" >}}
+{{< img-post alt="Schéma du connecteur USB 3.0" path="/media/2011/04" file="3107d7e498eebaf742fd42a6e29b3547.jpg" caption="Schéma du connecteur USB 3.0" >}}
 
 Voici les vues de dessus et de profil du connecteur (en coupe) :
 

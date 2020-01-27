@@ -17,7 +17,7 @@ Un serveur Web incluant généralement un **logiciel serveur** (_Nginx_), un **i
 
 {{< alert info github >}}Les fichiers nécessaires et le script de mise en place des containers sont disponibles sur [gist.github.com](https://gist.github.com/vonKrafft/18019dedb49eae01035489bbb9ff856c).{{< /alert >}}
 
-{{< img src="/media/2019/03/49abbcc5707255341cfebe39f9e2b1ce.png" >}}
+{{< img-post alt="Serveur Web avec Docker : Nginx, PHP et PostgreSQL" path="/media/2019/03/" file="49abbcc5707255341cfebe39f9e2b1ce.png" >}}
 
 ## Nginx et PHP FPM
 
@@ -121,7 +121,7 @@ pg_close($dbconn);
 
 Si tous ce passe bien, vous devriez obtenir une erreur ... _wait, what?_
 
-{{< img src="/media/2019/03/762a28c8146467077d7aefd4f33314ad.png" alt="Call to undefined function" link="/media/2019/03/762a28c8146467077d7aefd4f33314ad.png" >}}
+{{< img-post alt="Call to undefined function" path="/media/2019/03/" file="762a28c8146467077d7aefd4f33314ad.png" >}}
 
 ## Personnaliser l'image Docker de PHP
 
@@ -157,7 +157,7 @@ host:~# docker-compose up -d
 
 Si tous ce passe bien, vous devriez obtenir une erreur ... _wait, again?_
 
-{{< img src="/media/2019/03/25f80845da0b1c6c3de60d74036a6324.png" alt="Unable to connect to PostgreSQL server" link="/media/2019/03/25f80845da0b1c6c3de60d74036a6324.png" >}}
+{{< img-post alt="Unable to connect to PostgreSQL server" path="/media/2019/03" file="25f80845da0b1c6c3de60d74036a6324.png" >}}
 
 ## Le container PostgreSQL
 
@@ -215,7 +215,7 @@ host:~# docker-compose up -d
 
 Si tous ce passe bien, vous devriez obtenir une erreur ... Ah non, pas cette fois-ci, maintenant que tout est en place la fonction [`pg_version()`](https://secure.php.net/manual/fr/function.pg-version.php) renvoie les infos des versions client/serveur de PostgreSQL.
 
-{{< img src="/media/2019/03/5f46c66379b93cbc1ec1c6460be50af5.png" alt="Tout fonctionne" link="/media/2019/03/5f46c66379b93cbc1ec1c6460be50af5.png" >}}
+{{< img-post alt="Tout fonctionne" path="/media/2019/03" file="5f46c66379b93cbc1ec1c6460be50af5.png" >}}
 
 ---
 

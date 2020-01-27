@@ -119,7 +119,7 @@ Le site est maintenant accessible sur le port TCP/80 de l'hôte, en local. Cepen
 host:~# echo 'hello world!' > docker-web/www/index.html
 {{< /highlight >}}
 
-{{< img src="/media/2019/02/fc35fdc70d5fc69d269883a822c7a53e.png" alt="index.php" link="/media/2019/02/fc35fdc70d5fc69d269883a822c7a53e.png" >}}
+{{< img-link alt="index.php" path="/media/2019/02" file="fc35fdc70d5fc69d269883a822c7a53e.png" link="/media/2019/02/fc35fdc70d5fc69d269883a822c7a53e.png" >}}
 
 ## Le container PHP
 
@@ -212,7 +212,7 @@ host:~# docker-compose up -d
 
 {{< alert success check-circle >}}It works!{{< /alert >}}
 
-{{< img src="/media/2019/02/3be2a3b771431f2096ff984899869fa6.png" alt="index.php" link="/media/2019/02/3be2a3b771431f2096ff984899869fa6.png" >}}
+{{< img-link alt="index.php" path="/media/2019/02" file="3be2a3b771431f2096ff984899869fa6.png" link="/media/2019/02/3be2a3b771431f2096ff984899869fa6.png" >}}
 
 ---
 

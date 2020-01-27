@@ -100,10 +100,10 @@ Bien sûr, ces paramètres sont à rajouter ou à modifier dans le fichier de co
 
 {{< alert "info" info-circle >}}Ne pas oublier de redémarrer le serveur avec la commande `service nginx restart`{{< /alert >}}
 
-{{% gallery columns="2" %}}
-{{< gallery_item src="/media/2016/05/12df53fea8b3adfa6c2ec456dd22e204-300x186.jpg" link="/media/2016/05/12df53fea8b3adfa6c2ec456dd22e204.jpg" height="150px;" >}}
-{{< gallery_item src="/media/2016/05/ee434023cf89d7dfb21f63d64f0f9d74-150x150.png" link="/media/2016/05/ee434023cf89d7dfb21f63d64f0f9d74.png" height="150px;" >}}
-{{% /gallery %}}
+{{< img-fit
+    "" "12df53fea8b3adfa6c2ec456dd22e204-150x150.jpg" ""
+    "" "ee434023cf89d7dfb21f63d64f0f9d74-150x150.png" ""
+    "/media/2016/05/" "nowrap" "" >}}
 
 ## Conclusion
 

@@ -17,7 +17,7 @@ Clé de voute de l'ordinateur, la carte mère est le composant qu'il faut choisi
 
 ## Le format
 
-{{< img src="/media/2012/02/3ac0fe454169b8241246695c8ae1655c-294x300.jpg" link="/media/2012/02/3ac0fe454169b8241246695c8ae1655c.jpg" class="pull-right">}}
+{{< img-link alt="Motherboard" path="/media/2012/02" file="3ac0fe454169b8241246695c8ae1655c-294x300.jpg" link="/media/2012/02/3ac0fe454169b8241246695c8ae1655c.jpg" type="right" >}}
 
 Le choix d’une carte mère débute par le choix d’un format. En effet, la taille de votre carte mère sera plus ou moins importante selon la taille de votre boîtier ou le nombre de composant que vous souhaitez y intégrer. Voici une liste non exhaustive des différents formats de cartes mère :
 
@@ -27,7 +27,7 @@ Le choix d’une carte mère débute par le choix d’un format. En effet, la ta
 - **ITX** (21,5 x 19,5 cm) : Lancé par Via, ce format extrêmement compact est destiné au mini-PC. Economie de place, mais moins d’évolutivité : les cartes ITX ne sont souvent équipées que d’un ou deux connecteurs RAM et d’un ou zéro slot d’extension. Ses dérivées sont le Mini-ITX (17,0 x 17,0 cm) et le Nano-ITX (12,0 x 12,0 cm).
 - **DTX** (24,8 x 20,3) : Denier format lancé sur le marché par AMD, il a été conçu pour les petits PC à faible dissipation thermique. Son dérivé est le Mini-DTX (17,0 x 20,3 cm).
 
-{{< img src="/media/2012/02/c2e338655906d806345b2748ce291bb3-1024x313.jpg" link="/media/2012/02/c2e338655906d806345b2748ce291bb3.jpg" >}}
+{{< img-link path="/media/2012/02" file="c2e338655906d806345b2748ce291bb3-1024x313.jpg" link="/media/2012/02/c2e338655906d806345b2748ce291bb3.jpg" >}}
 
 ## Le socket
 
@@ -36,7 +36,7 @@ C’est lui qui impose ou qui est imposé par le modèle du processeur. Vous ave
 - **AMD** : Les plus utilisés actuellement sont les sockets AM3 et AM3+. Ils ont remplacé les sockets AM2 et AM2+ qu’utilisaient les anciens processeurs AMD. Pour les processeurs avec cœur graphique intégré, AMD utilise le socket FM1.
 - **Intel** : Les sockets actuels sont tous de la gamme LGA. On y trouve le LGA775 vieillissant, les LGA1156 et LGA1155 largement utilisés par la plupart des processeurs Intel. Le LGA1155 est destiné aux processeurs avec cœur graphique intégré. On trouve aussi les LGA1366 et LGA2011 conçus pour les processeurs haut de gamme.
 
-{{< img src="/media/2012/02/89c97c8c5d88b4123df891dd15c15fda.jpg" link="/media/2012/02/89c97c8c5d88b4123df891dd15c15fda.jpg" >}}
+{{< img-link path="/media/2012/02" file="89c97c8c5d88b4123df891dd15c15fda.jpg" link="/media/2012/02/89c97c8c5d88b4123df891dd15c15fda.jpg" >}}
 
 ## Composants intégrés à la carte mère
 
@@ -53,7 +53,7 @@ Cependant, les composants intégrés sont souvent de piètre qualité face à un
 
 La connectique externe découle du nombre de composants intégrés à la carte mère (voir plus haut) et varie peu d’un modèle à un autre. On y retrouve de l’USB (maintenant USB 3.0), les prises son (généralement six), la ou les prises Ethernet. Dans le cas des cartes graphique intégrées, on trouve aussi des ports VGA, DVI, HDMI et parfois DisplayPort. On peut aussi trouver un port parallèle pour les anciennes imprimantes et des ports PS/2 pour le clavier et la souris.
 
-{{< img src="/media/2012/02/9730d78e6c918c716e7cd0f2dbc047fb.jpg" link="/media/2012/02/9730d78e6c918c716e7cd0f2dbc047fb.jpg" >}}
+{{< img-link path="/media/2012/02" file="9730d78e6c918c716e7cd0f2dbc047fb.jpg" link="/media/2012/02/9730d78e6c918c716e7cd0f2dbc047fb.jpg" >}}
 
 Mais une carte mère sert avant tout à lier les autres composants entre eux. C’est pour cette raison qu’elle dispose de plus ou moins de ports internes, en fonction de son format et de son chipset (voir plus bas). Ces ports internes rendent la carte mère plus ou moins évolutive et sont donc un important critère de choix.
 
@@ -72,4 +72,4 @@ Le chipset est un ensemble de puces qui gère une grande partie du transit de l�
 
 Le choix du chipset est important car il détermine le nombre et la nature des connecteurs internes et externes. Il ne faut donc en aucun cas le négliger.
 
-{{< img src="/media/2012/02/99d05faf07be40020241c6c3cc60705c-300x240.jpg" link="/media/2012/02/99d05faf07be40020241c6c3cc60705c.jpg" >}}
+{{< img-link path="/media/2012/02" file="99d05faf07be40020241c6c3cc60705c-300x240.jpg" link="/media/2012/02/99d05faf07be40020241c6c3cc60705c.jpg" >}}

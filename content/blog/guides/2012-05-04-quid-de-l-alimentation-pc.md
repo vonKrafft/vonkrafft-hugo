@@ -28,7 +28,7 @@ Le choix de la puissance est délicat : à la fois assez mais pas trop. Afin d'e
 
 La politique actuelle en matière d’économie d’énergie a poussé les constructeurs à améliorer le rendement de leurs alimentations. Aujourd’hui, la quasi-totalité des alimentations sont certifiées 80 Plus mais plusieurs niveaux de performance existent.
 
-{{< img src="/media/2012/05/5f9732539f95eb20add06781b41d99d4-300x68.jpg" >}}
+{{< img-post path="/media/2012/05" file="5f9732539f95eb20add06781b41d99d4-300x68.jpg" >}}
 
 La certification 80 Plus est un label attribué aux alimentations ayant un rendement supérieur à 80% lors d’une utilisation à 20%, 50% et 100% de charge. Pour faire simple, le rendement est rapport entre la puissance consommée et la puissance fournie : si vos composants ont besoin de 350 watts, et bien votre PC consommera (350 x 100) / 80 = 437 watts, donc vous perdez 87 watts et plus le rendement est élevé, moins vous perdez d’énergie !
 
@@ -61,7 +61,7 @@ Voici une liste non exhaustive des connecteurs d’alimentation :
 - Le connecteur molex pour les lecteurs. Aujourd’hui largement remplacé par le SATA, il est commun au disque dur et au lecteur CD/DVD.
 - Le connecteur pour le lecteur de disquette, encore parfois présent par nostalgie sans doute.
 
-{{< img src="/media/2012/05/25bab96841a4c520268fd1eb78faec26.jpg" title="Connecteurs 20+4 broches, 12V 4+4 broches, SATA, PCI 6+2 broches, molex, disquette" >}}
+{{< img-post caption="Connecteurs 20+4 broches, 12V 4+4 broches, SATA, PCI 6+2 broches, molex, disquette" path="/media/2012/05" file="25bab96841a4c520268fd1eb78faec26.jpg" >}}
 
 Enfin, même si la majorité des alimentations propose des connecteurs inamovibles, il existe des alimentions, dites modulaires, qui permettent de n’utiliser uniquement les connecteurs nécessaires. En effet, chaque cordon de connecteurs peut se détacher du bloc d’alimentation ce qui permet de minimiser le noble de câble dans la tour afin d’améliorer le trafic de l’air.
 
@@ -69,11 +69,11 @@ Enfin, même si la majorité des alimentations propose des connecteurs inamovibl
 
 La norme de l'alimentation est déterminée par le boîtier dans lequel elle va prendre place. La plus courante les l’ATX. Mais celle-ci se décline en plusieurs normes apparus au fil du temps avec les nouveaux besoins des composants. La plus récente les l’ATX 2.3. D’autres boitiers plus exotiques nécessitent une norme particulière telles que le Flex-ATX ou l’EPS, le SFX ou le TFX.
 
-{{% gallery columns="3" title="Alimentation ATX, Flex ATX et TFX" %}}
-{{< gallery_item src="/media/2012/05/3943f9b57c4a193c4fdb822a79f8c169-300x225.jpg" link="/media/2012/05/3943f9b57c4a193c4fdb822a79f8c169.jpg" >}}
-{{< gallery_item src="/media/2012/05/84a98f30e431e616cb9afbccc2470721.jpg" link="/media/2012/05/84a98f30e431e616cb9afbccc2470721.jpg" >}}
-{{< gallery_item src="/media/2012/05/415c96672a562cab3f4b831411411eab-300x248.jpg" link="/media/2012/05/415c96672a562cab3f4b831411411eab.jpg" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/05/3943f9b57c4a193c4fdb822a79f8c169.jpg" "3943f9b57c4a193c4fdb822a79f8c169-300x225.jpg" ""
+    "/media/2012/05/84a98f30e431e616cb9afbccc2470721.jpg" "84a98f30e431e616cb9afbccc2470721.jpg" ""
+    "/media/2012/05/415c96672a562cab3f4b831411411eab.jpg" "415c96672a562cab3f4b831411411eab-300x248.jpg" ""
+    "/media/2012/05/" "nowrap" "Alimentation ATX, Flex ATX et TFX" >}}
 
 ### La ventilation
 

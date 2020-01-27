@@ -13,7 +13,7 @@ cover: "/media/2017/12/f99dc7883dc86099da307531d273ada6.png"
 
 Lorsque l'on ajoute des illustrations a un article sur un site Web, il est important de bien la dimensionner : une image trop petite sera soit floue soit illisible, tandis qu'une image trop grande sera trop longue à charger.
 
-{{< img src="/media/2017/12/f99dc7883dc86099da307531d273ada6.png" >}}
+{{< img-post path="/media/2017/12" file="f99dc7883dc86099da307531d273ada6.png" >}}
 
 <!--more-->
 

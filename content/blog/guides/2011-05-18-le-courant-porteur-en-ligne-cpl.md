@@ -15,7 +15,7 @@ La technologie CPL permet de transmettre des données par le circuit électrique
 
 <!--more-->
 
-{{< img src="/media/2011/05/0f2fa23471511c398c13d01b50f48d01.png" link="/media/2011/05/0f2fa23471511c398c13d01b50f48d01.png" >}}
+{{< img-link path="/media/2011/05" file="0f2fa23471511c398c13d01b50f48d01.png" link="/media/2011/05/0f2fa23471511c398c13d01b50f48d01.png" >}}
 
 **01 | Transmission des données**  
 La technologie CPL permet de transmettre des données par le circuit électrique de la maison en superposant au courant un signal utilisant des fréquences plus élevées, dans la bande (le 1,6 a 30MHz. C’est au chipset d’Atheros, composé de deux puces (INTB4DD et INT14W), que revient cette charge. La première puce est chargée de l'encodage et de la transmission des paquets et la deuxième fait ofﬁce d’aiguilleur. C’est cette dernière qui intercepte et envoie les signaux reçus par la prise mâle. On retrouve ces deux puces dans chacun des boitiers puisque tous deux envoient et reçoivent des données.

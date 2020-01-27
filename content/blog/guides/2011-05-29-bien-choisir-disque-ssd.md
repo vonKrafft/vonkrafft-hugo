@@ -19,9 +19,9 @@ Annoncé comme l’avenir du stockage des informations, le SSD est un élément 
 
 Le **SSD** (pour solid-state drive) est constitué de puces de **mémoire flash**, comme les clés USB. En réalité, on pourrait dire que ce sont des **grosse clés USB** mais un élément du SSD absent dans le stockage USB fait toute la différence. Cette élément est le **contrôleur**, il rend possible le dialogue entre les puces de mémoires du disque et le reste du système. Le choix de ce dernier est donc extrêmement important.
 
-{{< img src="/media/2011/05/baeefc8a43c6401fecd6abade9c5cc85-150x150.png" link="/media/2011/05/baeefc8a43c6401fecd6abade9c5cc85.png" class="pull-right">}}
-
 ### Le choix des puces
+
+{{< img-post path="/media/2011/05" file="baeefc8a43c6401fecd6abade9c5cc85-150x150.png" type="right">}}
 
 Les **puces** sont de deux types : **SLC** ou **MLC**, pour Single ou Multiple Level Cell. Les premières ne peuvent stocker qu'un seul bit de données à la fois quand les secondes en stockent 2, voire 3 bits. Cette technologie permet une économie de production certaine, mais engendre une **usure** plus rapide des cellules et dégrade les performances, particulièrement en écriture.
 
@@ -67,10 +67,11 @@ Vous êtes avides de **performance** ? Les SSD sont rapide, plus que les disques
 
 Les derniers modèles de SSD sont équipés de contrôleurs gérant le **SATA III**, qui offrent des performances bien meilleures que celles du SATA II (6 Gb/s au lieu des 3 Gb/s) à condition d'avoir une carte mère adaptée. Il offre des débits de **525 Mo/s** en écriture. Il existe aussi des SSD au format **PCI-Express** (4x ou 8x) qui proposent des taux de transfert encore plus élevés (**730 Mo/s** en lecture pour du PCI-e 4x). Ces disques communiquent directement avec la carte mère (pas de câbles S-ATA) mais ils sont aussi plus chers.
 
-{{% gallery columns="2" title="Les SSD en PCI-Express et les contrôleur de disque sont de bons atouts pour plus de performances" %}}
-{{< gallery_item src="/media/2011/05/094e8b4d2050a87bb6657b9b6c450b63.png" link="/media/2011/05/094e8b4d2050a87bb6657b9b6c450b63.png" >}}
-{{< gallery_item src="/media/2011/05/291f31126a31ce7ce88e71caa312a31c.jpg" link="/media/2011/05/291f31126a31ce7ce88e71caa312a31c.jpg" >}}
-{{% /gallery %}}
+{{< img-fit 
+    "" "094e8b4d2050a87bb6657b9b6c450b63.png" ""
+    "" "291f31126a31ce7ce88e71caa312a31c.jpg" ""
+    "/media/2011/05" "nowrap"
+    "Les SSD en PCI-Express et les contrôleur de disque sont de bons atouts pour plus de performances" >}}
 
 Enfin, une dernière connectique est présente sur les SSD : le **HSDL**. Plus rapide que le S-ATA, il offre des taux de transfert de l’ordre des **710 Mo/s** en lecture. Donc proche des cartes PCI-Express, il reste cependant bien moins cher.
 

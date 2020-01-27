@@ -13,7 +13,7 @@ cover: "/media/2018/01/f6840c5d35c17f43623f8cb9eb7d6f7e.png"
 
 Ayant récement migré de WordPress vers Hugo, j'ai eu besoin d'exporter le contenu de la base de données vers des fichiers Markdown, mais aussi revoir l'organisation des ressources, notamment les images. Pour cela, j'ai implémenté quelques scripts que je me propose ici de partager.
 
-{{< img src="/media/2018/01/f6840c5d35c17f43623f8cb9eb7d6f7e.png" >}}
+{{< img-post path="/media/2018/01" file="f6840c5d35c17f43623f8cb9eb7d6f7e.png" >}}
 
 <!--more-->
 

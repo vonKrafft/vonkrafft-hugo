@@ -11,7 +11,7 @@ slug: "asus-noob-overclocking-challenge-2012"
 cover: "/media/2012/03/7ec9d4471da595d37f40036e1a08d821-1024x1517.png"
 ---
 
-{{< img src="/media/2012/03/7ec9d4471da595d37f40036e1a08d821-300x444.png" class="pull-left" height="150px" >}}
+{{< img-post path="/media/2012/03" file="7ec9d4471da595d37f40036e1a08d821-300x444.png" type="left" >}}
 
 Aujourd'hui, 31 Mars 2012, s'est tenue la seconde édition de l'Asus Noob Overclocking Challenge au Surcouf Daumesnil, une compétition entre quatre équipes composées d'un pro et d'un débutant en Overclocking. Chaque duo devait obtenir le meilleur score à divers benchs (tests de performance) tout en conservant un système stable. j'était sur place ; bilan et score du Challenge.
 
@@ -21,9 +21,9 @@ Aujourd'hui, 31 Mars 2012, s'est tenue la seconde édition de l'Asus Noob Overcl
 
 Les candidats ont tout d'abord monte leur machine de test dont les composants ont été choisis par Asus. Ils avaient à disposition :
 
-{{< img src="/media/2012/03/41dddb519a17078c6287f5cb82d4dabc.png" link="/media/2012/03/41dddb519a17078c6287f5cb82d4dabc.png" >}}
+{{< img-link path="/media/2012/03" file="41dddb519a17078c6287f5cb82d4dabc.png" link="/media/2012/03/41dddb519a17078c6287f5cb82d4dabc.png" >}}
 
-{{< img src="/media/2012/03/3aeba92952645f14045ca381ef278e05-1024x768.jpg" width="699px" title="La configuration sélectionnée pour l'Asus Overclocking Challenge" link="/media/2012/03/3aeba92952645f14045ca381ef278e05.jpg" >}}
+{{< img-link path="/media/2012/03" file="3aeba92952645f14045ca381ef278e05-1024x768.jpg" link="/media/2012/03/3aeba92952645f14045ca381ef278e05.jpg" caption="La configuration sélectionnée pour l'Asus Overclocking Challenge" >}}
 
 ## La course au gigahertz.
 
@@ -35,14 +35,14 @@ Le deuxième test consistait à calculer le plus rapidement le premier million d
 
 Viennent ensuite les équipes de Rog, PC World et PC Inpact.
 
-{{% gallery columns="3" title="L'Asus Noob Overclocking Challenge en image*" %}}
-{{< gallery_item src="/media/2012/03/9cd2365c894996689b2bf2e53f1d74d2-300x225.jpg" link="/media/2012/03/9cd2365c894996689b2bf2e53f1d74d2.jpg" >}}
-{{< gallery_item src="/media/2012/03/3c5308aa5134276074d5be847267b27b-300x225.jpg" link="/media/2012/03/3c5308aa5134276074d5be847267b27b.jpg" >}}
-{{< gallery_item src="/media/2012/03/7742196dc540d0a9c440f036eb7bab59-300x225.jpg" link="/media/2012/03/7742196dc540d0a9c440f036eb7bab59.jpg" >}}
-{{< gallery_item src="/media/2012/03/73b3090c2ab3b9b992815b3db20e81fb-300x225.jpg" link="/media/2012/03/73b3090c2ab3b9b992815b3db20e81fb.jpg" >}}
-{{< gallery_item src="/media/2012/03/3e3de468c150c68fae5ac597faa69c27-300x225.jpg" link="/media/2012/03/3e3de468c150c68fae5ac597faa69c27.jpg" >}}
-{{< gallery_item src="/media/2012/03/fa0ea57fb2046ced0344f0b3adfe3396-300x225.jpg" link="/media/2012/03/fa0ea57fb2046ced0344f0b3adfe3396.jpg" >}}
-{{% /gallery %}}
+{{< img-fit
+    "/media/2012/03/9cd2365c894996689b2bf2e53f1d74d2.jpg" "9cd2365c894996689b2bf2e53f1d74d2-300x225.jpg" ""
+    "/media/2012/03/3c5308aa5134276074d5be847267b27b.jpg" "3c5308aa5134276074d5be847267b27b-300x225.jpg" ""
+    "/media/2012/03/7742196dc540d0a9c440f036eb7bab59.jpg" "7742196dc540d0a9c440f036eb7bab59-300x225.jpg" ""
+    "/media/2012/03/73b3090c2ab3b9b992815b3db20e81fb.jpg" "73b3090c2ab3b9b992815b3db20e81fb-300x225.jpg" ""
+    "/media/2012/03/3e3de468c150c68fae5ac597faa69c27.jpg" "3e3de468c150c68fae5ac597faa69c27-300x225.jpg" ""
+    "/media/2012/03/fa0ea57fb2046ced0344f0b3adfe3396.jpg" "fa0ea57fb2046ced0344f0b3adfe3396-300x225.jpg" ""
+    "/media/2012/03/" "nowrap" "L'Asus Noob Overclocking Challenge en image*" >}}
 
 ## Jamais deux sans trois
 
@@ -69,7 +69,7 @@ Ce denier bench clos l'Asus Noob Overclocking Challenge. Résultats : l'équipe 
 
 Démontage des configs, qu’Asus offre aux quatres Noob ayant participé au Challenge. Photo finish et la deuxième édition de l’Asus Noob Overclocking Challenge se termine.
 
-{{< img src="/media/2012/03/e6e2a1945a8b83d1d488810eedff6f1c-300x225.jpg" title="La photo souvenir : les Noobs et leurs mentors" link="/media/2012/03/e6e2a1945a8b83d1d488810eedff6f1c.jpg" >}}
+{{< img-link caption="La photo souvenir : les Noobs et leurs mentors" path="/media/2012/03" file="e6e2a1945a8b83d1d488810eedff6f1c-300x225.jpg" link="/media/2012/03/e6e2a1945a8b83d1d488810eedff6f1c.jpg" >}}
 
 Rendez-vous l’année prochaine pour la troisième édition ...
 

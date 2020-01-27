@@ -38,7 +38,7 @@ Si vous avez un serveur local (pour diverses raisons), vous pouvez y accéder av
 
 Oui, mais cela est vrai uniquement depuis l’extérieur, c’est-à-dire depuis une machine client qui se trouve au delà de notre box Internet. Mais nous supposons que notre serveur et notre client sont sur le même réseaux privé.
 
-{{< img src="/media/2015/12/91e02cd2b8621d0c05197f645668c5c4.png" title="Par défaut, un client extérieur ne peut pas accéder aux équipements de votre réseau local" link="/media/2015/12/91e02cd2b8621d0c05197f645668c5c4.png" >}}
+{{< img-link caption="Par défaut, un client extérieur ne peut pas accéder aux équipements de votre réseau local" path="/media/2015/12" file="91e02cd2b8621d0c05197f645668c5c4.png" link="/media/2015/12/91e02cd2b8621d0c05197f645668c5c4.png" >}}
 
 Donc, vous pouvez accéder à votre serveur (en HTTP, FTP, SSH … en fonction des services installés sur votre serveur) avec on adresse IP. Mais les adresses IP sont allouées dynamiquement, c’est-à-dire que l’adresse de votre serveur peut changer. Nous allons donc faire deux choses :
 
