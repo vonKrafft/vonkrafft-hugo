@@ -1,0 +1,87 @@
+<!--
+    params 3-6
+    Can be positional or named
+
+    position 0, name: path
+        Can pass in the following values:
+            title: will use /img/LinkTitle as the path
+            date: will use /img/Year/Month as the path
+            /path/to/img: can pass in explicit path to the image
+
+    position 1, name: file
+        Name of the file including the file extension
+
+    position 2, name: link
+        URL of the file including the path and the file extension
+
+    position 3, name: alt
+        Name of the alternate text for the image
+
+    position 4, name: alt
+        Optional caption (displayed under image)
+
+    position 5, name: type
+        Can pass in the following values:
+            center: places the image centered
+            left: places the image to the left
+            right: places the image to the right
+-->
+{{ $numOfParams := len .Params }}
+{{ if and (ge $numOfParams 3) (le $numOfParams 5) }}
+    <!-- Check if the Parameter is positional or named
+         which can handle both. -->
+    {{ if .IsNamedParams }}
+        {{ $.Scratch.Set "path" (.Get "path") }}
+        {{ $.Scratch.Set "file" (.Get "file") }}
+        {{ $.Scratch.Set "link" (.Get "link") }}
+        {{ $.Scratch.Set "alt"  (.Get "alt") }}
+        {{ $.Scratch.Set "caption" (.Get "caption") }}
+        {{ $.Scratch.Set "type" (.Get "type") }}
+    {{ else }}
+        {{ $.Scratch.Set "path" (.Get 0) }}
+        {{ $.Scratch.Set "file" (.Get 1) }}
+        {{ $.Scratch.Set "link" (.Get 2) }}
+        {{ if ge $numOfParams 4 }}
+            {{ $.Scratch.Set "alt" (.Get 3) }}
+        {{ else }}
+            {{ $.Scratch.Set "alt" "" }}
+        {{ end }}
+        {{ if ge $numOfParams 5 }}
+            {{ $.Scratch.Set "caption"  (.Get 4) }}
+        {{ else }}
+            {{ $.Scratch.Set "caption" "" }}
+        {{ end }}
+        {{ if ge $numOfParams 6 }}
+            {{ $.Scratch.Set "type"  (.Get 5) }}
+        {{ else }}
+            {{ $.Scratch.Set "type" "center" }}
+        {{ end }}
+    {{ end }}
+
+    {{ $file := $.Scratch.Get "file" }}
+    {{ $type := $.Scratch.Get "type" }}
+    {{ $link := $.Scratch.Get "link" }}
+    {{ $alt  := $.Scratch.Get "alt" }}
+    {{ $caption  := $.Scratch.Get "caption" }}
+
+    {{ $.Scratch.Set "structType" "shortcode" }}
+    {{ partial "img-path" . }}
+    {{ $path := $.Scratch.Get "path" }}
+
+    <figure>
+        {{ if eq $type "left" }}
+            <a href="{{ $link }}" class="image featured left">
+                <img src="{{ $path }}/{{ $file }}" alt="{{ $alt }}">
+            </a>
+        {{ else if eq $type "right" }}
+            <a href="{{ $link }}" class="image featured right">
+                <img src="{{ $path }}/{{ $file }}" alt="{{ $alt }}">
+            </a>
+        {{ else }}
+            <a href="{{ $link }}" class="image featured center">
+                <img src="{{ $path }}/{{ $file }}" alt="{{ $alt }}">
+            </a>
+        {{ end }}
+        {{ if ne $caption "" }}<figcaption class="image-caption">{{ $caption }}</figcaption>{{ end }}
+    </figure>
+{{ end }}
