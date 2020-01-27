@@ -34,7 +34,7 @@ Par préférence personnelle, nous allons utiliser `docker-compose` pour configu
 
 Tout d'abord, il nous faut créer l’arborescence de répertoire dont nous allons avoir besoin, ainsi que les fichiers de journalisation avec les privilèges adéquats :
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 host:~# mkdir -p docker-web/www                  # Webroot dans lequel sera stocké le contenu statique du site
 host:~# mkdir -p docker-web/log                  # Pour enregistrer les journaux de Nginx
 host:~# touch docker-web/log/{error,access}.log  # Journaux pour Nginx
@@ -109,13 +109,13 @@ services:
             - "127.0.0.1:80:80"
 {{< /highlight >}}
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 host:~# docker-compose up -d
 {{< /highlight >}}
 
 Le site est maintenant accessible sur le port TCP/80 de l'hôte, en local. Cependant, si vous vous rendez à l'adresse http://localhost/, vous obtiendrez une erreur **403 Forbidden** car notre répertoire `www` est vide. Pour simplement vérifier que tout fonctionne, il suffit de créer un fichier `index.html` :
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 host:~# echo 'hello world!' > docker-web/www/index.html
 {{< /highlight >}}
 
@@ -176,7 +176,7 @@ http {
 
 Nous aurons besoin également d'un fichier `index.php` afin de pouvoir tester que tout fonctionne une fois que le container sera en place.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 host:~# echo '<?php phpinfo();' > docker-web/www/index.php
 {{< /highlight >}}
 
@@ -206,7 +206,7 @@ services:
             - "./docker-web/www:/script:ro"
 {{< /highlight >}}
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 host:~# docker-compose up -d
 {{< /highlight >}}
 

@@ -46,7 +46,7 @@ Il n'existe pas de dépôt officiel pour WeeChat. Afin de ne pas dépendre d'une
 
 Ensuite, il nous suffit de construire notre image avec la commande `docker build` (attention de ne pas oublier le point à la fin de la commande) :
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 debian:~$ docker build -t vonkrafft/weechat:latest .
 Successfully built 226da8c3ad94
 Successfully tagged vonkrafft/weechat:latest
@@ -59,21 +59,21 @@ vonkrafft/weechat      latest        226da8c3ad94        54.3MB
 
 À ce stade, nous disposons d'une image Docker pour notre client IRC. Il nous faut à présent créer le conteneur WeeChat qui utilisera cette image. Pour cela, nous utiliserons Docker Compose. Tout d'abord, il nous faut un utilisateur non privilégié sur l'hôte pour faire tourner le conteneur.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 debian:~$ groupadd -g 1000 weechat 
 debian:~$ useradd -u 1000 -M -p '*' -s /bin/false -g 1000 weechat
 {{< /highlight >}}
 
 Nous allons également avoir besoin d'un **répertoire de travail**. Pour ma part, j'aime bien avoir toutes les données relatives à Docker dans une répertoire `/docker`, mais libre à vous de stocker vos données où cela vous arrange. Dans notre répertoire de travail, nous allons stocker les fichiers de configuration et de journalisation de WeeChat.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 debian:~$ mkdir -p /docker/web-irc/weechat
 debian:~$ chown 1000:1000 /docker/web-irc/weechat
 {{< /highlight >}}
 
 ### Configurer et exécuter WeeChat
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 debian:~$ ls -lh /docker/web-irc/
 drwxr-xr-x 2 weechat weechat 4.0K Sep 29 11:29 weechat
 debian:~$ docker run --rm -it -v "/docker/web-irc/weechat:/weechat/.weechat" vonkrafft/weechat:latest weechat
@@ -85,7 +85,7 @@ Si tout fonctionne (notamment vis-à-vis des permissions sur les répertoires pa
 
 Cet accès temporaire à WeeChat en ligne de commande va nous permettre de configurer le relais de WeeChat via le port 9001. Si vous souhaitez plus de détail, je vous invite à regarder la documentation sur le protocole [WeeChat Relay](https://weechat.org/files/doc/devel/weechat_relay_protocol.en.html).
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 /relay add weechat 9001
 /set relay.network.password mon_super_mot_de_passe
 /exit
@@ -101,7 +101,7 @@ Nous allons utiliser l'image officielle de [Nginx](https://hub.docker.com/_/ngin
 
 Dans notre répertoire de travail, nous allons stocker le contenu du site Web, les fichiers de journalisation du serveur Nginx, ainsi que notre fichier de configuration Nginx `default.conf`.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 debian:~$ cd /docker
 debian:~$ mkdir -p web-irc/log
 debian:~$ touch web-irc/log/access.log web-irc/log/error.log
@@ -124,7 +124,7 @@ Ensuite, il nous faut un fichier de configuration. Nous indiquons le port en éc
 
 Il nous faut à présent télécharger le code source de [Glowing Bear](https://github.com/glowing-bear/glowing-bear). Vous pouvez télécharger l'archive ZIP et la décompresser dans `/docker/web-irc/www`, ou alors utiliser Git pour cloner le dépôt (dans ce cas là, pensez à supprimer ou à restreindre l'accès au répertoire `.git`).
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 debian:~$ git clone https://github.com/glowing-bear/glowing-bear.git /docker/web-irc/www
 debian:~$ rm -r /docker/web-irc/www/.git
 {{< /highlight >}}

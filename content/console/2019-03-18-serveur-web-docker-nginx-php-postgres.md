@@ -151,7 +151,7 @@ web-php:
         - "./docker-web/www:/script:ro"
 {{< /highlight >}}
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 host:~# docker-compose up -d
 {{< /highlight >}}
 
@@ -163,7 +163,7 @@ Si tous ce passe bien, vous devriez obtenir une erreur ... _wait, again?_
 
 Évidement, il nous manque le container PostgreSQL, que nous avons déjà nommé ci-dessus dans le fichier `index.php` : **web-pgsql**.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 host:~# mkdir -p docker-web/data # Pour stocker le contenu de la base de données
 {{< /highlight >}}
 
@@ -209,7 +209,7 @@ services:
             POSTGRES_DB: foobar
 {{< /highlight >}}
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 host:~# docker-compose up -d
 {{< /highlight >}}
 

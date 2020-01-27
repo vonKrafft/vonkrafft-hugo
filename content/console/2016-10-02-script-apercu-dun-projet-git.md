@@ -36,6 +36,6 @@ N'hésitez pas à laisser un commentaire si vous avez des remarques et/ou des id
 
 Pour facilement obtenir ces infos lorsque vous vous trouvez dans un répertoire d'un projet Git, je vous propose de créer un alias :
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 alias 'git-overview'='/path/to/the/script/git-overview.sh'
 {{< /highlight >}}

@@ -68,7 +68,7 @@ iface eth0 inet static
 
 Pour connaître l’adresse IP de votre gateway, utilisez la commande trace :
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 vonkrafft@vps-001:~$ sudo route -n
 Kernel IP routing table
 Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
@@ -79,7 +79,7 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 
 L’adresse de votre gateway est celle repérée par le flag UG. Pour moi il s’agit de 192.168.1.254. Pour appliquer les changements, nous redémarrons le réseau :
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 vonkrafft@vps-001:~$ sudo service networking restart
 {{< /highlight >}}
 

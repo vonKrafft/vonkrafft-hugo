@@ -34,7 +34,7 @@ Un client et un serveur SSH sont respectivement installés sur “stargazer” e
 
 Pour nous connecter au serveur, rien de plus simple. Je me connecte grâce par SSH en tant que “vonkrafft” sur le VPS. Après avoir exécuté la commande, le serveur me demande mon mot de passe, je le saisi et c’est terminé : me voilà connecté au serveur.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 vonkrafft@stargazer:~$ ssh vonkrafft@farragut.server
 vonkrafft@farragut.server's password:
 
@@ -63,7 +63,7 @@ Il existe 2 types de clés : RSA et DSA. Chacune pouvant être de longueur diff�
 
 Pour générer notre paire de clés, il suffit d’utiliser l'outil mis à disposition par le paquet SSH. Nous allons donc créer deux clés RSA de 4096 bits que je stocke sur ma machine client dans le répertoire `/home/vonkrafft/.ssh` :
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 vonkrafft@stargazer:~$ ssh-keygen -t rsa -b 4096
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/vonkrafft/.ssh/id_rsa):
@@ -89,13 +89,13 @@ La passphrase est optionnelle. Mais je vous conseille d'entrer une passphrase: e
 
 Voilà, on a une paire de clés, c’est bien beau tout ça mais j’en fais quoi ? Je vais commencé par copier ma clé publique sur le serveur VPS. Deux façon de faire ça. La première est de copier la clé manuellement :
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 vonkrafft@stargazer:~$ scp ~/.ssh/id_rsa.pub vonkrafft@farragut.server:/home/vonkrafft/.ssh/authorized_keys
 {{< /highlight >}}
 
 Ou alors, mieux, nous utilisons la commande `ssh-copy-id` :
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 vonkrafft@stargazer:~$ ssh-copy-id -i ~/.ssh/id_rsa.pub vonkrafft@farragut.server
 {{< /highlight >}}
 
@@ -117,7 +117,7 @@ PermitRootLogin no
 
 J’indique au daemon SSH qu’il trouvera la clé publique dans le fichier `~/.ssh/authorized_keys` de l’utilisateur concerné. Il faut ensuite redémarrer le daemon SSH pour appliquer les modifications :
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 vonkrafft@farragut:~$ sudo service ssh reload
 {{< /highlight >}}
 
@@ -131,7 +131,7 @@ L'agent SSH permet de taper la passphrase une seule fois et de la conserver en m
 
 Pour lancer l’agent SSH, il suffit d’exécuter la commande `ssh-agent`. Ensuite, nous ajoutons notre clé privée à l’agent avec `ssh-add` :
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 vonkrafft@stargazer:~$ ssh-agent
 vonkrafft@stargazer:~$ ssh-add
 Enter passphrase for /home/vonkrafft/.ssh/id_rsa:
@@ -140,7 +140,7 @@ Identity added: /home/vonkrafft/.ssh/id_rsa (/home/vonkrafft/.ssh/id_rsa)
 
 Et lorsque nous nous reconnectons à notre VPS, nous n’avonsi plus besoin de saisir ni mot de passe ni passphrase.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 vonkrafft@stargazer:~$ ssh vonkrafft@farragut.server
 Last login: Fri Dec 18 18:40:15 2015 from stargazer
 vonkrafft@farragut:~$
@@ -163,7 +163,7 @@ Nous avons donc vu comment sécuriser une connexion SSH grâce à une authentifi
 
 Par défaut, le protocole SSH utilise le port 22. Mais il est tout à fait possible de configurer son serveur pour que le deamon ssh écoute sur un port différent. Ensuite, pour se connecter au serveur, nous devons utiliser l’option `-p` suivie du numéro de port :
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 vonkrafft@stargazer:~$ ssh -p 4242 vonkrafft@voyager.server
 {{< /highlight >}}
 
@@ -171,7 +171,7 @@ vonkrafft@stargazer:~$ ssh -p 4242 vonkrafft@voyager.server
 
 Il est possible de spécifier quelle clé il faut utiliser lors de la connexion SSH. Pour cela, il faut utiliser l’option `-i` suivie du chemin de la clé :
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 vonkrafft@stargazer:~$ ssh -i ~/.ssh/id_rsa_farragut vonkrafft@farragut.server
 {{< /highlight >}}
 
@@ -193,6 +193,6 @@ Host voyager
 
 Nous pouvons à présent nous connecter rapidement à deux hôtes (farragut et voyager) avec deux clés différentes et sans préciser d’option lors de la connexion.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 vonkrafft@stargazer:~$ ssh farragut
 {{< /highlight >}}

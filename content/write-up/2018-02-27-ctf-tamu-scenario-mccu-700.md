@@ -84,7 +84,7 @@ Nov  8 20:35:21 midcoastfcu useradd[1499]: new user: name=admin, UID=1000, GID=1
 
 We now have the complete archive of the compromised Wordpress. So we just use `grep` to list the versions of the different plugins. The versions in the PHP files are not necessarily correct, so you have to look in the `readme.txt` files for the stable tag.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 host:~$ grep -nr "Stable tag" ./*
 ./akismet/readme.txt:6:Stable tag: 3.0.4
 ./contact-form-7/readme.txt:7:Stable tag: 3.1.1
@@ -131,7 +131,7 @@ A simple search by filtering on the last edit date of the files allows to obtain
 $shell='uname -a;w;id;pwd;/bin/dsh';
 {{< /highlight >}}
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 host:~$ find . -type f -newermt '2017-11-08 20:32:49' -ls
    410155    184 -rw-r--r--   1 root     www-data   186411 Nov  9 06:38 ./.mysql.db
    414710      4 -rw-rw-rw-   1 www-data www-data      538 Nov  8 23:08 ./wp-content/w3tc-cache/index.php
@@ -170,7 +170,7 @@ host:~$ find . -type f -newermt '2017-11-08 20:32:49' -ls
 
 The attacker was able to obtain a root access on the server. He uploaded a webshell using the `ajax.php` file from the wpshop plugin, then he uploaded and executed the` / tmp / dc64` file. Then he elevated his privileges using DirtyCow root escalation privilege.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 host:~$ sha1sum 02\_analysis/evidence\_2/wordpress/wp-content/plugins/wpshop/includes/ajax.php
 4efaa331787b5cc077892ded823509967287efb0  02\_analysis/evidence\_2/wordpress/wp-content/plugins/wpshop/includes/ajax.php
 host:~$ sha1sum 04\_Privilege\_Escalation/evidence/dsh

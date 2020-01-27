@@ -43,7 +43,7 @@ Bien sûr, en plus de choisir un mot de passe maître robuste (une passphrase de
 
 Dans un précédent article, j'ai expliqué comment [générer des clés PGP et configurer une Yubikey](/console/pgp-generer-des-cles-et-configurer-une-yubikey/). Avec notre clé PGP et GnuPG, il est possible de chiffrer des documents. Ainsi, nous pouvons créer un fichier avec tous nos mots de passe et le chiffrer avec PGP.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 debian:~$ vim motsdepasse.txt                                                          # Modifier notre fichier avec les mots de passe
 debian:~$ gpg2 --recipient $GPGKEY --output motsdepasse.gpg --encrypt motsdepasse.txt  # Chiffrer le fichier
 debian:~$ rm motsdepasse.txt                                                           # Supprimer le fichier texte non chiffré
@@ -62,7 +62,7 @@ Avec [`pass`](https://www.passwordstore.org/), chaque mot de passe réside dans 
 
 Nous allons créer un répertoire de stockage de mot de passe pour y enregistrer nos mots de passe personnel, mais aussi les mots de passe d'autres personnes et des mots de passe commun. Imaginons une équipe constituée d'Alice, Bob et John qui souhaiterais mettre en place une gestion centralisée de leurs mots de passe. Alice, la chef de projet, décide d'utiliser `pass` puisqu'ils ont chacun une clé PGP.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 alice:~$ sudo apt install git gpg2 pass      # Installation
 alice:~$ pass init alice@awesome-project.fr  # Création d'un répertoire de stockage de mot de passe
 alice:~$ pass init $GPGKEY
@@ -77,7 +77,7 @@ drwxr-xr-x 39 alice alice 4.0K Jun 26 20:56 ..
 
 Le dossier `.password-store` a été créé dans le répertoire d'Alice et le fichier `.gpg-id` contient l'identité d'Alice (ici son adresse mail). Tous les mots de passe qui seront ajoutés avec `pass` seront chiffrés avec la clé d'Alice.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 alice:~$ pass init -p alice alice@awesome-project.fr   # Initialisation d'un répertoire pour Alice
 alice:~$ pass init -p bob bob@awesome-project.fr       # Initialisation d'un répertoire pour Bob
 alice:~$ pass init -p john john@awesome-project.fr     # Initialisation d'un répertoire pour John
@@ -98,7 +98,7 @@ Le fichier `.gpg-id` du réperoire `~/.password-store/shared` contient les ident
 
 A présent que l'arborescence du répertoire `~/.password-store` est créé, Alice voudrais le partager avec Bob et John. Pour cela, `pass` intègre les commandes de `git` pour versionner les modifications des mots de passe et synchroniser le contenu avec un serveur Git.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 alice:~$ pass git init                                                      # Initialisation d'un dépôt Git
 alice:~$ pass git remote add origin awesome-project.fr:/git/pass-store.git  # URL du serveur Git sur lequel centraliser les mots de passe
 {{< /highlight >}}
@@ -107,7 +107,7 @@ alice:~$ pass git remote add origin awesome-project.fr:/git/pass-store.git  # UR
 
 L'équipe vient d'embaucher Jane et donc Alice voudrais lui partager les mots de passe de `shared`. Pour cela, elle ajoute l'identité de Jane dans `shared/.gpg-id`. Les nouveaux mots de passe créé dans `shared` sont à présent bien chiffés avec les quatre clés, seulement voilà, les anciens mots de passe ne sont pas lisibles par Jane. Pour cela, il faut réinitialiser le répertoire pour chiffrer les mots de passe avec toutes les clés PGP autorisées.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 alice:~$ pass init -p jane jane@awesome-project.fr                           # Création d'un répertoire privée pour Jane
 alice:~$ echo "jane@awesome-project.fr" >> ~/.password-store/shared/.gpg-id  # Ajout de l'identité de Jane pour le répertoire shared
 alice:~$ pass init -p shared $(cat ~/.password-store/shared/.gpg-id)         # Réinitialisation du répertoire partagé

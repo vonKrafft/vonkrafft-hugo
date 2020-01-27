@@ -27,7 +27,7 @@ Comme je vous l'ai déjà précisé, les standards de HTTP2 ont été publié en
 
 Pour commencé, nous allons donc vérifier la version de Nginx et si besoin nous allons le mettre à jour.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 root:~# nginx -v
 nginx version: nginx/1.9.13
 root:~# apt-get update
@@ -44,7 +44,7 @@ Bon aller, tant que j'y suis, je vais vous dire comment installer la version mai
 
 Oui mais ... J'ai préciser au début du tutoriel que la distribution utilisée est Debian, et tout le monde connait la rapidité légendaire de mise à jour des dépôts Debian. Donc à moins d'attendre que les dépôts soient mis à jour pour Nginx, ce qui peut prendre du temps, nous allons installer la version mainline. Et puis cela vous permettra de bénéficier des dernières fonctionnalités du serveur.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 root:~# curl http://nginx.org/keys/nginx_signing.key | apt-key add -
 root:~# echo -e "deb http://nginx.org/packages/mainline/debian/ `lsb_release -cs` nginx\ndeb-src http://nginx.org/packages/mainline/debian/ `lsb_release -cs` nginx" &gt; /etc/apt/sources.list.d/nginx.list
 root:~# apt-get update
@@ -57,13 +57,13 @@ La nouvelle version du protocole préconise l'utilisation de TLS, dont la versio
 
 Tout d'abord, nous allons créer le répertoire qui contiendra les certificats SSL. J'ai choisi de le mettre avec le répertoire de configuration de Nginx (dans `/etc/nginx`), mais vous pouvez le mettre ailleurs.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 root:~# mkdir /etc/nginx/ssl
 {{< /highlight >}}
 
 Ensuite, nous allons créer un certificat auto-signé ainsi qu'une clé pour signer ce certificat. Si vous disposé déjà d'un certificat, copiez-le dans le répertoire que nous venons de créer. J'en profite aussi pour générer un fichier de configuration pour les paramètres de Diffie-Hellman.
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 root:~# openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout /etc/nginx/ssl/nginx.key -out /etc/nginx/ssl/nginx.crt
 root:~# openssl dhparam -out /etc/nginx/ssl/dhparam.pem 4096
 {{< /highlight >}}
@@ -109,7 +109,7 @@ Bien sûr, ces paramètres sont à rajouter ou à modifier dans le fichier de co
 
 Et voilà, vous avez un serveur Nginx à jour avec HTTP2 et SSL. Vous pouvez vous y rendre à l'adresse [https://localhost/](https://localhost/). Avant de se quitter, je vous propose les commandes suivante pour compiler Nginx depuis les sources, utile notamment pour l'installer sur un Raspberry Pi avec Raspbian (source [https://hanshell.com/](https://hanshell.com/2_compile_nginx_on_raspberry_pi.html)).
 
-{{< highlight bash >}}
+{{< highlight terminal >}}
 wandrille:~$ sudo apt-get install libpcre3-dev libssl-dev debhelper libxml2-dev libxslt-dev libgd2-xpm-dev libgeoip-dev libperl-dev
 wandrille:~$ apt-get source nginx
 wandrille:~$ cd nginx-1.9.13/
