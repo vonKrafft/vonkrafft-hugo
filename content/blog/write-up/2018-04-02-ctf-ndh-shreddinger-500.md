@@ -1,5 +1,5 @@
 ---
-title: "[CTF] NDH - Schreddinger"
+title: "[EN] [CTF] NDH - Schreddinger"
 description: "Write-up for challenge 'Schreddinger' (Dev, 500 pts) from NDH Quals 2018."
 tags: [ "CTF", "Python", "OCR", "PIL" ]
 lastmod: 2018-04-03 20:12:54

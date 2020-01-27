@@ -1,5 +1,5 @@
 ---
-title: "[CTF] TAMU - Scenario MCCU"
+title: "[EN] [CTF] TAMU - Scenario MCCU"
 description: "Write-up for challenge 'Scenario MCCU' (Forensics, 700 pts) from TAMU CTF 2018."
 tags: [ "CTF", "Forensics" ]
 lastmod: 2018-02-27 20:12:54

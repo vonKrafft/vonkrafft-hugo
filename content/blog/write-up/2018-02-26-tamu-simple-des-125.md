@@ -1,5 +1,5 @@
 ---
-title: "[CTF] TAMU - Simple DES"
+title: "[EN] [CTF] TAMU - Simple DES"
 description: "Write-up for challenge 'Simple DES' (Crypto, 125 pts) from TAMU CTF 2018."
 tags: [ "CTF", "Crypto", "DES", "Python" ]
 lastmod: 2018-02-26 20:54:01
@@ -16,7 +16,7 @@ cover: "/media/2018/02/32e3da5062e6e33f0a2a930faab52bc0.png"
 > He hasn't worked out all the kinks yet, but he thinks it works.
 > 
 > Your job is to confirm that you can decrypt a message, given the algorithm and parameters used.
-> <!--more-->
+> 
 > His system works as follows:
 > 
 > 1. Choose a plaintext that is divisible into 12bit 'blocks'
