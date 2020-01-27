@@ -2,6 +2,28 @@ body {
     background: #f4f4f4 url(../img/grey-prism.svg) repeat fixed;
 }
 
+table {
+    text-align: left;
+}
+
+table > thead {
+    background-color: inherit;
+    white-space: nowrap;
+}
+
+table > thead > tr > th:first-child, table > thead > tr > td:first-child, table > tbody > tr > td:first-child {
+    border-right: none;
+    font-weight: inherit;
+}
+
+table > tbody > tr:nth-child(2n) > td, table > tbody > tr:nth-child(2n) > th {
+    background-color: inherit;
+}
+
+table > tbody > tr:hover > td, table > tbody > tr:hover > th {
+    background-color: inherit;
+}
+
 /* Image */
 
 .image.left, .image.right, .image.center {
