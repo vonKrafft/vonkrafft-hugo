@@ -1,0 +1,9 @@
+<div class="config">
+    <div class="config-body">
+        <h5 class="config-title" style="color: {{ .Get `color` }};">{{ .Get "title" }}</h5>
+        {{ .Inner | markdownify }}
+    </div>
+    <div class="config-cost" style="color: {{ .Get `color` }};">
+        {{ .Get "cost" }}<br><em>euros</em>
+    </div>
+</div>

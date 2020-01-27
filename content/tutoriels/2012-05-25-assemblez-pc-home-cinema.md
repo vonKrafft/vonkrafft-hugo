@@ -70,7 +70,7 @@ Enfin, l’aspect du boîtier HTPC revient au jugement subjectif de chacun.
 
 Un PC Home Cinéma ayant un rôle précis, n’importe quel composant ne convient pas pour un tel ordinateur. En résumé, voici la fiche technique d'un PC « Home Cinéma » :
 
-{{% config title="Matériel" cost="500" color="#f7b63e" %}}
+{{< config title="Matériel" cost="500" color="#f7b63e" >}}
 
 - **Processeur** Intel Pentium G6xxT ou Core i3 21xxT
 - **Mémoire vive** 4 Go DDR3
@@ -82,7 +82,7 @@ Un PC Home Cinéma ayant un rôle précis, n’importe quel composant ne convien
 - **Boîtier** HTPC
 - **Lecteur optique** lecteur Blu-Ray/DVD/CD
 
-{{% /config %}}
+{{< /config >}}
 
 Ne reste plus à présent qu’à monter cette configuration. Si vous avez besoin d’aide pour le montage, je vous encourage à jeter un œil au [Guide de Montage PC](/monter-son-pc/).
 
