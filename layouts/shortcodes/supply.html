@@ -1,0 +1,14 @@
+<div class="supply">
+    <div class="supply-body">
+        <p class="supply-cost">{{ if eq (.Get "cost") "" }}&nbsp;{{ else }}{{ .Get "cost" }} <span>euros</span>{{ end }}</p>
+        <p class="supply-item"><b>Temps estimé :</b> <span>{{ .Get "time" }}</span></p>
+        <p class="supply-item"><b>Il vous faut :</b> <span>{{ .Get "supplies" }}</span></p>
+    </div>
+    <ul class="supply-level">
+        <li class='level-1 {{ if eq (.Get "level") "1" }}active{{ end }}'>1</li>
+        <li class='level-2 {{ if eq (.Get "level") "2" }}active{{ end }}'>2</li>
+        <li class='level-3 {{ if eq (.Get "level") "3" }}active{{ end }}'>3</li>
+        <li class='level-4 {{ if eq (.Get "level") "4" }}active{{ end }}'>4</li>
+        <li class='level-5 {{ if eq (.Get "level") "5" }}active{{ end }}'>5</li>
+    </ul>
+</div>
