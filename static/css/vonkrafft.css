@@ -24,6 +24,12 @@ table > tbody > tr:hover > td, table > tbody > tr:hover > th {
     background-color: inherit;
 }
 
+ul.pagination {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
 /* Image */
 
 .image.left, .image.right, .image.center {
