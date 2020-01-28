@@ -292,6 +292,27 @@ input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hove
 .post > header .meta-securite  { background-color: rgba(244, 81, 30, .7); }
 .post > header .meta-write-up  { background-color: rgba(232, 30, 98, .7); }
 
+.post-copyright {
+    color: #4a4a4a;
+    margin: 1rem 0;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    opacity: 0.5;
+    text-align: justify;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+.post-copyright:hover {
+    opacity: 1;
+}
+
+.post-copyright .img-cc {
+    display: inline-block;
+    margin-bottom: -3px;
+}
+
 /* Contact */
 
 .post-contact blockquote {
