@@ -53,7 +53,7 @@ Concernant les premières disponibilités françaises, les précommandes débute
 
 ## De nouveaux iPod Touch
 
-Concernant cette nouvelle génération, elle embarque un **processeur A5** et est équipé du nouvel **écran Retina de 4 pouces **tout comme l’iPhone 5. Cet iPod Touch est aussi doté du même appareil photo de l’iPhone 5 à 3 Mpx près (5 Mpx pour le Touch). Il est aussi doté de la fonction panorama.
+Concernant cette nouvelle génération, elle embarque un **processeur A5** et est équipé du nouvel **écran Retina de 4 pouces** tout comme l’iPhone 5. Cet iPod Touch est aussi doté du même appareil photo de l’iPhone 5 à 3 Mpx près (5 Mpx pour le Touch). Il est aussi doté de la fonction panorama.
 
 Nouveau look aussi, avec les **couleurs** disponible pour la coque arrière (noir, blanc, rose, jaune, bleu). Et le **nouveau connecteur** d’Apple est aussi de la partie, ainsi que les écouteurs **EarPods**.
 
@@ -61,8 +61,10 @@ Disponible en précommande **le 14 septembre** et commercialisé en octobre à p
 
 ## Et une nouvelle génération d’iPod Nano
 
-Il retrouve son écran perdu avec la 5<sup>e</sup> génération, ainsi que sa fonction de lecture vidéo. Et cet écran de **2,5 pouces** et **Multi-touch**. De plus, ce nouveau Nano embarque du **Bluetooth**, le **nouveau connecteur** Apple ainsi que les nouveaux écouteurs **EarPods**.
+Il retrouve son écran perdu avec la 5ème génération, ainsi que sa fonction de lecture vidéo. Et cet écran de **2,5 pouces** et **Multi-touch**. De plus, ce nouveau Nano embarque du **Bluetooth**, le **nouveau connecteur** Apple ainsi que les nouveaux écouteurs **EarPods**.
 
 Disponible en précommande le **14 septembre** et commercialisé en octobre à partir de **179 euros**.
 
-<small class="align-right">**Source** : [Apple.com](http://www.apple.com/fr/)</small>
+---
+
+**Source** : [Apple.com](http://www.apple.com/fr/)

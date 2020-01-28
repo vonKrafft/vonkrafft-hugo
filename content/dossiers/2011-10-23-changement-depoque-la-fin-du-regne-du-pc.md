@@ -61,7 +61,7 @@ Interconnecté, telle est la description du monde informatique actuel. Car si l�
 
 {{< img-link caption="http://nxoc01.cern.ch/hypertext/WWW/TheProject.html" path="/media/2011/10" file="eacc19d0b0262299d04e9dd1e0969a84-300x225.jpg" link="/media/2011/10/eacc19d0b0262299d04e9dd1e0969a84.jpg" >}}
 
-**2000**, la société, déjà fortement informatisé, subi le « bug de l’an 2000 ». Bug qui en réalité n’en est pas un, mais plutôt un défaut du codage informatique de l’époque. Ainsi, malgré les grandes quantités d’argent dépensées pour prévenir le « bug », de nombreux PC affichaient 01/01/1900 à l’aube du 2<sup>ème</sup> millénaire
+**2000**, la société, déjà fortement informatisé, subi le « bug de l’an 2000 ». Bug qui en réalité n’en est pas un, mais plutôt un défaut du codage informatique de l’époque. Ainsi, malgré les grandes quantités d’argent dépensées pour prévenir le « bug », de nombreux PC affichaient 01/01/1900 à l’aube du 2ème millénaire
 
 **2007**, Apple ouvre la porte d’un nouveau domaine informatique, celui du Smartphone avec l’iPhone. Présentés comme des mini-PC de poche, ces appareils vont très vite devenir omniprésents et ultra-connectés.
 

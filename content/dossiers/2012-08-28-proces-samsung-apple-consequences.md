@@ -43,4 +43,6 @@ Samsung a aussi déclaré « Le verdict d'aujourd'hui ne doit pas être considé
 
 Enfin, Samsung affirme que la guerre contre la marque à la pomme n’est pas terminée, « Ce n'est pas le dernier mot dans cette affaire ou dans les batailles qui se livrent dans les tribunaux à travers le monde, dont certains ont déjà rejeté plusieurs des revendications d'Apple. Samsung continuera à innover et à offrir des choix pour le consommateur. ».
 
-<small class="align-right">**Sources :** [The New York Times](http://bits.blogs.nytimes.com/2012/08/24/samsung-apple-reactions/) et [FOSS Patents](http://www.fosspatents.com/2012/08/apples-billion-dollar-win-over-samsung.html)</small>
+---
+
+**Sources :** [The New York Times](http://bits.blogs.nytimes.com/2012/08/24/samsung-apple-reactions/) et [FOSS Patents](http://www.fosspatents.com/2012/08/apples-billion-dollar-win-over-samsung.html)

@@ -67,4 +67,6 @@ Déjà avec le Marketplace, Microsoft rejoignait la philosophie de contrôle des
 > {{< img-post path="/media/2012/07" file="d10a2b7204c992679d55eff0c95dcd04-150x150.jpg" type="left" >}}
 > Après le pari d’un système unifié avec Windows 8, Microsoft se lance dans un nouveau pari, celui de l’intégration : depuis l’OS jusqu’à la tablette, en passant par le Marketplace, Microsoft contrôle tout. Cela représente un changement majeur puisque jusqu’à présent, Windows tirait sa force de la grande offre matérielle proposée par de multiples constructeurs et de son ouverture totale à tous logiciels. Pour le premier point, Microsoft n’a aucune raison de stopper la commercialisation de terminaux Windows par des constructeurs tiers. Quant au second point, Windows ne restreint au Marketplace que les tablettes sous Windows RT, tandis que les autres versions de Windows 8 restent ouvertes à toutes logithèques. Mais à terme, le Marketplace pourrait bien, à l’image de l’App Store, devenir l’unique lieu où se procurer ses logiciels. Alors ce changement de politique sera-t-il bénéfique à Microsoft ? Réponse en octobre et dans les années à venir …
 
-<small class="align-right">Source : [surface.com](http://surface.com)</small>
+---
+
+**Source** : [surface.com](http://surface.com)

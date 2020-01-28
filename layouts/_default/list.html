@@ -4,12 +4,26 @@
     {{ partial "navbar" . }}
     <!-- Main -->
     <div id="main">
-        {{ $paginator := .Paginate .Data.Pages }}
-        {{ range .Paginator.Pages }}
-            {{ .Render "content-list" }}
-        {{ end }}
+        {{ if ne (.Content | replaceRE "[^a-z]+" "") "" }}
 
-        {{ partial "pagination" . }}
+            <article class="post">
+                {{ $.Scratch.Set "h1" true }}
+                {{ .Render "header" }}
+                <div id="content">
+                    {{ .Content }}
+                </div>
+            </article>
+
+        {{ else }}
+
+            {{ $paginator := .Paginate .Data.Pages }}
+            {{ range .Paginator.Pages }}
+                {{ .Render "content-list" }}
+            {{ end }}
+
+            {{ partial "pagination" . }}
+
+        {{ end }}
     </div>
     {{ partial "sidebar" . }}
 {{ partial "footer" . }}

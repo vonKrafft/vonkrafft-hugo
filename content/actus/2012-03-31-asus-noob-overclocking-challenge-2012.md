@@ -73,4 +73,6 @@ Démontage des configs, qu’Asus offre aux quatres Noob ayant participé au Cha
 
 Rendez-vous l’année prochaine pour la troisième édition ...
 
-<small class="align-right">**Crédits photo** : Wandrille K.</small>
+---
+
+**Crédits photo** : Wandrille K.

@@ -62,4 +62,6 @@ Apple reste aussi à la pointe de la connectivité en intégrant au Nouvel iPad 
 
 Siri prend place aussi dans le Nouvel iPad, mais il est (pour l’instant) restreint à la dictée.
 
-<small>**Source** : Apple.com</small>
+---
+
+**Source** : Apple.com

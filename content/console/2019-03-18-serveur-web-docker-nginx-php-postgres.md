@@ -106,7 +106,7 @@ http {
 }
 {{< /highlight >}}
 
-Après avoir vérifié que nos deux containers `web-nginx` et `web-php` sont bien démarrés et que le serveur Nginx est accessible depuis un navigateur Web, nous allons modifier le fichier `index.php` pour qu'il se connecte à la base de données et affiche la version du <abbr title="Système de Gestion de Base de Données">SGBD</abbr>.
+Après avoir vérifié que nos deux containers `web-nginx` et `web-php` sont bien démarrés et que le serveur Nginx est accessible depuis un navigateur Web, nous allons modifier le fichier `index.php` pour qu'il se connecte à la base de données et affiche la version du SGBD (_Système de Gestion de Base de Données, NDLR_).
 
 {{< highlight php >}}
 <?php

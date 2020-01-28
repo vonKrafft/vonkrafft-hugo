@@ -30,6 +30,14 @@ ul.pagination {
     justify-content: space-around;
 }
 
+ul.pagination li {
+    flex-grow: 1;
+}
+
+ul.pagination li a {
+    width: 100%;
+}
+
 /* Image */
 
 .image.left, .image.right, .image.center {
@@ -228,6 +236,10 @@ input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hove
     display: block;
     content: "";
     clear: both;
+}
+
+.post #content ul.pagination li a {
+    border: solid 1px rgba(54, 54, 54, .4);
 }
 
 .post > header {
@@ -531,6 +543,10 @@ input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hove
     margin-right: .35em;
 }
 
+.alert a:hover {
+    color: inherit !important;
+}
+
 /* Supply */
 
 .supply {
@@ -642,7 +658,7 @@ ul.supply-level > li.level-5.active { background-color: rgb(124, 0, 110); }
 }
 
 .config .config-body {
-    flex-grow: 0;
+    flex-grow: 1;
     margin: .5em 1em;
 }
 
@@ -676,7 +692,7 @@ ul.supply-level > li.level-5.active { background-color: rgb(124, 0, 110); }
 
 .config .config-cost {
     color: #3c3b3b;
-    flex-grow: 1;
+    flex-grow: 0;
     font-family: "Raleway", Helvetica, sans-serif;
     font-size: 2.5em;
     font-weight: 800;

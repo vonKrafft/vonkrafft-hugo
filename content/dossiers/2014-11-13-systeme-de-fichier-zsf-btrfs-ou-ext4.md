@@ -129,4 +129,6 @@ Son rôle sur le long terme est de remplacer ext4. Cependant, tant que son déve
 - `(en)` [https://www.youtube.com/watch?v=hxWuaozpe2I [vidéo]](https://www.youtube.com/watch?v=hxWuaozpe2I)
 - `(fr)` [http://fr.wikipedia.org/wiki/Btrfs](http://fr.wikipedia.org/wiki/Btrfs)
 
-<small class="align-right">Recherches & rédaction : Jake, Wandrille et Thom</small>
+---
+
+Recherches & rédaction : Jake, Wandrille et Thom

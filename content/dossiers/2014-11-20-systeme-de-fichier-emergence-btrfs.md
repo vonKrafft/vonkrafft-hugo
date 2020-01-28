@@ -700,7 +700,7 @@ Bien que lancé en même temps que ZFS, le projet Btrfs est moins avancé, les d
 
 Si pour le moment les performances sont légérement en deça de ce qui peut être trouvé sur les autres systèmes de fichiers, nous pouvons constater des améliorations à chaque mises à jour. Le développement est encore actif et est dans une phase de stabilisation du code, nous pouvons donc espérer que Btrfs puisse bientôt concurrencer les autres systèmes de fichiers dans le domaine des performances, ce qu’il fait déjà pour ce qui concerne les fonctionnalités.
 
-L’actualité montre une accélération de l’adoption de Btrfs. Des entreprises en proposent le support, d’autres (<a href=http://www.phoronix.com/scan.php?page=news_item&px=MTY0NDk>telle que Facebook</a>) ont commencé à tester et à mettre en prodution le système de fichier. Au fur et à mesure que l’usage se répand, le nombre de contributeurs et de testeurs augmente aussi et laisse présager un cercle vertueux qui aménerait la stabilité totale et à terme la maturité du projet. Ainsi, si nous ne pouvons le conseiller à des entreprises stockant des données sensibles et ne souhaitant pas perdre de temps à cause de la technologie utilisée, nous encourageons toute société voulant rester à la pointe à tester Btrfs, et pourquoi pas à l’adopter en production.
+L’actualité montre une accélération de l’adoption de Btrfs. Des entreprises en proposent le support, d’autres ([telle que Facebook](http://www.phoronix.com/scan.php?page=news_item&px=MTY0NDk)) ont commencé à tester et à mettre en prodution le système de fichier. Au fur et à mesure que l’usage se répand, le nombre de contributeurs et de testeurs augmente aussi et laisse présager un cercle vertueux qui aménerait la stabilité totale et à terme la maturité du projet. Ainsi, si nous ne pouvons le conseiller à des entreprises stockant des données sensibles et ne souhaitant pas perdre de temps à cause de la technologie utilisée, nous encourageons toute société voulant rester à la pointe à tester Btrfs, et pourquoi pas à l’adopter en production.
 
 ## Sources et références
 
@@ -714,4 +714,6 @@ L’actualité montre une accélération de l’adoption de Btrfs. Des entrepris
 - (`en`) [Btrfs](https://en.wikipedia.org/wiki/Btrfs) sur wikipedia.org
 - (`en`) [My Btrfs Talk at Linuxcon JP 2014 ](http://marc.merlins.org/perso/btrfs/post_2014-05-21_My-Btrfs-Talk-at-Linuxcon-JP-2014.html)
 
-<small class="align-right">Recherches & rédaction : Jake, Wandrille et Thom</small>
+---
+
+Recherches & rédaction : Jake, Wandrille et Thom

@@ -34,22 +34,6 @@ Les processeurs actuels possèdent plusieurs niveaux de mémoire cache :
 - Le **cache L2** : situé dans le CPU, il vient s’intercaler entre le cœur du processeur et la mémoire vive. Il est plus rapide d’accès que la RAM mais moins que le cache L1.
 - Le **cache L3** : autrefois solidaire de la carte mère, les nouvelle architecture l’intègre au CPU. Il s’intercale alors entre le cache L2 et la mémoire vive.
 
-<table style="text-align: center; width: 100%; height: 100px;" cellspacing="5" cellpadding="1">
-	<tbody>
-		<tr>
-			<td style="background-color: #e0f2ff; border: solid 1px #404040; width: 19%;">Cœur du Processeur</td>
-			<td style="background-color: #fff4e0; border: solid 1px #404040; width: 19%;">Cache L1</td>
-			<td style="background-color: #e0ffe0; border: solid 1px #404040; width: 19%;">Cache L2</td>
-			<td style="background-color: #ffe0e0; border: solid 1px #404040; width: 19%;">Cache L3</td>
-			<td style="width: 5%; border: none;"></td>
-			<td style="background-color: #cacaca; border: solid 1px #404040; width: 19%;">Mémoire Vive</td>
-		</tr>
-		<tr>
-			<td style="height: 30%;" colspan="6">Schéma de la structure des caches d’un processeur</td>
-		</tr>
-	</tbody>
-</table>
-
 ## Les processeurs Multi-Cœur
 
 La loi de Moore prévoyait que le nombre de composants au sein d’un processeur et donc la puissance des CPU double tous les deux ans. Or, ces dernier ayant une taille fixe, les fabriquant se heurte depuis quelques années aux limites physique de cette loi. Leur parade a été de multiplier les cœurs des processeurs pour obtenir plus de performance. Après une longue mode des Dual Core, on voit aujourd’hui des processeurs avec deux, trois, quatre, six, huit voire même douze cœurs.

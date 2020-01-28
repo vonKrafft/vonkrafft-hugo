@@ -45,7 +45,7 @@ Septembre 2012, je rentre en école d'ingénieur. J'y apprends notamment le C, l
 
 Un an plus tard, je rentre au club info pour administrer le site des élèves et j'en profite pour migrer mon site vers WordPress. Kazeo était devenu bien trop limité pour mon usage et mes compétences Web était alors largement suffisantes pour m'occuper d'un WordPress. J'en profite alors pour faire un thème personnalisé et je mets le site en ligne sur Free.
 
-En novembre 2013, je vais à la Paris Games Week et j'en profite pour reprendre la rédaction d'article dont le rythme de publication avec diminué depuis 1 an. Mais peu de temps après, le site tombe dans l'abandon et aucun article n'est mis en ligne pendant 2 ans<sup>1</sup> !!! C'est seulement en décembre 2015 que le site reprend vie. Je suis alors en master 2 à Grenoble et j'ai depuis peu un serveur chez OVH. En mai 2016, je décide de rapatrier le site sur ce serveur qui y gagne au passage un coup de pinceau avec un nouveau thème WordPress entièrement personnel. Une nouvelle catégorie fait également son apparition : console, avec un premier article pour [donner un nom DNS à son serveur local](/console/donner-nom-dns-a-serveur-local/).
+En novembre 2013, je vais à la Paris Games Week et j'en profite pour reprendre la rédaction d'article dont le rythme de publication avec diminué depuis 1 an. Mais peu de temps après, le site tombe dans l'abandon et aucun article n'est mis en ligne pendant 2 ans[^1] !!! C'est seulement en décembre 2015 que le site reprend vie. Je suis alors en master 2 à Grenoble et j'ai depuis peu un serveur chez OVH. En mai 2016, je décide de rapatrier le site sur ce serveur qui y gagne au passage un coup de pinceau avec un nouveau thème WordPress entièrement personnel. Une nouvelle catégorie fait également son apparition : console, avec un premier article pour [donner un nom DNS à son serveur local](/console/donner-nom-dns-a-serveur-local/).
 
 {{< img-fit
     "/media/2017/12/65e7a314ef517c94664de23a17560d78.png" "ae1e7950cd6ca0c48b4c7aed43f9797c.png" ""
@@ -66,4 +66,4 @@ Nouvelle migration également : adieu WordPress, bienvenue à **Hugo**. Impléme
 
 En attendant, **#StayTuned** et espérons que le site vive encore dans 7 ans :)
 
-<small class="align-right">**[1]** Deux articles sur [Btrfs](/dossiers/systeme-de-fichier-emergence-btrfs/), datés de novembre 2014, seront ajoutés sur le sites lors de sa migration vers Hugo</small>
+[^1]: Deux articles sur [Btrfs](/dossiers/systeme-de-fichier-emergence-btrfs/), datés de novembre 2014, seront ajoutés sur le sites lors de sa migration vers Hugo

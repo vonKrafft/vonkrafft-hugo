@@ -102,7 +102,10 @@ gpg> addkey
 
 GnuPG dispose d'une interface de commande pour l'édition des clés. Pour ajouter une clé, saisir `addkey`, puis choisir l'option **(8) RSA (set your own capabilities)**, désactiver tous les rôles sauf **Sign** et générer une clé de 2048 bits.
 
-{{< alert "warning" question-circle >}}**Mais pourquoi utiliser RSA 2048 bits ?**<br>La Yubikey NEO, à l'heure où j'écris ces lignes, ne supporte que RSA 2048 and ECC p256. J'ai utilisé ici des clés RSA, mais libre à vous de générer des clés ECC en sélectionnant l'option **(11) ECC (set your own capabilities)**.{{< /alert >}}
+{{< alert "warning" question-circle >}}
+**Mais pourquoi utiliser RSA 2048 bits ?**  
+La Yubikey NEO, à l'heure où j'écris ces lignes, ne supporte que RSA 2048 and ECC p256. J'ai utilisé ici des clés RSA, mais libre à vous de générer des clés ECC en sélectionnant l'option **(11) ECC (set your own capabilities)**.
+{{< /alert >}}
 
 Répéter l'opération pour générer les deux autres clés avec les rôles **Encrypt** et **Authenticate**, puis enregistrer les modifications :
 

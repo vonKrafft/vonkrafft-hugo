@@ -35,7 +35,7 @@ Un mot de passe doit être individuel, secret, difficile à déterminer via une 
 
 J’en profite pour pousser un coup de gueule envers les sites Web qui limitent le nombre et/ou le type de caractères que l’on peut utiliser. J’ai déjà rencontré les cas suivants :
 
-<div class="pull-right hidden-xs hidden-sm">{{< tweet 940170499354750981 >}}</div>
+{{< tweet 940170499354750981 >}}
 
 - **« [Mot de passe sans accents, tirets ou espaces](https://twitter.com/von_Krafft/status/940170499354750981) »** : Non mais sérieux ?!? Qu’est-ce qui poussent les développeurs à interdire ce genre de caractères ? L’encodage de la base de données dans lequel le mot de passe est stocké ? Parce qu’à moins de stocker mon mot de passe en clair, les caractères spéciaux dans un mot de passe ne posent aucun problème technique !
 - **« [Le mot de passe ne doit pas excéder 14 caractères](https://twitter.com/von_Krafft/status/953742996910075904) »**, sinon quoi ? Si je choisis un mot de passe de 15 caractères j’explose ta base de données dans lequel tu as prévu un VARCHAR(14) pour stocker mon mot de passe en clair ?
@@ -60,7 +60,7 @@ Bref, un mot de passe ne peut pas à la fois se retenir facilement, respecter la
 
 Un autre point à prendre en compte est l’entropie. L’entropie correspond à la quantité d’information contenue dans le mot de passe. On peut la comparer à l’incertitude que l’on a sur ce dernier. Il existe plusieurs méthodes pour calculer l’entropie d’un mot de passe, certains calculs prenant en comptes des répétitions de caractères successifs ou encore intégrant des dictionnaires de mots de passe fréquents.
 
-Dans notre cas, nous prendrons <code>H = log<sub>2</sub>(N<sup>L</sup>) = L &times; ( log(N) / log(2) )</code>.
+Dans notre cas, nous prendrons `H = log2(N^L) = L × ( log(N) / log(2) )`.
 
 | Mot de passe              | Taille (N) | Alphabet (L) | Entropie (H) |
 | ------------------------- | ---------- | ------------ | ------------ |
@@ -162,7 +162,9 @@ Les mots de passe sont à présents stockés hachés dans la base de données de
 
 Que faire ? Et bien il suffit de « saler » le mot de passe, voire même le « poivrer ».
 
-{{< alert info >}}<i class="fa fa-question-circle"></i> Non mais attends, on n’est pas dans un cours de cuisine ici ...{{< /alert >}}
+{{< alert "info" "question-circle" >}}
+Non mais attends, on n’est pas dans un cours de cuisine ici ...
+{{< /alert >}}
 
 Afin de pallier au premier problème et éviter que deux utilisateurs avec le même mot de passe aient le même condensat, il suffit de concaténer le mot de passe avec une chaîne aléatoire propre à chaque utilisateur, que l’on appelle « sel » (en anglais salt).
 

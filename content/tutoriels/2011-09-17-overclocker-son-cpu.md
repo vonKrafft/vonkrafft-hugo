@@ -39,7 +39,7 @@ On peut donc effectuer un overclocking sur un CPU milieu de gamme et obtenir la 
 ### Le principe de l’overclocking
 
 Tout d’abord, il faut savoir que le processeur communique avec la RAM (mémoire vive), la carte graphique et le chipset (puces de la carte mère). Ce dernier communique avec le reste des composants. L’ensemble des connexions qui relient le chipset au processeur s’appelle le **Front Side Bus** (FSB).
-Pour des raisons historiques, la fréquence du processeur est égale à la <strong>*fréquence du FSB* x *un multiplicateur*</strong>, que nous allons appeler ici "coeff. CPU".
+Pour des raisons historiques, la fréquence du processeur est égale à la **_fréquence du FSB_ x _un multiplicateur_**, que nous allons appeler ici "coeff. CPU".
 
 {{< alert "info" cogs >}}**EXEMPLE :** Pentium 4 Dual Core E5200 : 200MHz (FSB) x 12,5 (Coeff. CPU) = 2500 MHz{{< /alert >}}
 

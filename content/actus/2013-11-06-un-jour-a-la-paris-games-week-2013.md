@@ -71,7 +71,7 @@ Depuis plus de deux mois avant la Paris Games Week, six célèbres moddeurs fran
 
 Petite pause déjeuné devant des matches Counter-Strike, dont un de la Team VeryGames affrontant le Clan Mystic. Un combat très sérré sur … que la Team VeryGames a remporté 16 à 14.
 
-Tout au long de la Paris Games Week, il était possible d’assister à une multitude de tournois organisé par l’ESWC (Electronic Sports World Cup), qui fêtait par la même occasion son 10<sup>ème</sup> anniversaire : Counter-Strike GO, Trackmania 2 Stadium, FIFA 14, Shoot Mania Storm, Call Of Duty BO 2, Dota 2 …
+Tout au long de la Paris Games Week, il était possible d’assister à une multitude de tournois organisé par l’ESWC (Electronic Sports World Cup), qui fêtait par la même occasion son 10ème anniversaire : Counter-Strike GO, Trackmania 2 Stadium, FIFA 14, Shoot Mania Storm, Call Of Duty BO 2, Dota 2 …
 
 {{< img-fit
     "/media/2013/11/e4bae577ec220f4cdce7a139474917fa.jpg" "e4bae577ec220f4cdce7a139474917fa-1024x550.jpg" "pgw13"

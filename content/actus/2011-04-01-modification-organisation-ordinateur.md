@@ -35,4 +35,6 @@ Plus récemment, Intel et AMD on développés des processeurs capable de gérer 
 
 La disparition de cette puce est intéressante pour les portables et les mini-PC, ces derniers étant à la recherche de place. Dans ces environnement très compact, chaque millimètre cube de gagner est bon à prendre. Le southbridge, grâce à son rôle essentielle dans la communication avec toutes les autres interfaces, a encore quelques années devant lui mais il sera, à terme, lui aussi intégré dans le processeur.
 
-<small class="align-right">**Source** : article original de C. Gauthier revu par Wandrille K.</small>
+---
+
+**Source** : article original de C. Gauthier revu par Wandrille K.

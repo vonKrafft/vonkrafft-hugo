@@ -21,7 +21,7 @@ Nouveau fer de lance de Microsoft, Windows 8 est disponible depuis le 26 octobre
 
 ### Peu de ressources nécessaires
 
-Windows 8 c'est tout d’abord un système d'exploitation pensé pour fonctionner sur des configurations modestes. Ainsi, la configuration minimale requière 1Go de RAM et processeur 1GHz. Outre les faibles besoins matériels, Windows 8 est aussi lancé à petit prix. Il faut compter 29,90 € pour passer à Windows 8 Professionnel depuis une machine Windows 7, Vista ou XP SP3. Ce tarif restera valable jusqu’au 1<sup>er</sup> janvier 2013.
+Windows 8 c'est tout d’abord un système d'exploitation pensé pour fonctionner sur des configurations modestes. Ainsi, la configuration minimale requière 1Go de RAM et processeur 1GHz. Outre les faibles besoins matériels, Windows 8 est aussi lancé à petit prix. Il faut compter 29,90 € pour passer à Windows 8 Professionnel depuis une machine Windows 7, Vista ou XP SP3. Ce tarif restera valable jusqu’au 1er janvier 2013.
 
 ### L’interface enrichie
 
@@ -68,4 +68,6 @@ Avec l’avènement des smartphones et tablettes, les OS ont tendance à converg
 
 {{< img-link path="/media/2012/10" file="83ea7c7f35f26434f60fc00cb78a655f.jpg" link="/media/2012/10/83ea7c7f35f26434f60fc00cb78a655f.jpg" >}}
 
-<small class="align-right">**Sources :** [Clubic.com](http://www.clubic.com/windows-os/windows-8/actualite-518865-windows-8-10-raisons.html)</small>
+---
+
+**Sources :** [Clubic.com](http://www.clubic.com/windows-os/windows-8/actualite-518865-windows-8-10-raisons.html)
