@@ -17,7 +17,7 @@ canonifyURLs = true
     # Sets the navbarTitle that appears in the top left of the navigation bar
     navbarTitle          = "vonKrafft"
     # Sets where "View More Posts" links
-    viewMorePostLink     = "/blog/"
+    viewMorePostLink     = "/page/2"
 
 # Optional Params
     # Sets navbarTitle to match the section of the website
@@ -108,23 +108,54 @@ canonifyURLs = true
 
 # Sets the menu items in the navigation bar
 # Identifier prepends a Font Awesome icon to the menu item
+
 [[menu.main]]
-    name = "Blog"
-    url = "/blog/"
-    identifier = "fa fa-newspaper-o"
+    name = "Sécurité"
+    url = "/securite/"
+    identifier = "fa fa-lock"
     weight = 1
+
+[[menu.main]]
+    name = "Console"
+    url = "/console/"
+    identifier = "fa fa-code"
+    weight = 2
+
+[[menu.main]]
+    name = "Actus"
+    url = "/actus/"
+    identifier = "fa fa-newspaper-o"
+    weight = 3
+
+[[menu.main]]
+    name = "Dossiers"
+    url = "/dossiers/"
+    identifier = "fa fa-book"
+    weight = 4
+
+[[menu.main]]
+    name = "Guides"
+    url = "/guides/"
+    identifier = "fa fa-laptop"
+    weight = 5
+
+[[menu.main]]
+    name = "Tuto"
+    url = "/tutoriels/"
+    identifier = "fa fa-flask"
+    weight = 6
 
 [[menu.main]]
     name = "Works"
     url = "/works/"
     identifier = "fa fa-rocket"
-    weight = 3
+    weight = 10
 
 [[menu.main]]
     name = "Contact"
     url = "/contact/"
     identifier = "fa fa-id-card-o"
-    weight = 4
+    weight = 20
 
 # Sets Social Media icons to appear and link to your account. Value should be your
 # username unless otherwise noted. These are the icons affected by socialAppearAtTop
