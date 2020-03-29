@@ -133,20 +133,10 @@ Quant au câblage, tout se range sans problème derrière le panneau de la carte
 
 Verdict ? Le Fractal Design Arc Midi Tower est un boîtier moyen tour pour Gamer peu onéreux et bien équipé. Sa ventilation efficace, son grand espace intérieur et son agencement fait de ce boîtier le compagnon idéal d’une petite configuration de Gamer.
 
-{{% rated %}}
-
-- La ventilation
-- Le Look / Design
-- Les rack de disques amovible
-- Le système anti-vibration
-- Le prix
-
-1. Les filtres à poussière en mousse épaisse
-1. Les caoutchoucs des passe-cloisons
-1. Pas d'adaptateur USB 3.0 vers USB 2.0
-1. La finition du cache 3,5 pouces
-
-{{% /rated %}}
+{{< rated
+    positive="La ventilation;Le Look / Design;Les rack de disques amovible;Le système anti-vibration;Le prix"
+    negative="Les filtres à poussière en mousse épaisse;Les caoutchoucs des passe-cloisons;Pas d'adaptateur USB 3.0 vers USB 2.0;La finition du cache 3,5 pouces"
+    >}}
 
 Vendu actuellement aux alentours de 70 euros, l’Arc Midi Tower ne manque de rien et a tout d’un grand !
 

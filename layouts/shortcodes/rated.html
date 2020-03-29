@@ -1,0 +1,4 @@
+<div class="rated">
+    <ul class="rated-positive">{{ range (split (.Get "positive") ";") }}<li>{{ . }}</li>{{ end }}</ul>
+    <ul class="rated-negative">{{ range (split (.Get "negative") ";") }}<li>{{ . }}</li>{{ end }}</ul>
+</div>

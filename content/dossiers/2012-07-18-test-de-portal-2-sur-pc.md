@@ -48,15 +48,10 @@ Il est clair que Portal 2, tout comme son prédécesseur, n’a rien d’excepti
 
 Portal 2 est un jeu comme on en voit rarement, plein d’idées et d’humour, proposant une ambiance immersive et une durée de vie conséquente, il s’impose comme l’un des titre de l’année. De quoi faire honneur à son prédécesseur qui avait déjà séduit. Portal 2 est d’ores et déjà disponible sur PC, PS3 ou Xbox 360.
 
-{{% rated background="" %}}
-
-- La richesse du Game Play
-- L’humour et les dialogues
-- La durée de vie
-
-1. Les temps de chargement entre deux niveaux
-
-{{% /rated %}}
+{{< rated
+    positive="La richesse du Game Play;L’humour et les dialogues;La durée de vie"
+    negative="Les temps de chargement entre deux niveaux"
+    >}}
 
 ## Info sur le jeu
 
