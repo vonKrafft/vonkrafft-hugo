@@ -1,0 +1,9 @@
+<ul class="actions pagination">
+    {{ if ne (.Get 0) "" }}
+        <li><a href="{{ .Get 1 }}" class="button big previous">{{ .Get 0 }}</a></li>
+    {{ end }}
+
+    {{ if ne (.Get 2) "" }}
+        <li><a href="{{ .Get 3 }}" class="button big next">{{ .Get 2 }}</a></li>
+    {{ end }}
+</ul>
