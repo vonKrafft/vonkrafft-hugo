@@ -66,7 +66,7 @@
                                 {{ $.Scratch.Set "dateType" .Date }}
                                 <time class="published" datetime=
                                     '{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
-                                    {{ ($.Scratch.Get "dateType").Format "January 2, 2006" }}</time>
+                                    {{ .Date.Day }} {{ index $.Site.Data.month (printf "%d" .Date.Month) }} {{ .Date.Year }}</time>
                             </header>
                             {{ .Render "featured" }}
                         </article>
@@ -79,7 +79,7 @@
                         {{ else }}
                             "/post/"
                         {{ end }}
-                        class="button">View more posts</a>
+                        class="button">Voir plus d'articles</a>
                 {{ end }}
             </div>
         </section>

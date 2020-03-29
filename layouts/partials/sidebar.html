@@ -33,7 +33,7 @@
   <section class="recent-posts">
     <div class="mini-posts">
       <header>
-        <h3>Recent Posts</h3>
+        <h3>Articles Récents</h3>
       </header>
       <div class="posts-container">
         {{ $.Scratch.Set "recentPosts" .Site.Pages }}
@@ -52,7 +52,7 @@
               </h3>
               {{ $.Scratch.Set "dateType" .Date }}
               <time class="published" datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
-                {{ ($.Scratch.Get "dateType").Format "January 2, 2006" }}
+                {{ .Date.Day }} {{ index $.Site.Data.month (printf "%d" .Date.Month) }} {{ .Date.Year }}
               </time>
             </header>
             <a href="{{ .RelPermalink }}" class="image"><img src="{{ .Params.cover }}" alt=""></a>
@@ -68,7 +68,7 @@
           {{ else }}
             "/post/"
           {{ end }}
-        class="button">View more posts</a>
+        class="button">Voir plus d'articles</a>
       {{ end }}
     </div>
   </section>
@@ -81,7 +81,7 @@
     <section id="categories">
       <header>
         <h3>
-          <a href="/categories/">Categories</a>
+          <a href="/categories/">Catégories</a>
         </h3>
       </header>
         {{ if .Site.Params.categoriesByCount }}

@@ -3,14 +3,10 @@
     {{ partial "navbar" . }}
     <!-- Main -->
     <div id="main">
-        {{ range first (index .Site.Params "paginate" | default 5) (where .Site.Pages "Type" "post") }}
+        {{ range (.Paginator 5).Pages }}
             {{ .Render "content-list" }}
         {{ end }}
-        
-        <!-- Pagination -->
-        <ul class="actions pagination">
-            <li><a href="/blog/" class="button big next">View more post</a></li>
-        </ul>
+        {{ partial "pagination" . }}
     </div>
     {{ partial "sidebar" . }}
 {{ partial "footer" . }}
