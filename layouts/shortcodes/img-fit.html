@@ -57,7 +57,7 @@
                     <span class="image fit featured">
                     {{ $.Scratch.Set "htmlTag" "span" }}
                 {{ else }}
-                    <a href="{{ . }}" class="image fit featured">
+                    <a href="{{ . }}" class="image fit featured" data-fancybox="gallery">
                     {{ $.Scratch.Set "htmlTag" "a" }}
                 {{ end }}
             {{ else if eq ($.Scratch.Get "count") 2 }}

@@ -70,15 +70,15 @@
 
     <figure>
         {{ if eq $type "left" }}
-            <a href="{{ $link }}" class="image featured left">
+            <a href="{{ $link }}" class="image featured left" data-fancybox="gallery">
                 <img src="{{ $path }}/{{ $file }}" alt="{{ $alt }}">
             </a>
         {{ else if eq $type "right" }}
-            <a href="{{ $link }}" class="image featured right">
+            <a href="{{ $link }}" class="image featured right" data-fancybox="gallery">
                 <img src="{{ $path }}/{{ $file }}" alt="{{ $alt }}">
             </a>
         {{ else }}
-            <a href="{{ $link }}" class="image featured center">
+            <a href="{{ $link }}" class="image featured center" data-fancybox="gallery">
                 <img src="{{ $path }}/{{ $file }}" alt="{{ $alt }}">
             </a>
         {{ end }}
