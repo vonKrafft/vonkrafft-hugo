@@ -1,83 +1,77 @@
 <!DOCTYPE HTML>
-<!--
-    Future Imperfect by HTML5 UP
-    html5up.net | @n33co
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-    <head>
-        {{ partial "seo_schema" . }}
-        {{ with $.Scratch.Get "generalTitle" }}
-            <title>{{ . }}</title>
+<head>
+
+    {{ with .Title }}<title>{{ . }} :: vonKrafft.fr</title>{{ end }}
+
+    <meta charset="utf-8" />
+    {{ .Hugo.Generator }}
+
+    <link rel="shortcut icon" href='{{ "/img/favicon.png" | relURL }}' type="image/png" />
+    <link rel="apple-touch-icon" href='{{ "/img/apple-touch-icon.png" | relURL }}' />
+    <link rel="apple-touch-icon" sizes="57x57" href='{{ "/img/apple-touch-icon-57x57.png" | relURL }}' />
+    <link rel="apple-touch-icon" sizes="72x72" href='{{ "/img/apple-touch-icon-72x72.png" | relURL }}' />
+    <link rel="apple-touch-icon" sizes="76x76" href='{{ "/img/apple-touch-icon-76x76.png" | relURL }}' />
+    <link rel="apple-touch-icon" sizes="114x114" href='{{ "/img/apple-touch-icon-114x114.png" | relURL }}' />
+    <link rel="apple-touch-icon" sizes="120x120" href='{{ "/img/apple-touch-icon-120x120.png" | relURL }}' />
+    <link rel="apple-touch-icon" sizes="144x144" href='{{ "/img/apple-touch-icon-144x144.png" | relURL }}' />
+    <link rel="apple-touch-icon" sizes="152x152" href='{{ "/img/apple-touch-icon-152x152.png" | relURL }}' />
+    <link rel="apple-touch-icon" sizes="180x180" href='{{ "/img/apple-touch-icon-180x180.png" | relURL }}' />
+
+    <link rel="canonical" href="{{ .Permalink }}" />
+    <link rel="alternative" href="/index.xml" title="{{ .Site.Title }}" type="application/atom+xml" />
+
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no,email=no,adress=no" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+
+    <meta name="robots" content="index,follow" />
+    {{ if isset .Site.Params "googlesiteverification" }}<meta name="google-site-verification" content="{{ .Site.Params.googleSiteVerification }}" />{{ end }}
+    {{ if isset .Site.Params "msvalidate" }}<meta name="msvalidate.01" content="{{ .Site.Params.msValidate }}" />{{ end }}
+
+    {{ if eq .Type "post" }}
+
+        <meta name="author" content='{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}' />
+        <meta name="description" content="{{ .Summary | plainify }}" />
+
+        {{ if isset .Params "cover" }}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:image" content="https://vonkrafft.fr{{ .Params.cover | relURL }}" />
         {{ else }}
-            {{ with .Title }}
-                <title>{{ . }}</title>
-            {{ else }}
-                <title>{{ .Site.Title }}</title>
-            {{ end }}
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:image" content='https://vonkrafft.fr{{ "/img/avatar.jpg" | relURL }}' />
         {{ end }}
 
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {{ .Hugo.Generator }}
-        {{ partial "favicon" . }}
+        <meta name="twitter:site" content="@{{ .Site.Params.twitter }}" />
+        <meta name="twitter:title" content="{{ .Title }}" />
+        <meta name="twitter:description" content="{{ .Summary | plainify }}" />
 
-        {{ with .Params.author }}
-            <meta name="author" content="{{ . }}">
-        {{ end }}
-        {{ with .Description }}
-            <meta name="description" content="{{ . }}">
-        {{ else }}
-            {{ with .Site.Params.description }}
-                <meta name="description" content="{{ . }}">
-            {{ end }}
-        {{ end }}
+    {{ else }}
 
-        {{ template "_internal/twitter_cards.html" . }}
-        {{ template "_internal/opengraph.html" . }}
-        <meta property="og:image" content="{{ .Site.BaseURL }}/images/logo.png">
-        <meta property="og:image:type" content="image/png">
-        <meta property="og:image:width" content="512">
-        <meta property="og:image:height" content="512">
-        {{ template "_internal/schema.html" . }}
-        {{ template "_internal/google_news.html" . }}
+        <meta name="author" content="{{ .Site.Params.author }}" />
+        <meta name="description" content="{{ .Site.Params.description }}" />
 
-        {{ if isset .Site.Params "customcss" }}
-            {{ $.Scratch.Set "cssFiles" .Site.Params.customCSS }}
-        {{ else }}
-            {{ $.Scratch.Set "cssFiles" false }}
-        {{ end }}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:image" content='https://vonkrafft.fr{{ "/img/avatar.jpg" | relURL }}' />
 
-        <!-- If the value "default" is passed into the param then we will first
-             load the standard css files associated with the theme -->
-        {{ if or (in ($.Scratch.Get "cssFiles") "default") (eq ($.Scratch.Get "cssFiles") false) }}
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
-            <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
-            <link rel="stylesheet" href="{{ "css/add-on.css" | relURL }}">
-            <link rel="stylesheet" href="{{ "css/academicons.min.css" | relURL }}">
-        {{ end }}
+        <meta name="twitter:site" content="@{{ .Site.Params.twitter }}" />
+        <meta name="twitter:title" content='{{ if isset .Site.Params "seotitle" }}{{ .Site.Params.seotitle }}{{ else }}{{ .Site.Title }}{{ end }}' />
+        <meta name="twitter:description" content="{{ .Site.Params.description }}" />
 
-        {{ if ne ($.Scratch.Get "cssFiles") false }}
-            {{ range $.Scratch.Get "cssFiles" }}
-                {{ if ne . "default" }}
-                    <link rel="stylesheet" href="{{ . | relURL }}">
-                {{ end }}
-            {{ end }}
-        {{ end }}
+    {{ end }}
 
-{{ if (not .Params.disable_highlight) }}
-  {{ $highTheme := .Site.Params.highlightjsTheme }}
-    {{ with .Site.Params.highlightjsVersion }}
-    <link href='{{ $.Site.Params.highlightjsCDN | default "//cdn.bootcss.com" }}/highlight.js/{{ . }}/styles/{{ $highTheme }}.min.css' rel='stylesheet' type='text/css' />
-  {{ end }}
-{{ end }}
+    <link rel="stylesheet" href='{{ "css/highlight-github.min.css" | relURL }}'>
+    <link rel="stylesheet" href='{{ "css/raleway.css" | relURL }}'>
+    <link rel="stylesheet" href='{{ "css/sourcesanspro.css" | relURL }}'>
+    <link rel="stylesheet" href='{{ "css/font-awesome.min.css" | relURL }}'>
+    <link rel="stylesheet" href='{{ "css/jquery.fancybox.min.css" | relURL }}'>
+    <link rel="stylesheet" href='{{ "css/main.css" | relURL }}'>
+    <link rel="stylesheet" href='{{ "css/academicons.min.css" | relURL }}'>
 
-      {{ template "_internal/google_analytics.html" . }}
-    </head>
-    <body>
+    {{ template "_internal/google_analytics.html" . }}
+</head>
+<body>
 
-      <!-- Wrapper -->
-      <div id="wrapper">
+    <!-- Wrapper -->
+    <div id="wrapper">
