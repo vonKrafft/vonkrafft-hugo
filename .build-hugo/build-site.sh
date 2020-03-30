@@ -1,13 +1,16 @@
 #!/bin/bash
+# usage: ./build-site.sh [BASEURL]
 
 cd "$(dirname "$0")"
 
-HUGO_BASEURL="/"
+HUGO_BASEURL="${1:=/}"
 HUGO_VERSION=$(grep "ENV HUGO_VERSION" Dockerfile | cut -d= -f2)
 
-docker build -t vonkrafft/hugo:${HUGO_VERSION} .
+if [ -z $(docker image ls -q vonkrafft/hugo:0.68.3) ]; then
+    docker build -t vonkrafft/hugo:${HUGO_VERSION} .
+fi
 
 cd ..
 
-rm -r public/*
-docker run -v "$(pwd):/site" vonkrafft/hugo:${HUGO_VERSION} -- --source /site --destination /site/public --cleanDestinationDir --baseURL "${HUGO_BASEURL}"
+if [ -d "public" ]; then rm -r public; fi
+docker run --rm -v "$(pwd):/site" vonkrafft/hugo:${HUGO_VERSION} -- --source /site --destination /site/public --cleanDestinationDir --baseURL "${HUGO_BASEURL}"
