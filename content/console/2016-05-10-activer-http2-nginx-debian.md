@@ -72,7 +72,7 @@ root:~# openssl dhparam -out /etc/nginx/ssl/dhparam.pem 4096
 
 Le serveur est à jour, nous avons notre certificat ... il ne nous reste plus qu'à activer HTTP2 et HTTPS. Ci-dessous, je vous met un extrait du fichier de configuration (dans mon cas, et par défaut, c'est le fichier `/etc/nginx/conf.d/default.conf`).
 
-{{< highlight plaintext >}}
+{{< highlight nginx >}}
 server {
     # Activer HTTP2 et SSL
     listen 443 ssl http2 default deferred;
