@@ -55,7 +55,7 @@
                 {{ .Date.Day }} {{ index $.Site.Data.month (printf "%d" .Date.Month) }} {{ .Date.Year }}
               </time>
             </header>
-            <a href="{{ .RelPermalink }}" class="image"><img src="{{ .Params.cover }}" alt=""></a>
+            {{ if isset .Params "cover" }}<a href="{{ .RelPermalink }}" class="image"><img src="{{ .Params.cover }}" alt=""></a>{{ end }}
             {{ .Render "featured" }}
           </article>
         {{ end }}

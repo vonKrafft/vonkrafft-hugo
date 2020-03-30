@@ -3,7 +3,7 @@
     {{ partial "navbar" . }}
     <!-- Main -->
     <div id="main">
-        {{ range (.Paginator 5).Pages }}
+        {{ range (.Paginator 8).Pages }}
             {{ .Render "content-list" }}
         {{ end }}
         {{ partial "pagination" . }}
