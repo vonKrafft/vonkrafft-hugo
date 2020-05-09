@@ -2,7 +2,7 @@
 title: "Des prises connectées Sonoff avec Tasmota"
 description: "Guide pour flasher des modules Sonoff Basic R2 afin d'utiliser Tamota et obtenir des prises connectées à moins de 10 euros."
 tags: [ "Domotique", "Sonoff", "Tasmota", "ESP8266", "Google Home" ]
-lastmod: "2020-03-29 18:35:51"
+lastmod: "2020-05-09 14:47:11"
 date: "2020-03-29 15:23:50"
 categories:
     - "Tutoriels"
@@ -111,4 +111,4 @@ Nous pouvons maintenant nous connecter en HTTP à notre prise connectée depuis 
 
 {{< img-post alt="" path="/media/2020/03/" file="73e863a39bd0dae83bc7a8cd5d98d189-1024x299.png" >}}
 
-Et voilà, une **prise connectée** peu onéreuse qui nous permet de commander une lampe ou tout type d'appareil 230V (10A max.) ! Personnellement, je ne me suis pas arrêté là et je me suis installé une centrale domotique sur un *Raspberry Pi* que j'ai relié à ma *Google Home Mini* pour un contrôle à la voix, mais ce sera l'objet d'un autre article :)
+Et voilà, une **prise connectée** peu onéreuse qui nous permet de commander une lampe ou tout type d'appareil 230V (10A max.) ! Personnellement, je ne me suis pas arrêté là et je me suis installé une centrale domotique sur un *Raspberry Pi* que j'ai relié à ma *Google Home Mini* pour un contrôle à la voix, mais c'est' l'objet d'un [autre article](/tutoriels/installer-domoticz-homebridge-raspberry-pi/) :)
