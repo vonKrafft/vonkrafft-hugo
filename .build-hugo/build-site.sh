@@ -6,7 +6,7 @@ cd "$(dirname "$0")"
 HUGO_BASEURL="${1:=/}"
 HUGO_VERSION=$(grep "ENV HUGO_VERSION" Dockerfile | cut -d= -f2)
 
-if [ -z $(docker image ls -q vonkrafft/hugo:0.68.3) ]; then
+if [ -z $(docker image ls -q vonkrafft/hugo:${HUGO_VERSION}) ]; then
     docker build -t vonkrafft/hugo:${HUGO_VERSION} .
 fi
 
